@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hermes Agent 中文介紹頁，整理核心特色、學習重點、工具與技能概念、教學應用與推薦連結。">
+  <title>Hermes Agent 中文詳頁 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    body { background: linear-gradient(180deg, #f7fbf8 0%, #eefbf3 100%); color: #1f2937; }
+    .hero { background: linear-gradient(135deg, #198754, #20c997); color: #fff; border-radius: 1.5rem; box-shadow: 0 1rem 3rem rgba(25,135,84,.2); }
+    .cardx { background:#fff; border:1px solid rgba(15,23,42,.08); border-radius:1rem; box-shadow:0 .75rem 2rem rgba(15,23,42,.06); }
+    .section-title { font-weight:800; letter-spacing:.02em; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="index.html">iAgents 中文學習站</a>
+      <div class="d-flex gap-2">
+        <a class="btn btn-outline-success" href="index.html">回首頁</a>
+        <a class="btn btn-success" href="resources.html">精選資源</a>
+      </div>
+    </div>
+  </nav>
+  <main class="container py-4 py-lg-5">
+    <section class="hero p-4 p-lg-5 mb-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8">
+          <span class="badge bg-light text-success px-3 py-2 mb-3">專案 B / 中文詳頁</span>
+          <h1 class="display-5 fw-bold mb-3">Hermes Agent 中文詳頁</h1>
+          <p class="lead mb-0">Hermes Agent 是 Nous Research 打造的 self-improving AI agent。它的重點不只是聊天，而是 memory、skills、tools、delegate 與跨平台 gateway 所構成的完整代理系統。</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="cardx p-4 text-dark">
+            <h2 class="h5 fw-bold">快速入口</h2>
+            <div class="d-grid gap-2">
+              <a class="btn btn-success" href="https://hermes-agent.nousresearch.com" target="_blank" rel="noopener">官方網站</a>
+              <a class="btn btn-outline-success" href="https://hermes-agent.nousresearch.com/docs/" target="_blank" rel="noopener">官方文件</a>
+              <a class="btn btn-outline-success" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="row g-4">
+        <div class="col-lg-6"><div class="cardx p-4 h-100"><h2 class="section-title h4 mb-3">核心理解重點</h2><ul class="mb-0"><li class="mb-2">工具呼叫能力讓 agent 能夠真正執行檔案、終端機、瀏覽器等操作。</li><li class="mb-2">記憶系統讓長期互動與個人化工作流成為可能。</li><li class="mb-2">技能系統可把複雜流程封裝成可重複使用的操作知識。</li><li>Delegate / background tasks 代表它已經是工作流型 agent，而非單輪對話機器人。</li></ul></div></div>
+        <div class="col-lg-6"><div class="cardx p-4 h-100"><h2 class="section-title h4 mb-3">建議學習順序</h2><ol class="mb-0"><li class="mb-2">先看 Getting Started，理解最基本使用方式。</li><li class="mb-2">再看 docs 中與 tools、memory、skills 相關說明。</li><li class="mb-2">閱讀 release notes，理解近期功能演進方向。</li><li>最後再研究 gateway、MCP、delegate 等進階能力。</li></ol></div></div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <h2 class="section-title h3 mb-4">推薦閱讀與用途整理</h2>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h3 class="h5 fw-bold">官方頁面</h3>
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com/docs/getting-started/" target="_blank" rel="noopener">Getting Started</a>
+              <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com/docs/getting-started/termux" target="_blank" rel="noopener">Termux 指南</a>
+              <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent/releases" target="_blank" rel="noopener">Release Notes</a>
+              <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">GitHub 原始碼</a>
+              <a class="list-group-item list-group-item-action" href="https://nousresearch.com" target="_blank" rel="noopener">Nous Research 官網</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="h5 fw-bold">教學與研究用途</h3>
+            <ul>
+              <li>AI Agent 工具使用與自動化流程教材</li>
+              <li>記憶系統、技能與長期互動案例</li>
+              <li>多平台 gateway 與 agent UX 比較</li>
+              <li>作為 LLM + tools + workflow 的整合示範</li>
+            </ul>
+            <a class="btn btn-outline-success" href="resources.html">查看整體資源頁</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center py-3">
+      <a class="btn btn-success me-2" href="index.html#hermes-agent">回首頁 Hermes Agent 區</a>
+      <a class="btn btn-outline-success" href="openclaw.html">前往 OpenClaw 詳頁</a>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
