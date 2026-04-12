@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OpenClaw 與 Hermes Agent 中文學習入口網站，整理說明文件、官網連結、GitHub 資源與 YouTube 教學影片。">
+  <title>iAgents 中文學習站 | OpenClaw 與 Hermes Agent</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+      background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+      color: #1f2937;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+      color: #fff;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 1rem 3rem rgba(13, 110, 253, 0.18);
+    }
+    .hero .badge {
+      letter-spacing: 0.05em;
+    }
+    .section-title {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .card {
+      border: 0;
+      border-radius: 1rem;
+      box-shadow: 0 0.75rem 2rem rgba(15, 23, 42, 0.08);
+    }
+    .list-group-item {
+      border: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .list-group-item:last-child {
+      border-bottom: 0;
+    }
+    .resource-tag {
+      font-size: 0.75rem;
+    }
+    .footer-note {
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#top">iAgents 中文學習站</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="切換導覽列">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#overview">網站定位</a></li>
+          <li class="nav-item"><a class="nav-link" href="#openclaw">OpenClaw</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hermes-agent">Hermes Agent</a></li>
+          <li class="nav-item"><a class="nav-link" href="#videos">YouTube 教學</a></li>
+          <li class="nav-item"><a class="nav-link" href="#roadmap">學習路線</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top" class="container py-4 py-lg-5">
+    <section class="hero p-4 p-lg-5 mb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <span class="badge bg-light text-primary mb-3 px-3 py-2">UTF-8 / 繁體中文 / Bootstrap 5</span>
+          <h1 class="display-5 fw-bold mb-3">OpenClaw 與 Hermes Agent 中文學習入口</h1>
+          <p class="lead mb-4">本網站作為中文學習整理站，聚焦於 OpenClaw 與 Hermes Agent 的入門理解、安裝教學、官方文件入口、GitHub 專案資源，以及 YouTube 教學影片索引，方便後續擴充成完整的中文知識庫。</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-light btn-lg text-primary fw-semibold" href="#overview">查看首頁規劃</a>
+            <a class="btn btn-outline-light btn-lg" href="#videos">瀏覽影片整理</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="bg-white bg-opacity-10 rounded-4 p-4">
+            <h2 class="h5 fw-bold">首頁規劃重點</h2>
+            <ul class="mb-0 ps-3">
+              <li>專案簡介與定位</li>
+              <li>官方網站與 GitHub 入口</li>
+              <li>中文學習重點整理</li>
+              <li>YouTube 教學影片清單</li>
+              <li>建議學習順序與後續擴充方向</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview" class="mb-5">
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card h-100 p-4">
+            <h2 class="section-title h3 mb-3">網站定位與內容規劃</h2>
+            <p>此首頁目前先作為靜態入口頁，目標是先把最重要的學習路徑固定下來，讓後續能逐步補齊教學文章、安裝筆記、環境設定範例、工作流示範與中文教學影片索引。</p>
+            <div class="row g-3 mt-1">
+              <div class="col-md-6">
+                <div class="border rounded-4 p-3 h-100 bg-light">
+                  <h3 class="h6 fw-bold">第一階段</h3>
+                  <p class="mb-0">建立首頁、官方連結、文件入口、YouTube 搜尋與教學索引。</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="border rounded-4 p-3 h-100 bg-light">
+                  <h3 class="h6 fw-bold">第二階段</h3>
+                  <p class="mb-0">補上中文說明文件、安裝教學、常見問題與實際應用案例。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card h-100 p-4">
+            <h2 class="section-title h4 mb-3">本頁預計收錄的資訊類型</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0">OpenClaw 與 Hermes Agent 的定位比較</li>
+              <li class="list-group-item px-0">官方網站、官方文件、GitHub repo 與社群連結</li>
+              <li class="list-group-item px-0">適合初學者的 YouTube 教學入口</li>
+              <li class="list-group-item px-0">建議的學習順序與安裝路線</li>
+              <li class="list-group-item px-0">未來可擴充的中文筆記與教案頁面</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="openclaw" class="mb-5">
+      <div class="card p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-4">
+          <div>
+            <span class="badge text-bg-primary resource-tag mb-2">專案 A</span>
+            <h2 class="section-title h3 mb-1">OpenClaw</h2>
+            <p class="mb-0 text-secondary">個人 AI 助手平台，強調跨平台、訊息通道整合與個人化使用體驗。</p>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary" href="https://openclaw.ai" target="_blank" rel="noopener">官方網站</a>
+            <a class="btn btn-outline-primary" href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener">GitHub Repo</a>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h3 class="h5 fw-bold">中文學習重點</h3>
+            <ul>
+              <li>OpenClaw 是什麼、適合哪些使用場景。</li>
+              <li>如何從 Getting Started 開始安裝。</li>
+              <li>如何串接 Telegram、Discord、Slack 等通道。</li>
+              <li>如何透過 skills 與工具擴充實際能力。</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="h5 fw-bold">官方文件入口</h3>
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai" target="_blank" rel="noopener">官方文件首頁</a>
+              <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/start/getting-started" target="_blank" rel="noopener">Getting Started</a>
+              <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/start/showcase" target="_blank" rel="noopener">Showcase</a>
+              <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/help/faq" target="_blank" rel="noopener">FAQ</a>
+              <a class="list-group-item list-group-item-action" href="https://deepwiki.com/openclaw/openclaw" target="_blank" rel="noopener">DeepWiki 專案索引</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hermes-agent" class="mb-5">
+      <div class="card p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-4">
+          <div>
+            <span class="badge text-bg-success resource-tag mb-2">專案 B</span>
+            <h2 class="section-title h3 mb-1">Hermes Agent</h2>
+            <p class="mb-0 text-secondary">Nous Research 推出的可持續學習型 AI Agent，主打記憶、技能、工具整合與多通道互動。</p>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-success" href="https://hermes-agent.nousresearch.com" target="_blank" rel="noopener">官方網站</a>
+            <a class="btn btn-outline-success" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">GitHub Repo</a>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h3 class="h5 fw-bold">中文學習重點</h3>
+            <ul>
+              <li>Hermes Agent 的核心概念：memory、skills、tools、delegate。</li>
+              <li>CLI、Telegram、Discord 等不同使用入口。</li>
+              <li>如何選擇模型提供者與工具集。</li>
+              <li>如何把 Hermes Agent 用於教學、研究與日常自動化。</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="h5 fw-bold">官方文件入口</h3>
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com/docs/" target="_blank" rel="noopener">官方文件首頁</a>
+              <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com/docs/getting-started/" target="_blank" rel="noopener">Getting Started</a>
+              <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com/docs/getting-started/termux" target="_blank" rel="noopener">Termux 指南</a>
+              <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">官方 GitHub Repo</a>
+              <a class="list-group-item list-group-item-action" href="https://nousresearch.com" target="_blank" rel="noopener">Nous Research 官網</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="mb-5">
+      <div class="card p-4 p-lg-5">
+        <h2 class="section-title h3 mb-3">YouTube 教學影片列表</h2>
+        <p class="text-secondary mb-4">由於 AI Agent 生態更新很快，本頁目前先整理成「可直接觀看或搜尋的 YouTube 入口清單」，方便快速追蹤最新教學、安裝影片與功能展示。後續可再逐步人工篩選成固定推薦片單。</p>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100 bg-light">
+              <h3 class="h5 fw-bold mb-3">OpenClaw 相關影片入口</h3>
+              <div class="list-group">
+                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=OpenClaw+AI+assistant" target="_blank" rel="noopener">OpenClaw AI assistant 相關影片</a>
+                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=OpenClaw+tutorial" target="_blank" rel="noopener">OpenClaw tutorial</a>
+                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=OpenClaw+install" target="_blank" rel="noopener">OpenClaw 安裝教學</a>
+                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=OpenClaw+Telegram+Discord" target="_blank" rel="noopener">OpenClaw 通道整合示範</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100 bg-light">
+              <h3 class="h5 fw-bold mb-3">Hermes Agent 相關影片入口</h3>
+              <div class="list-group">
+                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=Hermes+Agent+Nous+Research" target="_blank" rel="noopener">Hermes Agent 與 Nous Research 介紹</a>
+                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=Hermes+Agent+tutorial" target="_blank" rel="noopener">Hermes Agent tutorial</a>
+                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=Hermes+Agent+Telegram" target="_blank" rel="noopener">Hermes Agent Telegram 教學</a>
+                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=Hermes+Agent+tools+skills" target="_blank" rel="noopener">Hermes Agent tools / skills 示範</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="mb-5">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card h-100 p-4">
+            <h2 class="section-title h4 mb-3">建議學習路線</h2>
+            <ol class="mb-0">
+              <li class="mb-2">先閱讀兩個專案的官方首頁與 Getting Started。</li>
+              <li class="mb-2">從 YouTube 搜尋入口挑選安裝與入門示範影片。</li>
+              <li class="mb-2">實際安裝至少一個專案，建立最小可運作環境。</li>
+              <li class="mb-2">再進一步研究工具、技能、通道整合與自動化用法。</li>
+              <li>最後整理成中文筆記、範例與課程教材。</li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card h-100 p-4">
+            <h2 class="section-title h4 mb-3">後續擴充建議</h2>
+            <ul class="mb-0">
+              <li class="mb-2">新增 OpenClaw 與 Hermes Agent 個別詳細介紹頁。</li>
+              <li class="mb-2">加入安裝步驟截圖與常見問題排除。</li>
+              <li class="mb-2">建立中文術語表與關鍵概念對照表。</li>
+              <li class="mb-2">整理「教學用途」、「研究用途」、「個人工作流」示範案例。</li>
+              <li>建立固定推薦的 YouTube 精選影片清單與觀看筆記。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center py-3">
+      <p class="footer-note mb-2">本頁目前為首頁雛形與內容規劃稿，後續可逐步擴充為完整中文學習網站。</p>
+      <p class="footer-note mb-0">資料來源：OpenClaw 官方網站 / 文件 / GitHub，以及 Hermes Agent 官方網站 / 文件 / GitHub。</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
