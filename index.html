@@ -3,42 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="OpenClaw 與 Hermes Agent 中文學習入口網站，整理說明文件、官網連結、GitHub 資源與 YouTube 教學影片。">
+  <meta name="description" content="OpenClaw 與 Hermes Agent 中文學習站，整理說明文件、官網連結、GitHub 資源、YouTube 影片與中英文最新消息。">
   <title>iAgents 中文學習站 | OpenClaw 與 Hermes Agent</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
+    :root {
+      --brand-blue: #0d6efd;
+      --brand-purple: #6610f2;
+      --soft-bg: #f6f9ff;
+      --soft-border: rgba(15, 23, 42, 0.08);
+    }
     body {
-      background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+      background: linear-gradient(180deg, #f8fbff 0%, #eff4ff 100%);
       color: #1f2937;
     }
     .hero {
-      background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+      background: linear-gradient(135deg, var(--brand-blue), var(--brand-purple));
       color: #fff;
       border-radius: 1.5rem;
+      box-shadow: 0 1rem 3rem rgba(13, 110, 253, 0.2);
       overflow: hidden;
-      box-shadow: 0 1rem 3rem rgba(13, 110, 253, 0.18);
     }
-    .hero .badge {
-      letter-spacing: 0.05em;
+    .card,
+    .feature-box,
+    .news-item {
+      border: 1px solid var(--soft-border);
+      border-radius: 1rem;
+      box-shadow: 0 0.75rem 2rem rgba(15, 23, 42, 0.06);
+      background: #fff;
     }
     .section-title {
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.02em;
     }
-    .card {
-      border: 0;
+    .soft-panel {
+      background: var(--soft-bg);
+      border: 1px solid rgba(13, 110, 253, 0.08);
       border-radius: 1rem;
-      box-shadow: 0 0.75rem 2rem rgba(15, 23, 42, 0.08);
     }
-    .list-group-item {
-      border: 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    .nav-pills .nav-link.active {
+      background: linear-gradient(135deg, var(--brand-blue), var(--brand-purple));
     }
-    .list-group-item:last-child {
-      border-bottom: 0;
+    .resource-link {
+      text-decoration: none;
     }
-    .resource-tag {
-      font-size: 0.75rem;
+    .resource-link:hover {
+      text-decoration: underline;
+    }
+    .news-item {
+      padding: 1rem;
+      height: 100%;
+    }
+    .news-date {
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+    .comparison-table td,
+    .comparison-table th {
+      vertical-align: top;
     }
     .footer-note {
       color: #64748b;
@@ -50,15 +72,17 @@
   <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold text-primary" href="#top">iAgents 中文學習站</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="切換導覽列">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="切換導覽列">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#overview">網站定位</a></li>
+          <li class="nav-item"><a class="nav-link" href="#comparison">比較整理</a></li>
           <li class="nav-item"><a class="nav-link" href="#openclaw">OpenClaw</a></li>
           <li class="nav-item"><a class="nav-link" href="#hermes-agent">Hermes Agent</a></li>
-          <li class="nav-item"><a class="nav-link" href="#videos">YouTube 教學</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news">最新消息</a></li>
+          <li class="nav-item"><a class="nav-link" href="#videos">YouTube</a></li>
           <li class="nav-item"><a class="nav-link" href="#roadmap">學習路線</a></li>
         </ul>
       </div>
@@ -69,23 +93,23 @@
     <section class="hero p-4 p-lg-5 mb-5">
       <div class="row align-items-center g-4">
         <div class="col-lg-8">
-          <span class="badge bg-light text-primary mb-3 px-3 py-2">UTF-8 / 繁體中文 / Bootstrap 5</span>
+          <span class="badge bg-light text-primary px-3 py-2 mb-3">UTF-8 / 繁體中文 / Bootstrap 5</span>
           <h1 class="display-5 fw-bold mb-3">OpenClaw 與 Hermes Agent 中文學習入口</h1>
-          <p class="lead mb-4">本網站作為中文學習整理站，聚焦於 OpenClaw 與 Hermes Agent 的入門理解、安裝教學、官方文件入口、GitHub 專案資源，以及 YouTube 教學影片索引，方便後續擴充成完整的中文知識庫。</p>
+          <p class="lead mb-4">這個網站用來集中整理 OpenClaw 與 Hermes Agent 的中文學習資料，內容包含專案定位、官方文件、GitHub 入口、YouTube 教學搜尋、建議學習路徑，以及來自網路最新資訊整理的中英文消息區塊。</p>
           <div class="d-flex flex-wrap gap-2">
-            <a class="btn btn-light btn-lg text-primary fw-semibold" href="#overview">查看首頁規劃</a>
-            <a class="btn btn-outline-light btn-lg" href="#videos">瀏覽影片整理</a>
+            <a class="btn btn-light btn-lg text-primary fw-semibold" href="#overview">從首頁規劃開始</a>
+            <a class="btn btn-outline-light btn-lg" href="#news">查看最新消息</a>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="bg-white bg-opacity-10 rounded-4 p-4">
-            <h2 class="h5 fw-bold">首頁規劃重點</h2>
+            <h2 class="h5 fw-bold">本頁核心功能</h2>
             <ul class="mb-0 ps-3">
-              <li>專案簡介與定位</li>
-              <li>官方網站與 GitHub 入口</li>
-              <li>中文學習重點整理</li>
-              <li>YouTube 教學影片清單</li>
-              <li>建議學習順序與後續擴充方向</li>
+              <li>兩大 AI Agent 專案中文導覽</li>
+              <li>官方網站、文件與原始碼入口</li>
+              <li>中英文最新消息各 5 條</li>
+              <li>YouTube 教學影片入口索引</li>
+              <li>建議學習順序與網站擴充方向</li>
             </ul>
           </div>
         </div>
@@ -95,36 +119,77 @@
     <section id="overview" class="mb-5">
       <div class="row g-4">
         <div class="col-lg-7">
-          <div class="card h-100 p-4">
-            <h2 class="section-title h3 mb-3">網站定位與內容規劃</h2>
-            <p>此首頁目前先作為靜態入口頁，目標是先把最重要的學習路徑固定下來，讓後續能逐步補齊教學文章、安裝筆記、環境設定範例、工作流示範與中文教學影片索引。</p>
-            <div class="row g-3 mt-1">
+          <div class="card p-4 h-100">
+            <h2 class="section-title h3 mb-3">網站定位與整理方向</h2>
+            <p>這裡不是單純放連結的清單，而是希望把零散的資源整理成可教學、可自學、可研究的中文入口。OpenClaw 與 Hermes Agent 雖然都屬於 AI Agent / 個人助理生態，但實作方向、工具組合與社群脈絡仍有差異，因此本頁同時強調「共通理解」與「差異辨識」。</p>
+            <div class="row g-3 mt-2">
               <div class="col-md-6">
-                <div class="border rounded-4 p-3 h-100 bg-light">
-                  <h3 class="h6 fw-bold">第一階段</h3>
-                  <p class="mb-0">建立首頁、官方連結、文件入口、YouTube 搜尋與教學索引。</p>
+                <div class="soft-panel p-3 h-100">
+                  <h3 class="h6 fw-bold">對學生 / 初學者</h3>
+                  <p class="mb-0">快速了解專案是什麼、去哪裡看官方文件、怎麼開始安裝與嘗試。</p>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="border rounded-4 p-3 h-100 bg-light">
-                  <h3 class="h6 fw-bold">第二階段</h3>
-                  <p class="mb-0">補上中文說明文件、安裝教學、常見問題與實際應用案例。</p>
+                <div class="soft-panel p-3 h-100">
+                  <h3 class="h6 fw-bold">對教師 / 研究者</h3>
+                  <p class="mb-0">便於整理中文教案、案例、課堂示範與 agent 工作流比較。</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-5">
-          <div class="card h-100 p-4">
-            <h2 class="section-title h4 mb-3">本頁預計收錄的資訊類型</h2>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item px-0">OpenClaw 與 Hermes Agent 的定位比較</li>
-              <li class="list-group-item px-0">官方網站、官方文件、GitHub repo 與社群連結</li>
-              <li class="list-group-item px-0">適合初學者的 YouTube 教學入口</li>
-              <li class="list-group-item px-0">建議的學習順序與安裝路線</li>
-              <li class="list-group-item px-0">未來可擴充的中文筆記與教案頁面</li>
-            </ul>
+          <div class="card p-4 h-100">
+            <h2 class="section-title h4 mb-3">首頁內容架構</h2>
+            <ol class="mb-0">
+              <li class="mb-2">專案概觀與比較摘要</li>
+              <li class="mb-2">OpenClaw 專區：定位、官方文件、建議閱讀點</li>
+              <li class="mb-2">Hermes Agent 專區：定位、官方文件、建議閱讀點</li>
+              <li class="mb-2">中英文最新消息區塊</li>
+              <li class="mb-2">YouTube 教學入口與關鍵字搜尋</li>
+              <li>建議學習路線與後續擴充方向</li>
+            </ol>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparison" class="mb-5">
+      <div class="card p-4 p-lg-5">
+        <h2 class="section-title h3 mb-3">OpenClaw 與 Hermes Agent 快速比較</h2>
+        <p class="text-secondary mb-4">這裡先用教學導向角度整理兩個專案的閱讀切入點，幫助使用者快速判斷應先研究哪一邊。</p>
+        <div class="table-responsive">
+          <table class="table comparison-table align-middle">
+            <thead>
+              <tr>
+                <th>面向</th>
+                <th>OpenClaw</th>
+                <th>Hermes Agent</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>官方定位</th>
+                <td>個人 AI 助手，強調跨平台通道與個人裝置上的使用體驗。</td>
+                <td>可持續學習的 AI Agent，強調技能、記憶、工具、委派與長期互動。</td>
+              </tr>
+              <tr>
+                <th>適合的學習切入點</th>
+                <td>從通道整合、個人助手部署、使用者互動體驗切入。</td>
+                <td>從 agent 架構、工具調用、記憶系統、技能與工作流切入。</td>
+              </tr>
+              <tr>
+                <th>適合的教學用途</th>
+                <td>適合作為個人 AI 助手平台與跨平台介面整合示範。</td>
+                <td>適合作為 AI Agent、工具使用、代理流程與自動化案例教材。</td>
+              </tr>
+              <tr>
+                <th>初學者建議</th>
+                <td>先看官網與 Getting Started，再看 Showcase 與 FAQ。</td>
+                <td>先看官方 docs 與 Getting Started，再理解 tools / skills / memory。</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -133,33 +198,34 @@
       <div class="card p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-4">
           <div>
-            <span class="badge text-bg-primary resource-tag mb-2">專案 A</span>
+            <span class="badge text-bg-primary mb-2">專案 A</span>
             <h2 class="section-title h3 mb-1">OpenClaw</h2>
-            <p class="mb-0 text-secondary">個人 AI 助手平台，強調跨平台、訊息通道整合與個人化使用體驗。</p>
+            <p class="mb-0 text-secondary">Your own personal AI assistant. Any OS. Any Platform. The lobster way.</p>
           </div>
           <div class="d-flex flex-wrap gap-2">
             <a class="btn btn-primary" href="https://openclaw.ai" target="_blank" rel="noopener">官方網站</a>
             <a class="btn btn-outline-primary" href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener">GitHub Repo</a>
+            <a class="btn btn-outline-primary" href="https://docs.openclaw.ai" target="_blank" rel="noopener">官方文件</a>
           </div>
         </div>
         <div class="row g-4">
           <div class="col-lg-6">
-            <h3 class="h5 fw-bold">中文學習重點</h3>
+            <h3 class="h5 fw-bold">中文理解重點</h3>
             <ul>
-              <li>OpenClaw 是什麼、適合哪些使用場景。</li>
-              <li>如何從 Getting Started 開始安裝。</li>
-              <li>如何串接 Telegram、Discord、Slack 等通道。</li>
-              <li>如何透過 skills 與工具擴充實際能力。</li>
+              <li>它強調的是「你自己的 AI 助手」，而不是只有單一 CLI 工具。</li>
+              <li>支援多種訊息通道與平台整合，適合從真實日常溝通介面切入。</li>
+              <li>官方建議從 onboard / getting started 開始，逐步完成安裝與通道設定。</li>
+              <li>若要做中文教學，可以整理成「安裝」、「通道」、「使用情境」、「進階擴充」四大模組。</li>
             </ul>
           </div>
           <div class="col-lg-6">
-            <h3 class="h5 fw-bold">官方文件入口</h3>
+            <h3 class="h5 fw-bold">建議優先閱讀的官方頁面</h3>
             <div class="list-group">
-              <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai" target="_blank" rel="noopener">官方文件首頁</a>
               <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/start/getting-started" target="_blank" rel="noopener">Getting Started</a>
               <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/start/showcase" target="_blank" rel="noopener">Showcase</a>
               <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/help/faq" target="_blank" rel="noopener">FAQ</a>
-              <a class="list-group-item list-group-item-action" href="https://deepwiki.com/openclaw/openclaw" target="_blank" rel="noopener">DeepWiki 專案索引</a>
+              <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/install/docker" target="_blank" rel="noopener">Docker 安裝</a>
+              <a class="list-group-item list-group-item-action" href="https://deepwiki.com/openclaw/openclaw" target="_blank" rel="noopener">DeepWiki 索引</a>
             </div>
           </div>
         </div>
@@ -170,33 +236,146 @@
       <div class="card p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-4">
           <div>
-            <span class="badge text-bg-success resource-tag mb-2">專案 B</span>
+            <span class="badge text-bg-success mb-2">專案 B</span>
             <h2 class="section-title h3 mb-1">Hermes Agent</h2>
-            <p class="mb-0 text-secondary">Nous Research 推出的可持續學習型 AI Agent，主打記憶、技能、工具整合與多通道互動。</p>
+            <p class="mb-0 text-secondary">The self-improving AI agent built by Nous Research.</p>
           </div>
           <div class="d-flex flex-wrap gap-2">
             <a class="btn btn-success" href="https://hermes-agent.nousresearch.com" target="_blank" rel="noopener">官方網站</a>
             <a class="btn btn-outline-success" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">GitHub Repo</a>
+            <a class="btn btn-outline-success" href="https://hermes-agent.nousresearch.com/docs/" target="_blank" rel="noopener">官方文件</a>
           </div>
         </div>
         <div class="row g-4">
           <div class="col-lg-6">
-            <h3 class="h5 fw-bold">中文學習重點</h3>
+            <h3 class="h5 fw-bold">中文理解重點</h3>
             <ul>
-              <li>Hermes Agent 的核心概念：memory、skills、tools、delegate。</li>
-              <li>CLI、Telegram、Discord 等不同使用入口。</li>
-              <li>如何選擇模型提供者與工具集。</li>
-              <li>如何把 Hermes Agent 用於教學、研究與日常自動化。</li>
+              <li>Hermes Agent 的核心特色是 memory、skills、tools、delegate 與跨平台 gateway。</li>
+              <li>它不只是聊天工具，而是具備可持續學習與工作流能力的 agent 系統。</li>
+              <li>若用於中文教材，可優先整理 CLI、工具呼叫、技能系統、背景任務與平台整合。</li>
+              <li>也非常適合拿來示範 AI Agent 與 LLM 工具使用的教學案例。</li>
             </ul>
           </div>
           <div class="col-lg-6">
-            <h3 class="h5 fw-bold">官方文件入口</h3>
+            <h3 class="h5 fw-bold">建議優先閱讀的官方頁面</h3>
             <div class="list-group">
-              <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com/docs/" target="_blank" rel="noopener">官方文件首頁</a>
               <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com/docs/getting-started/" target="_blank" rel="noopener">Getting Started</a>
               <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com/docs/getting-started/termux" target="_blank" rel="noopener">Termux 指南</a>
-              <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">官方 GitHub Repo</a>
+              <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent/releases" target="_blank" rel="noopener">Release Notes</a>
+              <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">GitHub 原始碼</a>
               <a class="list-group-item list-group-item-action" href="https://nousresearch.com" target="_blank" rel="noopener">Nous Research 官網</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="mb-5">
+      <div class="card p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 mb-4">
+          <div>
+            <h2 class="section-title h3 mb-2">最新消息（中文 / English）</h2>
+            <p class="text-secondary mb-0">以下消息來自 OpenClaw 與 Hermes Agent 官方 GitHub release / commit 等公開網路資訊整理。更新時間：2026-04-12 12:06:12 CST。</p>
+          </div>
+        </div>
+
+        <ul class="nav nav-pills mb-4" id="newsTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="zh-tab" data-bs-toggle="pill" data-bs-target="#zh-news" type="button" role="tab" aria-controls="zh-news" aria-selected="true">中文最新消息</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="en-tab" data-bs-toggle="pill" data-bs-target="#en-news" type="button" role="tab" aria-controls="en-news" aria-selected="false">English Latest News</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="newsTabContent">
+          <div class="tab-pane fade show active" id="zh-news" role="tabpanel" aria-labelledby="zh-tab" tabindex="0">
+            <div class="row g-3">
+              <div class="col-lg-6">
+                <article class="news-item">
+                  <div class="news-date mb-2">2026-04-12 · OpenClaw Release</div>
+                  <h3 class="h5">OpenClaw 2026.4.11 正式版釋出</h3>
+                  <p class="mb-3">OpenClaw 發布 v2026.4.11，重點包含 Dreaming / memory-wiki 新增 ChatGPT 匯入與 Imported Insights / Memory Palace 子分頁、webchat 結構化媒體氣泡、以及更豐富的 video_generate 能力。</p>
+                  <a class="resource-link" href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.11" target="_blank" rel="noopener">查看來源 →</a>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article class="news-item">
+                  <div class="news-date mb-2">2026-04-11 · OpenClaw Release</div>
+                  <h3 class="h5">OpenClaw 2026.4.10 加入 Codex 與 Active Memory 方向更新</h3>
+                  <p class="mb-3">前一版正式釋出特別提到 bundled Codex provider 與 plugin-owned app-server harness，並加入可選的 Active Memory plugin，顯示 OpenClaw 正在強化模型整合與記憶工作流。</p>
+                  <a class="resource-link" href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.10" target="_blank" rel="noopener">查看來源 →</a>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article class="news-item">
+                  <div class="news-date mb-2">2026-04-08 · Hermes Agent Release</div>
+                  <h3 class="h5">Hermes Agent v0.8.0 釋出：背景任務通知與即時模型切換</h3>
+                  <p class="mb-3">Hermes Agent v0.8.0 被官方稱為 intelligence release，亮點包括背景任務自動通知、跨平台 live model switching、Google AI Studio 支援、MCP OAuth 2.1 與多項 agent 使用體驗提升。</p>
+                  <a class="resource-link" href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.8" target="_blank" rel="noopener">查看來源 →</a>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article class="news-item">
+                  <div class="news-date mb-2">2026-04-03 · Hermes Agent Release</div>
+                  <h3 class="h5">Hermes Agent v0.7.0 著重穩定性與安全性</h3>
+                  <p class="mb-3">v0.7.0 被定位為 resilience release，加入可插拔記憶提供者、credential pool rotation、Camofox anti-detection browser 與多項 gateway 強化與安全修補。</p>
+                  <a class="resource-link" href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.3" target="_blank" rel="noopener">查看來源 →</a>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article class="news-item">
+                  <div class="news-date mb-2">2026-04-12 · Hermes Agent Commits</div>
+                  <h3 class="h5">Hermes Agent 近期提交聚焦壓縮與備份能力</h3>
+                  <p class="mb-3">最新 commit 顯示 Hermes Agent 正在改善 context compaction，並新增 /compress &lt;focus&gt;、hermes backup 與 hermes import 等指令，代表使用者資料管理與長對話壓縮仍在快速進化。</p>
+                  <a class="resource-link" href="https://github.com/NousResearch/hermes-agent/commits/main/" target="_blank" rel="noopener">查看來源 →</a>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="en-news" role="tabpanel" aria-labelledby="en-tab" tabindex="0">
+            <div class="row g-3">
+              <div class="col-lg-6">
+                <article class="news-item">
+                  <div class="news-date mb-2">2026-04-12 · OpenClaw Release</div>
+                  <h3 class="h5">OpenClaw 2026.4.11 ships memory-wiki and richer webchat output</h3>
+                  <p class="mb-3">The latest OpenClaw release adds ChatGPT import ingestion for Dreaming / memory-wiki, structured media bubbles in webchat, richer embed output, and expanded video generation options.</p>
+                  <a class="resource-link" href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.11" target="_blank" rel="noopener">Source →</a>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article class="news-item">
+                  <div class="news-date mb-2">2026-04-11 · OpenClaw Release</div>
+                  <h3 class="h5">OpenClaw 2026.4.10 emphasized Codex and Active Memory</h3>
+                  <p class="mb-3">An earlier April release introduced a bundled Codex provider path and highlighted an optional Active Memory plugin, signaling stronger support for model orchestration and memory workflows.</p>
+                  <a class="resource-link" href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.10" target="_blank" rel="noopener">Source →</a>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article class="news-item">
+                  <div class="news-date mb-2">2026-04-08 · Hermes Agent Release</div>
+                  <h3 class="h5">Hermes Agent v0.8.0 adds background task notifications and live model switching</h3>
+                  <p class="mb-3">The v0.8.0 “intelligence release” highlights auto-notifications for background tasks, live model switching across platforms, Google AI Studio support, approval buttons, and MCP OAuth 2.1 improvements.</p>
+                  <a class="resource-link" href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.8" target="_blank" rel="noopener">Source →</a>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article class="news-item">
+                  <div class="news-date mb-2">2026-04-03 · Hermes Agent Release</div>
+                  <h3 class="h5">Hermes Agent v0.7.0 focused on resilience and security</h3>
+                  <p class="mb-3">The v0.7.0 release introduced pluggable memory providers, credential pool rotation, browser hardening, and gateway security improvements, positioning the project for more robust production use.</p>
+                  <a class="resource-link" href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.3" target="_blank" rel="noopener">Source →</a>
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article class="news-item">
+                  <div class="news-date mb-2">2026-04-12 · Hermes Agent Commits</div>
+                  <h3 class="h5">Recent Hermes Agent commits target compression, backup, and import workflows</h3>
+                  <p class="mb-3">Recent main-branch commits mention guided compression via /compress &lt;focus&gt;, new hermes backup and import commands, and fixes to context compaction so long-running conversations behave more reliably.</p>
+                  <a class="resource-link" href="https://github.com/NousResearch/hermes-agent/commits/main/" target="_blank" rel="noopener">Source →</a>
+                </article>
+              </div>
             </div>
           </div>
         </div>
@@ -205,28 +384,28 @@
 
     <section id="videos" class="mb-5">
       <div class="card p-4 p-lg-5">
-        <h2 class="section-title h3 mb-3">YouTube 教學影片列表</h2>
-        <p class="text-secondary mb-4">由於 AI Agent 生態更新很快，本頁目前先整理成「可直接觀看或搜尋的 YouTube 入口清單」，方便快速追蹤最新教學、安裝影片與功能展示。後續可再逐步人工篩選成固定推薦片單。</p>
+        <h2 class="section-title h3 mb-3">YouTube 教學影片入口</h2>
+        <p class="text-secondary mb-4">目前先提供高相關性的 YouTube 搜尋入口，方便快速追蹤安裝教學、功能展示與社群實作分享。後續可再篩選固定推薦片單。</p>
         <div class="row g-4">
           <div class="col-lg-6">
-            <div class="border rounded-4 p-4 h-100 bg-light">
-              <h3 class="h5 fw-bold mb-3">OpenClaw 相關影片入口</h3>
-              <div class="list-group">
-                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=OpenClaw+AI+assistant" target="_blank" rel="noopener">OpenClaw AI assistant 相關影片</a>
-                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=OpenClaw+tutorial" target="_blank" rel="noopener">OpenClaw tutorial</a>
-                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=OpenClaw+install" target="_blank" rel="noopener">OpenClaw 安裝教學</a>
-                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=OpenClaw+Telegram+Discord" target="_blank" rel="noopener">OpenClaw 通道整合示範</a>
+            <div class="soft-panel p-4 h-100">
+              <h3 class="h5 fw-bold mb-3">OpenClaw</h3>
+              <div class="list-group list-group-flush">
+                <a class="list-group-item bg-transparent" href="https://www.youtube.com/results?search_query=OpenClaw+AI+assistant" target="_blank" rel="noopener">OpenClaw AI assistant 介紹</a>
+                <a class="list-group-item bg-transparent" href="https://www.youtube.com/results?search_query=OpenClaw+tutorial" target="_blank" rel="noopener">OpenClaw tutorial</a>
+                <a class="list-group-item bg-transparent" href="https://www.youtube.com/results?search_query=OpenClaw+install" target="_blank" rel="noopener">OpenClaw 安裝教學</a>
+                <a class="list-group-item bg-transparent" href="https://www.youtube.com/results?search_query=OpenClaw+Telegram+Discord" target="_blank" rel="noopener">OpenClaw 通道整合示範</a>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="border rounded-4 p-4 h-100 bg-light">
-              <h3 class="h5 fw-bold mb-3">Hermes Agent 相關影片入口</h3>
-              <div class="list-group">
-                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=Hermes+Agent+Nous+Research" target="_blank" rel="noopener">Hermes Agent 與 Nous Research 介紹</a>
-                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=Hermes+Agent+tutorial" target="_blank" rel="noopener">Hermes Agent tutorial</a>
-                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=Hermes+Agent+Telegram" target="_blank" rel="noopener">Hermes Agent Telegram 教學</a>
-                <a class="list-group-item list-group-item-action" href="https://www.youtube.com/results?search_query=Hermes+Agent+tools+skills" target="_blank" rel="noopener">Hermes Agent tools / skills 示範</a>
+            <div class="soft-panel p-4 h-100">
+              <h3 class="h5 fw-bold mb-3">Hermes Agent</h3>
+              <div class="list-group list-group-flush">
+                <a class="list-group-item bg-transparent" href="https://www.youtube.com/results?search_query=Hermes+Agent+Nous+Research" target="_blank" rel="noopener">Hermes Agent / Nous Research 介紹</a>
+                <a class="list-group-item bg-transparent" href="https://www.youtube.com/results?search_query=Hermes+Agent+tutorial" target="_blank" rel="noopener">Hermes Agent tutorial</a>
+                <a class="list-group-item bg-transparent" href="https://www.youtube.com/results?search_query=Hermes+Agent+Telegram" target="_blank" rel="noopener">Hermes Agent Telegram 教學</a>
+                <a class="list-group-item bg-transparent" href="https://www.youtube.com/results?search_query=Hermes+Agent+tools+skills" target="_blank" rel="noopener">Hermes Agent tools / skills 示範</a>
               </div>
             </div>
           </div>
@@ -237,26 +416,26 @@
     <section id="roadmap" class="mb-5">
       <div class="row g-4">
         <div class="col-lg-6">
-          <div class="card h-100 p-4">
+          <div class="card p-4 h-100">
             <h2 class="section-title h4 mb-3">建議學習路線</h2>
             <ol class="mb-0">
-              <li class="mb-2">先閱讀兩個專案的官方首頁與 Getting Started。</li>
-              <li class="mb-2">從 YouTube 搜尋入口挑選安裝與入門示範影片。</li>
-              <li class="mb-2">實際安裝至少一個專案，建立最小可運作環境。</li>
-              <li class="mb-2">再進一步研究工具、技能、通道整合與自動化用法。</li>
-              <li>最後整理成中文筆記、範例與課程教材。</li>
+              <li class="mb-2">先閱讀專案官網與 Getting Started，建立整體概念。</li>
+              <li class="mb-2">再看 GitHub Repo 與 release notes，理解專案更新節奏。</li>
+              <li class="mb-2">接著透過 YouTube 搜尋入口找安裝與實作影片。</li>
+              <li class="mb-2">親自部署一個最小可運作版本，實測通道、工具或 CLI。</li>
+              <li>最後再回到中文筆記與比較整理，建立自己的教學或研究工作流。</li>
             </ol>
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="card h-100 p-4">
-            <h2 class="section-title h4 mb-3">後續擴充建議</h2>
+          <div class="card p-4 h-100">
+            <h2 class="section-title h4 mb-3">後續擴充方向</h2>
             <ul class="mb-0">
-              <li class="mb-2">新增 OpenClaw 與 Hermes Agent 個別詳細介紹頁。</li>
-              <li class="mb-2">加入安裝步驟截圖與常見問題排除。</li>
-              <li class="mb-2">建立中文術語表與關鍵概念對照表。</li>
-              <li class="mb-2">整理「教學用途」、「研究用途」、「個人工作流」示範案例。</li>
-              <li>建立固定推薦的 YouTube 精選影片清單與觀看筆記。</li>
+              <li class="mb-2">新增 OpenClaw 與 Hermes Agent 的個別詳細介紹頁。</li>
+              <li class="mb-2">加入安裝流程圖、架構圖與中文術語表。</li>
+              <li class="mb-2">建立「教學用途」、「研究用途」、「個人工作流」案例集。</li>
+              <li class="mb-2">把 YouTube 區塊擴充為人工篩選的精選影片列表。</li>
+              <li>加入搜尋、標籤分類、文章頁與 GitHub Pages 正式發布流程。</li>
             </ul>
           </div>
         </div>
@@ -264,8 +443,8 @@
     </section>
 
     <section class="text-center py-3">
-      <p class="footer-note mb-2">本頁目前為首頁雛形與內容規劃稿，後續可逐步擴充為完整中文學習網站。</p>
-      <p class="footer-note mb-0">資料來源：OpenClaw 官方網站 / 文件 / GitHub，以及 Hermes Agent 官方網站 / 文件 / GitHub。</p>
+      <p class="footer-note mb-2">本頁以 UTF-8 繁體中文撰寫，版面使用 Bootstrap 5，適合作為 OpenClaw 與 Hermes Agent 中文學習站的首頁雛形。</p>
+      <p class="footer-note mb-0">資料來源：OpenClaw 與 Hermes Agent 官方網站、官方文件、GitHub Releases 與公開 commit 資訊。</p>
     </section>
   </main>
 
