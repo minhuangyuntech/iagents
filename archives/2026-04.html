@@ -36,11 +36,38 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-16.html — 2026-04-16 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-16.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-15.html — 2026-04-15 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-15.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-14.html — 2026-04-14 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-14.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-13.html — 2026-04-13 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-13.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-12.html — 2026-04-12 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-12.html">開啟</a></li>
         </ul>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <h2 class="section-title h3 mb-4">2026-04-16 中文精選</h2>
+        <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-16 · OpenClaw 官方 Release</div><h3 class="h5">OpenClaw 2026.4.15-beta.1 把模型授權狀態、遠端記憶儲存與本地模型精簡預設放進同一版</h3><p class="mb-3">這版同時碰到模型授權健康度、durable memory 與弱本地模型的工具負載，適合工程學生拿來對照 observability、儲存分層與資源受限部署要怎麼一起設計。</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.15-beta.1" target="_blank" rel="noopener">查看來源（GitHub Release）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-16 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 把 dreaming 的 storage.mode 預設改成 separate，避免階段區塊污染每日記憶檔</h3><p class="mb-3">這個修補很適合拿來教資料邊界：同樣叫做 memory，若沒有把工作階段、推理階段與日誌分開，後續檢索與除錯就會一起失真。</p><a href="https://github.com/openclaw/openclaw/commit/8c392f0019b0c2666cd3bcf739c3cd990a79383c" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-16 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 修正群組 shutdown 通知誤把 user_id 當 thread_id 的路由問題</h3><p class="mb-3">這筆修補可拿來討論 session key 設計：群組、私訊與 thread 若共用一套格式，欄位語意一旦混淆，通知就可能送到錯的上下文。</p><a href="https://github.com/NousResearch/hermes-agent/commit/1d4b9c1a7400d54d2178a327981ca65d25f7cb73" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-16 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 對 OpenCode Go 關閉不適用的 /models 健康檢查，避免 doctor 誤報</h3><p class="mb-3">工程上很值得討論的一點是：健康檢查不是越多越好，若探針假設和 provider 介面不一致，就會把錯誤警告當成系統真相。</p><a href="https://github.com/NousResearch/hermes-agent/commit/f1df83179f77776bb56dbda30e144e7728beb552" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-15 · TechCrunch</div><h3 class="h5">OpenAI 更新 Agents SDK，主打讓企業更容易做出更安全、能力更完整的 agent</h3><p class="mb-3">這則外部新聞適合放回課堂脈絡：當 agent 從 demo 走向企業系統，SDK 不只要會呼叫工具，還要把安全、能力界線與部署治理一起包進來。</p><a href="https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/" target="_blank" rel="noopener">查看來源（TechCrunch）→</a></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <h2 class="section-title h3 mb-4">2026-04-16 English Selected News</h2>
+        <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-16 · OpenClaw Official Release</div><h3 class="h5">OpenClaw 2026.4.15-beta.1 combines model-auth status, remote memory storage, and leaner local-model defaults</h3><p class="mb-3">The beta release is a compact case study in observability, durable-memory architecture, and resource-constrained local-model deployment rather than a single feature drop.</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.15-beta.1" target="_blank" rel="noopener">Source (GitHub Release) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-16 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw now defaults dreaming storage.mode to separate so phase blocks stop polluting daily memory files</h3><p class="mb-3">It is a strong teaching example of data-boundary design: if session traces, phase outputs, and memory files blur together, retrieval quality and debugging both degrade.</p><a href="https://github.com/openclaw/openclaw/commit/8c392f0019b0c2666cd3bcf739c3cd990a79383c" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-16 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent fixes shutdown-notification routing that confused group user_id with thread_id</h3><p class="mb-3">This is a clean systems lesson in session-key design: once one field means different things across chat types, notifications can leak into the wrong execution context.</p><a href="https://github.com/NousResearch/hermes-agent/commit/1d4b9c1a7400d54d2178a327981ca65d25f7cb73" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-16 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent skips the OpenCode Go health probe because that provider does not expose a shared /models endpoint</h3><p class="mb-3">It shows why observability has to respect each provider contract: the wrong probe creates false alarms and trains operators to ignore warnings.</p><a href="https://github.com/NousResearch/hermes-agent/commit/f1df83179f77776bb56dbda30e144e7728beb552" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-15 · TechCrunch</div><h3 class="h5">OpenAI updates its Agents SDK to help enterprises build safer, more capable agents</h3><p class="mb-3">The report is useful classroom context: as agents move from demos into enterprise workflows, SDKs must package safety controls, capability boundaries, and deployment governance.</p><a href="https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/" target="_blank" rel="noopener">Source (TechCrunch) →</a></article></div>
+        </div>
       </div>
     </section>
 
