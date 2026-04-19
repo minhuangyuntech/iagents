@@ -121,7 +121,7 @@
         <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
           <div>
             <h2 class="section-title h3 mb-1">最新消息重點</h2>
-            <p class="text-secondary mb-0">每天上午 7:00 更新；首頁只保留三則最適合拿來做課堂討論的摘要。今天可先對照「browser 啟動可觀測性」「provider 身分辨識」與「coding agent 生產力評估」三個角度。若要看完整中英文 5 條與歷史檔案，請直接進入彙整頁與檔案列表。</p>
+            <p class="text-secondary mb-0">每天上午 7:00 更新；首頁只保留三則最適合拿來做課堂討論的摘要。今天建議從「併發與 usage 觀測」「session 生命週期」與「provider 原生 API／工具可靠性」三個角度做對照，再進入完整中英文 5 條。</p>
           </div>
           <div class="d-flex gap-2 flex-wrap">
             <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -131,20 +131,20 @@
         <div class="row g-3">
           <div class="col-lg-4">
             <article class="mini-news">
-              <div class="news-date mb-2">2026-04-18 · OpenClaw 官方 Commit</div>
-              <p>OpenClaw 補強 browser CDP 啟動診斷，提醒學生瀏覽器自動化真正難的常是 readiness 與錯誤定位，不只是工具能不能呼叫。</p>
+              <div class="news-date mb-2">2026-04-19 · OpenClaw 官方 Release</div>
+              <p>OpenClaw 2026.4.19-beta.2 把真實 usage 統計與 nested session 隔離補齊，很適合教學上拿來談 agent 併發控制與 observability 不該分開看。</p>
             </article>
           </div>
           <div class="col-lg-4">
             <article class="mini-news">
-              <div class="news-date mb-2">2026-04-18 · Hermes Agent 官方 Commit</div>
-              <p>Hermes 修補 /model 選單的同名 provider 混淆，這是很好的 UI 安全案例：名稱碰撞也會造成操作錯誤、成本判斷錯誤與權限誤用。</p>
+              <div class="news-date mb-2">2026-04-19 · OpenClaw 官方 Commit</div>
+              <p>OpenClaw 在刪除 agent 時同步失效孤兒 session，提醒學生系統生命週期管理若沒做乾淨，舊狀態會變成後續除錯與權限判斷的噪音。</p>
             </article>
           </div>
           <div class="col-lg-4">
             <article class="mini-news">
-              <div class="news-date mb-2">2026-04-17 · TechCrunch</div>
-              <p>TechCrunch 談「tokenmaxxing」很適合放進課堂評估：coding agent 不能只看產碼量，還要一起看重工率、除錯成本與維護負擔。</p>
+              <div class="news-date mb-2">2026-04-19 · Hermes Agent 官方 Commit</div>
+              <p>Hermes 同日把 Gemini 切回原生 AI Studio API、也補強 patch 寫入驗證；這是一個很好的案例，說明 provider 契約與工具可靠性都會直接影響 agent 判斷。</p>
             </article>
           </div>
         </div>

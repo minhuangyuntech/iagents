@@ -36,6 +36,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-20.html — 2026-04-20 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-20.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-19.html — 2026-04-19 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-19.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-18.html — 2026-04-18 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-18.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-17.html — 2026-04-17 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-17.html">開啟</a></li>
@@ -49,6 +50,32 @@
     </section>
 
 
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <h2 class="section-title h3 mb-4">2026-04-20 中文精選</h2>
+        <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-19 · OpenClaw 官方 Release</div><h3 class="h5">OpenClaw 2026.4.19-beta.2 補上真實 usage 統計、nested session 隔離與 token 狀態延續</h3><p class="mb-3">這版很適合課堂上談 agent 併發與觀測：stream usage 不能再顯示假 0%，不同 session 的 nested work 也不能互相堵塞，否則學生很難判斷系統到底慢在哪裡。</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.19-beta.2" target="_blank" rel="noopener">查看來源（GitHub Release）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-19 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 在刪除 agent 時同步失效孤兒 session，避免舊工作流殘留</h3><p class="mb-3">這筆 commit 很適合拿來教生命週期管理：刪掉 agent 不代表狀態自然乾淨，若 session 還活著，就可能留下錯誤路由、幽靈任務或誤判的健康狀態。</p><a href="https://github.com/openclaw/openclaw/commit/d41c9860d79d816034bfa79a21c7f64b99f29c05" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-19 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 為 subagent 錯誤 payload 補上角色、session key 與 timing</h3><p class="mb-3">對工程學生最值得看的點是除錯資訊結構化：錯誤訊息若沒有角色、session key 與時間資訊，團隊很難把失敗對回正確的工作流與重現步驟。</p><a href="https://github.com/openclaw/openclaw/commit/4277078bc515914c48190721897a8fba92ed37c7" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-19 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 把 Gemini 改走原生 AI Studio API，保留原生 thought signatures 與 function replay</h3><p class="mb-3">這則更新很適合拿來教 provider 契約差異：若一律走 OpenAI 相容層，常會失去原生能力或偽裝出不完整行為；直接接原生 API 才比較能看清供應商邊界。</p><a href="https://github.com/NousResearch/hermes-agent/commit/3dea497b2068ff67cbc7250e3a2b5d6e48bc254f" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-19 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 的 patch tool 加上落盤驗證與 escape-drift 防護，避免「看起來改成功其實沒寫入」</h3><p class="mb-3">這筆修補很適合課堂上談工具可靠性：自動化如果只回傳 diff 卻不驗證檔案真的寫入，agent 會在錯誤前提下繼續執行，後面每一步都可能被污染。</p><a href="https://github.com/NousResearch/hermes-agent/commit/d2c2e344691a64ce6ddeb140d50b8c422e71010a" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <h2 class="section-title h3 mb-4">2026-04-20 English Selected News</h2>
+        <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-19 · OpenClaw Official Release</div><h3 class="h5">OpenClaw 2026.4.19-beta.2 adds real usage accounting, nested-session isolation, and carried-forward token status</h3><p class="mb-3">This release is a compact teaching case for concurrency and observability: streaming usage should not show fake zeros, and nested work on one session should not stall unrelated sessions if students are going to reason about performance correctly.</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.19-beta.2" target="_blank" rel="noopener">Source (GitHub Release) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-19 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw now invalidates orphaned sessions when an agent is deleted so stale workflows do not linger</h3><p class="mb-3">This commit is a clean lesson in lifecycle management: deleting an agent does not automatically clean the rest of the system, and surviving sessions can leave behind wrong routing, ghost tasks, or misleading health signals.</p><a href="https://github.com/openclaw/openclaw/commit/d41c9860d79d816034bfa79a21c7f64b99f29c05" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-19 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw enriches subagent error payloads with role, session key, and timing</h3><p class="mb-3">The engineering lesson is structured debugging data: without role, session key, and timing, teams struggle to map a failure back to the right workflow and reproduce it with confidence.</p><a href="https://github.com/openclaw/openclaw/commit/4277078bc515914c48190721897a8fba92ed37c7" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-19 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent routes Gemini through the native AI Studio API and preserves native thought signatures and function replay</h3><p class="mb-3">This update is a strong teaching example of provider-contract differences: if everything is forced through an OpenAI-compatible shim, native behaviors get lost or distorted; using the native API makes those boundaries visible.</p><a href="https://github.com/NousResearch/hermes-agent/commit/3dea497b2068ff67cbc7250e3a2b5d6e48bc254f" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-19 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent hardens the patch tool with post-write verification and escape-drift guards so a reported edit actually lands on disk</h3><p class="mb-3">This fix is a practical lesson in tool reliability: if automation reports a diff without verifying the file actually changed on disk, the agent continues under a false assumption and every later step can be contaminated.</p><a href="https://github.com/NousResearch/hermes-agent/commit/d2c2e344691a64ce6ddeb140d50b8c422e71010a" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+        </div>
+      </div>
+    </section>
     <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <h2 class="section-title h3 mb-4">2026-04-19 中文精選</h2>
