@@ -36,6 +36,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-23.html — 2026-04-23 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-23.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-20.html — 2026-04-20 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-20.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-19.html — 2026-04-19 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-19.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-18.html — 2026-04-18 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-18.html">開啟</a></li>
@@ -50,6 +51,32 @@
     </section>
 
 
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <h2 class="section-title h3 mb-4">2026-04-23 中文精選</h2>
+        <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-22 · OpenClaw 官方 Release</div><h3 class="h5">OpenClaw 2026.4.21 把 image generation 預設切到 gpt-image-2，並把 provider fallback 失敗先寫進 log</h3><p class="mb-3">這版很適合工程學生拿來談工具鏈可觀測性：圖像生成不是只換模型名稱，還要一起看預設路徑、fallback 順序與警告紀錄，否則 demo 成功一次不代表部署時能追到真正故障點。</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.21" target="_blank" rel="noopener">查看來源（GitHub Release）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-22 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 為 Codex workflow 加入 prompt 與 compaction hooks，讓後續擴充點更清楚</h3><p class="mb-3">很適合拿來教 agent 架構的「插點設計」：當 prompt、context compaction 與 provider workflow 有固定 hooks，後面要加安全審核、觀測或課堂實驗功能時，才不會把核心流程改得難以維護。</p><a href="https://github.com/openclaw/openclaw/commit/e8b56a9928922727d1bbe63e3779916527fc5693" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-22 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 防止 context compressor 在 structured message content 上誤判，降低多模態訊息壓縮風險</h3><p class="mb-3">這筆修補很適合課堂上談 message schema：一旦訊息內容可能是文字、清單、圖片描述或工具結果混合，壓縮器若只假設純字串，就會在最需要節省上下文時先把語意弄壞。</p><a href="https://github.com/NousResearch/hermes-agent/commit/1e8254e599620055c26fa974c2ee7b85630bd2cb" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-22 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 確保 async timeout 發生時 executor 仍能非阻塞 shutdown，避免卡住後續任務</h3><p class="mb-3">對長時間執行的 agent 來說，timeout 只是第一步；如果清理流程還會卡住，排程、背景程序與多代理工作流都會被拖慢。這是一個很好拿來談 timeout 與 cleanup 必須成對設計的例子。</p><a href="https://github.com/NousResearch/hermes-agent/commit/76c454914a7c341bcff4b92da9b7d048d4e3b9ae" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-22 · The Verge</div><h3 class="h5">The Verge 指出 OpenAI 已讓團隊可建立能自己執行工作的 custom bots，agent 正從個人助理走向團隊流程</h3><p class="mb-3">這則外部新聞適合補產品層視角：當 agent 開始共享工作空間、上下文與任務責任，課堂討論就不能只看模型能力，還要一起看權限、治理、協作介面與成果驗證。</p><a href="https://www.theverge.com/ai-artificial-intelligence/917065/openai-chatgpt-workspace-agents-custom-teams-bots" target="_blank" rel="noopener">查看來源（The Verge）→</a></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <h2 class="section-title h3 mb-4">2026-04-23 English Selected News</h2>
+        <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-22 · OpenClaw Official Release</div><h3 class="h5">OpenClaw 2026.4.21 makes gpt-image-2 the default image-generation path and logs failed provider fallbacks before recovery</h3><p class="mb-3">This release is a clean teaching case for tooling observability: image generation is not just a model-name swap. Students should compare the default path, fallback order, and warning logs, because a successful demo run does not mean the deployed system is debuggable.</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.21" target="_blank" rel="noopener">Source (GitHub Release) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-22 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw adds prompt and compaction hooks to the Codex workflow so extension points are easier to reason about</h3><p class="mb-3">This is a strong classroom example of agent extension design: once prompt handling, context compaction, and provider flow expose clear hooks, later work on safety checks, observability, or experimental features stops spilling into core control logic.</p><a href="https://github.com/openclaw/openclaw/commit/e8b56a9928922727d1bbe63e3779916527fc5693" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-22 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent guards the context compressor against structured message content so multimodal turns do not get mangled during compaction</h3><p class="mb-3">The engineering lesson is message-schema awareness: once conversation content may contain text, lists, image descriptors, or tool results, a compressor that assumes plain strings can break meaning exactly when context pressure is highest.</p><a href="https://github.com/NousResearch/hermes-agent/commit/1e8254e599620055c26fa974c2ee7b85630bd2cb" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-22 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent ensures non-blocking executor shutdown after async timeouts so stuck cleanup does not stall later work</h3><p class="mb-3">For long-running agents, a timeout alone is not enough. If cleanup can still block, schedulers, background jobs, and delegated workflows all degrade. This is a practical example of why timeout handling and teardown must be designed together.</p><a href="https://github.com/NousResearch/hermes-agent/commit/76c454914a7c341bcff4b92da9b7d048d4e3b9ae" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-22 · The Verge</div><h3 class="h5">The Verge reports that OpenAI now lets teams build custom bots that can do work on their own, pushing agents toward shared team workflows</h3><p class="mb-3">This external report adds the product and governance angle: once agents work across a shared workspace with delegated responsibility, engineering discussion has to include permissions, oversight, collaboration UX, and how results are verified.</p><a href="https://www.theverge.com/ai-artificial-intelligence/917065/openai-chatgpt-workspace-agents-custom-teams-bots" target="_blank" rel="noopener">Source (The Verge) →</a></article></div>
+        </div>
+      </div>
+    </section>
 
     <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
