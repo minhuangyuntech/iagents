@@ -121,7 +121,7 @@
         <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
           <div>
             <h2 class="section-title h3 mb-1">最新消息重點</h2>
-            <p class="text-secondary mb-0">每天上午 7:00 更新；首頁只保留三則最適合拿來做課堂討論的摘要。今天建議從「工具 fallback 與 log」「workflow hooks」以及「多模態壓縮＋timeout cleanup」三個角度切入，再進入完整中英文 5 條。</p>
+            <p class="text-secondary mb-0">每天上午 7:00 更新；首頁只保留三則最適合拿來做課堂討論的摘要。今天建議先抓「平台化擴充」「排程工具範圍控制」與「app connectors 權限邊界」三個角度，再進入完整中英文 5 條。</p>
           </div>
           <div class="d-flex gap-2 flex-wrap">
             <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -129,25 +129,25 @@
           </div>
         </div>
         <div class="row g-3">
-          <div class="col-lg-4">
-            <article class="mini-news">
-              <div class="news-date mb-2">2026-04-22 · OpenClaw 官方 Release</div>
-              <p>OpenClaw 2026.4.21 把圖像生成預設、fallback 與 log 一起整理，正好可拿來教學生比較「功能變更」和「可觀測性」為什麼不能分開看。</p>
-            </article>
-          </div>
-          <div class="col-lg-4">
-            <article class="mini-news">
-              <div class="news-date mb-2">2026-04-22 · OpenClaw 官方 Commit</div>
-              <p>Codex workflow 新增 prompt／compaction hooks，提醒學生 agent 平台若沒有明確插點，後續安全、觀測與研究實驗都會變得很難擴充。</p>
-            </article>
-          </div>
-          <div class="col-lg-4">
-            <article class="mini-news">
-              <div class="news-date mb-2">2026-04-22 · Hermes Agent 官方 Commit</div>
-              <p>Hermes 同日修補 structured message compaction 與 async timeout cleanup，兩者都很適合拿來討論多模態上下文與長時間任務如何一起維持可靠性。</p>
-            </article>
-          </div>
-        </div>
+  <div class="col-lg-4">
+    <article class="mini-news">
+      <div class="news-date mb-2">2026-04-23 · OpenClaw 官方 Release</div>
+      <p>OpenClaw 2026.4.22 把 xAI 圖像、語音與本機內嵌終端模式一起推進，很適合拿來教學生觀察 agent 平台如何同時擴充 provider、工具與互動介面。</p>
+    </article>
+  </div>
+  <div class="col-lg-4">
+    <article class="mini-news">
+      <div class="news-date mb-2">2026-04-24 · Hermes Agent 官方 Release</div>
+      <p>Hermes Agent v0.11.0 同步重寫 TUI、抽離 transport 並新增原生 Bedrock，適合對照「介面更新」背後其實常連著更深的架構重整。</p>
+    </article>
+  </div>
+  <div class="col-lg-4">
+    <article class="mini-news">
+      <div class="news-date mb-2">2026-04-24 · Hermes Agent 官方 Commit</div>
+      <p>Hermes 讓 cron 尊重工具設定與 per-job enabled_toolsets，正好可帶學生討論排程系統如何控制成本、權限與可重現性。</p>
+    </article>
+  </div>
+</div>
       </div>
     </section>
 

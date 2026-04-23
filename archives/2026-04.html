@@ -36,6 +36,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-24.html — 2026-04-24 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-24.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-23.html — 2026-04-23 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-23.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-20.html — 2026-04-20 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-20.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-19.html — 2026-04-19 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-19.html">開啟</a></li>
@@ -51,6 +52,31 @@
     </section>
 
 
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-04-24 中文精選</h2>
+    <div class="row g-3">
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-23 · OpenClaw 官方 Release</div><h3 class="h5">OpenClaw 2026.4.22 把 xAI 圖像、TTS、STT 與內嵌本機終端模式一起推進</h3><p class="mb-3">這版最適合工程學生拿來看「平台化」怎麼發生：同一個版本同時碰多模態 provider、語音串流、內嵌聊天模式與模型註冊流程，代表產品化 agent 已經不是單一模型能力，而是整條工具與通道路徑一起演進。</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.22" target="_blank" rel="noopener">查看來源（GitHub Release）→</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 修補 Codex「/models add」metadata 傳遞，避免模型已加入但執行路徑資訊不同步</h3><p class="mb-3">這筆 commit 很適合課堂上談設定一致性：模型能被加入，不代表 doctor、runtime、legacy migration 與命令列回應都會一起對齊。若 metadata 漏掉，系統就可能出現「看得到、選得到、卻不一定跑得對」的錯誤。</p><a href="https://github.com/openclaw/openclaw/commit/07049c8eba24068cee85be8453e2c1489eb49d2d" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · Hermes Agent 官方 Release</div><h3 class="h5">Hermes Agent v0.11.0 推出全新 Ink TUI、可插拔 transport、原生 Bedrock 與更多推論路徑</h3><p class="mb-3">這次 release 很適合拿來教系統抽象化：互動介面重寫、provider transport 抽離、AWS Bedrock 原生支援，以及 GPT-5.5／Gemini CLI OAuth 等新路徑，說明 agent 平台已從單一 CLI 進入多介面、多供應商、多平台工程。</p><a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.23" target="_blank" rel="noopener">查看來源（GitHub Release）→</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 讓 cron 依照平台工具設定與 per-job enabled_toolsets 執行，降低排程誤開昂貴工具</h3><p class="mb-3">這則更新很適合拿來教「能力範圍控制」：排程工作不該自動拿到所有工具。當 cron 會尊重平台設定、而個別 job 又能覆蓋時，學生就能更清楚理解成本、權限與可重現性如何一起管理。</p><a href="https://github.com/NousResearch/hermes-agent/commit/ef5eaf8d8757a5e75fa571042abc287430192f53" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-23 · The Verge</div><h3 class="h5">The Verge 報導 Claude 開始直接連到 Spotify、Uber Eats 與 TurboTax，agent 正往個人 app 工作流深入</h3><p class="mb-3">這則外部新聞很適合補「權限與責任邊界」視角：當 agent 不只回答問題，而是直接碰到播放清單、點餐與報稅等真實 app 操作，工程討論就必須把 connector 權限、使用者確認與行為稽核一起納入。</p><a href="https://www.theverge.com/ai-artificial-intelligence/917871/anthropic-claude-personal-app-connectors" target="_blank" rel="noopener">查看來源（The Verge）→</a></article></div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-04-24 English Selected News</h2>
+    <div class="row g-3">
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-23 · OpenClaw Official Release</div><h3 class="h5">OpenClaw 2026.4.22 ships xAI image/TTS/STT support alongside embedded local terminal-chat mode</h3><p class="mb-3">This release is a compact teaching case for platformization: multimodal provider support, voice streaming, embedded terminal chat, and model-registration flow all moved in one drop, showing that production agents evolve as full tool-and-channel systems, not as isolated model swaps.</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.22" target="_blank" rel="noopener">Source (GitHub Release) →</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw fixes Codex `/models add` metadata handling so newly registered models do not drift from runtime expectations</h3><p class="mb-3">This is a clean classroom example of configuration consistency: adding a model is not enough if doctor, runtime, migrations, and command output do not preserve the same metadata. Otherwise the system can show a model as available while execution paths still disagree.</p><a href="https://github.com/openclaw/openclaw/commit/07049c8eba24068cee85be8453e2c1489eb49d2d" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · Hermes Agent Official Release</div><h3 class="h5">Hermes Agent v0.11.0 lands a new Ink TUI, pluggable transports, native Bedrock, and broader inference coverage</h3><p class="mb-3">The engineering lesson is abstraction at scale: a rewritten interface, extracted transport layer, native AWS Bedrock support, and new GPT-5.5 / Gemini CLI OAuth paths show an agent platform moving beyond one CLI into multi-interface, multi-provider systems engineering.</p><a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.23" target="_blank" rel="noopener">Source (GitHub Release) →</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent now makes cron honor platform tool configuration and per-job enabled_toolsets</h3><p class="mb-3">This update is a strong teaching example of capability scoping: scheduled jobs should not silently inherit every expensive or risky tool. By making cron respect platform-level settings while still allowing explicit per-job overrides, the project sharpens cost control, permissions, and reproducibility together.</p><a href="https://github.com/NousResearch/hermes-agent/commit/ef5eaf8d8757a5e75fa571042abc287430192f53" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-23 · The Verge</div><h3 class="h5">The Verge reports that Claude is connecting directly to Spotify, Uber Eats, and TurboTax, pushing agents deeper into personal app workflows</h3><p class="mb-3">This external report is useful for discussing permission and accountability boundaries: once an agent can touch playlists, grocery orders, and tax workflows, engineering conversations need to include connector scopes, user confirmation, and action auditability.</p><a href="https://www.theverge.com/ai-artificial-intelligence/917871/anthropic-claude-personal-app-connectors" target="_blank" rel="noopener">Source (The Verge) →</a></article></div>
+    </div>
+  </div>
+</section>
 
     <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
