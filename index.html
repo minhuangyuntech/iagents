@@ -1,127 +1,127 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="面向科技大學工程相關科系學生的 OpenClaw 與 Hermes Agent 中文學習站，整理專案比較、學習路線、實作建議與精簡最新消息。">
-  <title>iAgents 中文學習站 | 工程學生版 OpenClaw 與 Hermes Agent 入門</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-    :root {
-      --brand-blue: #0d6efd;
-      --brand-purple: #6610f2;
-      --soft-bg: #f6f9ff;
-      --soft-border: rgba(15, 23, 42, 0.08);
-    }
-    body {
-      background: linear-gradient(180deg, #f8fbff 0%, #eff4ff 100%);
-      color: #1f2937;
-    }
-    .hero {
-      background: linear-gradient(135deg, var(--brand-blue), var(--brand-purple));
-      color: #fff;
-      border-radius: 1.5rem;
-      box-shadow: 0 1rem 3rem rgba(13, 110, 253, 0.2);
-      overflow: hidden;
-    }
-    .card,
-    .feature-box,
-    .news-item,
-    .mini-news {
-      border: 1px solid var(--soft-border);
-      border-radius: 1rem;
-      box-shadow: 0 0.75rem 2rem rgba(15, 23, 42, 0.06);
-      background: #fff;
-    }
-    .section-title {
-      font-weight: 800;
-      letter-spacing: 0.02em;
-    }
-    .soft-panel {
-      background: var(--soft-bg);
-      border: 1px solid rgba(13, 110, 253, 0.08);
-      border-radius: 1rem;
-    }
-    .resource-link {
-      text-decoration: none;
-    }
-    .resource-link:hover {
-      text-decoration: underline;
-    }
-    .comparison-table td,
-    .comparison-table th {
-      vertical-align: top;
-    }
-    .footer-note {
-      color: #64748b;
-      font-size: 0.95rem;
-    }
-    .mini-news {
-      padding: 1rem;
-      height: 100%;
-    }
-    .mini-news .news-date {
-      font-size: 0.82rem;
-      color: #64748b;
-    }
-    .mini-news p {
-      font-size: 0.95rem;
-      margin-bottom: 0;
-    }
-  </style>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="面向科技大學工程相關科系學生的 OpenClaw 與 Hermes Agent 中文學習站，整理專案比較、學習路線、實作建議與精簡最新消息。">
+ <title>iAgents 中文學習站 | 工程學生版 OpenClaw 與 Hermes Agent 入門</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <style>
+   :root {
+     --brand-blue: #0d6efd;
+     --brand-purple: #6610f2;
+     --soft-bg: #f6f9ff;
+     --soft-border: rgba(15, 23, 42, 0.08);
+   }
+   body {
+     background: linear-gradient(180deg, #f8fbff 0%, #eff4ff 100%);
+     color: #1f2937;
+   }
+   .hero {
+     background: linear-gradient(135deg, var(--brand-blue), var(--brand-purple));
+     color: #fff;
+     border-radius: 1.5rem;
+     box-shadow: 0 1rem 3rem rgba(13, 110, 253, 0.2);
+     overflow: hidden;
+   }
+   .card,
+   .feature-box,
+   .news-item,
+   .mini-news {
+     border: 1px solid var(--soft-border);
+     border-radius: 1rem;
+     box-shadow: 0 0.75rem 2rem rgba(15, 23, 42, 0.06);
+     background: #fff;
+   }
+   .section-title {
+     font-weight: 800;
+     letter-spacing: 0.02em;
+   }
+   .soft-panel {
+     background: var(--soft-bg);
+     border: 1px solid rgba(13, 110, 253, 0.08);
+     border-radius: 1rem;
+   }
+   .resource-link {
+     text-decoration: none;
+   }
+   .resource-link:hover {
+     text-decoration: underline;
+   }
+   .comparison-table td,
+   .comparison-table th {
+     vertical-align: top;
+   }
+   .footer-note {
+     color: #64748b;
+     font-size: 0.95rem;
+   }
+   .mini-news {
+     padding: 1rem;
+     height: 100%;
+   }
+   .mini-news .news-date {
+     font-size: 0.82rem;
+     color: #64748b;
+   }
+   .mini-news p {
+     font-size: 0.95rem;
+     margin-bottom: 0;
+   }
+ </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-primary" href="#top">iAgents 中文學習站</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="切換導覽列">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#overview">課程定位</a></li>
-          <li class="nav-item"><a class="nav-link" href="#comparison">專案比較</a></li>
-          <li class="nav-item"><a class="nav-link" href="#modules">學習模組</a></li>
-          <li class="nav-item"><a class="nav-link" href="#roadmap">學習路線</a></li>
-          <li class="nav-item"><a class="nav-link" href="coding-agents.html">Coding Agents</a></li>
-          <li class="nav-item"><a class="nav-link" href="resources.html">延伸資源</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+ <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+   <div class="container">
+     <a class="navbar-brand fw-bold text-primary" href="#top">iAgents 中文學習站</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="切換導覽列">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="mainNav">
+       <ul class="navbar-nav ms-auto">
+         <li class="nav-item"><a class="nav-link" href="#overview">課程定位</a></li>
+         <li class="nav-item"><a class="nav-link" href="#comparison">專案比較</a></li>
+         <li class="nav-item"><a class="nav-link" href="#modules">學習模組</a></li>
+         <li class="nav-item"><a class="nav-link" href="#roadmap">學習路線</a></li>
+         <li class="nav-item"><a class="nav-link" href="coding-agents.html">Coding Agents</a></li>
+         <li class="nav-item"><a class="nav-link" href="resources.html">延伸資源</a></li>
+       </ul>
+     </div>
+   </div>
+ </nav>
 
-  <main id="top" class="container py-4 py-lg-5">
-    <section class="hero p-4 p-lg-5 mb-4">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-8">
-          <span class="badge bg-light text-primary px-3 py-2 mb-3">UTF-8 / 繁體中文 / Bootstrap 5</span>
-          <h1 class="display-5 fw-bold mb-3">AI Agent 系統實作與應用導讀</h1>
-          <p class="lead mb-4">以 OpenClaw 與 Hermes Agent 為案例，協助資工、電機、電子、資管與自動化相關科系學生理解 AI Agent 的系統架構、工具呼叫、平台整合、任務流程與專題實作方向。</p>
-          <div class="d-flex flex-wrap gap-2">
-            <a class="btn btn-light btn-lg text-primary fw-semibold" href="#overview">從課程定位開始</a>
-            <a class="btn btn-outline-light btn-lg" href="#modules">看學習模組</a>
-            <a class="btn btn-warning btn-lg fw-semibold" href="resources.html">讀精選資源</a>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="bg-white bg-opacity-10 rounded-4 p-4">
-            <h2 class="h5 fw-bold">適合的閱讀對象</h2>
-            <ul class="mb-0 ps-3">
-              <li>資工與軟體工程學生</li>
-              <li>電機、電子與控制系學生</li>
-              <li>資訊管理與資料應用學生</li>
-              <li>想做專題、報告或競賽的學生</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+ <main id="top" class="container py-4 py-lg-5">
+   <section class="hero p-4 p-lg-5 mb-4">
+     <div class="row align-items-center g-4">
+       <div class="col-lg-8">
+         <span class="badge bg-light text-primary px-3 py-2 mb-3">UTF-8 / 繁體中文 / Bootstrap 5</span>
+         <h1 class="display-5 fw-bold mb-3">AI Agent 系統實作與應用導讀</h1>
+         <p class="lead mb-4">以 OpenClaw 與 Hermes Agent 為案例，協助資工、電機、電子、資管與自動化相關科系學生理解 AI Agent 的系統架構、工具呼叫、平台整合、任務流程與專題實作方向。</p>
+         <div class="d-flex flex-wrap gap-2">
+           <a class="btn btn-light btn-lg text-primary fw-semibold" href="#overview">從課程定位開始</a>
+           <a class="btn btn-outline-light btn-lg" href="#modules">看學習模組</a>
+           <a class="btn btn-warning btn-lg fw-semibold" href="resources.html">讀精選資源</a>
+         </div>
+       </div>
+       <div class="col-lg-4">
+         <div class="bg-white bg-opacity-10 rounded-4 p-4">
+           <h2 class="h5 fw-bold">適合的閱讀對象</h2>
+           <ul class="mb-0 ps-3">
+             <li>資工與軟體工程學生</li>
+             <li>電機、電子與控制系學生</li>
+             <li>資訊管理與資料應用學生</li>
+             <li>想做專題、報告或競賽的學生</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </section>
     <section id="news" class="mb-5">
       <div class="card p-4">
         <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
           <div>
             <h2 class="section-title h3 mb-1">最新消息重點</h2>
-            <p class="text-secondary mb-0">每天上午 7:00 更新；首頁只保留三則最適合拿來做課堂討論的摘要。今天建議先抓「平台化擴充」「排程工具範圍控制」與「app connectors 權限邊界」三個角度，再進入完整中英文 5 條。</p>
+            <p class="text-secondary mb-0">每天上午 7:00 更新；首頁只保留三則最適合拿來做課堂討論的摘要。今天建議先抓「多模態平台擴充」「plugin/快取一致性」與「取消時的狀態持久化」三個角度，再進入完整中英文 5 條。</p>
           </div>
           <div class="d-flex gap-2 flex-wrap">
             <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -131,273 +131,274 @@
         <div class="row g-3">
   <div class="col-lg-4">
     <article class="mini-news">
-      <div class="news-date mb-2">2026-04-23 · OpenClaw 官方 Release</div>
-      <p>OpenClaw 2026.4.22 把 xAI 圖像、語音與本機內嵌終端模式一起推進，很適合拿來教學生觀察 agent 平台如何同時擴充 provider、工具與互動介面。</p>
+      <div class="news-date mb-2">2026-04-24 · OpenClaw 官方 Release</div>
+      <p>OpenClaw 2026.4.23 同步推進圖像生成、forked context 與生成 timeout，很適合帶學生看 agent 平台如何同時處理多模態、子任務上下文與資源限制。</p>
     </article>
   </div>
   <div class="col-lg-4">
     <article class="mini-news">
-      <div class="news-date mb-2">2026-04-24 · Hermes Agent 官方 Release</div>
-      <p>Hermes Agent v0.11.0 同步重寫 TUI、抽離 transport 並新增原生 Bedrock，適合對照「介面更新」背後其實常連著更深的架構重整。</p>
+      <div class="news-date mb-2">2026-04-24 · OpenClaw 官方 Commit</div>
+      <p>OpenClaw 把 plugin discovery registration snapshot 做快取，正好可拿來教外掛探索流程若缺少一致狀態視圖，為何會出現找到外掛卻載不穩的問題。</p>
     </article>
   </div>
   <div class="col-lg-4">
     <article class="mini-news">
       <div class="news-date mb-2">2026-04-24 · Hermes Agent 官方 Commit</div>
-      <p>Hermes 讓 cron 尊重工具設定與 per-job enabled_toolsets，正好可帶學生討論排程系統如何控制成本、權限與可重現性。</p>
+      <p>Hermes 在 CancelledError 也寫入不完整 snapshot，適合討論 API 中斷時若恢復狀態不對稱，後端為何容易卡在 in_progress。</p>
     </article>
   </div>
 </div>
       </div>
     </section>
 
-    <section id="overview" class="mb-5">
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <div class="card p-4 h-100">
-            <h2 class="section-title h3 mb-3">課程定位與教學重點</h2>
-            <p>閱讀時可把兩個專案當成兩種案例系統：OpenClaw 偏向個人 AI 助手產品整合，Hermes Agent 偏向可擴充的 AI Agent 工作流平台。前者適合看通道、部署與互動設計，後者適合看 tools、memory、skills 與 delegate。</p>
-            <div class="row g-3 mt-2">
-              <div class="col-md-6">
-                <div class="soft-panel p-3 h-100">
-                  <h3 class="h6 fw-bold">對大二到大四學生</h3>
-                  <p class="mb-0">幫助你把 AI Agent 理解成系統工程問題，而不是只有聊天介面。</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="soft-panel p-3 h-100">
-                  <h3 class="h6 fw-bold">對專題與競賽</h3>
-                  <p class="mb-0">可用來拆解成平台整合、工具鏈設計、資料流與使用者互動等子題目。</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="card p-4 h-100">
-            <h2 class="section-title h4 mb-3">本次閱讀任務</h2>
-            <ol class="mb-0">
-              <li class="mb-2">兩個 AI Agent 專案的差異與定位</li>
-              <li class="mb-2">適合工程學生的學習模組</li>
-              <li class="mb-2">專題、課堂報告與實作切入點</li>
-              <li class="mb-2">近期版本與產業新聞的工程重點</li>
-              <li>官方文件、影片與新聞之間的對照閱讀路徑</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
+   <section id="overview" class="mb-5">
+     <div class="row g-4">
+       <div class="col-lg-7">
+         <div class="card p-4 h-100">
+           <h2 class="section-title h3 mb-3">課程定位與教學重點</h2>
+           <p>閱讀時可把兩個專案當成兩種案例系統：OpenClaw 偏向個人 AI 助手產品整合，Hermes Agent 偏向可擴充的 AI Agent 工作流平台。前者適合看通道、部署與互動設計，後者適合看 tools、memory、skills 與 delegate。</p>
+           <div class="row g-3 mt-2">
+             <div class="col-md-6">
+               <div class="soft-panel p-3 h-100">
+                 <h3 class="h6 fw-bold">對大二到大四學生</h3>
+                 <p class="mb-0">幫助你把 AI Agent 理解成系統工程問題，而不是只有聊天介面。</p>
+               </div>
+             </div>
+             <div class="col-md-6">
+               <div class="soft-panel p-3 h-100">
+                 <h3 class="h6 fw-bold">對專題與競賽</h3>
+                 <p class="mb-0">可用來拆解成平台整合、工具鏈設計、資料流與使用者互動等子題目。</p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="col-lg-5">
+         <div class="card p-4 h-100">
+           <h2 class="section-title h4 mb-3">本次閱讀任務</h2>
+           <ol class="mb-0">
+             <li class="mb-2">兩個 AI Agent 專案的差異與定位</li>
+             <li class="mb-2">適合工程學生的學習模組</li>
+             <li class="mb-2">專題、課堂報告與實作切入點</li>
+             <li class="mb-2">近期版本與產業新聞的工程重點</li>
+             <li>官方文件、影片與新聞之間的對照閱讀路徑</li>
+           </ol>
+         </div>
+       </div>
+     </div>
+   </section>
 
-    <section id="comparison" class="mb-5">
-      <div class="card p-4 p-lg-5">
-        <h2 class="section-title h3 mb-3">OpenClaw 與 Hermes Agent 快速比較</h2>
-        <p class="text-secondary mb-4">如果你是工程相關科系學生，可以先把兩個專案理解成兩種不同的學習案例：一個偏向個人 AI 助手產品化，一個偏向可擴充的 AI Agent 系統工程。</p>
-        <div class="table-responsive">
-          <table class="table comparison-table align-middle">
-            <thead>
-              <tr>
-                <th>面向</th>
-                <th>OpenClaw</th>
-                <th>Hermes Agent</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>工程觀點</th>
-                <td>偏向跨平台整合、訊息通道與個人助理產品體驗。</td>
-                <td>偏向工具調度、記憶、技能與代理工作流設計。</td>
-              </tr>
-              <tr>
-                <th>適合觀察的系統面</th>
-                <td>平台整合、使用者互動、部署與通道接入。</td>
-                <td>工具呼叫、長期記憶、任務分解、多步驟自動化。</td>
-              </tr>
-              <tr>
-                <th>適合的課堂用途</th>
-                <td>可做智慧助理平台、介面與應用情境分析。</td>
-                <td>可做 AI Agent 架構、workflow 與工具系統示範。</td>
-              </tr>
-              <tr>
-                <th>初學者建議</th>
-                <td>先看官網與 Getting Started，再研究應用展示。</td>
-                <td>先看 Getting Started，再理解 tools、skills、memory。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
+   <section id="comparison" class="mb-5">
+     <div class="card p-4 p-lg-5">
+       <h2 class="section-title h3 mb-3">OpenClaw 與 Hermes Agent 快速比較</h2>
+       <p class="text-secondary mb-4">如果你是工程相關科系學生，可以先把兩個專案理解成兩種不同的學習案例：一個偏向個人 AI 助手產品化，一個偏向可擴充的 AI Agent 系統工程。</p>
+       <div class="table-responsive">
+         <table class="table comparison-table align-middle">
+           <thead>
+             <tr>
+               <th>面向</th>
+               <th>OpenClaw</th>
+               <th>Hermes Agent</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th>工程觀點</th>
+               <td>偏向跨平台整合、訊息通道與個人助理產品體驗。</td>
+               <td>偏向工具調度、記憶、技能與代理工作流設計。</td>
+             </tr>
+             <tr>
+               <th>適合觀察的系統面</th>
+               <td>平台整合、使用者互動、部署與通道接入。</td>
+               <td>工具呼叫、長期記憶、任務分解、多步驟自動化。</td>
+             </tr>
+             <tr>
+               <th>適合的課堂用途</th>
+               <td>可做智慧助理平台、介面與應用情境分析。</td>
+               <td>可做 AI Agent 架構、workflow 與工具系統示範。</td>
+             </tr>
+             <tr>
+               <th>初學者建議</th>
+               <td>先看官網與 Getting Started，再研究應用展示。</td>
+               <td>先看 Getting Started，再理解 tools、skills、memory。</td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </div>
+   </section>
 
-    <section id="modules" class="mb-5">
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="card p-4 h-100">
-            <h2 class="section-title h4 mb-3">模組 1：專案理解</h2>
-            <p>先閱讀 OpenClaw 與 Hermes Agent 的定位、目標使用者與官方文件，理解兩者分別解決什麼問題。</p>
-            <a class="btn btn-outline-primary mt-auto" href="resources.html">看精選資源</a>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card p-4 h-100">
-            <h2 class="section-title h4 mb-3">模組 2：系統與工具</h2>
-            <p>從工具呼叫、記憶、平台整合、資料流與任務流程觀察 agent 系統如何真正運作。</p>
-            <a class="btn btn-outline-primary mt-auto" href="hermes-agent.html">看 Hermes 詳頁</a>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card p-4 h-100">
-            <h2 class="section-title h4 mb-3">模組 3：專題應用</h2>
-            <p>把這些內容轉化成期末專題、技術報告、競賽展示或實作型課程題目。</p>
-            <a class="btn btn-outline-primary mt-auto" href="openclaw.html">看 OpenClaw 詳頁</a>
-          </div>
-        </div>
-      </div>
-    </section>
+   <section id="modules" class="mb-5">
+     <div class="row g-4">
+       <div class="col-lg-4">
+         <div class="card p-4 h-100">
+           <h2 class="section-title h4 mb-3">模組 1：專案理解</h2>
+           <p>先閱讀 OpenClaw 與 Hermes Agent 的定位、目標使用者與官方文件，理解兩者分別解決什麼問題。</p>
+           <a class="btn btn-outline-primary mt-auto" href="resources.html">看精選資源</a>
+         </div>
+       </div>
+       <div class="col-lg-4">
+         <div class="card p-4 h-100">
+           <h2 class="section-title h4 mb-3">模組 2：系統與工具</h2>
+           <p>從工具呼叫、記憶、平台整合、資料流與任務流程觀察 agent 系統如何真正運作。</p>
+           <a class="btn btn-outline-primary mt-auto" href="hermes-agent.html">看 Hermes 詳頁</a>
+         </div>
+       </div>
+       <div class="col-lg-4">
+         <div class="card p-4 h-100">
+           <h2 class="section-title h4 mb-3">模組 3：專題應用</h2>
+           <p>把這些內容轉化成期末專題、技術報告、競賽展示或實作型課程題目。</p>
+           <a class="btn btn-outline-primary mt-auto" href="openclaw.html">看 OpenClaw 詳頁</a>
+         </div>
+       </div>
+     </div>
+   </section>
 
-    <section id="openclaw" class="mb-5">
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="card p-4 p-lg-5 h-100">
-            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
-              <div>
-                <span class="badge text-bg-primary mb-2">專案 A</span>
-                <h2 class="section-title h3 mb-1">OpenClaw</h2>
-                <p class="mb-0 text-secondary">適合拿來理解個人 AI 助手平台與跨平台整合。</p>
-              </div>
-              <div class="d-flex flex-wrap gap-2">
-                <a class="btn btn-primary" href="https://openclaw.ai" target="_blank" rel="noopener">官方網站</a>
-                <a class="btn btn-outline-primary" href="openclaw.html">中文詳頁</a>
-              </div>
-            </div>
-            <ul class="mb-4">
-              <li>可從部署、通道整合與使用情境角度切入</li>
-              <li>適合做智慧助理平台案例分析</li>
-              <li>也適合作為產品導向 AI 系統的研究材料</li>
-            </ul>
-            <div class="list-group">
-              <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/start/getting-started" target="_blank" rel="noopener">Getting Started</a>
-              <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/start/showcase" target="_blank" rel="noopener">Showcase</a>
-              <a class="list-group-item list-group-item-action" href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener">GitHub Repo</a>
-            </div>
-          </div>
-        </div>
-        <div id="hermes-agent" class="col-lg-6">
-          <div class="card p-4 p-lg-5 h-100">
-            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
-              <div>
-                <span class="badge text-bg-success mb-2">專案 B</span>
-                <h2 class="section-title h3 mb-1">Hermes Agent</h2>
-                <p class="mb-0 text-secondary">適合拿來理解 AI Agent 的工具系統與工作流。</p>
-              </div>
-              <div class="d-flex flex-wrap gap-2">
-                <a class="btn btn-success" href="https://hermes-agent.nousresearch.com" target="_blank" rel="noopener">官方網站</a>
-                <a class="btn btn-outline-success" href="hermes-agent.html">中文詳頁</a>
-              </div>
-            </div>
-            <ul class="mb-4">
-              <li>適合觀察 tools、memory、skills 與 delegate</li>
-              <li>可作為 AI Agent 系統架構與 workflow 教材</li>
-              <li>也很適合做實作型專題與功能拆解分析</li>
-            </ul>
-            <div class="list-group">
-              <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com/docs/getting-started/" target="_blank" rel="noopener">Getting Started</a>
-              <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent/releases" target="_blank" rel="noopener">Release Notes</a>
-              <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">GitHub Repo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+   <section id="openclaw" class="mb-5">
+     <div class="row g-4">
+       <div class="col-lg-6">
+         <div class="card p-4 p-lg-5 h-100">
+           <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
+             <div>
+               <span class="badge text-bg-primary mb-2">專案 A</span>
+               <h2 class="section-title h3 mb-1">OpenClaw</h2>
+               <p class="mb-0 text-secondary">適合拿來理解個人 AI 助手平台與跨平台整合。</p>
+             </div>
+             <div class="d-flex flex-wrap gap-2">
+               <a class="btn btn-primary" href="https://openclaw.ai" target="_blank" rel="noopener">官方網站</a>
+               <a class="btn btn-outline-primary" href="openclaw.html">中文詳頁</a>
+             </div>
+           </div>
+           <ul class="mb-4">
+             <li>可從部署、通道整合與使用情境角度切入</li>
+             <li>適合做智慧助理平台案例分析</li>
+             <li>也適合作為產品導向 AI 系統的研究材料</li>
+           </ul>
+           <div class="list-group">
+             <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/start/getting-started" target="_blank" rel="noopener">Getting Started</a>
+             <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/start/showcase" target="_blank" rel="noopener">Showcase</a>
+             <a class="list-group-item list-group-item-action" href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener">GitHub Repo</a>
+           </div>
+         </div>
+       </div>
+       <div id="hermes-agent" class="col-lg-6">
+         <div class="card p-4 p-lg-5 h-100">
+           <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
+             <div>
+               <span class="badge text-bg-success mb-2">專案 B</span>
+               <h2 class="section-title h3 mb-1">Hermes Agent</h2>
+               <p class="mb-0 text-secondary">適合拿來理解 AI Agent 的工具系統與工作流。</p>
+             </div>
+             <div class="d-flex flex-wrap gap-2">
+               <a class="btn btn-success" href="https://hermes-agent.nousresearch.com" target="_blank" rel="noopener">官方網站</a>
+               <a class="btn btn-outline-success" href="hermes-agent.html">中文詳頁</a>
+             </div>
+           </div>
+           <ul class="mb-4">
+             <li>適合觀察 tools、memory、skills 與 delegate</li>
+             <li>可作為 AI Agent 系統架構與 workflow 教材</li>
+             <li>也很適合做實作型專題與功能拆解分析</li>
+           </ul>
+           <div class="list-group">
+             <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com/docs/getting-started/" target="_blank" rel="noopener">Getting Started</a>
+             <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent/releases" target="_blank" rel="noopener">Release Notes</a>
+             <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">GitHub Repo</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
 
-    <section id="coding-agents" class="mb-5">
-      <div class="card p-4 p-lg-5">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-8">
-            <h2 class="section-title h3 mb-2">Coding Agents</h2>
-            <p class="text-secondary mb-3">Claude Code 與 OpenAI Codex 可當成 CLI 型 AI coding agent 的代表案例，用來觀察重構、除錯、測試、PR review 與開發流程自動化如何被整合成一條工作流。</p>
-            <ul class="mb-0">
-              <li class="mb-2">可搭配 Hermes Agent 一起比較工具型 agent 的能力邊界</li>
-              <li class="mb-2">適合課堂討論重構、除錯、PR review 與自動化流程</li>
-              <li>可搭配官方文件、影片與新聞對照同一主題的不同表述</li>
-            </ul>
-          </div>
-          <div class="col-lg-4 text-lg-end d-flex flex-column gap-2">
-            <a class="btn btn-dark" href="coding-agents.html">讀 Coding Agents</a>
-            <a class="btn btn-outline-dark" href="https://code.claude.com/docs/en/overview" target="_blank" rel="noopener">Claude Code Overview</a>
-            <a class="btn btn-outline-dark" href="https://developers.openai.com/codex" target="_blank" rel="noopener">OpenAI Codex Docs</a>
-          </div>
-        </div>
-      </div>
-    </section>
+   <section id="coding-agents" class="mb-5">
+     <div class="card p-4 p-lg-5">
+       <div class="row g-4 align-items-center">
+         <div class="col-lg-8">
+           <h2 class="section-title h3 mb-2">Coding Agents</h2>
+           <p class="text-secondary mb-3">Claude Code 與 OpenAI Codex 可當成 CLI 型 AI coding agent 的代表案例，用來觀察重構、除錯、測試、PR review 與開發流程自動化如何被整合成一條工作流。</p>
+           <ul class="mb-0">
+             <li class="mb-2">可搭配 Hermes Agent 一起比較工具型 agent 的能力邊界</li>
+             <li class="mb-2">適合課堂討論重構、除錯、PR review 與自動化流程</li>
+             <li>可搭配官方文件、影片與新聞對照同一主題的不同表述</li>
+           </ul>
+         </div>
+         <div class="col-lg-4 text-lg-end d-flex flex-column gap-2">
+           <a class="btn btn-dark" href="coding-agents.html">讀 Coding Agents</a>
+           <a class="btn btn-outline-dark" href="https://code.claude.com/docs/en/overview" target="_blank" rel="noopener">Claude Code Overview</a>
+           <a class="btn btn-outline-dark" href="https://developers.openai.com/codex" target="_blank" rel="noopener">OpenAI Codex Docs</a>
+         </div>
+       </div>
+     </div>
+   </section>
 
-    <section id="videos" class="mb-5">
-      <div class="card p-4 p-lg-5">
-        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 mb-3 align-items-lg-center">
-          <div>
-            <h2 class="section-title h3 mb-2">YouTube 教學影片</h2>
-            <p class="text-secondary mb-0">可優先找安裝流程、功能示範、實際操作與專案比較影片，搭配官方文件一起看，較容易把名詞、操作步驟與系統設計連起來。</p>
-          </div>
-          <div>
-            <a class="btn btn-outline-danger" href="videos.html">看教學影片</a>
-          </div>
-        </div>
-      </div>
-    </section>
+   <section id="videos" class="mb-5">
+     <div class="card p-4 p-lg-5">
+       <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 mb-3 align-items-lg-center">
+         <div>
+           <h2 class="section-title h3 mb-2">YouTube 教學影片</h2>
+           <p class="text-secondary mb-0">可優先找安裝流程、功能示範、實際操作與專案比較影片，搭配官方文件一起看，較容易把名詞、操作步驟與系統設計連起來。</p>
+         </div>
+         <div>
+           <a class="btn btn-outline-danger" href="videos.html">看教學影片</a>
+         </div>
+       </div>
+     </div>
+   </section>
 
-    <section id="roadmap" class="mb-5">
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="card p-4 h-100">
-            <h2 class="section-title h4 mb-3">建議學習路線</h2>
-            <ol class="mb-0">
-              <li class="mb-2">先看首頁比較，確認兩個專案的差異。</li>
-              <li class="mb-2">選一個專案深入閱讀詳頁與官方文件。</li>
-              <li class="mb-2">搭配影片入口與 release notes 看近期演進。</li>
-              <li class="mb-2">把內容轉成報告、專題或實作題目。</li>
-              <li>最後回到資源頁整理自己的學習筆記與方向。</li>
-            </ol>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card p-4 h-100">
-            <h2 class="section-title h4 mb-3">適合的專題方向</h2>
-            <ul class="mb-0">
-              <li class="mb-2">AI 助手平台與跨通道整合</li>
-              <li class="mb-2">AI Agent 工具鏈與自動化工作流</li>
-              <li class="mb-2">記憶系統與個人化互動設計</li>
-              <li class="mb-2">工程教育中的 agent 應用展示</li>
-              <li>從產品與系統兩種角度比較開源 AI 專案</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+   <section id="roadmap" class="mb-5">
+     <div class="row g-4">
+       <div class="col-lg-6">
+         <div class="card p-4 h-100">
+           <h2 class="section-title h4 mb-3">建議學習路線</h2>
+           <ol class="mb-0">
+             <li class="mb-2">先看首頁比較，確認兩個專案的差異。</li>
+             <li class="mb-2">選一個專案深入閱讀詳頁與官方文件。</li>
+             <li class="mb-2">搭配影片入口與 release notes 看近期演進。</li>
+             <li class="mb-2">把內容轉成報告、專題或實作題目。</li>
+             <li>最後回到資源頁整理自己的學習筆記與方向。</li>
+           </ol>
+         </div>
+       </div>
+       <div class="col-lg-6">
+         <div class="card p-4 h-100">
+           <h2 class="section-title h4 mb-3">適合的專題方向</h2>
+           <ul class="mb-0">
+             <li class="mb-2">AI 助手平台與跨通道整合</li>
+             <li class="mb-2">AI Agent 工具鏈與自動化工作流</li>
+             <li class="mb-2">記憶系統與個人化互動設計</li>
+             <li class="mb-2">工程教育中的 agent 應用展示</li>
+             <li>從產品與系統兩種角度比較開源 AI 專案</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </section>
 
-    <section class="mb-5">
-      <div class="card p-4 p-lg-5">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-8">
-            <h2 class="section-title h3 mb-3">報告與專題查詢路徑</h2>
-            <p class="mb-3">做報告時可先讀專案詳頁建立背景，再看消息彙整抓近期重點，最後用影片與歷史新聞補足案例與脈絡。</p>
-            <p class="mb-0 text-secondary">建議每次整理至少留下三個觀察：功能面、系統面、以及可以延伸成專題的實作面。</p>
-          </div>
-          <div class="col-lg-4 text-lg-end d-flex flex-column gap-2">
-            <a class="btn btn-primary" href="resources.html">精選資源頁</a>
-            <a class="btn btn-outline-dark" href="coding-agents.html">Coding Agents 頁</a>
-            <a class="btn btn-outline-primary" href="news.html">消息彙整頁</a>
-            <a class="btn btn-outline-secondary" href="news-archive.html">新聞檔案列表</a>
-            <a class="btn btn-outline-danger" href="videos.html">教學影片</a>
-          </div>
-        </div>
-      </div>
-    </section>
+   <section class="mb-5">
+     <div class="card p-4 p-lg-5">
+       <div class="row g-4 align-items-center">
+         <div class="col-lg-8">
+           <h2 class="section-title h3 mb-3">報告與專題查詢路徑</h2>
+           <p class="mb-3">做報告時可先讀專案詳頁建立背景，再看消息彙整抓近期重點，最後用影片與歷史新聞補足案例與脈絡。</p>
+           <p class="mb-0 text-secondary">建議每次整理至少留下三個觀察：功能面、系統面、以及可以延伸成專題的實作面。</p>
+         </div>
+         <div class="col-lg-4 text-lg-end d-flex flex-column gap-2">
+           <a class="btn btn-primary" href="resources.html">精選資源頁</a>
+           <a class="btn btn-outline-dark" href="coding-agents.html">Coding Agents 頁</a>
+           <a class="btn btn-outline-primary" href="news.html">消息彙整頁</a>
+           <a class="btn btn-outline-secondary" href="news-archive.html">新聞檔案列表</a>
+           <a class="btn btn-outline-danger" href="videos.html">教學影片</a>
+         </div>
+       </div>
+     </div>
+   </section>
 
-    <section class="text-center py-3">
-      <p class="footer-note mb-2">閱讀時可把版本更新、官方文件與示範影片互相比對，較容易看出功能、系統設計與產品定位之間的關係。</p>
-      <p class="footer-note mb-0">資料來源以 OpenClaw、Hermes Agent、Claude Code、OpenAI Codex 的官方網站、官方文件、GitHub Releases 與公開 commit / news 為主。</p>
-    </section>
-  </main>
+   <section class="text-center py-3">
+     <p class="footer-note mb-2">閱讀時可把版本更新、官方文件與示範影片互相比對，較容易看出功能、系統設計與產品定位之間的關係。</p>
+     <p class="footer-note mb-0">資料來源以 OpenClaw、Hermes Agent、Claude Code、OpenAI Codex 的官方網站、官方文件、GitHub Releases 與公開 commit / news 為主。</p>
+   </section>
+ </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+

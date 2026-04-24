@@ -1,282 +1,283 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="iAgents 中文學習站精選資源頁，整理 OpenClaw 與 Hermes Agent 的快速入門、精選連結、教學應用與下一步建議。">
-  <title>精選資源頁 | iAgents 中文學習站</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-    body {
-      background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
-      color: #1f2937;
-    }
-    .hero {
-      background: linear-gradient(135deg, #0d6efd, #6610f2);
-      color: white;
-      border-radius: 1.5rem;
-      box-shadow: 0 1rem 3rem rgba(13, 110, 253, 0.2);
-    }
-    .soft-card {
-      background: #fff;
-      border: 1px solid rgba(15, 23, 42, 0.08);
-      border-radius: 1rem;
-      box-shadow: 0 0.75rem 2rem rgba(15, 23, 42, 0.06);
-    }
-    .section-title {
-      font-weight: 800;
-      letter-spacing: 0.02em;
-    }
-    .resource-link {
-      text-decoration: none;
-    }
-    .resource-link:hover {
-      text-decoration: underline;
-    }
-    .tag {
-      display: inline-block;
-      padding: 0.35rem 0.7rem;
-      border-radius: 999px;
-      background: #e9f2ff;
-      color: #0d6efd;
-      font-size: 0.9rem;
-      margin-right: 0.4rem;
-      margin-bottom: 0.5rem;
-    }
-  </style>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="iAgents 中文學習站精選資源頁，整理 OpenClaw 與 Hermes Agent 的快速入門、精選連結、教學應用與下一步建議。">
+ <title>精選資源頁 | iAgents 中文學習站</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <style>
+   body {
+     background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+     color: #1f2937;
+   }
+   .hero {
+     background: linear-gradient(135deg, #0d6efd, #6610f2);
+     color: white;
+     border-radius: 1.5rem;
+     box-shadow: 0 1rem 3rem rgba(13, 110, 253, 0.2);
+   }
+   .soft-card {
+     background: #fff;
+     border: 1px solid rgba(15, 23, 42, 0.08);
+     border-radius: 1rem;
+     box-shadow: 0 0.75rem 2rem rgba(15, 23, 42, 0.06);
+   }
+   .section-title {
+     font-weight: 800;
+     letter-spacing: 0.02em;
+   }
+   .resource-link {
+     text-decoration: none;
+   }
+   .resource-link:hover {
+     text-decoration: underline;
+   }
+   .tag {
+     display: inline-block;
+     padding: 0.35rem 0.7rem;
+     border-radius: 999px;
+     background: #e9f2ff;
+     color: #0d6efd;
+     font-size: 0.9rem;
+     margin-right: 0.4rem;
+     margin-bottom: 0.5rem;
+   }
+ </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-primary" href="index.html">iAgents 中文學習站</a>
-      <div class="d-flex gap-2 flex-wrap">
-        <a class="btn btn-outline-primary" href="index.html">回首頁</a>
-        <a class="btn btn-outline-primary" href="openclaw.html">OpenClaw 詳頁</a>
-        <a class="btn btn-outline-success" href="hermes-agent.html">Hermes 詳頁</a>
-        <a class="btn btn-outline-dark" href="coding-agents.html">Coding Agents</a>
-        <a class="btn btn-outline-danger" href="videos.html">教學影片</a>
-        <a class="btn btn-outline-secondary" href="news.html">每日新聞</a>
-      </div>
-    </div>
-  </nav>
+ <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+   <div class="container">
+     <a class="navbar-brand fw-bold text-primary" href="index.html">iAgents 中文學習站</a>
+     <div class="d-flex gap-2 flex-wrap">
+       <a class="btn btn-outline-primary" href="index.html">回首頁</a>
+       <a class="btn btn-outline-primary" href="openclaw.html">OpenClaw 詳頁</a>
+       <a class="btn btn-outline-success" href="hermes-agent.html">Hermes 詳頁</a>
+       <a class="btn btn-outline-dark" href="coding-agents.html">Coding Agents</a>
+       <a class="btn btn-outline-danger" href="videos.html">教學影片</a>
+       <a class="btn btn-outline-secondary" href="news.html">每日新聞</a>
+     </div>
+   </div>
+ </nav>
 
-  <main class="container py-4 py-lg-5">
-    <section class="hero p-4 p-lg-5 mb-5">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-8">
-          <span class="badge bg-light text-primary px-3 py-2 mb-3">Resources</span>
-          <h1 class="display-5 fw-bold mb-3">OpenClaw 與 Hermes Agent 精選資源頁</h1>
-          <p class="lead mb-4">可先把這些連結當成最短學習路徑：先看官方定位，再讀 Getting Started，接著對照 release 與 repo，最後整理成自己的課堂筆記或專題方向。</p>
-          <div>
-            <span class="tag">快速入門</span>
-            <span class="tag">官方文件</span>
-            <span class="tag">GitHub Repo</span>
-            <span class="tag">教學應用</span>
-            <span class="tag">Coding Agents</span>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="soft-card p-4 text-dark">
-            <h2 class="h5 fw-bold">學習重點</h2>
-            <ul class="mb-0 ps-3">
-              <li>兩個專案的學習順序</li>
-              <li>精選官方連結</li>
-              <li>課堂／研究應用建議</li>
-              <li>可直接延伸成報告或專題的主題</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+ <main class="container py-4 py-lg-5">
+   <section class="hero p-4 p-lg-5 mb-5">
+     <div class="row g-4 align-items-center">
+       <div class="col-lg-8">
+         <span class="badge bg-light text-primary px-3 py-2 mb-3">Resources</span>
+         <h1 class="display-5 fw-bold mb-3">OpenClaw 與 Hermes Agent 精選資源頁</h1>
+         <p class="lead mb-4">可先把這些連結當成最短學習路徑：先看官方定位，再讀 Getting Started，接著對照 release 與 repo，最後整理成自己的課堂筆記或專題方向。</p>
+         <div>
+           <span class="tag">快速入門</span>
+           <span class="tag">官方文件</span>
+           <span class="tag">GitHub Repo</span>
+           <span class="tag">教學應用</span>
+           <span class="tag">Coding Agents</span>
+         </div>
+       </div>
+       <div class="col-lg-4">
+         <div class="soft-card p-4 text-dark">
+           <h2 class="h5 fw-bold">學習重點</h2>
+           <ul class="mb-0 ps-3">
+             <li>兩個專案的學習順序</li>
+             <li>精選官方連結</li>
+             <li>課堂／研究應用建議</li>
+             <li>可直接延伸成報告或專題的主題</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </section>
 
-    <section class="mb-5">
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="soft-card p-4 h-100">
-            <h2 class="section-title h3 mb-3">OpenClaw 快速入門</h2>
-            <p>如果你想先理解「個人 AI 助手如何跨平台運作」，OpenClaw 是很適合的切入點。建議先看 Getting Started，再看 Showcase 與安裝文件。</p>
-            <div class="list-group list-group-flush">
-              <a class="list-group-item list-group-item-action" href="https://openclaw.ai" target="_blank" rel="noopener">官方網站</a>
-              <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/start/getting-started" target="_blank" rel="noopener">Getting Started</a>
-              <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/start/showcase" target="_blank" rel="noopener">Showcase</a>
-              <a class="list-group-item list-group-item-action" href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener">GitHub Repo</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="soft-card p-4 h-100">
-            <h2 class="section-title h3 mb-3">Hermes Agent 快速入門</h2>
-            <p>如果你想先理解 AI Agent 的工具呼叫、記憶、技能與委派能力，Hermes Agent 更適合當成教材與研究對象。建議從 getting started 和 release notes 一起閱讀。</p>
-            <div class="list-group list-group-flush">
-              <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com" target="_blank" rel="noopener">官方網站</a>
-              <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com/docs/getting-started/" target="_blank" rel="noopener">Getting Started</a>
-              <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent/releases" target="_blank" rel="noopener">Release Notes</a>
-              <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">GitHub Repo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+   <section class="mb-5">
+     <div class="row g-4">
+       <div class="col-lg-6">
+         <div class="soft-card p-4 h-100">
+           <h2 class="section-title h3 mb-3">OpenClaw 快速入門</h2>
+           <p>如果你想先理解「個人 AI 助手如何跨平台運作」，OpenClaw 是很適合的切入點。建議先看 Getting Started，再看 Showcase 與安裝文件。</p>
+           <div class="list-group list-group-flush">
+             <a class="list-group-item list-group-item-action" href="https://openclaw.ai" target="_blank" rel="noopener">官方網站</a>
+             <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/start/getting-started" target="_blank" rel="noopener">Getting Started</a>
+             <a class="list-group-item list-group-item-action" href="https://docs.openclaw.ai/start/showcase" target="_blank" rel="noopener">Showcase</a>
+             <a class="list-group-item list-group-item-action" href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener">GitHub Repo</a>
+           </div>
+         </div>
+       </div>
+       <div class="col-lg-6">
+         <div class="soft-card p-4 h-100">
+           <h2 class="section-title h3 mb-3">Hermes Agent 快速入門</h2>
+           <p>如果你想先理解 AI Agent 的工具呼叫、記憶、技能與委派能力，Hermes Agent 更適合當成教材與研究對象。建議從 getting started 和 release notes 一起閱讀。</p>
+           <div class="list-group list-group-flush">
+             <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com" target="_blank" rel="noopener">官方網站</a>
+             <a class="list-group-item list-group-item-action" href="https://hermes-agent.nousresearch.com/docs/getting-started/" target="_blank" rel="noopener">Getting Started</a>
+             <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent/releases" target="_blank" rel="noopener">Release Notes</a>
+             <a class="list-group-item list-group-item-action" href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener">GitHub Repo</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
 
-    <section class="mb-5">
-      <div class="soft-card p-4 p-lg-5">
-        <h2 class="section-title h3 mb-4">建議學習順序</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="border rounded-4 p-3 h-100">
-              <h3 class="h5 fw-bold">Step 1</h3>
-              <p class="mb-0">先看官網與 Getting Started，建立專案定位與基礎概念。</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="border rounded-4 p-3 h-100">
-              <h3 class="h5 fw-bold">Step 2</h3>
-              <p class="mb-0">再看 GitHub releases 與 repo 結構，理解更新節奏與工程方向。</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="border rounded-4 p-3 h-100">
-              <h3 class="h5 fw-bold">Step 3</h3>
-              <p class="mb-0">最後把資料整理成中文教學、報告、課程或實作案例。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+   <section class="mb-5">
+     <div class="soft-card p-4 p-lg-5">
+       <h2 class="section-title h3 mb-4">建議學習順序</h2>
+       <div class="row g-4">
+         <div class="col-md-4">
+           <div class="border rounded-4 p-3 h-100">
+             <h3 class="h5 fw-bold">Step 1</h3>
+             <p class="mb-0">先看官網與 Getting Started，建立專案定位與基礎概念。</p>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="border rounded-4 p-3 h-100">
+             <h3 class="h5 fw-bold">Step 2</h3>
+             <p class="mb-0">再看 GitHub releases 與 repo 結構，理解更新節奏與工程方向。</p>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="border rounded-4 p-3 h-100">
+             <h3 class="h5 fw-bold">Step 3</h3>
+             <p class="mb-0">最後把資料整理成中文教學、報告、課程或實作案例。</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
 
-    <section class="mb-5">
-      <div class="soft-card p-4 p-lg-5">
-        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-4">
-          <div>
-            <h2 class="section-title h3 mb-2">Coding Agents</h2>
-            <p class="text-secondary mb-0">把 Claude Code 與 OpenAI Codex 放在一起閱讀時，可更清楚比較 CLI agent、coding workflow 與開發自動化的設計差異。</p>
-          </div>
-          <div>
-            <a class="btn btn-dark" href="coding-agents.html">讀 Coding Agents</a>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-6">
-            <div class="border rounded-4 p-4 h-100">
-              <h3 class="h4 fw-bold mb-3">Claude Code</h3>
-              <p>適合整理 Anthropic 的 CLI 型 coding agent、終端互動、工作流自動化與開發者體驗。</p>
-              <ul class="mb-3">
-                <li class="mb-2">看官方概覽與 CLI 文件</li>
-                <li class="mb-2">整理常見使用情境：重構、除錯、PR review</li>
-                <li>和 Hermes / OpenClaw 對照 agent 的產品定位</li>
-              </ul>
-              <a class="btn btn-outline-dark" href="https://code.claude.com/docs/en/overview" target="_blank" rel="noopener">Claude Code Overview</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="border rounded-4 p-4 h-100">
-              <h3 class="h4 fw-bold mb-3">OpenAI Codex</h3>
-              <p>適合整理 OpenAI 的 coding agent / developer workflow 資料，觀察模型能力如何落地到程式開發流程。</p>
-              <ul class="mb-3">
-                <li class="mb-2">看開發者文件與開源 CLI</li>
-                <li class="mb-2">整理 exec、review、automation 等操作概念</li>
-                <li>搭配企業部署與 agent workflow 新聞一起閱讀</li>
-              </ul>
-              <a class="btn btn-outline-dark" href="https://developers.openai.com/codex" target="_blank" rel="noopener">OpenAI Codex Docs</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+   <section class="mb-5">
+     <div class="soft-card p-4 p-lg-5">
+       <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-4">
+         <div>
+           <h2 class="section-title h3 mb-2">Coding Agents</h2>
+           <p class="text-secondary mb-0">把 Claude Code 與 OpenAI Codex 放在一起閱讀時，可更清楚比較 CLI agent、coding workflow 與開發自動化的設計差異。</p>
+         </div>
+         <div>
+           <a class="btn btn-dark" href="coding-agents.html">讀 Coding Agents</a>
+         </div>
+       </div>
+       <div class="row g-4">
+         <div class="col-lg-6">
+           <div class="border rounded-4 p-4 h-100">
+             <h3 class="h4 fw-bold mb-3">Claude Code</h3>
+             <p>適合整理 Anthropic 的 CLI 型 coding agent、終端互動、工作流自動化與開發者體驗。</p>
+             <ul class="mb-3">
+               <li class="mb-2">看官方概覽與 CLI 文件</li>
+               <li class="mb-2">整理常見使用情境：重構、除錯、PR review</li>
+               <li>和 Hermes / OpenClaw 對照 agent 的產品定位</li>
+             </ul>
+             <a class="btn btn-outline-dark" href="https://code.claude.com/docs/en/overview" target="_blank" rel="noopener">Claude Code Overview</a>
+           </div>
+         </div>
+         <div class="col-lg-6">
+           <div class="border rounded-4 p-4 h-100">
+             <h3 class="h4 fw-bold mb-3">OpenAI Codex</h3>
+             <p>適合整理 OpenAI 的 coding agent / developer workflow 資料，觀察模型能力如何落地到程式開發流程。</p>
+             <ul class="mb-3">
+               <li class="mb-2">看開發者文件與開源 CLI</li>
+               <li class="mb-2">整理 exec、review、automation 等操作概念</li>
+               <li>搭配企業部署與 agent workflow 新聞一起閱讀</li>
+             </ul>
+             <a class="btn btn-outline-dark" href="https://developers.openai.com/codex" target="_blank" rel="noopener">OpenAI Codex Docs</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
 
-    <section class="mb-5">
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="soft-card p-4 h-100">
-            <h2 class="section-title h4 mb-3">課堂切入角度</h2>
-            <ul class="mb-0">
-              <li class="mb-2">OpenClaw：適合示範個人 AI 助手、跨平台訊息通道與使用情境設計。</li>
-              <li class="mb-2">Hermes Agent：適合示範工具使用、記憶系統、技能與多步驟代理工作流。</li>
-              <li class="mb-2">Coding Agents：適合聚焦程式開發工作流、CLI agent 與自動化協作模式。</li>
-              <li>三者一起比較時，很適合作為 AI Agent 生態系與產品定位的對照案例。</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="soft-card p-4 h-100">
-            <h2 class="section-title h4 mb-3">延伸學習方向</h2>
-            <ul class="mb-0">
-              <li class="mb-2">補充實作截圖、架構圖與術語表。</li>
-              <li class="mb-2">把 release note 改寫成功能、系統、部署三個層次的比較表。</li>
-              <li class="mb-2">整理一份 OpenClaw、Hermes、Claude Code、Codex 的定位對照。</li>
-              <li>延伸成期末專題提案、課程簡報或讀書會教材。</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+   <section class="mb-5">
+     <div class="row g-4">
+       <div class="col-lg-6">
+         <div class="soft-card p-4 h-100">
+           <h2 class="section-title h4 mb-3">課堂切入角度</h2>
+           <ul class="mb-0">
+             <li class="mb-2">OpenClaw：適合示範個人 AI 助手、跨平台訊息通道與使用情境設計。</li>
+             <li class="mb-2">Hermes Agent：適合示範工具使用、記憶系統、技能與多步驟代理工作流。</li>
+             <li class="mb-2">Coding Agents：適合聚焦程式開發工作流、CLI agent 與自動化協作模式。</li>
+             <li>三者一起比較時，很適合作為 AI Agent 生態系與產品定位的對照案例。</li>
+           </ul>
+         </div>
+       </div>
+       <div class="col-lg-6">
+         <div class="soft-card p-4 h-100">
+           <h2 class="section-title h4 mb-3">延伸學習方向</h2>
+           <ul class="mb-0">
+             <li class="mb-2">補充實作截圖、架構圖與術語表。</li>
+             <li class="mb-2">把 release note 改寫成功能、系統、部署三個層次的比較表。</li>
+             <li class="mb-2">整理一份 OpenClaw、Hermes、Claude Code、Codex 的定位對照。</li>
+             <li>延伸成期末專題提案、課程簡報或讀書會教材。</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </section>
 
 
-    <section class="mb-5">
-      <div class="soft-card p-4 p-lg-5">
-        <h2 class="section-title h3 mb-3">15 分鐘課堂快讀法</h2>
-        <div class="row g-3">
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">前 5 分鐘</h3><p class="mb-0">先讀一則 release，圈出今天新增的是工具、模型、還是平台整合。</p></div></div>
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">中間 5 分鐘</h3><p class="mb-0">再找一則 commit，確認同一主題落到哪個模組、哪個風險或哪種修補。</p></div></div>
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">最後 5 分鐘</h3><p class="mb-0">補一則外部新聞，把技術更新寫成一句產品影響與一句專題方向。</p></div></div>
-        </div>
-      </div>
-    </section>
+   <section class="mb-5">
+     <div class="soft-card p-4 p-lg-5">
+       <h2 class="section-title h3 mb-3">15 分鐘課堂快讀法</h2>
+       <div class="row g-3">
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">前 5 分鐘</h3><p class="mb-0">先讀一則 release，圈出今天新增的是工具、模型、還是平台整合。</p></div></div>
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">中間 5 分鐘</h3><p class="mb-0">再找一則 commit，確認同一主題落到哪個模組、哪個風險或哪種修補。</p></div></div>
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">最後 5 分鐘</h3><p class="mb-0">補一則外部新聞，把技術更新寫成一句產品影響與一句專題方向。</p></div></div>
+       </div>
+     </div>
+   </section>
 
-    <section class="mb-5">
-      <div class="soft-card p-4 p-lg-5">
-        <h2 class="section-title h3 mb-3">每日讀 Release / Commit 的 3 步驟</h2>
-        <div class="row g-3">
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">Step A</h3><p class="mb-0">先看 release highlights，抓出 1 個和課程主題最相關的功能。</p></div></div>
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">Step B</h3><p class="mb-0">再找 1 則 commit，觀察產品功能如何落成具體工程修補。</p></div></div>
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">Step C</h3><p class="mb-0">最後寫下 2 句 takeaway：一個談系統設計，一個談你能做的專題題目。</p></div></div>
-        </div>
-        <p class="text-secondary mt-3 mb-2">多補一欄「驗證方法」會更像工程筆記：請寫下你要看哪個 health check、哪段 log、哪個 UI 狀態或哪個回歸測試來證明更新真的生效。</p>
-        <p class="text-secondary mb-2">本週可固定再補三個欄位：session key、usage metadata、provider API 路徑。這三欄特別適合拿來檢查今天新聞裡的併發、觀測與原生 provider 契約是否真的說得通。</p>
-        <p class="text-secondary mb-0">再補一欄「來源層級」：官方 release 看產品方向、commit 看工程細節、外部新聞看工作流或市場影響，這樣比較不會把不同訊號混成同一種結論。</p>
-        <p class="text-secondary mt-2 mb-0">今天特別可以再補一欄「工具範圍」：如果新聞碰到 cron、app connector 或模型註冊，請順手記下它在哪一層限制權限、成本或 metadata，這樣更容易把消息改寫成可驗證的工程題目。</p>
-      </div>
-    </section>
+   <section class="mb-5">
+     <div class="soft-card p-4 p-lg-5">
+       <h2 class="section-title h3 mb-3">每日讀 Release / Commit 的 3 步驟</h2>
+       <div class="row g-3">
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">Step A</h3><p class="mb-0">先看 release highlights，抓出 1 個和課程主題最相關的功能。</p></div></div>
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">Step B</h3><p class="mb-0">再找 1 則 commit，觀察產品功能如何落成具體工程修補。</p></div></div>
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">Step C</h3><p class="mb-0">最後寫下 2 句 takeaway：一個談系統設計，一個談你能做的專題題目。</p></div></div>
+       </div>
+       <p class="text-secondary mt-3 mb-2">多補一欄「驗證方法」會更像工程筆記：請寫下你要看哪個 health check、哪段 log、哪個 UI 狀態或哪個回歸測試來證明更新真的生效。</p>
+       <p class="text-secondary mb-2">本週可固定再補三個欄位：session key、usage metadata、provider API 路徑。這三欄特別適合拿來檢查今天新聞裡的併發、觀測與原生 provider 契約是否真的說得通。</p>
+       <p class="text-secondary mb-0">再補一欄「來源層級」：官方 release 看產品方向、commit 看工程細節、外部新聞看工作流或市場影響，這樣比較不會把不同訊號混成同一種結論。</p>
+       <p class="text-secondary mt-2 mb-0">今天特別可以再補兩欄：「工具範圍」與「狀態快照」。如果新聞碰到 plugin discovery、取消中的 API 回應、app connector 或模型註冊，請順手記下它在哪一層限制權限、保存 snapshot，或維持 metadata 一致性，這樣更容易把消息改寫成可驗證的工程題目。</p>
+     </div>
+   </section>
 
-    <section class="mb-5">
-      <div class="soft-card p-4 p-lg-5">
-        <h2 class="section-title h3 mb-3">本週課堂練習：把新聞改寫成工程問題</h2>
-        <div class="row g-3">
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">題目 1</h3><p class="mb-0">從 release note 挑 1 個功能，寫出它可能依賴的資料流、工具鏈與外部服務。</p></div></div>
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">題目 2</h3><p class="mb-0">從 commit 挑 1 個修補，判斷它屬於安全性、可用性、可觀測性，或跨平台相容性問題。</p></div></div>
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">題目 3</h3><p class="mb-0">最後用 3 句話提案：如果你做期末專題，要把哪一則新聞改成可展示的實作功能？</p></div></div>
-        </div>
-      </div>
-    </section>
+   <section class="mb-5">
+     <div class="soft-card p-4 p-lg-5">
+       <h2 class="section-title h3 mb-3">本週課堂練習：把新聞改寫成工程問題</h2>
+       <div class="row g-3">
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">題目 1</h3><p class="mb-0">從 release note 挑 1 個功能，寫出它可能依賴的資料流、工具鏈與外部服務。</p></div></div>
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">題目 2</h3><p class="mb-0">從 commit 挑 1 個修補，判斷它屬於安全性、可用性、可觀測性，或跨平台相容性問題。</p></div></div>
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">題目 3</h3><p class="mb-0">最後用 3 句話提案：如果你做期末專題，要把哪一則新聞改成可展示的實作功能？</p></div></div>
+       </div>
+     </div>
+   </section>
 
-    <section class="mb-5">
-      <div class="soft-card p-4 p-lg-5">
-        <h2 class="section-title h3 mb-3">本日練習：把一則新聞拆成功能、風險、驗證</h2>
-        <div class="row g-3">
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">功能</h3><p class="mb-0">先寫出新聞裡新增或修補的是哪一個能力，例如健康檢查、憑證策略或工作流模板。</p></div></div>
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">風險</h3><p class="mb-0">再判斷它想避免的是安全性、穩定性、相容性，還是可觀測性問題。</p></div></div>
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">驗證</h3><p class="mb-0">最後補一句：如果你自己做專題，會用什麼測試、日誌或介面來證明它真的生效。</p></div></div>
-        </div>
-      </div>
-    </section>
+   <section class="mb-5">
+     <div class="soft-card p-4 p-lg-5">
+       <h2 class="section-title h3 mb-3">本日練習：把一則新聞拆成功能、風險、驗證</h2>
+       <div class="row g-3">
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">功能</h3><p class="mb-0">先寫出新聞裡新增或修補的是哪一個能力，例如健康檢查、憑證策略或工作流模板。</p></div></div>
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">風險</h3><p class="mb-0">再判斷它想避免的是安全性、穩定性、相容性，還是可觀測性問題。</p></div></div>
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">驗證</h3><p class="mb-0">最後補一句：如果你自己做專題，會用什麼測試、日誌或介面來證明它真的生效。</p></div></div>
+       </div>
+     </div>
+   </section>
 
-    <section class="mb-5">
-      <div class="soft-card p-4 p-lg-5">
-        <h2 class="section-title h3 mb-3">本日新聞筆記模板</h2>
-        <div class="row g-3">
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">先抓邊界</h3><p class="mb-0">先寫這則新聞主要碰的是工具、記憶、排程、權限，還是平台整合。</p></div></div>
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">再寫風險</h3><p class="mb-0">補一句：如果這個修補不存在，最可能出現的是安全性、穩定性、可觀測性，還是使用者誤判。</p></div></div>
-          <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">最後想驗證</h3><p class="mb-0">列出 1 個你會實作的測試、1 段要看的 log，或 1 個要觀察的 UI／API 狀態。</p></div></div>
-        </div>
-      </div>
-    </section>
+   <section class="mb-5">
+     <div class="soft-card p-4 p-lg-5">
+       <h2 class="section-title h3 mb-3">本日新聞筆記模板</h2>
+       <div class="row g-3">
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">先抓邊界</h3><p class="mb-0">先寫這則新聞主要碰的是工具、記憶、排程、權限，還是平台整合。</p></div></div>
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">再寫風險</h3><p class="mb-0">補一句：如果這個修補不存在，最可能出現的是安全性、穩定性、可觀測性，還是使用者誤判。</p></div></div>
+         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h5 fw-bold">最後想驗證</h3><p class="mb-0">列出 1 個你會實作的測試、1 段要看的 log，或 1 個要觀察的 UI／API 狀態。</p></div></div>
+       </div>
+     </div>
+   </section>
 
-    <section class="text-center py-3">
-      <p class="text-secondary mb-2">建議每次閱讀先抓 1 個核心功能、1 個工程問題、1 個可延伸的專題題目。</p>
-      <a class="btn btn-primary" href="index.html">回首頁</a>
-    </section>
-  </main>
+   <section class="text-center py-3">
+     <p class="text-secondary mb-2">建議每次閱讀先抓 1 個核心功能、1 個工程問題、1 個可延伸的專題題目。</p>
+     <a class="btn btn-primary" href="index.html">回首頁</a>
+   </section>
+ </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+

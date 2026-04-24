@@ -36,6 +36,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-25.html — 2026-04-25 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-25.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-24.html — 2026-04-24 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-24.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-23.html — 2026-04-23 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-23.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-20.html — 2026-04-20 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-20.html">開啟</a></li>
@@ -51,6 +52,32 @@
       </div>
     </section>
 
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-04-25 中文精選</h2>
+    <div class="row g-3">
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · OpenClaw 官方 Release</div><h3 class="h5">OpenClaw 2026.4.23 擴充無 API key 的圖像生成、sessions_spawn forked context 與可調整生成 timeout</h3><p class="mb-3">這版很適合工程學生看「平台擴充不是只加模型」：它同時碰到 OpenAI／OpenRouter 圖像路徑、子代理上下文繼承、媒體工具 timeout 與本地記憶嵌入設定，代表 agent 平台已經在同一版裡一起處理多模態、流程控制與資源限制。</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.23" target="_blank" rel="noopener">查看來源（GitHub Release）→</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 快取 plugin discovery registration snapshot，降低外掛探索與註冊時的狀態漂移</h3><p class="mb-3">這筆 commit 很適合拿來談 plugin 系統的一致性：當 provider、registry 與 loader 同時參與探索流程時，如果每一步看到的註冊狀態不同，外掛就可能出現「有被找到、卻不一定能穩定載入」的問題。</p><a href="https://github.com/openclaw/openclaw/commit/0c46e8000e2b1d32d0d28c1fa63e25f09190a48f" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-23 · Hermes Agent 官方 Release</div><h3 class="h5">Hermes Agent v0.11.0 以新 Ink TUI、可插拔 transport、原生 Bedrock 與擴大的 plugin surface 推進平台化</h3><p class="mb-3">這次 release 最值得學生看的不是單一功能，而是抽象層重整：互動介面、provider transport、推論路徑與 plugin 擴充點一起被重新整理，適合拿來對照「產品變好用」背後通常伴隨哪些架構改造。</p><a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.23" target="_blank" rel="noopener">查看來源（GitHub Release）→</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 在 asyncio.CancelledError 時也持久化不完整 snapshot，避免 API server 卡在 in_progress</h3><p class="mb-3">這則更新很適合課堂上談失敗處理：連線被重置與請求被取消雖然都是中斷，但如果只有其中一條錯誤路徑會落盤，後端狀態就可能長時間停在錯的階段。這是設計可恢復系統時很典型的邊界案例。</p><a href="https://github.com/NousResearch/hermes-agent/commit/36d68bcb82ea4868afc0e6f8eeb803c213bfedcc" target="_blank" rel="noopener">查看來源（GitHub Commit）→</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · The Verge</div><h3 class="h5">The Verge 報導 Claude 開始直接連到 Spotify、Uber Eats 與 TurboTax，agent 更深入個人 app 工作流</h3><p class="mb-3">這則外部新聞很適合補上權限邊界的討論：當 agent 不是只回答問題，而是能碰到點餐、播放清單與報稅流程，工程分析就必須把 connector scope、使用者確認與行為稽核一起放進設計裡。</p><a href="https://www.theverge.com/ai-artificial-intelligence/917871/anthropic-claude-personal-app-connectors" target="_blank" rel="noopener">查看來源（The Verge）→</a></article></div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-04-25 English Selected News</h2>
+    <div class="row g-3">
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · OpenClaw Official Release</div><h3 class="h5">OpenClaw 2026.4.23 expands API-keyless image generation, forked context for sessions_spawn, and per-call generation timeouts</h3><p class="mb-3">This release is a compact teaching case for platform expansion beyond model swaps: OpenAI/OpenRouter image paths, child-session context inheritance, media-tool timeouts, and local-memory embedding limits all moved together, showing an agent platform evolving across multimodal IO, workflow control, and constrained-host tuning.</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.23" target="_blank" rel="noopener">Source (GitHub Release) →</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw caches plugin-discovery registration snapshots to reduce state drift during plugin loading</h3><p class="mb-3">This commit is a strong classroom example of plugin-system consistency: when providers, registries, and loaders all participate in discovery, each phase needs the same registration view or plugins can become discoverable without becoming reliably loadable.</p><a href="https://github.com/openclaw/openclaw/commit/0c46e8000e2b1d32d0d28c1fa63e25f09190a48f" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-23 · Hermes Agent Official Release</div><h3 class="h5">Hermes Agent v0.11.0 pushes platformization with a new Ink TUI, pluggable transports, native Bedrock, and a broader plugin surface</h3><p class="mb-3">The key teaching point is architectural refactoring rather than any single feature: interface, provider transport, inference paths, and plugin extension points were all reorganized together, making this a useful example of how a better product experience often rides on deeper systems redesign.</p><a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.23" target="_blank" rel="noopener">Source (GitHub Release) →</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent now persists incomplete snapshots on asyncio.CancelledError so the API server does not stay stuck in in_progress</h3><p class="mb-3">This is a clean teaching example of failure-path design: connection resets and request cancellations are both interruption paths, but if only one writes recovery state, the backend can remain stuck in the wrong phase. It is a practical case of why recoverable systems need symmetric error handling.</p><a href="https://github.com/NousResearch/hermes-agent/commit/36d68bcb82ea4868afc0e6f8eeb803c213bfedcc" target="_blank" rel="noopener">Source (GitHub Commit) →</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-24 · The Verge</div><h3 class="h5">The Verge reports that Claude is connecting directly to Spotify, Uber Eats, and TurboTax, pushing agents deeper into personal app workflows</h3><p class="mb-3">This external report is useful for discussing permission boundaries: once an agent is not just answering questions but touching food orders, playlists, and tax workflows, engineering analysis has to include connector scopes, user confirmation, and action auditability.</p><a href="https://www.theverge.com/ai-artificial-intelligence/917871/anthropic-claude-personal-app-connectors" target="_blank" rel="noopener">Source (The Verge) →</a></article></div>
+    </div>
+  </div>
+</section>
 
 <section class="mb-5">
   <div class="cardx p-4 p-lg-5">
