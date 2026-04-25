@@ -116,12 +116,12 @@
        </div>
      </div>
    </section>
-    <section id="news" class="mb-5">
+      <section id="news" class="mb-5">
       <div class="card p-4">
         <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
           <div>
             <h2 class="section-title h3 mb-1">最新消息重點</h2>
-            <p class="text-secondary mb-0">每天上午 7:00 更新；首頁只保留三則最適合拿來做課堂討論的摘要。今天建議先抓「多模態平台擴充」「plugin/快取一致性」與「取消時的狀態持久化」三個角度，再進入完整中英文 5 條。</p>
+            <p class="text-secondary mb-0">每天上午 7:00 更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓「Google Meet / realtime voice 整合」「announcement delivery target 邊界」與「cross-provider reasoning replay」三個角度，再進入完整中英文 5 條。</p>
           </div>
           <div class="d-flex gap-2 flex-wrap">
             <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -131,20 +131,20 @@
         <div class="row g-3">
   <div class="col-lg-4">
     <article class="mini-news">
-      <div class="news-date mb-2">2026-04-24 · OpenClaw 官方 Release</div>
-      <p>OpenClaw 2026.4.23 同步推進圖像生成、forked context 與生成 timeout，很適合帶學生看 agent 平台如何同時處理多模態、子任務上下文與資源限制。</p>
+      <div class="news-date mb-2">2026-04-25 · OpenClaw 官方 Release</div>
+      <p>OpenClaw 2026.4.24 把 Google Meet participant plugin、realtime voice consult 與 DeepSeek V4 Flash 預設放進同一版，適合課堂上一起討論多模態、會議插件與瀏覽器控制如何互相牽動。</p>
     </article>
   </div>
   <div class="col-lg-4">
     <article class="mini-news">
-      <div class="news-date mb-2">2026-04-24 · OpenClaw 官方 Commit</div>
-      <p>OpenClaw 把 plugin discovery registration snapshot 做快取，正好可拿來教外掛探索流程若缺少一致狀態視圖，為何會出現找到外掛卻載不穩的問題。</p>
+      <div class="news-date mb-2">2026-04-25 · OpenClaw 官方 Commit</div>
+      <p>OpenClaw 把沒有外部 route 的 subagent announce 留在 session 內，正好可拿來教「知道 session key」不等於「可以安全外送訊息」。</p>
     </article>
   </div>
   <div class="col-lg-4">
     <article class="mini-news">
-      <div class="news-date mb-2">2026-04-24 · Hermes Agent 官方 Commit</div>
-      <p>Hermes 在 CancelledError 也寫入不完整 snapshot，適合討論 API 中斷時若恢復狀態不對稱，後端為何容易卡在 in_progress。</p>
+      <div class="news-date mb-2">2026-04-25 · Hermes Agent 官方 Commit</div>
+      <p>Hermes 為 DeepSeek／Kimi tool-call replay 補上空 reasoning_content，適合討論 cross-provider 歷史欄位若不對齊，為何請求會在回放時直接失敗。</p>
     </article>
   </div>
 </div>
