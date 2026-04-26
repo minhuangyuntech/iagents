@@ -36,6 +36,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-27.html — 2026-04-27 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-27.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-26.html — 2026-04-26 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-26.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-25.html — 2026-04-25 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-25.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-24.html — 2026-04-24 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-24.html">開啟</a></li>
@@ -54,6 +55,32 @@
     </section>
 
 
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-04-27 中文精選</h2>
+    <div class="row g-3">
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-26 · OpenClaw 官方 Release</div><h3 class="h5">OpenClaw 2026.4.25-beta.4 把 TTS 升級、冷持久化 plugin registry 與更完整 telemetry 一起推進</h3><p class="mb-3">這版很適合工程學生從三個層次看平台演進：語音輸出不再只是單一 provider，而是牽動 chat 級自動朗讀、per-agent / per-account 覆寫；plugin 啟動改走冷持久化 registry，讓安裝與修補更可重現；而更細的 telemetry 也讓模型、工具與記憶壓力更容易被觀測。</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.25-beta.4" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）→</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-26 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 在容器內自動停用 Bonjour advertising，避免把本機探索假設錯套到 Docker 環境</h3><p class="mb-3">這筆 commit 適合拿來談部署邊界：服務探索在本機桌面與容器裡的網路前提不同，如果 agent 平台把 mDNS 廣播視為永遠可用，就可能在教室伺服器或 CI 容器中留下誤導性的可見性與診斷結果。</p><a href="https://github.com/openclaw/openclaw/commit/989cfd1e33dbca9907d5b940445a7e61cadc4545" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）→</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-26 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 補齊 Slack rich_text 引文、清單與 link unfurl 預覽擷取，讓代理看到比較完整的原始上下文</h3><p class="mb-3">這則更新很適合課堂上談訊息前處理：若平台只讀 plain text，轉傳內容、引用段落與附件預覽就會在進入模型前先遺失。這不是小 UI 問題，而是會直接影響代理能否正確理解需求與證據來源。</p><a href="https://github.com/NousResearch/hermes-agent/commit/6087e04043c491c0b66dda1b287cc72d3a5492c7" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）→</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-26 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 修補 cron 對 Home Assistant toolset 的雙重關閉條件，讓有 HASS_TOKEN 的排程工作恢復可用</h3><p class="mb-3">這是很好的 capability scoping 教材：排程系統要尊重平台工具設定，但也不能把已明確啟用、而且有 runtime token 檢查的工具再錯關一次。否則看似安全的預設，反而會讓自動化工作在正式環境靜默失能。</p><a href="https://github.com/NousResearch/hermes-agent/commit/4921b269450b9c1648057559224d465fb1c58d62" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）→</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-23 · OpenAI 官方 Academy</div><h3 class="h5">OpenAI 整理出 Codex 在工作場合的 10 種常見用法，從重複任務自動化一路延伸到跨檔案交付</h3><p class="mb-3">這條官方教材很適合工程學生把「coding agent 能做什麼」拆成可驗證工作流：不要只問模型會不會寫程式，而要看它是否能把輸入、檔案、工具與交付物串成穩定流程，這也能和今天的 OpenClaw / Hermes 更新互相對照。</p><a href="https://openai.com/academy/top-10-use-cases-codex-for-work" target="_blank" rel="noopener">查看來源（OpenAI 官方 Academy）→</a></article></div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-04-27 English Selected News</h2>
+    <div class="row g-3">
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-26 · OpenClaw Official Release</div><h3 class="h5">OpenClaw 2026.4.25-beta.4 bundles a broad TTS upgrade, a cold persisted plugin registry, and deeper telemetry coverage</h3><p class="mb-3">This release is a useful classroom case on platform evolution in layers: voice output now spans chat-scoped auto-TTS and per-agent overrides, plugin startup becomes more deterministic through a persisted registry, and telemetry expands so model calls, tool loops, and memory pressure are easier to observe together.</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.25-beta.4" target="_blank" rel="noopener">Source（OpenClaw Official Release） →</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-26 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw now auto-disables Bonjour advertising in containers so desktop discovery assumptions do not leak into Docker deployments</h3><p class="mb-3">This commit is a compact teaching example for deployment boundaries: service discovery has different network assumptions on a laptop versus inside a container, and agent systems should not report misleading reachability just because mDNS works in one environment.</p><a href="https://github.com/openclaw/openclaw/commit/989cfd1e33dbca9907d5b940445a7e61cadc4545" target="_blank" rel="noopener">Source（OpenClaw Official Commit） →</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-26 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent extracts Slack rich_text quotes, lists, and link unfurl previews so the agent receives fuller inbound context</h3><p class="mb-3">This update is a clean lesson in message preprocessing: if a gateway only reads plain text, forwarded content, quoted blocks, and attachment previews can disappear before the model ever sees them. That is not just a UI quirk — it changes what evidence the agent can reason over.</p><a href="https://github.com/NousResearch/hermes-agent/commit/6087e04043c491c0b66dda1b287cc72d3a5492c7" target="_blank" rel="noopener">Source（Hermes Agent Official Commit） →</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-26 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent fixes cron so Home Assistant tools remain available when HASS_TOKEN is explicitly configured</h3><p class="mb-3">This is a strong teaching case for capability scoping: scheduled jobs should honor platform tool settings, but they also should not silently disable a toolset that the operator has explicitly opted into and that already has runtime gating.</p><a href="https://github.com/NousResearch/hermes-agent/commit/4921b269450b9c1648057559224d465fb1c58d62" target="_blank" rel="noopener">Source（Hermes Agent Official Commit） →</a></article></div>
+      <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-23 · OpenAI Academy</div><h3 class="h5">OpenAI maps ten practical Codex use cases at work, from repetitive-task automation to multi-file deliverables</h3><p class="mb-3">This official guide is useful for engineering students because it turns the vague question “what can a coding agent do?” into concrete workflow categories. It pairs well with today’s OpenClaw and Hermes updates because all three point toward agents being evaluated as tool-and-delivery systems, not just chat models.</p><a href="https://openai.com/academy/top-10-use-cases-codex-for-work" target="_blank" rel="noopener">Source（OpenAI Academy） →</a></article></div>
+    </div>
+  </div>
+</section>
 
 <section class="mb-5">
   <div class="cardx p-4 p-lg-5">
