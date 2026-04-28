@@ -36,6 +36,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-29.html — 2026-04-29 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-29.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-28.html — 2026-04-28 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-28.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-27.html — 2026-04-27 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-27.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-26.html — 2026-04-26 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-04-26.html">開啟</a></li>
@@ -55,6 +56,34 @@
       </div>
     </section>
 
+
+
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-04-29 中文精選</h2>
+    <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-28 · OpenClaw 官方 Release</div><h3 class="h5">OpenClaw 2026.4.26 把瀏覽器即時語音、穩定模型來源規劃與 Cerebras provider 一次拉進主線</h3><p class="mb-3">這版最適合工程學生拆成三個平台層：瀏覽器即時語音不再只是一段前端效果，而是牽動 ephemeral token、Gateway relay 與後端 voice plugin；模型清單改走明確 authority order，方便比較設定、安裝清單與執行期 fallback；provider 資訊再往 plugin manifest 收斂，也讓核心路由更容易維護。</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.26" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-28 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 為 Docker 加上 OPENCLAW_SKIP_ONBOARDING，讓容器教學與自動部署少一層互動阻塞</h3><p class="mb-3">這筆 commit 很適合拿來談部署可重現性：當 agent 平台要進容器、課堂機房或 CI，若啟動流程還要求人工 onboarding，就很難形成穩定的驗證腳本。把 onboarding 明確變成可跳過的環境參數，代表系統開始把互動式初始設定和可自動化執行的 runtime 分開。</p><a href="https://github.com/openclaw/openclaw/commit/490e6d6dc590515135abe2f318283a0e4e8c6546" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-28 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 強化 TUI gateway 的 stdio transport，補住 half-closed pipe 與 SIGTERM race</h3><p class="mb-3">這是一個很好的系統可靠性教材：代理介面若只在「正常結束」時穩定，一碰到半關閉管線或關閉訊號競態就可能留下卡死或殘缺輸出。工程上真正難的是把退出路徑也做成可預期的狀態轉換。</p><a href="https://github.com/NousResearch/hermes-agent/commit/1e326c686df8a7304d5018f846246b3126dc5cfd" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-28 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 讓 TUI 可選擇自動接回最近 session，把長流程操作從「重新開局」改成「延續上下文」</h3><p class="mb-3">這則更新適合課堂上談人機協作的工作流設計：當使用者回到工具時，若每次都得重新找 session、重新確認上下文，長任務就會被切碎。auto-resume 把 UI 決策和 session 狀態管理綁在一起，是很實用的 workflow continuity 範例。</p><a href="https://github.com/NousResearch/hermes-agent/commit/87d3fa6f1c73ccb60b91e9e2c405d5212244bce9" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-28 · The Verge</div><h3 class="h5">The Verge 報導 Claude 已可直接連到 Photoshop、Blender 與 Ableton，agent 開始進入創作工具鏈</h3><p class="mb-3">這則外部消息很適合拿來補「工具接面」視角：當 agent 不只回答問題，而是直接碰到設計、3D 與音樂工作軟體，工程討論就要把 connector scope、操作確認、檔案版本與回退流程一起放進架構比較。</p><a href="https://www.theverge.com/ai-artificial-intelligence/919648/anthropic-claude-creative-connectors-adobe-blender" target="_blank" rel="noopener">查看來源（The Verge）→</a></article></div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-04-29 English Selected News</h2>
+    <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-28 · OpenClaw Official Release</div><h3 class="h5">OpenClaw 2026.4.26 brings browser realtime voice, a stricter model-source authority order, and bundled Cerebras support into the mainline release</h3><p class="mb-3">This release is useful for engineering students because it ties together three platform layers: browser realtime voice now depends on ephemeral tokens and gateway relays rather than a purely local UI trick; model listing now has an explicit authority order across config, manifests, and runtime fallback; and provider metadata keeps moving into plugin manifests so the core router carries less hidden policy.</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.26" target="_blank" rel="noopener">Source（OpenClaw Official Release） →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-28 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw adds OPENCLAW_SKIP_ONBOARDING for Docker so container setups can start without an interactive onboarding stop</h3><p class="mb-3">This commit is a compact teaching case for deployment reproducibility: if an agent platform still requires interactive onboarding during container startup, it is hard to build reliable classroom demos, CI smoke tests, or lab-server rollouts. Turning that step into an explicit environment flag cleanly separates setup-time interaction from runtime automation.</p><a href="https://github.com/openclaw/openclaw/commit/490e6d6dc590515135abe2f318283a0e4e8c6546" target="_blank" rel="noopener">Source（OpenClaw Official Commit） →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-28 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent hardens the TUI gateway stdio transport against half-closed pipes and SIGTERM races</h3><p class="mb-3">This is a strong classroom example of reliability at shutdown boundaries: an agent interface that only behaves in the happy path can still leave hung sessions or broken output once pipes close unevenly or termination signals arrive at the wrong moment. Robust systems work is often about making the exit path predictable too.</p><a href="https://github.com/NousResearch/hermes-agent/commit/1e326c686df8a7304d5018f846246b3126dc5cfd" target="_blank" rel="noopener">Source（Hermes Agent Official Commit） →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-28 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent adds opt-in auto-resume for the most recent TUI session so long tasks restart from context instead of from zero</h3><p class="mb-3">This update is a clean teaching case for workflow continuity: when users return to an agent tool, forcing them to rediscover the right session every time increases coordination cost and error risk. Auto-resume shows how UI defaults and session-state design shape the practical usability of long-running agent work.</p><a href="https://github.com/NousResearch/hermes-agent/commit/87d3fa6f1c73ccb60b91e9e2c405d5212244bce9" target="_blank" rel="noopener">Source（Hermes Agent Official Commit） →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-04-28 · The Verge</div><h3 class="h5">The Verge reports that Claude can now plug directly into Photoshop, Blender, and Ableton, pushing agents deeper into creative toolchains</h3><p class="mb-3">This external report is useful for discussing tool-interface boundaries: once an agent is not just answering questions but acting inside design, 3D, and audio software, engineering analysis has to include connector scope, confirmation flow, file versioning, and rollback strategy.</p><a href="https://www.theverge.com/ai-artificial-intelligence/919648/anthropic-claude-creative-connectors-adobe-blender" target="_blank" rel="noopener">Source（The Verge） →</a></article></div>
+    </div>
+  </div>
+</section>
 
 
 <section class="mb-5">
