@@ -116,12 +116,12 @@
        </div>
      </div>
    </section>
-     <section id="news" class="mb-5">
+         <section id="news" class="mb-5">
       <div class="card p-4">
         <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
           <div>
             <h2 class="section-title h3 mb-1">最新消息重點</h2>
-            <p class="text-secondary mb-0">每天上午 7:00 更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓「agent 平台如何把工具接管與 provider 打包成同一版」「UI 狀態持久化為什麼會影響人機協作可靠性」「AI 算力瓶頸如何反過來限制 agent 佈署」三個角度，再進入完整中英文 5 條。</p>
+            <p class="text-secondary mb-0">每天上午 7:00 更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓「互動 steering 怎麼改變 agent 控制流」「自我維護技能庫會帶來哪些治理問題」「agent 一旦碰到付款流程要補哪些授權與風險邊界」三個角度，再進入完整中英文 5 條。</p>
           </div>
           <div class="d-flex gap-2 flex-wrap">
             <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -131,20 +131,20 @@
         <div class="row g-3">
   <div class="col-lg-4">
     <article class="mini-news">
-      <div class="news-date mb-2">2026-04-30 · OpenClaw 官方 Release</div>
-      <p>這版最適合工程學生拆成「工具接管、provider 佈署、訊息通道」三層：Codex Computer Use 不只多了安裝與狀態指令，還補了 fail-closed MCP 檢查；DeepInfra 讓模型、TTS、embeddings 與媒體生成一起進入 provider 清單；QQBot / Yuanbao 則把 agent 從單一 CLI 拉向更多實際通道。</p>
+      <div class="news-date mb-2">2026-05-01 · OpenClaw 官方 Release</div>
+      <p>這版很適合工程學生拆成四層：訊息佇列開始預設支援 active-run steering，memory 不再只記片段而是朝可追溯人物知識走，NVIDIA 與 manifest-backed model/auth 路徑擴大供應商覆蓋，Slack／Telegram／Discord 等通道則持續補齊可靠性。看 release 時可把「互動控制、記憶、provider、channel」放在同一張系統圖上。</p>
     </article>
   </div>
   <div class="col-lg-4">
     <article class="mini-news">
-      <div class="news-date mb-2">2026-04-30 · Hermes Agent 官方 Commit</div>
-      <p>這則更新適合課堂上談 UI 狀態管理：如果 slash command 已把細節模式改成全域設定，重開後卻又回到內建區段預設，使用者就會以為系統「記住了模式、卻沒記住內容」。這是很典型的設定同步與可預期性問題。</p>
+      <div class="news-date mb-2">2026-05-01 · Hermes Agent 官方 Release</div>
+      <p>這次 release 最值得課堂討論的是「agent 開始維護自己的 agent 工具鏈」：Curator 會週期性評分與整理技能庫，self-improvement loop 改成更偏 rubric 與 active-update，LM Studio 也升格為一級 provider。對工程學生而言，這是觀察自動化維護、工具治理與多供應商推論整合的好案例。</p>
     </article>
   </div>
   <div class="col-lg-4">
     <article class="mini-news">
-      <div class="news-date mb-2">2026-04-30 · TechCrunch</div>
-      <p>這則外部消息很適合補上基礎設施視角：agent 工作流看起來像 prompt 與 tool 的問題，但一旦模型供給受限，推論延遲、部署節奏、地區可用性與成本控制都會被反向影響。做專題時可把「功能設計」和「算力供應」一起討論。</p>
+      <div class="news-date mb-2">2026-05-01 · TechCrunch</div>
+      <p>這則外部消息很適合補上交易與權限邊界：當 agent 不只是找資料或呼叫工具，而是能碰到付款與購物流程，系統設計就得把身份確認、授權範圍、風險控管、交易回報與人工覆核一起納入。做專題時可把「工具可用」和「可安全成交」分開討論。</p>
     </article>
   </div>
 </div>
