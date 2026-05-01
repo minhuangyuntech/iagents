@@ -123,7 +123,7 @@
       <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center">
         <div>
           <h2 class="section-title h3 mb-2">本週讀新聞時可直接套用的比較框架</h2>
-          <p class="text-secondary mb-0">看到 release、commit 或外部報導時，先標記它主要改的是哪一層：互動控制、runtime 依賴、技能治理、協作流程，還是交易授權。今天特別適合再補三欄：<strong>持久化載體</strong>（狀態寫進 config、SQLite、memory 還是 channel metadata）、<strong>驗證訊號</strong>（你要看哪個 log / dashboard / workflow 狀態）、<strong>風險邊界</strong>（問題會停在本機、gateway、provider 還是付款流程）。這樣比較容易把零散消息整理成期中報告或專題提案。</p>
+          <p class="text-secondary mb-0">看到 release、commit 或外部報導時，先標記它主要改的是哪一層：系統總覽、授權模型、背景自治、provider／channel，還是文件型 workflow。今天特別適合再補三欄：<strong>持久化載體</strong>（狀態寫進 config、SQLite、memory 還是 channel metadata）、<strong>驗證訊號</strong>（你要看哪個 log / dashboard / preview 狀態）、<strong>責任邊界</strong>（問題會停在本機、gateway、provider 還是人工審批流程）。這樣比較容易把零散消息整理成期中報告或專題提案。</p>
         </div>
         <div class="d-flex gap-2 flex-wrap">
           <a class="btn btn-outline-secondary" href="news.html">配合今日新聞練習</a>
@@ -133,6 +133,17 @@
     </div>
   </section>
 
+
+  <section class="mb-5">
+    <div class="soft-card p-4">
+      <h2 class="section-title h4 mb-3">讀 release / commit 時先補這張三欄筆記</h2>
+      <div class="row g-3">
+        <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h6 fw-bold">1. 受影響邊界</h3><p class="mb-0">先判斷它改的是互動控制、授權、背景工作、provider、還是文件／UI workflow。</p></div></div>
+        <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h6 fw-bold">2. 狀態放哪裡</h3><p class="mb-0">寫下狀態落在 config、資料庫、memory、channel metadata 還是前端畫面，避免只看功能名稱。</p></div></div>
+        <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h6 fw-bold">3. 怎麼驗證</h3><p class="mb-0">至少補 1 個 log、preview、權限設定、版本差異或 dashboard，才能把新聞改寫成工程題目。</p></div></div>
+      </div>
+    </div>
+  </section>
   <section class="mb-5">
     <div class="soft-card p-4 p-lg-5">
       <h2 class="section-title h3 mb-4">建議學習順序</h2>
