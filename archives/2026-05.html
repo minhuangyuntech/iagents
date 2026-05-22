@@ -36,12 +36,39 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05-23.html — 2026-05-23 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-05-23.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05-22.html — 2026-05-22 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-05-22.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05-02.html — 2026-05-02 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-05-02.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05-01.html — 2026-05-01 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-05-01.html">開啟</a></li>
         </ul>
       </div>
     </section>
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-05-23 中文精選</h2>
+    <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-23 · OpenClaw 官方 Release</div><h3 class="h5">OpenClaw 2026.5.20 把執行核准、Discord 語音跟隨、Policy 外掛與多供應商治理收進同一版</h3><p class="mb-3">這條官方 release 適合拿來畫 agent 平台總覽：同一版同時碰到 approvals、realtime voice、policy 檢查與 provider 路由，學生可直接拆成互動層、治理層與模型供應商層三條線。</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.20" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-23 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 改用檔案系統安全的 trash 流程刪除 agent，讓「刪除」變成可討論的資料生命週期問題</h3><p class="mb-3">這筆 commit 很適合提醒學生：agent 系統不只要會建立狀態，也要安全地移除狀態。討論時可把刪除流程拆成 recoverability、權限邊界、誤刪風險與稽核軌跡。</p><a href="https://github.com/openclaw/openclaw/commit/951bbe67b08203e51b89f993acb6ff9f53b7c061" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-23 · Hermes Agent 官方 Release</div><h3 class="h5">Hermes Agent v0.14.0 把可攜安裝、本地 OpenAI 相容代理、多工具面與平台穩定性整理成基礎版面</h3><p class="mb-3">雖然不是今天發版，但它仍是目前最新的官方 release，適合先當成結構底圖：從安裝與 gateway，到 browser、MCP、Google Workspace、kanban 與 cron，已經是可拿來做課堂實作的 agent 基礎設施。</p><a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.16" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Release）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-23 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Agent 為 MiniMax OAuth 改成每次請求都刷新短效 access token，讓供應商授權生命週期更可控</h3><p class="mb-3">這筆 commit 很適合拿來談 provider 整合的真實摩擦：短效 token 若不跟著請求節奏刷新，agent 可能在長流程中途失效。課堂上可延伸比較 refresh 時機、錯誤回報與降級策略。</p><a href="https://github.com/NousResearch/hermes-agent/commit/a84cec61cad90f97f8eb142ecaf6830dac796c52" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-23 · InfoQ</div><h3 class="h5">InfoQ 整理 Cloudflare 六層 agent infrastructure stack，適合對照 compute、orchestration、memory 與 browsing</h3><p class="mb-3">這則外部報導很適合補平台視角：Cloudflare 把 compute、workflow、memory、browser run 與 commerce 組成同一棧，學生可直接拿來對照 OpenClaw 與 Hermes 各自覆蓋到哪些層。</p><a href="https://www.infoq.com/news/2026/05/cloudflare-agent-platform-stack/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener">查看來源（InfoQ）→</a></article></div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-05-23 English Selected News</h2>
+    <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-23 · OpenClaw Official Release</div><h3 class="h5">OpenClaw 2026.5.20 packages exec approvals, Discord voice-follow behavior, a policy plugin, and broader provider governance in one release</h3><p class="mb-3">This release is the clearest official systems map for class today. One version touches approval flow, realtime voice sessions, policy-backed channel checks, and provider routing, so students can separate interaction surfaces, governance controls, and model-plumbing layers.</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.20" target="_blank" rel="noopener">Source (OpenClaw Official Release) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-23 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw switches agent deletion to an fs-safe trash path, turning “delete” into a data-lifecycle topic</h3><p class="mb-3">This commit is a good prompt for teaching that agent systems must remove state safely as well as create it. Students can break the change into recoverability, permission boundaries, accidental-deletion risk, and auditability.</p><a href="https://github.com/openclaw/openclaw/commit/951bbe67b08203e51b89f993acb6ff9f53b7c061" target="_blank" rel="noopener">Source (OpenClaw Official Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-23 · Hermes Agent Official Release</div><h3 class="h5">Hermes Agent v0.14.0 packages portable install, a local OpenAI-compatible proxy, broader tool surfaces, and platform reliability into a foundation release</h3><p class="mb-3">It is still the latest official release and works well as the baseline map for students. From install and gateway behavior to browser, MCP, Google Workspace, kanban, and cron, the release reads like an agent infrastructure stack instead of a single-feature drop.</p><a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.16" target="_blank" rel="noopener">Source (Hermes Agent Official Release) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-23 · Hermes Agent Official Commit</div><h3 class="h5">Hermes Agent refreshes short-lived MiniMax OAuth access tokens per request, making provider auth lifecycle easier to reason about</h3><p class="mb-3">This commit is a strong classroom example of the friction inside provider integrations. If short-lived tokens are not refreshed at the right boundary, long-running agent flows fail mid-task, so students can discuss refresh timing, error reporting, and degraded behavior.</p><a href="https://github.com/NousResearch/hermes-agent/commit/a84cec61cad90f97f8eb142ecaf6830dac796c52" target="_blank" rel="noopener">Source (Hermes Agent Official Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-23 · InfoQ</div><h3 class="h5">InfoQ reports Cloudflare’s six-layer agent infrastructure stack, giving students a clean compare-and-contrast map for compute, orchestration, memory, and browsing</h3><p class="mb-3">This external item adds the platform-comparison angle. Cloudflare’s stack groups compute, workflows, memory, browser execution, and commerce in one model, which makes it easier for students to compare how OpenClaw and Hermes cover different infrastructure layers.</p><a href="https://www.infoq.com/news/2026/05/cloudflare-agent-platform-stack/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener">Source (InfoQ) →</a></article></div>
+    </div>
+  </div>
+</section>
 
 <section class="mb-5">
   <div class="cardx p-4 p-lg-5">
@@ -68,6 +95,7 @@
     </div>
   </div>
 </section>
+
 <section class="mb-5">
   <div class="cardx p-4 p-lg-5">
     <h2 class="section-title h3 mb-4">2026-05-02 中文精選</h2>
@@ -93,6 +121,7 @@
     </div>
   </div>
 </section>
+
 <section class="mb-5">
   <div class="cardx p-4 p-lg-5">
     <h2 class="section-title h3 mb-4">2026-05-01 中文精選</h2>
