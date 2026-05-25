@@ -36,6 +36,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
                 <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05-26.html — 2026-05-26 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-05-26.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05-25.html — 2026-05-25 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-05-25.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05-24.html — 2026-05-24 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-05-24.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05-23.html — 2026-05-23 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-05-23.html">開啟</a></li>
@@ -47,6 +48,32 @@
     </section>
 
 
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-05-26 中文精選</h2>
+    <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-26 · OpenClaw 官方 Release</div><h3 class="h5">OpenClaw 2026.5.24-beta.2 把 thumb approval、熱路徑快取與 meeting-notes 外掛放進同一版</h3><p class="mb-3">這版最適合拿來畫平台控制面：iMessage 可直接用 👍/👎 回覆核准，gateway 把 channel catalog、plugin metadata 與 session-store 讀取改成 process-local 快取，meeting-notes 又從核心包拆成外掛與來源契約。工程學生可把互動控制、啟動效能與資料進站一起讀。</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.24-beta.2" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-26 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 降低 runtime metadata hot path churn，提醒學生快取與觀測訊號要一起設計</h3><p class="mb-3">這筆 commit 直接凍結並重用 plugin metadata snapshot、package signature 與 alias map，還把 Discord realtime turn retention 延到真正開始音訊時才記錄。課堂上可追問：效能優化後，哪些 log 與 trace 仍要保留，才不會把除錯能力一起削掉。</p><a href="https://github.com/openclaw/openclaw/commit/1d21224de3f6959bc48ae4b2393e688182d5e47e" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-26 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes 修補 /model --global 對平面字串設定的寫回失敗，把 schema 演進變成可見的教材</h3><p class="mb-3">當 config.yaml 把 model 寫成單一字串時，舊流程會在 gateway 靜默炸掉。這次修補先把 scalar model coercion 成 dict，再寫回 default 值並補 regression test。學生可把它當成設定格式升級、錯誤訊息可見性與持久化安全的範例。</p><a href="https://github.com/NousResearch/hermes-agent/commit/2c6bbaf3529fbd7dca4330d53b5c819f3d223ba5" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-26 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes 讓外部 secrets 每個 HERMES_HOME 只套用一次，適合拿來談啟動冪等性</h3><p class="mb-3">load_hermes_dotenv() 過去會在多個入口重複觸發 Bitwarden 與 ASCII sanitization，讓 CLI 啟動時狀態列重複出現。新修補用 process-level guard 避免同一個 home_path 被反覆套用，剛好可拿來比較 secrets 載入、啟動噪音與長流程 refresh 的設計。</p><a href="https://github.com/NousResearch/hermes-agent/commit/de76f4dbcfac97a4ed3398fc908c4bd7ab8bde79" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-26 · TechCrunch</div><h3 class="h5">TechCrunch 用 Google 的案例提醒：AI security 是持續營運，不是發版後再補的選修題</h3><p class="mb-3">這則外部報導適合和今天兩個專案的官方修補一起讀：快取、設定持久化、secrets、未授權資產暴露與環境變數邊界，都不是單次修正就結束。工程學生可把它轉成日常檢查表：哪些 log、allowlist、denylist 與回歸測試要固定跑。</p><a href="https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/" target="_blank" rel="noopener">查看來源（TechCrunch）→</a></article></div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-05-26 English Selected News</h2>
+    <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-26 · OpenClaw Official Release</div><h3 class="h5">OpenClaw 2026.5.24-beta.2 bundles thumb approvals, hot-path caching, and a source-only meeting-notes plugin</h3><p class="mb-3">This release is a strong systems map for class: iMessage approvals now resolve directly from 👍/👎 reactions, gateway hot paths reuse process-local metadata and session-store reads, and meeting notes move into a source-provider plugin contract. Students can read interaction control, startup performance, and ingestion as one platform story.</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.24-beta.2" target="_blank" rel="noopener">Source (OpenClaw Official Release) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-26 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw reduces runtime metadata hot-path churn, making cache design and observability a paired lesson</h3><p class="mb-3">The commit memoizes plugin metadata snapshots, package signatures, and alias maps, while deferring Discord realtime turn retention until audio actually starts. It is a good teaching case for asking how to reduce filesystem churn without erasing the diagnostics needed for debugging live systems.</p><a href="https://github.com/openclaw/openclaw/commit/1d21224de3f6959bc48ae4b2393e688182d5e47e" target="_blank" rel="noopener">Source (OpenClaw Official Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-26 · Hermes Agent Official Commit</div><h3 class="h5">Hermes fixes /model --global persistence for flat-string configs, turning schema evolution into a visible teaching case</h3><p class="mb-3">When config.yaml used a flat model string, the gateway path silently crashed before persisting /model --global. The fix coerces scalar model settings into a dict before mutation and adds regression coverage, making it a clean example of config-schema migration, user-facing errors, and safe persistence.</p><a href="https://github.com/NousResearch/hermes-agent/commit/2c6bbaf3529fbd7dca4330d53b5c819f3d223ba5" target="_blank" rel="noopener">Source (Hermes Agent Official Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-26 · Hermes Agent Official Commit</div><h3 class="h5">Hermes applies external secrets only once per HERMES_HOME, making startup idempotence easier to teach</h3><p class="mb-3">Multiple Hermes entrypoints used to re-run external secret loading, Bitwarden fetch logic, and status printing during one startup. The new process-level guard makes secret application idempotent per HERMES_HOME, which helps students discuss startup noise, cached secret refresh, and boundary-aware initialization.</p><a href="https://github.com/NousResearch/hermes-agent/commit/de76f4dbcfac97a4ed3398fc908c4bd7ab8bde79" target="_blank" rel="noopener">Source (Hermes Agent Official Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-26 · TechCrunch</div><h3 class="h5">TechCrunch uses Google’s example to argue that AI security is ongoing operations, not a post-release afterthought</h3><p class="mb-3">This external item pairs well with today’s official fixes because caching, config persistence, secrets, asset exposure, and environment-variable boundaries all need continuous hardening. It pushes students to turn news into an operations checklist: which logs, allowlists, denylists, and regression tests must run every time.</p><a href="https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/" target="_blank" rel="noopener">Source (TechCrunch) →</a></article></div>
+    </div>
+  </div>
+</section>
 
 <section class="mb-5">
   <div class="cardx p-4 p-lg-5">
