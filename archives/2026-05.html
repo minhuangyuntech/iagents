@@ -36,6 +36,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
                 <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05-27.html — 2026-05-27 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-05-27.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05-26.html — 2026-05-26 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-05-26.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05-25.html — 2026-05-25 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-05-25.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05-24.html — 2026-05-24 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-05-24.html">開啟</a></li>
@@ -48,6 +49,31 @@
     </section>
 
 
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-05-27 中文精選</h2>
+    <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-27 · OpenClaw 官方 Release</div><h3 class="h5">OpenClaw 2026.5.26-beta.1 把熱路徑快取、Talk 控制與可觀測性一起推進</h3><p class="mb-3">官方 release 把可見回覆與後續慢工作拆開，重用 command／model／plugin metadata 的熱路徑快取，並讓 Talk runs 能被檢視、steer、取消或接續。很適合工程學生把互動控制、啟動路徑與 telemetry 放在同一張系統圖上。</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.26-beta.1" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-27 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 為 Telegram Docker E2E 補上有界 npm 安裝，提醒部署腳本也要可預測</h3><p class="mb-3">這筆 commit 把 Telegram live／RTT Docker 腳本中的 npm 安裝流程加上邊界與對應測試，避免套件準備在教室機房、CI 或長流程中無限制拖長。課堂上可拿來比較 package preparation、timeout 設計與失敗回報。</p><a href="https://github.com/openclaw/openclaw/commit/130464e797315c8f4788bceb2812e0195dbd80dd" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-27 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 改用 corepack pnpm 進行 mac app 封裝，讓打包版本更可重現</h3><p class="mb-3">mac app 封裝腳本與測試同步改成走 corepack pnpm，重點不只是「能不能打包」，而是封裝鏈版本要可釘住、可重播。對工程學生來說，這是部署工具鏈與發版一致性的直接案例。</p><a href="https://github.com/openclaw/openclaw/commit/728b61a0a4ca87aabd16e8ac31a0bee71079bd97" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-27 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes 讓 /reload-mcp 直接刷新快取中的 agent tools，不必再靠 /new 才看見新工具</h3><p class="mb-3">gateway 重新連線 MCP 後，現在會把快取中的 AIAgent tools 與 valid_tool_names 一起更新，且保留原本的 enabled／disabled toolset 範圍。這條很適合拿來教工具探索快取、session 延續性與顯式 reload 邊界。</p><a href="https://github.com/NousResearch/hermes-agent/commit/f05a47309ec8842387e88eab856df55c6910b57b" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）→</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-27 · TechCrunch</div><h3 class="h5">TechCrunch：OpenRouter 一年內估值翻倍到 13 億美元，顯示多模型路由基礎設施正被單獨定價</h3><p class="mb-3">報導指出 OpenRouter 完成 1.13 億美元 B 輪，且六個月內使用量成長 5 倍。這對工程學生的重點不是募資本身，而是模型路由、API 正規化與多供應商切換，已經被視為獨立的 LLM 基礎設施層。</p><a href="https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/" target="_blank" rel="noopener">查看來源（TechCrunch）→</a></article></div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-05-27 English Selected News</h2>
+    <div class="row g-3">
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-27 · OpenClaw Official Release</div><h3 class="h5">OpenClaw 2026.5.26-beta.1 advances hot-path caching, Talk control, and observability together</h3><p class="mb-3">The release separates visible reply delivery from slower follow-up work, reuses command/model/plugin metadata on hot paths, and makes Talk runs inspectable, steerable, cancellable, and follow-up friendly. It is a strong systems map for teaching interaction control, startup paths, and telemetry in one pass.</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.26-beta.1" target="_blank" rel="noopener">Source (OpenClaw Official Release) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-27 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw bounds Telegram Docker E2E npm installs, making deployment scripts more predictable to teach</h3><p class="mb-3">This commit adds bounded npm-install behavior and matching tests for the Telegram live/RTT Docker scripts so package preparation does not stretch unpredictably in classrooms, CI, or long-running flows. It is a clean prompt for discussing package prep, timeout policy, and failure reporting.</p><a href="https://github.com/openclaw/openclaw/commit/130464e797315c8f4788bceb2812e0195dbd80dd" target="_blank" rel="noopener">Source (OpenClaw Official Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-27 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw switches mac app packaging to corepack pnpm so the packaging toolchain is easier to reproduce</h3><p class="mb-3">The mac app packaging script and its tests now go through corepack pnpm, which turns packaging from a one-off shell step into a version-pinned release pipeline. For engineering students, this is a direct lesson in packaging reproducibility and release consistency.</p><a href="https://github.com/openclaw/openclaw/commit/728b61a0a4ca87aabd16e8ac31a0bee71079bd97" target="_blank" rel="noopener">Source (OpenClaw Official Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-27 · Hermes Agent Official Commit</div><h3 class="h5">Hermes makes /reload-mcp refresh cached agent tools immediately instead of requiring /new</h3><p class="mb-3">After reconnecting MCP servers, the gateway now refreshes cached AIAgent tool lists and valid tool names while preserving each agent’s enabled/disabled toolset scope. That makes it a useful teaching case for tool-discovery caches, session continuity, and explicit reload boundaries.</p><a href="https://github.com/NousResearch/hermes-agent/commit/f05a47309ec8842387e88eab856df55c6910b57b" target="_blank" rel="noopener">Source (Hermes Agent Official Commit) →</a></article></div>
+          <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-05-27 · TechCrunch</div><h3 class="h5">TechCrunch says OpenRouter’s $1.3B valuation shows multi-model routing infrastructure is being priced as its own layer</h3><p class="mb-3">The report says OpenRouter raised a $113M Series B and grew usage 5x in six months. The teaching value is not the funding headline alone, but the idea that routing, API normalization, and provider switching are now treated as standalone LLM infrastructure.</p><a href="https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/" target="_blank" rel="noopener">Source (TechCrunch) →</a></article></div>
+    </div>
+  </div>
+</section>
 
 <section class="mb-5">
   <div class="cardx p-4 p-lg-5">
