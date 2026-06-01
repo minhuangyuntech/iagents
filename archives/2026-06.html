@@ -3,91 +3,70 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="OpenClaw 與 Hermes Agent 的每日新聞彙整頁，提供精選中英文消息與新聞檔案列表入口。">
-  <title>每日新聞彙整 | iAgents 中文學習站</title>
+  <meta name="description" content="2026 年 6 月 iAgents 新聞與舊聞 HTML 檔案，整理 OpenClaw 與 Hermes Agent 的精選中英文消息。">
+  <title>2026-06 新聞檔案 | iAgents 中文學習站</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <style>
     body { background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%); color:#1f2937; }
-    .hero { background: linear-gradient(135deg, #0d6efd, #6610f2); color:#fff; border-radius:1.5rem; box-shadow:0 1rem 3rem rgba(13,110,253,.2); }
-    .news-item,.cardx { background:#fff; border:1px solid rgba(15,23,42,.08); border-radius:1rem; box-shadow:0 .75rem 2rem rgba(15,23,42,.06); }
-    .news-item { padding:1rem; height:100%; }
+    .hero,.cardx { border-radius:1rem; }
+    .hero { background: linear-gradient(135deg, #0f766e, #14b8a6); color:#fff; box-shadow:0 1rem 3rem rgba(20,184,166,.18); }
+    .cardx { background:#fff; border:1px solid rgba(15,23,42,.08); box-shadow:0 .75rem 2rem rgba(15,23,42,.06); }
     .section-title { font-weight:800; letter-spacing:.02em; }
     .news-date { font-size:.85rem; color:#64748b; }
+    .news-item { padding:1rem; border:1px solid rgba(15,23,42,.08); border-radius:1rem; background:#fff; height:100%; }
   </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold text-primary" href="index.html">iAgents 中文學習站</a>
+      <a class="navbar-brand fw-bold text-success" href="../index.html">iAgents 中文學習站</a>
       <div class="d-flex gap-2 flex-wrap">
-        <a class="btn btn-outline-primary" href="index.html">回首頁</a>
-        <a class="btn btn-primary" href="news-archive.html">新聞檔案列表</a>
-        <a class="btn btn-outline-secondary" href="resources.html">精選資源</a>
+        <a class="btn btn-outline-success" href="../news.html">今日新聞</a>
+        <a class="btn btn-outline-secondary" href="../news-archive.html">檔案列表</a>
       </div>
     </div>
   </nav>
   <main class="container py-4 py-lg-5">
     <section class="hero p-4 p-lg-5 mb-5">
-      <h1 class="display-5 fw-bold mb-3">每日新聞彙整</h1>
-      <p class="lead mb-2">今天建議先抓三條工程線：一、OpenClaw 新版把恢復、重試與協作面放回同一張平台圖；二、腳本收尾與打包產物提醒你 deployment correctness 不只是功能有沒有出現；三、Hermes 新管理面板與外部新聞一起對照，可把 agent 產品操作面和平台營運面分開分析。</p>
-      <p class="mb-0">目前更新時間：2026-06-02 07:00 CST</p>
+      <h1 class="display-5 fw-bold mb-3">2026 年 6 月新聞檔案</h1>
+      <p class="lead mb-0">本檔案保留 2026 年 6 月的精選新聞與舊聞，依日期由新到舊排列，方便學生回查每日更新脈絡。</p>
     </section>
 
     <section class="mb-4">
       <div class="cardx p-4">
-        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center">
-          <div>
-            <h2 class="section-title h4 mb-2">今天怎麼讀</h2>
-            <p class="mb-0 text-secondary">先把 5 條消息分成四欄：恢復能力、封裝正確性、營運管理、外部驗證。每欄至少挑 1 條官方 release 或 commit，再補 1 條外部報導；最後寫下你會檢查的產物、log、管理頁、等待狀態或人工接管條件。</p>
-          </div>
-          <div class="d-flex gap-2 flex-wrap">
-            <a class="btn btn-outline-primary" href="news-archive.html">查看檔案列表</a>
-            <a class="btn btn-outline-dark" href="archives/2026-06.html">查看本月檔案</a>
-          </div>
-        </div>
+        <h2 class="section-title h4 mb-3">本月每日檔案</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-06-02.html — 2026-06-02 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-06-02.html">開啟</a></li>
+        </ul>
       </div>
     </section>
 
-    <section class="mb-4">
-      <div class="cardx p-4">
-        <h2 class="section-title h4 mb-2">今日課堂提問</h2>
-        <p class="text-secondary mb-0">請每組各選 1 條 OpenClaw 更新與 1 條 Hermes 更新，標記它主要改的是恢復能力、封裝正確性、流程控制還是營運管理；再補一欄你會看的 log、產物、管理頁或人工接管條件。</p>
-      </div>
-    </section>
-
-    <section class="mb-5">
-      <div class="cardx p-4 p-lg-5">
-        <h2 class="section-title h3 mb-2">中文精選消息</h2>
-        <p class="text-secondary mb-4">保留 5 條：4 條官方更新加 1 條外部報導，方便工程學生把恢復能力、封裝正確性、管理面與 agent 驗證方法放進同一張比較表。</p>
-        <div class="row g-3">
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-06-02 中文精選</h2>
+    <div class="row g-3">
           <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-06-02 · OpenClaw 官方 Release</div><h3 class="h5">OpenClaw 2026.6.1-beta.2 把中斷恢復、通道穩定、受限重試與多代理協作一起往前推</h3><p class="mb-3">最新 release 同時修補工具呼叫中斷後的恢復、各種通道的投遞穩定性、provider／plugin 請求的計時與重試邊界，並擴充 workboard 與 Skill Workshop。課堂上很適合把「恢復能力、可觀測性、協作面」畫成同一張 agent 平台總圖。</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.2" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）→</a></article></div>
           <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-06-02 · OpenClaw 官方 Commit</div><h3 class="h5">OpenClaw 清理 boundary step 的 process groups，提醒腳本收尾也是執行安全的一部分</h3><p class="mb-3">這筆 commit 針對 boundary 檢查腳本補強 process group 清理與測試，重點不只是腳本能跑完，而是子程序、signal 與殘留程序是否被正確回收。工程學生可拿來討論長流程測試、失敗復原與資源洩漏。</p><a href="https://github.com/openclaw/openclaw/commit/2770aa5f4cf627070635c5875da594150806c39a" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）→</a></article></div>
           <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-06-02 · Hermes Agent 官方 Release</div><h3 class="h5">Hermes Agent v0.15.2 補上 bundled plugin manifests，讓封裝後的外掛載入更可預期</h3><p class="mb-3">這次 patch release 很小，但很適合拿來教「封裝正確性」：wheel 與 sdist 若漏掉 plugin.yaml，安裝後的能力面就可能和原始碼版不一致。學生可把它當成發版內容、套件產物與執行時載入之間的驗證案例。</p><a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.29.2" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Release）→</a></article></div>
           <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-06-02 · Hermes Agent 官方 Commit</div><h3 class="h5">Hermes Dashboard 擴成完整管理面板，讓 MCP、webhooks、credentials、memory 與 gateway 都能遠端管理</h3><p class="mb-3">這筆大型 commit 新增後端 API、管理頁面與測試，讓管理者不必進 CLI 也能操作 MCP、pairing、webhooks、credential pool、memory provider 與 gateway lifecycle。很適合帶學生比較「聊天介面」和「平台營運控制台」的邊界。</p><a href="https://github.com/NousResearch/hermes-agent/commit/b571ec298d912d0b8f23fb71923663580486f1f9" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）→</a></article></div>
           <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-06-02 · The Verge</div><h3 class="h5">The Verge 試用 Gemini 新 AI agent，提醒學生把 demo 效果和實際可用性分開驗證</h3><p class="mb-3">這則外部報導的教學價值在於：agent 展示看起來流暢，不代表任務規格、觀察回饋與失敗處理都已成熟。做課堂比較時，可要求每組寫下若要驗證同類 agent，至少要補哪些任務成功率、等待狀態與人工接管條件。</p><a href="https://www.theverge.com/tech/941138/google-gemini-spark-ai-agent-hands-on" target="_blank" rel="noopener">查看來源（The Verge）→</a></article></div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="mb-5">
-      <div class="cardx p-4 p-lg-5">
-        <h2 class="section-title h3 mb-2">English Selected News</h2>
-        <p class="text-secondary mb-4">Capped at five items so students can compare recovery behavior, packaging correctness, admin surfaces, and agent verification criteria without losing the engineering thread.</p>
-        <div class="row g-3">
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h3 mb-4">2026-06-02 English Selected News</h2>
+    <div class="row g-3">
           <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-06-02 · OpenClaw Official Release</div><h3 class="h5">OpenClaw 2026.6.1-beta.2 advances interruption recovery, channel stability, bounded retries, and multi-agent coordination together</h3><p class="mb-3">The latest release improves recovery after interrupted tool calls, steadies delivery across channels, bounds more provider/plugin timers and retries, and expands Workboard plus Skill Workshop surfaces. It is a strong systems-reading exercise for recovery, observability, and orchestration in one platform view.</p><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.1-beta.2" target="_blank" rel="noopener">Source (OpenClaw Official Release) →</a></article></div>
           <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-06-02 · OpenClaw Official Commit</div><h3 class="h5">OpenClaw cleans boundary-step process groups, turning script teardown into an execution-safety lesson</h3><p class="mb-3">This commit hardens process-group cleanup and tests for a boundary-check script. The lesson is not only whether the script finishes, but whether child processes, signals, and leftovers are reclaimed correctly after failures or aborts.</p><a href="https://github.com/openclaw/openclaw/commit/2770aa5f4cf627070635c5875da594150806c39a" target="_blank" rel="noopener">Source (OpenClaw Official Commit) →</a></article></div>
           <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-06-02 · Hermes Agent Official Release</div><h3 class="h5">Hermes Agent v0.15.2 ships bundled plugin manifests so packaged installs load plugins more predictably</h3><p class="mb-3">This patch release is small, but it is a clean teaching case for packaging correctness: if wheel or sdist artifacts miss plugin.yaml manifests, installed behavior can silently diverge from the source tree. Students can connect release artifacts, packaging rules, and runtime plugin loading.</p><a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.29.2" target="_blank" rel="noopener">Source (Hermes Agent Official Release) →</a></article></div>
           <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-06-02 · Hermes Agent Official Commit</div><h3 class="h5">Hermes expands the dashboard into a full administration panel for MCP, webhooks, credentials, memory, and gateway control</h3><p class="mb-3">This large commit adds backend APIs, admin pages, and test coverage so operators can manage MCP servers, pairing, webhooks, credential pools, memory providers, and gateway lifecycle without dropping into the CLI. It clearly separates chat UX from platform-operations UX.</p><a href="https://github.com/NousResearch/hermes-agent/commit/b571ec298d912d0b8f23fb71923663580486f1f9" target="_blank" rel="noopener">Source (Hermes Agent Official Commit) →</a></article></div>
           <div class="col-lg-6"><article class="news-item"><div class="news-date mb-2">2026-06-02 · The Verge</div><h3 class="h5">The Verge’s Gemini agent hands-on is a good reminder to validate real task execution separately from polished demos</h3><p class="mb-3">The classroom value of this report is methodological: an agent can look smooth in a demo while still leaving open questions about task specification, progress visibility, failure handling, and handoff conditions. It is a useful prompt for writing verification criteria before trusting agent behavior.</p><a href="https://www.theverge.com/tech/941138/google-gemini-spark-ai-agent-hands-on" target="_blank" rel="noopener">Source (The Verge) →</a></article></div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="text-center py-3">
-      <a class="btn btn-primary me-2" href="index.html#news">回首頁消息區</a>
-      <a class="btn btn-outline-primary me-2" href="news-archive.html">新聞檔案列表</a>
-      <a class="btn btn-outline-secondary" href="archives/2026-06.html">本月新聞檔案</a>
-    </section>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
