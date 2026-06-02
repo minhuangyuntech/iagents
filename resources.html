@@ -140,7 +140,7 @@
       <div class="row g-3">
         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h6 fw-bold">1. 受影響邊界</h3><p class="mb-0">先判斷它改的是互動控制、授權、背景工作、provider、還是文件／UI workflow。</p></div></div>
         <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h6 fw-bold">2. 狀態放哪裡</h3><p class="mb-0">寫下狀態落在 config、資料庫、memory、channel metadata 還是前端畫面，避免只看功能名稱。</p></div></div>
-        <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h6 fw-bold">3. 怎麼驗證</h3><p class="mb-0">至少補 1 個 log、preview、權限設定、版本差異或 dashboard；今天可特別檢查 /model 是否真的寫回、secrets 狀態列是否只出現一次、dashboard 是否拒絕非前端資產。</p></div></div>
+        <div class="col-md-4"><div class="border rounded-4 p-3 h-100"><h3 class="h6 fw-bold">3. 怎麼驗證</h3><p class="mb-0">至少補 1 個 log、preview、權限設定、版本差異或 dashboard；今天可再多看兩個點：policy schema 是否拒絕未知 keys、desktop build stamp 是否真的能對回產物內容。</p></div></div>
       </div>
     </div>
   </section>
