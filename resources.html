@@ -137,11 +137,11 @@
   <section class="mb-5">
     <div class="soft-card p-4">
       <h2 class="section-title h4 mb-2">讀 release / commit 時先補這張四欄筆記</h2>
-      <p class="text-secondary mb-3">如果今天的消息同時碰到恢復、fallback、上手流程或雲端容量，這四欄會比只抄功能名稱更容易整理成工程報告。</p>
+      <p class="text-secondary mb-3">如果今天的消息同時碰到恢復、fallback、上手流程、雲端容量或安全模式，這四欄會比只抄功能名稱更容易整理成工程報告。</p>
       <div class="row g-3">
         <div class="col-md-6 col-xl-3"><div class="border rounded-4 p-3 h-100"><h3 class="h6 fw-bold">1. 受影響邊界</h3><p class="mb-0">先判斷它改的是互動控制、授權、背景工作、provider、channel，還是文件／UI workflow。</p></div></div>
         <div class="col-md-6 col-xl-3"><div class="border rounded-4 p-3 h-100"><h3 class="h6 fw-bold">2. 狀態放哪裡</h3><p class="mb-0">寫下狀態落在 config、資料庫、memory、channel metadata 還是前端畫面，避免只看功能名稱。</p></div></div>
-        <div class="col-md-6 col-xl-3"><div class="border rounded-4 p-3 h-100"><h3 class="h6 fw-bold">3. 怎麼驗證</h3><p class="mb-0">至少補 1 個 log、preview、權限設定、版本差異或 dashboard；今天可特別對照 release 產物與 setup flow 是否一致。</p></div></div>
+        <div class="col-md-6 col-xl-3"><div class="border rounded-4 p-3 h-100"><h3 class="h6 fw-bold">3. 怎麼驗證</h3><p class="mb-0">至少補 1 個 log、preview、權限設定、版本差異或 dashboard；今天也可特別對照 release 產物、CI artifact 與 desktop log rotation 是否真的留下證據。</p></div></div>
         <div class="col-md-6 col-xl-3"><div class="border rounded-4 p-3 h-100"><h3 class="h6 fw-bold">4. 失敗怎麼退</h3><p class="mb-0">再補一欄 fallback：失敗時是切換 channel、退回手動設定、延後重試，還是交給人工接手；這一欄最容易把新聞轉成可驗證的流程圖。</p></div></div>
       </div>
     </div>
