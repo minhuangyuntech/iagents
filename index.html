@@ -116,12 +116,12 @@
        </div>
      </div>
    </section>
-            <section id="news" class="mb-5">
+                <section id="news" class="mb-5">
     <div class="card p-4">
       <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
         <div>
           <h2 class="section-title h3 mb-1">最新消息重點</h2>
-          <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先從「MCP 富內容要在哪裡正規化」「CI 沒有 artifact 是否應該直接 fail closed」「桌面 agent 的 log 與 prompt-injection 邊界誰負責」三個角度切入，再到完整中英文 5 條做對照。</p>
+          <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先從「輸出與工具結果要在哪一層正規化」「RPC／HTTP／GUI surface 是否共用政策」「provider 自動偵測與成本治理要看哪些訊號」三個角度切入，再到完整中英文 5 條做對照。</p>
         </div>
         <div class="d-flex gap-2 flex-wrap">
           <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -131,20 +131,20 @@
       <div class="row g-3">
         <div class="col-lg-4">
           <article class="mini-news">
-            <div class="news-date mb-2">2026-06-06 · OpenClaw 官方 Release</div>
-            <p>OpenClaw 新 beta 同時補輸出清理、MCP 富內容正規化與快取失效後恢復，很適合拿來拆資料邊界與重試流程。</p>
+            <div class="news-date mb-2">2026-06-07 · OpenClaw 官方 Release</div>
+            <p>OpenClaw beta.2 把輸出清理、MCP 結果正規化與 session 恢復放進同一版，適合帶學生一起拆「輸出邊界」與重試位置。</p>
           </article>
         </div>
         <div class="col-lg-4">
           <article class="mini-news">
-            <div class="news-date mb-2">2026-06-06 · OpenClaw 官方 Commit</div>
-            <p>OpenClaw 把 CI 成功條件往「必須交 artifacts 與 metrics」推進，能直接拿來講 fail closed 與可稽核證據。</p>
+            <div class="news-date mb-2">2026-06-08 · OpenClaw／Hermes 官方 Commit</div>
+            <p>今天最值得對照的兩筆修補都在收斂一致性：OpenClaw 把 owner-only HTTP tools 鎖回 allowlist，Hermes 則讓 SearXNG 自動偵測和設定來源重新對齊。</p>
           </article>
         </div>
         <div class="col-lg-4">
           <article class="mini-news">
-            <div class="news-date mb-2">2026-06-06 · TechCrunch</div>
-            <p>Lockdown Mode 的報導提醒：prompt injection 不是只靠模型解決，還要搭配權限邊界與最小揭露。</p>
+            <div class="news-date mb-2">2026-06-08 · TechCrunch</div>
+            <p>Tokenpocalypse 報導可直接接到課堂上的成本題：token 預算、快取命中、fallback 路徑與人工接手門檻要在哪一層被量測與管控。</p>
           </article>
         </div>
       </div>
