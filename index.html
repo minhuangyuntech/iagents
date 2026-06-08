@@ -116,12 +116,12 @@
        </div>
      </div>
    </section>
-                <section id="news" class="mb-5">
+  <section id="news" class="mb-5">
     <div class="card p-4">
       <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
         <div>
           <h2 class="section-title h3 mb-1">最新消息重點</h2>
-          <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先從「輸出與工具結果要在哪一層正規化」「RPC／HTTP／GUI surface 是否共用政策」「provider 自動偵測與成本治理要看哪些訊號」三個角度切入，再到完整中英文 5 條做對照。</p>
+          <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先從「輸出邊界與 tool-result 正規化」「provider／endpoint 與設定來源是否一致」「GUI workflow 與底層 tool contract 是否對齊」三個角度切入，再到完整中英文 5 條做對照。</p>
         </div>
         <div class="d-flex gap-2 flex-wrap">
           <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -131,20 +131,20 @@
       <div class="row g-3">
         <div class="col-lg-4">
           <article class="mini-news">
-            <div class="news-date mb-2">2026-06-07 · OpenClaw 官方 Release</div>
-            <p>OpenClaw beta.2 把輸出清理、MCP 結果正規化與 session 恢復放進同一版，適合帶學生一起拆「輸出邊界」與重試位置。</p>
+            <div class="news-date mb-2">2026-06-09 · OpenClaw 官方 Release</div>
+            <p>OpenClaw beta.5 把輸出清理、richer MCP blocks 邊界與快取失效後恢復收進同一版，適合帶學生一起拆資料清理、tool contract 與 retry 應放在哪一層。</p>
           </article>
         </div>
         <div class="col-lg-4">
           <article class="mini-news">
-            <div class="news-date mb-2">2026-06-08 · OpenClaw／Hermes 官方 Commit</div>
-            <p>今天最值得對照的兩筆修補都在收斂一致性：OpenClaw 把 owner-only HTTP tools 鎖回 allowlist，Hermes 則讓 SearXNG 自動偵測和設定來源重新對齊。</p>
+            <div class="news-date mb-2">2026-06-07 / 2026-06-08 · OpenClaw / Hermes 官方 Commit</div>
+            <p>今天最值得對照的兩筆修補都在收斂 provider 層：OpenClaw 把 Parallel 變成零設定預設搜尋 provider，Hermes 則讓 SearXNG 自動偵測和設定來源重新對齊。</p>
           </article>
         </div>
         <div class="col-lg-4">
           <article class="mini-news">
-            <div class="news-date mb-2">2026-06-08 · TechCrunch</div>
-            <p>Tokenpocalypse 報導可直接接到課堂上的成本題：token 預算、快取命中、fallback 路徑與人工接手門檻要在哪一層被量測與管控。</p>
+            <div class="news-date mb-2">2026-06-08 · TechCrunch / Hermes Release</div>
+            <p>Apple 把 AI workflow 帶進 Shortcuts GUI，而 Hermes Surface Release 擴大了桌面與管理面板；兩者都適合拿來問：表面變多後，權限、觀測與 fallback 是否還共用同一套規則？</p>
           </article>
         </div>
       </div>
@@ -182,6 +182,7 @@
              <li class="mb-2">專題、課堂報告與實作切入點</li>
              <li class="mb-2">近期版本與產業新聞的工程重點</li>
             <li>練習把 release、commit 與外部報導各自對應到驗證方法</li>
+            <li>同一天至少對照 1 則官方 release 與 1 則 commit，分辨 source of truth 是文件、設定、provider 還是 GUI workflow</li>
             <li>每讀一條消息都補 1 個可驗證證據：產物、log、管理頁或人工接管條件</li>
              <li>官方文件、影片與新聞之間的對照閱讀路徑</li>
            </ol>
