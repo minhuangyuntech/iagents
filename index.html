@@ -121,7 +121,7 @@
       <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
         <div>
           <h2 class="section-title h3 mb-1">最新消息重點</h2>
-          <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先從「輸出邊界與 tool-result 正規化」「provider／endpoint 與設定來源是否一致」「GUI workflow 與底層 tool contract 是否對齊」三個角度切入，再到完整中英文 5 條做對照。</p>
+          <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：release 如何把輸出邊界與 provider 一起驗證、transport header normalization 為什麼會變成 401，以及新模型先上線時 curated list／live catalog／picker 誰該當 source of truth。</p>
         </div>
         <div class="d-flex gap-2 flex-wrap">
           <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -131,20 +131,20 @@
       <div class="row g-3">
         <div class="col-lg-4">
           <article class="mini-news">
-            <div class="news-date mb-2">2026-06-09 · OpenClaw 官方 Release</div>
-            <p>OpenClaw beta.5 把輸出清理、richer MCP blocks 邊界與快取失效後恢復收進同一版，適合帶學生一起拆資料清理、tool contract 與 retry 應放在哪一層。</p>
+            <div class="news-date mb-2">2026-06-10 · OpenClaw 官方 Release</div>
+            <p>OpenClaw 2026.6.5 正式版把輸出清理、MCP 富內容邊界、恢復邏輯與 Parallel 搜尋 provider 一起打包，適合拿來教 release 何時只是功能集合，何時已經是在收斂整個系統邊界。</p>
           </article>
         </div>
         <div class="col-lg-4">
           <article class="mini-news">
-            <div class="news-date mb-2">2026-06-07 / 2026-06-08 · OpenClaw / Hermes 官方 Commit</div>
-            <p>今天最值得對照的兩筆修補都在收斂 provider 層：OpenClaw 把 Parallel 變成零設定預設搜尋 provider，Hermes 則讓 SearXNG 自動偵測和設定來源重新對齊。</p>
+            <div class="news-date mb-2">2026-06-10 · OpenClaw / Hermes 官方 Commit</div>
+            <p>今天最值得對照的兩筆修補都在處理映射問題：OpenClaw 收斂 SSE header 大小寫避免重複 Authorization；Hermes 保留 curated aliases，避免 live catalog 把可用模型從 picker 隱掉。</p>
           </article>
         </div>
         <div class="col-lg-4">
           <article class="mini-news">
-            <div class="news-date mb-2">2026-06-08 · TechCrunch / Hermes Release</div>
-            <p>Apple 把 AI workflow 帶進 Shortcuts GUI，而 Hermes Surface Release 擴大了桌面與管理面板；兩者都適合拿來問：表面變多後，權限、觀測與 fallback 是否還共用同一套規則？</p>
+            <div class="news-date mb-2">2026-06-10 · Hermes / TechCrunch</div>
+            <p>Claude Fable 5 的外部發布消息，剛好能和 Hermes 新增模型清單、修補 picker 一起看：當模型先公開可用，工程團隊要先補哪一層—curated list、catalog、文件，還是 UI。</p>
           </article>
         </div>
       </div>
@@ -176,17 +176,25 @@
        <div class="col-lg-5">
          <div class="card p-4 h-100">
            <h2 class="section-title h4 mb-3">本次閱讀任務</h2>
-           <ol class="mb-0">
-             <li class="mb-2">兩個 AI Agent 專案的差異與定位</li>
-             <li class="mb-2">適合工程學生的學習模組</li>
-             <li class="mb-2">專題、課堂報告與實作切入點</li>
-             <li class="mb-2">近期版本與產業新聞的工程重點</li>
-            <li>練習把 release、commit 與外部報導各自對應到驗證方法</li>
-            <li>同一天至少對照 1 則官方 release 與 1 則 commit，分辨 source of truth 是文件、設定、provider 還是 GUI workflow</li>
-            <li>每讀一條消息都補 1 個可驗證證據：產物、log、管理頁或人工接管條件</li>
-             <li>官方文件、影片與新聞之間的對照閱讀路徑</li>
-           </ol>
-         </div>
+          <ol class="mb-0">
+            <li class="mb-2">兩個 AI Agent 專案的差異與定位</li>
+            <li class="mb-2">適合工程學生的學習模組</li>
+            <li class="mb-2">專題、課堂報告與實作切入點</li>
+            <li class="mb-2">近期版本與產業新聞的工程重點</li>
+           <li>練習把 release、commit 與外部報導各自對應到驗證方法</li>
+           <li>同一天至少對照 1 則官方 release 與 1 則 commit，分辨 source of truth 是文件、設定、provider 還是 GUI workflow</li>
+           <li>每讀一條消息都補 1 個可驗證證據：產物、log、管理頁或人工接管條件</li>
+            <li>官方文件、影片與新聞之間的對照閱讀路徑</li>
+          </ol>
+          <div class="soft-panel mt-3 p-3">
+            <h3 class="h6 fw-bold mb-2">今天記錄的最小欄位</h3>
+            <ul class="mb-0 ps-3">
+              <li>哪一份 artifact 才是 source of truth：release notes、API catalog、UI picker 或設定檔。</li>
+              <li>如果失敗，症狀會先出現在 401、模型消失、回退路徑，還是多入口設定不一致。</li>
+              <li>至少補 1 個回歸證據：測試檔、log、狀態列、models endpoint 或管理面板畫面。</li>
+            </ul>
+          </div>
+        </div>
        </div>
      </div>
    </section>
