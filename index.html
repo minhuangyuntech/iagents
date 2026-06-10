@@ -117,39 +117,39 @@
      </div>
    </section>
   <section id="news" class="mb-5">
-    <div class="card p-4">
-      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
-        <div>
-          <h2 class="section-title h3 mb-1">最新消息重點</h2>
-          <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：release 如何把輸出邊界與 provider 一起驗證、transport header normalization 為什麼會變成 401，以及新模型先上線時 curated list／live catalog／picker 誰該當 source of truth。</p>
-        </div>
-        <div class="d-flex gap-2 flex-wrap">
-          <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
-          <a class="btn btn-outline-secondary" href="news-archive.html">瀏覽新聞檔案列表</a>
-        </div>
-      </div>
-      <div class="row g-3">
-        <div class="col-lg-4">
-          <article class="mini-news">
-            <div class="news-date mb-2">2026-06-10 · OpenClaw 官方 Release</div>
-            <p>OpenClaw 2026.6.5 正式版把輸出清理、MCP 富內容邊界、恢復邏輯與 Parallel 搜尋 provider 一起打包，適合拿來教 release 何時只是功能集合，何時已經是在收斂整個系統邊界。</p>
-          </article>
-        </div>
-        <div class="col-lg-4">
-          <article class="mini-news">
-            <div class="news-date mb-2">2026-06-10 · OpenClaw / Hermes 官方 Commit</div>
-            <p>今天最值得對照的兩筆修補都在處理映射問題：OpenClaw 收斂 SSE header 大小寫避免重複 Authorization；Hermes 保留 curated aliases，避免 live catalog 把可用模型從 picker 隱掉。</p>
-          </article>
-        </div>
-        <div class="col-lg-4">
-          <article class="mini-news">
-            <div class="news-date mb-2">2026-06-10 · Hermes / TechCrunch</div>
-            <p>Claude Fable 5 的外部發布消息，剛好能和 Hermes 新增模型清單、修補 picker 一起看：當模型先公開可用，工程團隊要先補哪一層—curated list、catalog、文件，還是 UI。</p>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
+   <div class="card p-4">
+     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
+       <div>
+         <h2 class="section-title h3 mb-1">最新消息重點</h2>
+         <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：release 是否把安全預設一起補齊、host env／.env 路徑是不是同一個設定來源，以及串流或記憶功能最後是被什麼證據驗證。</p>
+       </div>
+       <div class="d-flex gap-2 flex-wrap">
+         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
+         <a class="btn btn-outline-secondary" href="news-archive.html">瀏覽新聞檔案列表</a>
+       </div>
+     </div>
+     <div class="row g-3">
+       <div class="col-lg-4">
+         <article class="mini-news">
+           <div class="news-date mb-2">2026-06-11 · OpenClaw 官方 Release</div>
+           <p>OpenClaw 2026.6.6-beta.1 把 transcripts、sandbox、MCP 與搜尋政策等多個安全邊界一起收緊，還把 exec approval timeout 改成 fail closed，適合當成「功能成長後怎麼一起補安全」的 release 範例。</p>
+         </article>
+       </div>
+       <div class="col-lg-4">
+         <article class="mini-news">
+           <div class="news-date mb-2">2026-06-11 · OpenClaw / Hermes 官方 Commit</div>
+           <p>今天最值得對照的兩筆修補都在收斂設定邊界：OpenClaw 封鎖 build tool 的環境變數覆寫，Hermes 則把 HERMES_HOME-aware 的 .env 尋址擴到更多技能，避免 Docker 與文件各走各的路。</p>
+         </article>
+       </div>
+       <div class="col-lg-4">
+         <article class="mini-news">
+           <div class="news-date mb-2">2026-06-11 · Hermes / TechCrunch</div>
+           <p>Hermes 修補串流取消後的最終渲染，而 TechCrunch 提醒 memory tools 可能讓模型更差；兩者都很適合帶學生問：功能看起來可用，是否真的有品質證據支撐。</p>
+         </article>
+       </div>
+     </div>
+   </div>
+ </section>
 
   <section id="overview" class="mb-5">
      <div class="row g-4">
@@ -181,23 +181,23 @@
             <li class="mb-2">適合工程學生的學習模組</li>
             <li class="mb-2">專題、課堂報告與實作切入點</li>
             <li class="mb-2">近期版本與產業新聞的工程重點</li>
-           <li>練習把 release、commit 與外部報導各自對應到驗證方法</li>
-           <li>同一天至少對照 1 則官方 release 與 1 則 commit，分辨 source of truth 是文件、設定、provider 還是 GUI workflow</li>
-           <li>每讀一條消息都補 1 個可驗證證據：產物、log、管理頁或人工接管條件</li>
+            <li>練習把 release、commit 與外部報導各自對應到驗證方法</li>
+            <li>同一天至少對照 1 則官方 release 與 1 則 commit，分辨 source of truth 是 release notes、host env policy、實際路徑，還是平台最終渲染</li>
+            <li>每讀一條消息都補 1 個可驗證證據：產物、測試檔、log、畫面或評估結果</li>
             <li>官方文件、影片與新聞之間的對照閱讀路徑</li>
           </ol>
           <div class="soft-panel mt-3 p-3">
             <h3 class="h6 fw-bold mb-2">今天記錄的最小欄位</h3>
             <ul class="mb-0 ps-3">
-              <li>哪一份 artifact 才是 source of truth：release notes、API catalog、UI picker 或設定檔。</li>
-              <li>如果失敗，症狀會先出現在 401、模型消失、回退路徑，還是多入口設定不一致。</li>
-              <li>至少補 1 個回歸證據：測試檔、log、狀態列、models endpoint 或管理面板畫面。</li>
+              <li>哪一份 artifact 才是 source of truth：release notes、host env policy、真正讀取的 .env 路徑，或平台 finalize 流程。</li>
+              <li>如果失敗，症狀會先出現在 timeout、環境繼承、Docker 路徑、Telegram 預覽，還是 memory 評估退化。</li>
+              <li>至少補 1 個回歸證據：測試檔、錯誤訊息、實際路徑、最終訊息畫面或比較實驗。</li>
             </ul>
           </div>
         </div>
-       </div>
-     </div>
-   </section>
+      </div>
+    </div>
+  </section>
 
    <section id="comparison" class="mb-5">
      <div class="card p-4 p-lg-5">

@@ -34,6 +34,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-06-11.html — 2026-06-11 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-06-11.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-06-10.html — 2026-06-10 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-06-10.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-06-09.html — 2026-06-09 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-06-09.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-06-08.html — 2026-06-08 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-06-08.html">開啟</a></li>
@@ -47,7 +48,32 @@
       </div>
     </section>
 
-    <section class="mb-5">
+        <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">2026-06-11 每日重點</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條練習怎麼把同一則更新改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-success" href="2026-06-11.html">開啟 2026-06-11 每日檔案</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 2026.6.6-beta.1 一次收緊 transcripts、sandbox binds、MCP stdio 與搜尋政策等安全邊界，還把 exec approval timeout 改成 fail closed，適合拿來教「功能變多時如何一起補安全」</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.6-beta.1" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 封鎖 build tool 的環境變數覆寫路徑，連 Cargo／Rust／Make／Hg 相關鍵都納入 host env policy，適合示範「主機環境繼承要 fail closed」</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/e15b646f189a25b03b69557a5e3e79f468376d07" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 把 HERMES_HOME-aware 的 .env 尋址擴到更多 sibling skills，提醒學生 Docker 與非預設 HOME 下，設定來源不能硬編碼成 ~/.hermes/.env</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/d1383a6b1450c6c139720b1b01f8b99cc130453f" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 在 stream consumer 被取消時也會走 finalize 路徑，避免 Telegram 只留下原始 streaming 預覽，適合拿來教「串流取消不等於回覆已正確收尾」</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/da818510ec753f1c7def777eeca51bb1e4d17d1e" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch：新的研究指出 memory tools 可能讓模型表現變差、還更容易迎合使用者，適合把「記憶」從功能亮點改寫成評估題目</strong><br>來源：<a href="https://techcrunch.com/2026/06/10/how-memory-tools-can-make-ai-models-worse/" target="_blank" rel="noopener">查看來源（TechCrunch）</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 2026.6.6-beta.1 tightens security boundaries across transcripts, sandbox binds, MCP stdio, and search policy while making exec-approval timeouts fail closed</strong><br>Source：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.6.6-beta.1" target="_blank" rel="noopener">Source（OpenClaw Official Release）</a></li><li class="mb-3"><strong>OpenClaw blocks build-tool environment overrides for Cargo, Rust, Make, and Mercurial paths, making host-environment inheritance a fail-closed boundary</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/e15b646f189a25b03b69557a5e3e79f468376d07" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes widens HERMES_HOME-aware .env resolution across sibling skills, showing why config lookup cannot stay hardcoded to ~/.hermes/.env under Docker or custom homes</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/d1383a6b1450c6c139720b1b01f8b99cc130453f" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>Hermes now finalizes best-effort delivery when the stream consumer is cancelled, preventing Telegram from being left with raw streaming previews</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/da818510ec753f1c7def777eeca51bb1e4d17d1e" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>TechCrunch: new research suggests memory tools can degrade model performance and encourage sycophancy, turning “memory” into an evaluation problem</strong><br>Source：<a href="https://techcrunch.com/2026/06/10/how-memory-tools-can-make-ai-models-worse/" target="_blank" rel="noopener">Source（TechCrunch）</a></li></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
