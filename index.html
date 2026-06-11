@@ -117,38 +117,38 @@
      </div>
    </section>
   <section id="news" class="mb-5">
-   <div class="card p-4">
-     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
-       <div>
-         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-         <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：release 是否把安全預設一起補齊、host env／.env 路徑是不是同一個設定來源，以及串流或記憶功能最後是被什麼證據驗證。</p>
-       </div>
-       <div class="d-flex gap-2 flex-wrap">
-         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
-         <a class="btn btn-outline-secondary" href="news-archive.html">瀏覽新聞檔案列表</a>
-       </div>
-     </div>
-     <div class="row g-3">
-       <div class="col-lg-4">
-         <article class="mini-news">
-           <div class="news-date mb-2">2026-06-11 · OpenClaw 官方 Release</div>
-           <p>OpenClaw 2026.6.6-beta.1 把 transcripts、sandbox、MCP 與搜尋政策等多個安全邊界一起收緊，還把 exec approval timeout 改成 fail closed，適合當成「功能成長後怎麼一起補安全」的 release 範例。</p>
-         </article>
-       </div>
-       <div class="col-lg-4">
-         <article class="mini-news">
-           <div class="news-date mb-2">2026-06-11 · OpenClaw / Hermes 官方 Commit</div>
-           <p>今天最值得對照的兩筆修補都在收斂設定邊界：OpenClaw 封鎖 build tool 的環境變數覆寫，Hermes 則把 HERMES_HOME-aware 的 .env 尋址擴到更多技能，避免 Docker 與文件各走各的路。</p>
-         </article>
-       </div>
-       <div class="col-lg-4">
-         <article class="mini-news">
-           <div class="news-date mb-2">2026-06-11 · Hermes / TechCrunch</div>
-           <p>Hermes 修補串流取消後的最終渲染，而 TechCrunch 提醒 memory tools 可能讓模型更差；兩者都很適合帶學生問：功能看起來可用，是否真的有品質證據支撐。</p>
-         </article>
-       </div>
-     </div>
-   </div>
+  <div class="card p-4">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
+      <div>
+        <h2 class="section-title h3 mb-1">最新消息重點</h2>
+        <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：release 怎麼把安全預設與失敗模式一起收斂、不同啟動路徑是否還共用同一個 tool／profile source of truth，以及 guardrail 若看不見時要補哪些證據。</p>
+      </div>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
+        <a class="btn btn-outline-secondary" href="news-archive.html">瀏覽新聞檔案列表</a>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-lg-4">
+        <article class="mini-news">
+          <div class="news-date mb-2">2026-06-12 · OpenClaw 官方 Release</div>
+          <p>OpenClaw 最新 beta 把 transcripts、sandbox、host env、MCP 與搜尋政策等邊界一起收緊，也把 timeout 改成 fail closed，適合當作「功能擴張後怎麼一起補安全預設」的 release 範例。</p>
+        </article>
+      </div>
+      <div class="col-lg-4">
+        <article class="mini-news">
+          <div class="news-date mb-2">2026-06-12 · OpenClaw / Hermes 官方 Commit</div>
+          <p>今天最值得對照的三筆 commit 都在收斂系統邊界：OpenClaw 把 skill write 的 preflight 放到 rollback 前，Hermes 則分別補齊 MCP discovery 與 per-profile backend，避免不同啟動路徑偷偷讀到不同世界。</p>
+        </article>
+      </div>
+      <div class="col-lg-4">
+        <article class="mini-news">
+          <div class="news-date mb-2">2026-06-12 · The Verge</div>
+          <p>Anthropic 為看不見的 Claude Fable guardrails 道歉，很適合帶學生問：安全機制若無法被文件、畫面或 log 指認，它到底算不算可驗證的系統契約？</p>
+        </article>
+      </div>
+    </div>
+  </div>
  </section>
 
   <section id="overview" class="mb-5">
@@ -182,6 +182,7 @@
             <li class="mb-2">專題、課堂報告與實作切入點</li>
             <li class="mb-2">近期版本與產業新聞的工程重點</li>
             <li>練習把 release、commit 與外部報導各自對應到驗證方法</li>
+            <li>把「看不見的 guardrail」改寫成可驗證證據欄位：文件、旗標、畫面、log 或回歸測試</li>
             <li>同一天至少對照 1 則官方 release 與 1 則 commit，分辨 source of truth 是 release notes、host env policy、實際路徑，還是平台最終渲染</li>
             <li>每讀一條消息都補 1 個可驗證證據：產物、測試檔、log、畫面或評估結果</li>
             <li>官方文件、影片與新聞之間的對照閱讀路徑</li>
