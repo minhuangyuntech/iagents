@@ -121,7 +121,7 @@
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
       <div>
         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-        <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：release 怎麼把安全預設與失敗模式一起收斂、不同啟動路徑是否還共用同一個 tool／profile source of truth，以及 guardrail 若看不見時要補哪些證據。</p>
+        <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：release 是否把新能力與邊界控制一起發佈、診斷與搜尋功能有沒有偷放寬授權或修改狀態，以及外部對 agent 進展的說法能不能回到可量測證據。</p>
       </div>
       <div class="d-flex gap-2 flex-wrap">
         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -131,20 +131,20 @@
     <div class="row g-3">
       <div class="col-lg-4">
         <article class="mini-news">
-          <div class="news-date mb-2">2026-06-12 · OpenClaw 官方 Release</div>
-          <p>OpenClaw 最新 beta 把 transcripts、sandbox、host env、MCP 與搜尋政策等邊界一起收緊，也把 timeout 改成 fail closed，適合當作「功能擴張後怎麼一起補安全預設」的 release 範例。</p>
+          <div class="news-date mb-2">2026-07-04 · OpenClaw / Hermes 官方 Release</div>
+          <p>今天兩個 release 都很適合教「能力增加時怎麼一起補證據與邊界」：OpenClaw 把 attach、on-exit cron 與 scoped conversations 打包，Hermes 則把 MoA、completion contracts 與 verification evidence 放進同一版。</p>
         </article>
       </div>
       <div class="col-lg-4">
         <article class="mini-news">
-          <div class="news-date mb-2">2026-06-12 · OpenClaw / Hermes 官方 Commit</div>
-          <p>今天最值得對照的三筆 commit 都在收斂系統邊界：OpenClaw 把 skill write 的 preflight 放到 rollback 前，Hermes 則分別補齊 MCP discovery 與 per-profile backend，避免不同啟動路徑偷偷讀到不同世界。</p>
+          <div class="news-date mb-2">2026-07-04 · OpenClaw / Hermes 官方 Commit</div>
+          <p>今天最值得對照的兩筆 commit 都在提醒學生「方便功能也是控制面」：OpenClaw 把 legacy cron store 問題先變成可審核的 doctor lint，Hermes 的 /sessions search 則維持原本的 visibility guard，不讓搜尋偷放大授權範圍。</p>
         </article>
       </div>
       <div class="col-lg-4">
         <article class="mini-news">
-          <div class="news-date mb-2">2026-06-12 · The Verge</div>
-          <p>Anthropic 為看不見的 Claude Fable guardrails 道歉，很適合帶學生問：安全機制若無法被文件、畫面或 log 指認，它到底算不算可驗證的系統契約？</p>
+          <div class="news-date mb-2">2026-07-04 · TechCrunch</div>
+          <p>Meta 內部坦言 AI agents 進展不如預期，很適合帶學生問：若你要證明 agent 真的更好，應該看完成率、失敗樣態、成本，還是只看 demo 與敘事？</p>
         </article>
       </div>
     </div>
