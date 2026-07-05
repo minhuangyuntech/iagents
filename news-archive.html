@@ -27,7 +27,7 @@
   <main class="container py-4 py-lg-5">
    <section class="hero p-4 p-lg-5 mb-5">
      <h1 class="display-5 fw-bold mb-3">新聞檔案列表</h1>
-     <p class="lead mb-0">可把這些檔案當成版本演進紀錄來讀：先看最新的 2026-07-05 每日檔案與 2026-07 月檔案，再往前追幾天，較容易看出 release 封裝、授權／狀態邊界與外部進展敘事的連續性。</p>
+     <p class="lead mb-0">可把這些檔案當成版本演進紀錄來讀：先看最新的 2026-07-06 每日檔案與 2026-07 月檔案，再往前追幾天，較容易看出 release 封裝、觀測／capability 邊界與外部進展敘事的連續性。</p>
    </section>
 
    <section class="mb-5">
@@ -35,8 +35,9 @@
        <h2 class="section-title h3 mb-3">目前可查閱的檔案</h2>
        <ul class="list-group list-group-flush">
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>news.html — 今日精選中英文消息</span><a class="btn btn-sm btn-outline-primary" href="news.html">開啟</a></li>
-      <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-05.html — 2026-07-05 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-05.html">開啟</a></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-06.html — 2026-07-06 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-06.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07.html — 2026 年 07 月新聞與舊聞彙整</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07.html">開啟</a></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-05.html — 2026-07-05 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-05.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-04.html — 2026-07-04 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-04.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-06-12.html — 2026-06-12 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-06-12.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-06-11.html — 2026-06-11 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-06-11.html">開啟</a></li>
@@ -90,9 +91,9 @@
          <li class="mb-2">每月檔案適合拿來整理版本節奏與產品方向變化。</li>
          <li class="mb-2">做簡報時可挑 3 天以上的消息，形成一條演進時間線。</li>
          <li class="mb-2">做課堂比較時，可固定用「release／commit／外部報導／驗證方法」四欄整理，較容易把消息轉成工程問題。</li>
-         <li class="mb-2">若同一天同時有 release、commit 與外部新聞，先把它們分成「功能封裝」「授權／狀態邊界」「市場／進展敘事」三欄再做比較。</li>
-         <li class="mb-2">固定補一欄「觸及檔案／可驗證證據」，例如 doctor JSON、測試檔、log、狀態列、可見性檢查或回歸案例，會更容易把新聞改寫成工程任務。</li>
-         <li>讀 commit 時再補一欄「哪個 guard 才是真正 source of truth」，例如 release notes、doctor --fix、resume visibility guard、completion contract 或平台最終渲染，會更容易把外部新聞接回系統設計。</li>
+         <li class="mb-2">若同一天同時有 release、commit 與外部新聞，先把它們分成「功能封裝」「觀測／capability 邊界」「市場／進展敘事」三欄再做比較。</li>
+         <li class="mb-2">固定補一欄「觸及檔案／可驗證證據」，例如 release notes、usage bucket、測試檔、initialize capability、政策文件或回歸案例，會更容易把新聞改寫成工程任務。</li>
+         <li>讀 commit 時再補一欄「哪個 guard 才是真正 source of truth」，例如 release notes、doctor --fix、usage.ts、MCP initialize capability、completion contract 或平台最終渲染，會更容易把外部新聞接回系統設計。</li>
        </ul>
      </div>
    </section>
