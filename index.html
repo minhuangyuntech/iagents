@@ -121,7 +121,7 @@
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
       <div>
         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-        <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：release 有沒有把能力和邊界一起打包、commit 有沒有把成本與 capability gate 講清楚、外部新聞有沒有把 coding agent 帶進治理問題。</p>
+        <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：release 是否把新能力和邊界一起打包、commit 是否把暫態預算與全域設定分清楚、外部新聞是否把 agent stack 帶回 production 成本與責任分層。</p>
       </div>
       <div class="d-flex gap-2 flex-wrap">
         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -131,20 +131,20 @@
     <div class="row g-3">
       <div class="col-lg-4">
         <article class="mini-news">
-          <div class="news-date mb-2">2026-07-06 · OpenClaw 官方 Release</div>
-          <p>OpenClaw 2026.7.1-beta.2 把 GPT-5.6、attach、Telegram Codex、on-exit cron 與 scoped conversations 放進同一版，很適合教學生從 release notes 直接拆能力、控制面與失敗面。</p>
+          <div class="news-date mb-2">2026-07-07 · OpenClaw 官方 Release</div>
+          <p>OpenClaw 2026.7.1-beta.2 把 GPT-5.6、attach、Telegram Codex、on-exit cron 與 scoped conversations 收進同一版，適合學生直接從 release notes 練習拆能力擴張、控制面與失敗面。</p>
         </article>
       </div>
       <div class="col-lg-4">
         <article class="mini-news">
-          <div class="news-date mb-2">2026-07-06 · OpenClaw / Hermes 官方 Commit</div>
-          <p>今天的 commit 更適合教工程邊界：OpenClaw 把成本分析與時區切桶對齊，Hermes 把 MCP probe 綁回 config 與 advertised capabilities，兩者都在修「觀測與探索不能越界」。</p>
+          <div class="news-date mb-2">2026-07-07 · OpenClaw / Hermes 官方 Commit</div>
+          <p>今天的 commit 適合教工程邊界：OpenClaw 把 preflight token overflow 延續到 recovery budgeting，Hermes 修正 --tui -m 不該偷偷改全域模型；兩者都在修「短期狀態與長期設定不能混在一起」。</p>
         </article>
       </div>
       <div class="col-lg-4">
         <article class="mini-news">
-          <div class="news-date mb-2">2026-07-06 · TechCrunch</div>
-          <p>Alibaba 據報禁止員工使用 Claude Code，提醒學生 coding agent 不只比功能，還要問資料能不能外流、哪些操作要審計，以及企業為何會把工具限制寫進政策。</p>
+          <div class="news-date mb-2">2026-07-07 · TechCrunch</div>
+          <p>Vercel CEO 主張 production 場景要把 models 和 agents 分開看，提醒學生比較 agent stack 時要一起問成本、工作流責任分層，以及哪些組件可以替換。</p>
         </article>
       </div>
     </div>
@@ -182,6 +182,7 @@
             <li class="mb-2">專題、課堂報告與實作切入點</li>
             <li class="mb-2">近期版本與產業新聞的工程重點</li>
             <li>練習把 release、commit 與外部報導各自對應到驗證方法</li>
+            <li>再補 1 欄「設定是暫時覆蓋還是永久寫回」，避免把示範旗標誤當成系統預設</li>
             <li>把「看不見的 guardrail」改寫成可驗證證據欄位：文件、旗標、畫面、log 或回歸測試</li>
             <li>同一天至少對照 1 則官方 release 與 1 則 commit，分辨 source of truth 是 release notes、host env policy、實際路徑，還是平台最終渲染</li>
             <li>每讀一條消息都補 1 個可驗證證據：產物、測試檔、log、畫面或評估結果</li>
