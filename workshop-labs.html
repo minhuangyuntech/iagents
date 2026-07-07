@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="8 個 Workshop Labs 的教學與實作頁。">
+  <title>實作教材 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css">
+  <style>
+:root {
+  --bg: #0b1020;
+  --panel: rgba(18, 25, 49, 0.94);
+  --panel-2: rgba(24, 33, 63, 0.96);
+  --text: #e5ecff;
+  --muted: #a8b3cf;
+  --brand: #7c9cff;
+  --brand-2: #54d2ff;
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --border: rgba(148, 163, 184, 0.18);
+}
+body {
+  background: radial-gradient(circle at top, #172041 0%, #0b1020 45%, #070b16 100%);
+  color: var(--text);
+  font-family: "Noto Sans TC", "Segoe UI", sans-serif;
+}
+a { color: #9fc4ff; }
+a:hover { color: #dbe9ff; }
+.navbar, .offcanvas, .cardx, .soft-panel, .toc-card, .chapter-nav, .exercise-box, .faq-item, .table-wrap, .timeline-step {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.28);
+}
+.navbar { backdrop-filter: blur(10px); }
+.hero {
+  background: linear-gradient(135deg, rgba(124,156,255,.22), rgba(84,210,255,.12));
+  border: 1px solid rgba(124,156,255,.35);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.hero-grid {
+  background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.badge-soft { background: rgba(124,156,255,.18); color: #dbe6ff; }
+.section-title, h1, h2, h3, h4 { color: #f8fbff; }
+.section-title { font-weight: 800; letter-spacing: .02em; }
+.muted { color: var(--muted); }
+.cardx, .soft-panel, .exercise-box, .faq-item, .table-wrap, .timeline-step { border-radius: 1rem; }
+.chapter-anchor { scroll-margin-top: 96px; }
+.toc-card {
+  position: sticky;
+  top: 88px;
+  border-radius: 1rem;
+}
+.toc-card a {
+  color: #d6e2ff;
+  text-decoration: none;
+  display: block;
+  padding: .4rem 0;
+  border-bottom: 1px dashed rgba(148,163,184,.15);
+}
+.toc-card a:last-child { border-bottom: 0; }
+.toc-card a:hover { color: #7c9cff; }
+.chapter-nav .nav-link {
+  color: #dbe6ff;
+  border: 1px solid rgba(148,163,184,.18);
+  margin-bottom: .5rem;
+  border-radius: .85rem;
+  background: rgba(255,255,255,.02);
+}
+.chapter-nav .nav-link:hover { background: rgba(124,156,255,.12); color: #fff; }
+.table { --bs-table-color: #e5ecff; --bs-table-bg: transparent; --bs-table-border-color: rgba(148,163,184,.2); }
+.table thead th { color: #fff; background: rgba(124,156,255,.12); }
+.accordion { --bs-accordion-bg: transparent; --bs-accordion-color: #e5ecff; --bs-accordion-border-color: rgba(148,163,184,.18); --bs-accordion-btn-bg: rgba(255,255,255,.02); --bs-accordion-btn-color: #f8fbff; --bs-accordion-active-bg: rgba(124,156,255,.12); --bs-accordion-active-color: #fff; }
+code { color: #8be9fd; }
+pre { border-radius: 1rem; overflow: hidden; border: 1px solid rgba(148,163,184,.18); }
+.pill {
+  display: inline-block;
+  padding: .35rem .75rem;
+  border-radius: 999px;
+  background: rgba(84,210,255,.12);
+  color: #d9f8ff;
+  margin-right: .4rem;
+  margin-bottom: .5rem;
+  font-size: .92rem;
+}
+.list-check li { margin-bottom: .55rem; }
+.list-check li::marker { color: var(--success); }
+.mermaid-wrap {
+  background: rgba(255,255,255,.02);
+  border: 1px solid rgba(148,163,184,.18);
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow: auto;
+}
+.timeline-step { padding: 1rem; height: 100%; }
+.footer-note { color: var(--muted); font-size: .95rem; }
+.small-note { font-size: .95rem; color: var(--muted); }
+.kpi { background: rgba(255,255,255,.03); border: 1px solid rgba(148,163,184,.18); border-radius: 1rem; padding: 1rem; height: 100%; }
+@media (max-width: 991.98px) {
+  .toc-card { position: static; }
+}
+</style>
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="index.html">iAgents 中文學習站</a>
+      <button class="navbar-toggler btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocCanvas" aria-controls="tocCanvas">課程目錄</button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link text-white-50" href="index.html">回首頁</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="resources.html">精選資源</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="coding-agents.html">Coding Agents</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="workshop.html">Workshop 首頁</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="tocCanvas" aria-labelledby="tocCanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="tocCanvasLabel">Workshop 課程地圖</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="toc-card p-3">
+        <a href="workshop.html">Workshop 首頁</a>
+<a href="workshop-intro.html">1. ChatBot 到 Intelligent Agent</a>
+<a href="workshop-tools.html">2. 主流 Agent 工具比較</a>
+<a href="workshop-api.html">3. API 與模型來源</a>
+<a href="workshop-ollama.html">4. Ollama 本地模型</a>
+<a href="workshop-rag.html">5. RAG 與 Agent</a>
+<a href="workshop-multi-agent.html">6. Multi-Agent</a>
+<a href="workshop-labs.html" style="color:#7c9cff;font-weight:700">7. 實作教材</a>
+<a href="workshop-gb10.html">8. GB10 教學環境</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container py-4 py-lg-5">
+    <section class="hero hero-grid p-4 p-lg-5 mb-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8">
+          <span class="badge badge-soft px-3 py-2 mb-3">Intelligent Agent 實作研習 / 多頁教材版</span>
+          <h1 class="display-5 fw-bold mb-3">Chapter 7｜Workshop 實作教材</h1>
+          <p class="lead mb-4">依需求規格整理 8 個實作主題，讓研習從理論落到真正可操作的教材。</p>
+          <div class="mb-0">
+            <span class="pill">教師研習</span>
+            <span class="pill">理論 + 架構 + 實作</span>
+            <span class="pill">RWD + 深色模式</span>
+            <span class="pill">Mermaid + 程式碼範例</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <aside class="toc-card p-4">
+            <h2 class="h5 fw-bold mb-3">本課程單元</h2>
+            <a href="workshop.html">Workshop 首頁</a>
+<a href="workshop-intro.html">1. ChatBot 到 Intelligent Agent</a>
+<a href="workshop-tools.html">2. 主流 Agent 工具比較</a>
+<a href="workshop-api.html">3. API 與模型來源</a>
+<a href="workshop-ollama.html">4. Ollama 本地模型</a>
+<a href="workshop-rag.html">5. RAG 與 Agent</a>
+<a href="workshop-multi-agent.html">6. Multi-Agent</a>
+<a href="workshop-labs.html" style="color:#7c9cff;font-weight:700">7. 實作教材</a>
+<a href="workshop-gb10.html">8. GB10 教學環境</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+    
+<section class="mb-5"><div class="cardx p-4 p-lg-5">
+<h2 class="section-title h2 mb-3">學習目標</h2>
+<ul class="list-check"><li>完成 8 個最小可教學的實作主題。</li><li>讓學員真正動手跑過雲端 API、本地模型與多角色 workflow。</li><li>為課後延伸專題留下可複用的範例。</li></ul>
+<div class="accordion mt-4" id="labsAcc">
+  <div class="accordion-item faq-item mb-3"><h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#lab1">Lab 1｜安裝 Claude Code</button></h2><div id="lab1" class="accordion-collapse collapse show" data-bs-parent="#labsAcc"><div class="accordion-body"><ol><li>安裝 Node.js（建議 nvm 或 mise）。</li><li>依官方文件安裝 Claude Code。</li><li>確認帳號登入與 CLI 可執行。</li></ol><pre><code class="language-bash">npm install -g @anthropic-ai/claude-code
+claude --help</code></pre><p><strong>常見錯誤：</strong>Node 版本不符、權限不足、未登入。</p><p class="mb-0"><strong>練習：</strong>請學員用 Claude Code 描述當前資料夾結構。</p></div></div></div>
+  <div class="accordion-item faq-item mb-3"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lab2">Lab 2｜安裝 Codex CLI</button></h2><div id="lab2" class="accordion-collapse collapse" data-bs-parent="#labsAcc"><div class="accordion-body"><ol><li>準備 Node 與對應帳號環境。</li><li>安裝 Codex CLI。</li><li>測試 help 與基本模型連線。</li></ol><pre><code class="language-bash">npm install -g @openai/codex
+codex --help</code></pre><p class="mb-0"><strong>練習：</strong>請學員比較 Claude Code 與 Codex CLI 的第一印象與使用情境。</p></div></div></div>
+  <div class="accordion-item faq-item mb-3"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lab3">Lab 3｜安裝 OpenClaw</button></h2><div id="lab3" class="accordion-collapse collapse" data-bs-parent="#labsAcc"><div class="accordion-body"><ol><li>閱讀官方 Getting Started。</li><li>確認 Docker / Python 等需求。</li><li>啟動服務並測試主要通道。</li></ol><pre><code class="language-bash"># 依官方文件操作，常見做法為 docker compose up -d</code></pre><p class="mb-0"><strong>練習：</strong>請學員說明 OpenClaw 比較像「平台」還是「單一工具」。</p></div></div></div>
+  <div class="accordion-item faq-item mb-3"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lab4">Lab 4｜建立第一個 Agent</button></h2><div id="lab4" class="accordion-collapse collapse" data-bs-parent="#labsAcc"><div class="accordion-body"><pre><code class="language-python">def simple_agent(task: str):
+    plan = ["理解任務", "判斷是否要查資料", "產出結果"]
+    return {"task": task, "plan": plan}</code></pre><p><strong>說明：</strong>這是最小概念版；真正 agent 還會加入模型、工具與狀態。</p><p class="mb-0"><strong>練習：</strong>請學員再加一個「查詢 API」或「寫檔」步驟。</p></div></div></div>
+  <div class="accordion-item faq-item mb-3"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lab5">Lab 5｜呼叫 Gemini API</button></h2><div id="lab5" class="accordion-collapse collapse" data-bs-parent="#labsAcc"><div class="accordion-body"><pre><code class="language-python">from google import genai
+client = genai.Client(api_key="YOUR_GEMINI_API_KEY")
+print(client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents="請產生一段 AI Agent 課程介紹"
+).text)</code></pre><p class="mb-0"><strong>常見錯誤：</strong>API Key 未設定、額度不足、model 名稱錯誤。</p></div></div></div>
+  <div class="accordion-item faq-item mb-3"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lab6">Lab 6｜呼叫 Ollama</button></h2><div id="lab6" class="accordion-collapse collapse" data-bs-parent="#labsAcc"><div class="accordion-body"><pre><code class="language-bash">ollama serve
+ollama pull qwen3:8b</code></pre><pre><code class="language-python">import requests
+r = requests.post("http://localhost:11434/api/generate", json={
+    "model": "qwen3:8b",
+    "prompt": "請解釋 RAG 與 Agent 的關係",
+    "stream": False
+})
+print(r.json()["response"])</code></pre></div></div></div>
+  <div class="accordion-item faq-item mb-3"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lab7">Lab 7｜切換雲端模型與本地模型</button></h2><div id="lab7" class="accordion-collapse collapse" data-bs-parent="#labsAcc"><div class="accordion-body"><pre><code class="language-python">from openai import OpenAI
+cloud_client = OpenAI(api_key="YOUR_API_KEY", base_url="https://api.openai.com/v1")
+local_client = OpenAI(api_key="ollama", base_url="http://localhost:11434/v1")</code></pre><p class="mb-0">重點是理解 client 介面與 provider / base_url 的抽象邊界。</p></div></div></div>
+  <div class="accordion-item faq-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#lab8">Lab 8｜建立 Multi-Agent Workflow</button></h2><div id="lab8" class="accordion-collapse collapse" data-bs-parent="#labsAcc"><div class="accordion-body"><pre><code class="language-python">workflow = {
+    "planner": "拆解教學任務",
+    "researcher": "找資料與案例",
+    "writer": "整理教材草稿",
+    "reviewer": "檢查正確性與教學可用性"
+}
+print(workflow)</code></pre><p class="mb-0"><strong>練習：</strong>請將自己的課程主題代入，例如 IoT、機率或半導體製程。</p></div></div></div>
+</div>
+</div></section>
+
+    <section class="text-center py-3">
+      <p class="footer-note mb-2">本系列內容依據使用者提供的 Intelligent_Agent_Workshop_Website_Spec.md 整理成可教學、可導覽、可逐頁閱讀的研習網站版本。</p>
+      <div class="d-flex justify-content-center flex-wrap gap-2">
+        <a class="btn btn-outline-light" href="workshop.html">回 Workshop 首頁</a>
+        <a class="btn btn-primary" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">回頁首</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script>hljs.highlightAll(); mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="商業 API、免費 API 與 OpenAI-compatible 模型來源教材頁。">
+  <title>API 與模型來源 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css">
+  <style>
+:root {
+  --bg: #0b1020;
+  --panel: rgba(18, 25, 49, 0.94);
+  --panel-2: rgba(24, 33, 63, 0.96);
+  --text: #e5ecff;
+  --muted: #a8b3cf;
+  --brand: #7c9cff;
+  --brand-2: #54d2ff;
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --border: rgba(148, 163, 184, 0.18);
+}
+body {
+  background: radial-gradient(circle at top, #172041 0%, #0b1020 45%, #070b16 100%);
+  color: var(--text);
+  font-family: "Noto Sans TC", "Segoe UI", sans-serif;
+}
+a { color: #9fc4ff; }
+a:hover { color: #dbe9ff; }
+.navbar, .offcanvas, .cardx, .soft-panel, .toc-card, .chapter-nav, .exercise-box, .faq-item, .table-wrap, .timeline-step {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.28);
+}
+.navbar { backdrop-filter: blur(10px); }
+.hero {
+  background: linear-gradient(135deg, rgba(124,156,255,.22), rgba(84,210,255,.12));
+  border: 1px solid rgba(124,156,255,.35);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.hero-grid {
+  background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.badge-soft { background: rgba(124,156,255,.18); color: #dbe6ff; }
+.section-title, h1, h2, h3, h4 { color: #f8fbff; }
+.section-title { font-weight: 800; letter-spacing: .02em; }
+.muted { color: var(--muted); }
+.cardx, .soft-panel, .exercise-box, .faq-item, .table-wrap, .timeline-step { border-radius: 1rem; }
+.chapter-anchor { scroll-margin-top: 96px; }
+.toc-card {
+  position: sticky;
+  top: 88px;
+  border-radius: 1rem;
+}
+.toc-card a {
+  color: #d6e2ff;
+  text-decoration: none;
+  display: block;
+  padding: .4rem 0;
+  border-bottom: 1px dashed rgba(148,163,184,.15);
+}
+.toc-card a:last-child { border-bottom: 0; }
+.toc-card a:hover { color: #7c9cff; }
+.chapter-nav .nav-link {
+  color: #dbe6ff;
+  border: 1px solid rgba(148,163,184,.18);
+  margin-bottom: .5rem;
+  border-radius: .85rem;
+  background: rgba(255,255,255,.02);
+}
+.chapter-nav .nav-link:hover { background: rgba(124,156,255,.12); color: #fff; }
+.table { --bs-table-color: #e5ecff; --bs-table-bg: transparent; --bs-table-border-color: rgba(148,163,184,.2); }
+.table thead th { color: #fff; background: rgba(124,156,255,.12); }
+.accordion { --bs-accordion-bg: transparent; --bs-accordion-color: #e5ecff; --bs-accordion-border-color: rgba(148,163,184,.18); --bs-accordion-btn-bg: rgba(255,255,255,.02); --bs-accordion-btn-color: #f8fbff; --bs-accordion-active-bg: rgba(124,156,255,.12); --bs-accordion-active-color: #fff; }
+code { color: #8be9fd; }
+pre { border-radius: 1rem; overflow: hidden; border: 1px solid rgba(148,163,184,.18); }
+.pill {
+  display: inline-block;
+  padding: .35rem .75rem;
+  border-radius: 999px;
+  background: rgba(84,210,255,.12);
+  color: #d9f8ff;
+  margin-right: .4rem;
+  margin-bottom: .5rem;
+  font-size: .92rem;
+}
+.list-check li { margin-bottom: .55rem; }
+.list-check li::marker { color: var(--success); }
+.mermaid-wrap {
+  background: rgba(255,255,255,.02);
+  border: 1px solid rgba(148,163,184,.18);
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow: auto;
+}
+.timeline-step { padding: 1rem; height: 100%; }
+.footer-note { color: var(--muted); font-size: .95rem; }
+.small-note { font-size: .95rem; color: var(--muted); }
+.kpi { background: rgba(255,255,255,.03); border: 1px solid rgba(148,163,184,.18); border-radius: 1rem; padding: 1rem; height: 100%; }
+@media (max-width: 991.98px) {
+  .toc-card { position: static; }
+}
+</style>
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="index.html">iAgents 中文學習站</a>
+      <button class="navbar-toggler btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocCanvas" aria-controls="tocCanvas">課程目錄</button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link text-white-50" href="index.html">回首頁</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="resources.html">精選資源</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="coding-agents.html">Coding Agents</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="workshop.html">Workshop 首頁</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="tocCanvas" aria-labelledby="tocCanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="tocCanvasLabel">Workshop 課程地圖</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="toc-card p-3">
+        <a href="workshop.html">Workshop 首頁</a>
+<a href="workshop-intro.html">1. ChatBot 到 Intelligent Agent</a>
+<a href="workshop-tools.html">2. 主流 Agent 工具比較</a>
+<a href="workshop-api.html" style="color:#7c9cff;font-weight:700">3. API 與模型來源</a>
+<a href="workshop-ollama.html">4. Ollama 本地模型</a>
+<a href="workshop-rag.html">5. RAG 與 Agent</a>
+<a href="workshop-multi-agent.html">6. Multi-Agent</a>
+<a href="workshop-labs.html">7. 實作教材</a>
+<a href="workshop-gb10.html">8. GB10 教學環境</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container py-4 py-lg-5">
+    <section class="hero hero-grid p-4 p-lg-5 mb-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8">
+          <span class="badge badge-soft px-3 py-2 mb-3">Intelligent Agent 實作研習 / 多頁教材版</span>
+          <h1 class="display-5 fw-bold mb-3">Chapter 3｜API 與模型來源</h1>
+          <p class="lead mb-4">整理 OpenAI、Anthropic、Gemini、OpenRouter 與免費 API，建立雲端模型教學的基本盤。</p>
+          <div class="mb-0">
+            <span class="pill">教師研習</span>
+            <span class="pill">理論 + 架構 + 實作</span>
+            <span class="pill">RWD + 深色模式</span>
+            <span class="pill">Mermaid + 程式碼範例</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <aside class="toc-card p-4">
+            <h2 class="h5 fw-bold mb-3">本課程單元</h2>
+            <a href="workshop.html">Workshop 首頁</a>
+<a href="workshop-intro.html">1. ChatBot 到 Intelligent Agent</a>
+<a href="workshop-tools.html">2. 主流 Agent 工具比較</a>
+<a href="workshop-api.html" style="color:#7c9cff;font-weight:700">3. API 與模型來源</a>
+<a href="workshop-ollama.html">4. Ollama 本地模型</a>
+<a href="workshop-rag.html">5. RAG 與 Agent</a>
+<a href="workshop-multi-agent.html">6. Multi-Agent</a>
+<a href="workshop-labs.html">7. 實作教材</a>
+<a href="workshop-gb10.html">8. GB10 教學環境</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+    
+<section class="mb-5"><div class="cardx p-4 p-lg-5">
+<h2 class="section-title h2 mb-3">學習目標</h2>
+<ul class="list-check"><li>理解商業 API 與免費 API 的差異。</li><li>知道 API Key、費用、Rate Limit、適用情境如何影響教學設計。</li><li>能用 OpenAI-compatible 介面在不同 provider 間切換。</li></ul>
+<h2 class="section-title h2 mt-4 mb-3">商業 API</h2>
+<div class="table-wrap p-3 p-lg-4 table-responsive"><table class="table table-bordered align-middle"><thead><tr><th>供應商</th><th>API Key</th><th>費用</th><th>Rate Limit</th><th>適用情境</th></tr></thead><tbody>
+<tr><th>OpenAI</th><td>需於平台建立 key；教學時建議用環境變數管理</td><td>依模型與 token 計價；需即時查官方 pricing</td><td>依帳號層級、模型與組織設定而不同</td><td>標準開發者教學、OpenAI SDK、生態最完整</td></tr>
+<tr><th>Anthropic</th><td>於 Claude / Anthropic 平台建立 key</td><td>依模型與 token 計價；請查官方 pricing</td><td>依方案與模型不同</td><td>reasoning、長文本、coding assistant 生態討論</td></tr>
+<tr><th>Google Gemini</th><td>於 Google AI Studio 建立 key</td><td>提供免費額度與付費層；適合 workshop 上手</td><td>免費與付費層限制不同</td><td>快速示範、多模態入口、教師自學門檻較低</td></tr>
+<tr><th>OpenRouter</th><td>建立 OpenRouter key，統一多模型入口</td><td>依路由的實際模型計價</td><td>依帳號與上游 provider 而定</td><td>做多模型比較、provider abstraction、備援切換</td></tr>
+</tbody></table></div>
+<p class="small-note">說明費率與速率限制時，教學上應提醒學員：價格與 Rate Limit 變動頻繁，實際授課前務必重新檢查官方 pricing / limits 頁面，而不要把教材中的文字視為永久數字。</p>
+<h2 class="section-title h2 mt-4 mb-3">免費 API</h2>
+<div class="row g-4"><div class="col-lg-4"><div class="soft-panel p-4 h-100"><h3 class="h4">Gemini Free API</h3><p>優點是上手快、入口清楚，適合 workshop 第一個雲端 API 範例。缺點是免費額度與速率限制較容易遇到上限。</p></div></div><div class="col-lg-4"><div class="soft-panel p-4 h-100"><h3 class="h4">Groq</h3><p>以低延遲推理著稱，適合示範「速度如何影響互動體驗」。缺點是可用模型與平台政策需依當期服務為準。</p></div></div><div class="col-lg-4"><div class="soft-panel p-4 h-100"><h3 class="h4">Cerebras</h3><p>可用來作為高效推理平台案例。優點是能讓學生理解不同推理基礎設施的差異；缺點是教學資料需持續更新。</p></div></div></div>
+<h2 class="section-title h2 mt-4 mb-3">Python 範例</h2>
+<pre><code class="language-python">from google import genai
+
+client = genai.Client(api_key="YOUR_GEMINI_API_KEY")
+response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents="請用繁體中文說明 AI Agent 與 ChatBot 的差異。",
+)
+print(response.text)</code></pre>
+<pre><code class="language-python">from openai import OpenAI
+
+client = OpenAI(
+    api_key="YOUR_API_KEY",
+    base_url="https://openrouter.ai/api/v1"
+)
+resp = client.chat.completions.create(
+    model="openai/gpt-4.1-mini",
+    messages=[{"role": "user", "content": "請列出 Agent 的核心元件。"}]
+)
+print(resp.choices[0].message.content)</code></pre>
+<h2 class="section-title h2 mt-4 mb-3">常見錯誤</h2>
+<ul class="list-check"><li><code>401 Unauthorized</code>：API Key 錯誤、漏設或權限不足。</li><li><code>429 Too Many Requests</code>：超過免費額度或速率限制。</li><li><code>404 model not found</code>：模型名稱錯誤或 provider 未提供。</li><li><code>403 Forbidden</code>：例如 OpenAI 平台頁面未授權，需登入或改用正確 API endpoint。</li></ul>
+<div class="exercise-box p-4 mt-4"><h3 class="h5 fw-bold">實作練習</h3><ol class="mb-0"><li>用 Gemini Free API 完成第一次呼叫。</li><li>改接一個 OpenAI-compatible provider。</li><li>比較回應速度、費用、輸出風格與教學上手難度。</li></ol></div>
+</div></section>
+
+    <section class="text-center py-3">
+      <p class="footer-note mb-2">本系列內容依據使用者提供的 Intelligent_Agent_Workshop_Website_Spec.md 整理成可教學、可導覽、可逐頁閱讀的研習網站版本。</p>
+      <div class="d-flex justify-content-center flex-wrap gap-2">
+        <a class="btn btn-outline-light" href="workshop.html">回 Workshop 首頁</a>
+        <a class="btn btn-primary" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">回頁首</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script>hljs.highlightAll(); mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GB10 多使用者教學環境與部署建議教材頁。">
+  <title>GB10 教學環境 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css">
+  <style>
+:root {
+  --bg: #0b1020;
+  --panel: rgba(18, 25, 49, 0.94);
+  --panel-2: rgba(24, 33, 63, 0.96);
+  --text: #e5ecff;
+  --muted: #a8b3cf;
+  --brand: #7c9cff;
+  --brand-2: #54d2ff;
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --border: rgba(148, 163, 184, 0.18);
+}
+body {
+  background: radial-gradient(circle at top, #172041 0%, #0b1020 45%, #070b16 100%);
+  color: var(--text);
+  font-family: "Noto Sans TC", "Segoe UI", sans-serif;
+}
+a { color: #9fc4ff; }
+a:hover { color: #dbe9ff; }
+.navbar, .offcanvas, .cardx, .soft-panel, .toc-card, .chapter-nav, .exercise-box, .faq-item, .table-wrap, .timeline-step {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.28);
+}
+.navbar { backdrop-filter: blur(10px); }
+.hero {
+  background: linear-gradient(135deg, rgba(124,156,255,.22), rgba(84,210,255,.12));
+  border: 1px solid rgba(124,156,255,.35);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.hero-grid {
+  background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.badge-soft { background: rgba(124,156,255,.18); color: #dbe6ff; }
+.section-title, h1, h2, h3, h4 { color: #f8fbff; }
+.section-title { font-weight: 800; letter-spacing: .02em; }
+.muted { color: var(--muted); }
+.cardx, .soft-panel, .exercise-box, .faq-item, .table-wrap, .timeline-step { border-radius: 1rem; }
+.chapter-anchor { scroll-margin-top: 96px; }
+.toc-card {
+  position: sticky;
+  top: 88px;
+  border-radius: 1rem;
+}
+.toc-card a {
+  color: #d6e2ff;
+  text-decoration: none;
+  display: block;
+  padding: .4rem 0;
+  border-bottom: 1px dashed rgba(148,163,184,.15);
+}
+.toc-card a:last-child { border-bottom: 0; }
+.toc-card a:hover { color: #7c9cff; }
+.chapter-nav .nav-link {
+  color: #dbe6ff;
+  border: 1px solid rgba(148,163,184,.18);
+  margin-bottom: .5rem;
+  border-radius: .85rem;
+  background: rgba(255,255,255,.02);
+}
+.chapter-nav .nav-link:hover { background: rgba(124,156,255,.12); color: #fff; }
+.table { --bs-table-color: #e5ecff; --bs-table-bg: transparent; --bs-table-border-color: rgba(148,163,184,.2); }
+.table thead th { color: #fff; background: rgba(124,156,255,.12); }
+.accordion { --bs-accordion-bg: transparent; --bs-accordion-color: #e5ecff; --bs-accordion-border-color: rgba(148,163,184,.18); --bs-accordion-btn-bg: rgba(255,255,255,.02); --bs-accordion-btn-color: #f8fbff; --bs-accordion-active-bg: rgba(124,156,255,.12); --bs-accordion-active-color: #fff; }
+code { color: #8be9fd; }
+pre { border-radius: 1rem; overflow: hidden; border: 1px solid rgba(148,163,184,.18); }
+.pill {
+  display: inline-block;
+  padding: .35rem .75rem;
+  border-radius: 999px;
+  background: rgba(84,210,255,.12);
+  color: #d9f8ff;
+  margin-right: .4rem;
+  margin-bottom: .5rem;
+  font-size: .92rem;
+}
+.list-check li { margin-bottom: .55rem; }
+.list-check li::marker { color: var(--success); }
+.mermaid-wrap {
+  background: rgba(255,255,255,.02);
+  border: 1px solid rgba(148,163,184,.18);
+  border-radius: 1rem;
+  padding: 1rem;
+  overflow: auto;
+}
+.timeline-step { padding: 1rem; height: 100%; }
+.footer-note { color: var(--muted); font-size: .95rem; }
+.small-note { font-size: .95rem; color: var(--muted); }
+.kpi { background: rgba(255,255,255,.03); border: 1px solid rgba(148,163,184,.18); border-radius: 1rem; padding: 1rem; height: 100%; }
+@media (max-width: 991.98px) {
+  .toc-card { position: static; }
+}
+</style>
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="index.html">iAgents 中文學習站</a>
+      <button class="navbar-toggler btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocCanvas" aria-controls="tocCanvas">課程目錄</button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link text-white-50" href="index.html">回首頁</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="resources.html">精選資源</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="coding-agents.html">Coding Agents</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="workshop.html">Workshop 首頁</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="tocCanvas" aria-labelledby="tocCanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="tocCanvasLabel">Workshop 課程地圖</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="toc-card p-3">
+        <a href="workshop.html">Workshop 首頁</a>
+<a href="workshop-intro.html">1. ChatBot 到 Intelligent Agent</a>
+<a href="workshop-tools.html">2. 主流 Agent 工具比較</a>
+<a href="workshop-api.html">3. API 與模型來源</a>
+<a href="workshop-ollama.html">4. Ollama 本地模型</a>
+<a href="workshop-rag.html">5. RAG 與 Agent</a>
+<a href="workshop-multi-agent.html">6. Multi-Agent</a>
+<a href="workshop-labs.html">7. 實作教材</a>
+<a href="workshop-gb10.html" style="color:#7c9cff;font-weight:700">8. GB10 教學環境</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container py-4 py-lg-5">
+    <section class="hero hero-grid p-4 p-lg-5 mb-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8">
+          <span class="badge badge-soft px-3 py-2 mb-3">Intelligent Agent 實作研習 / 多頁教材版</span>
+          <h1 class="display-5 fw-bold mb-3">Chapter 8｜GB10 教學環境設計</h1>
+          <p class="lead mb-4">以多使用者、共用 Ollama、安全與可重建環境為主軸，說明如何準備 20 人研習工作站。</p>
+          <div class="mb-0">
+            <span class="pill">教師研習</span>
+            <span class="pill">理論 + 架構 + 實作</span>
+            <span class="pill">RWD + 深色模式</span>
+            <span class="pill">Mermaid + 程式碼範例</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <aside class="toc-card p-4">
+            <h2 class="h5 fw-bold mb-3">本課程單元</h2>
+            <a href="workshop.html">Workshop 首頁</a>
+<a href="workshop-intro.html">1. ChatBot 到 Intelligent Agent</a>
+<a href="workshop-tools.html">2. 主流 Agent 工具比較</a>
+<a href="workshop-api.html">3. API 與模型來源</a>
+<a href="workshop-ollama.html">4. Ollama 本地模型</a>
+<a href="workshop-rag.html">5. RAG 與 Agent</a>
+<a href="workshop-multi-agent.html">6. Multi-Agent</a>
+<a href="workshop-labs.html">7. 實作教材</a>
+<a href="workshop-gb10.html" style="color:#7c9cff;font-weight:700">8. GB10 教學環境</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+    
+<section class="mb-5"><div class="cardx p-4 p-lg-5">
+<h2 class="section-title h2 mb-3">學習目標</h2>
+<ul class="list-check"><li>理解單機多使用者的 GB10 教學架構。</li><li>知道如何共用 Ollama 而避免使用者互相干擾。</li><li>能設計安全、可控、可重建的研習環境。</li></ul>
+<h2 class="section-title h2 mt-4 mb-3">Linux 多使用者架構</h2>
+<pre><code class="language-text">teacher
+user01
+user02
+...
+user20</code></pre>
+<div class="row g-4"><div class="col-lg-6"><div class="soft-panel p-4 h-100"><h3 class="h4">每位學員各自擁有</h3><ul class="mb-0 ps-3 list-check"><li>獨立 Home Directory</li><li>SSH 登入</li><li>Git 設定</li><li>Claude Code / OpenClaw 設定</li><li>API Keys</li><li>Python Environment</li><li>Node Environment</li></ul></div></div><div class="col-lg-6"><div class="mermaid-wrap"><div class="mermaid">flowchart TD
+T[teacher] --> G[GB10 Linux Host]
+U1[user01] --> G
+U2[user02] --> G
+U20[user20] --> G
+G --> H1[/home/teacher]
+G --> H2[/home/user01]
+G --> H3[/home/user02]
+G --> H4[/home/user20]
+G --> O[Ollama :11434 共用服務]
+</div></div></div></div>
+<h2 class="section-title h2 mt-4 mb-3">Ollama 共用原則</h2>
+<ul class="list-check"><li>所有使用者共用 <code>localhost:11434</code>。</li><li>模型只下載一次。</li><li>所有學員共用同一份模型檔。</li><li>不必為每位學員重複安裝模型。</li></ul>
+<h2 class="section-title h2 mt-4 mb-3">安全性建議</h2>
+<div class="row g-4"><div class="col-lg-4"><div class="timeline-step"><h3 class="h6 fw-bold">學員不可 sudo</h3><p class="mb-0">避免誤改系統、降低環境失控風險。</p></div></div><div class="col-lg-4"><div class="timeline-step"><h3 class="h6 fw-bold">Docker 僅教師可用</h3><p class="mb-0">避免容器資源競爭與權限擴張。</p></div></div><div class="col-lg-4"><div class="timeline-step"><h3 class="h6 fw-bold">只管理自己的 Home</h3><p class="mb-0">降低互相覆蓋設定、刪檔與環境污染。</p></div></div></div>
+<h2 class="section-title h2 mt-4 mb-3">Node / Python 建議</h2>
+<ul class="list-check"><li>Node：使用 <strong>nvm</strong> 或 <strong>mise</strong>，不要直接綁系統 Node。</li><li>Python：使用 <strong>uv</strong> + <strong>venv</strong>，避免所有人共用套件。</li></ul>
+<h2 class="section-title h2 mt-4 mb-3">Golden Image 與 /etc/skel</h2>
+<p>可將 aliases、Git、uv、nvm、VS Code CLI、Ollama Client、OpenClaw Template、Claude Code Template、範例專案放在 <code>/etc/skel</code>，讓每位新學員帳號建立時都擁有相同起始環境。</p>
+<div class="exercise-box p-4 mt-4"><h3 class="h5 fw-bold">實作練習</h3><p class="mb-0">請學員描述：若你要管理 20 位學員的帳號，哪些設定該由教師預先處理？哪些設定應保留給學員自己完成？</p></div>
+</div></section>
+
+    <section class="text-center py-3">
+      <p class="footer-note mb-2">本系列內容依據使用者提供的 Intelligent_Agent_Workshop_Website_Spec.md 整理成可教學、可導覽、可逐頁閱讀的研習網站版本。</p>
+      <div class="d-flex justify-content-center flex-wrap gap-2">
+        <a class="btn btn-outline-light" href="workshop.html">回 Workshop 首頁</a>
+        <a class="btn btn-primary" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">回頁首</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script>hljs.highlightAll(); mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+</body>
+</html>
