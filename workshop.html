@@ -212,6 +212,18 @@ pre { border-radius: 1rem; overflow: hidden; border: 1px solid rgba(148,163,184,
   </div>
 </section>
 
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h2 mb-4">建議授課模式</h2>
+    <div class="row g-3">
+      <div class="col-md-4"><div class="timeline-step"><h3 class="h6 fw-bold">模式 A｜純示範型</h3><p class="mb-0">教師為主操作，學員以理解 agent 生態與流程為目標。</p></div></div>
+      <div class="col-md-4"><div class="timeline-step"><h3 class="h6 fw-bold">模式 B｜半實作型</h3><p class="mb-0">學員跟做 API、Ollama 與一個最小 workflow，適合 6 小時研習。</p></div></div>
+      <div class="col-md-4"><div class="timeline-step"><h3 class="h6 fw-bold">模式 C｜專題延伸型</h3><p class="mb-0">研習後延伸成各系課程應用、小型專題或教師社群共備。</p></div></div>
+    </div>
+  </div>
+</section>
+
 <section class="mb-5">
   <div class="cardx p-4 p-lg-5">
     <h2 class="section-title h2 mb-4">6 小時研習建議流程</h2>
@@ -237,7 +249,29 @@ pre { border-radius: 1rem; overflow: hidden; border: 1px solid rgba(148,163,184,
   </div>
 </section>
 
-    <section class="text-center py-3">
+    
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <h2 class="section-title h2 mb-4">課前準備與 FAQ</h2>
+    <div class="accordion" id="homeFaq">
+      <div class="accordion-item faq-item mb-3">
+        <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#homeFaq1">這門研習和 Prompt Engineering 課有何不同？</button></h2>
+        <div id="homeFaq1" class="accordion-collapse collapse show" data-bs-parent="#homeFaq"><div class="accordion-body">本課程重點不是教學員如何多寫幾種 prompt，而是讓學員理解：當任務需要查資料、呼叫工具、切換模型、保留狀態與人工審核時，系統設計就會從聊天介面升級為 agent workflow。</div></div>
+      </div>
+      <div class="accordion-item faq-item mb-3">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#homeFaq2">如果學員背景差異很大，怎麼安排？</button></h2>
+        <div id="homeFaq2" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">建議前半段用共通概念與圖示建立語言，後半段再用分層練習：非程式背景學員完成概念設計與流程圖，程式背景學員再進一步完成 API 與本地模型連接。</div></div>
+      </div>
+      <div class="accordion-item faq-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#homeFaq3">課前應準備什麼？</button></h2>
+        <div id="homeFaq3" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body"><ul class="mb-0 ps-3"><li>至少一個可用的雲端 API Key。</li><li>基本 Python 與 Node 環境。</li><li>若要示範本地模型，請先確認 Ollama 或教室工作站資源。</li><li>最好準備一份自己的課程資料，方便在 RAG 練習中直接使用。</li></ul></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter-nav p-4 mt-4"><div class="row g-3 align-items-stretch"><div class="col-md-6"><div class="nav-link h-100 p-3 opacity-50"><div class="small-note">上一頁</div><div class="fw-bold">已是起點</div></div></div><div class="col-md-6"><a class="nav-link h-100 p-3" href="workshop-intro.html"><div class="small-note">下一頁</div><div class="fw-bold">1. ChatBot 到 Intelligent Agent</div></a></div></div></section>
+<section class="text-center py-3">
       <p class="footer-note mb-2">本系列內容依據使用者提供的 Intelligent_Agent_Workshop_Website_Spec.md 整理成可教學、可導覽、可逐頁閱讀的研習網站版本。</p>
       <div class="d-flex justify-content-center flex-wrap gap-2">
         <a class="btn btn-outline-light" href="workshop.html">回 Workshop 首頁</a>
