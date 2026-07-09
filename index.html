@@ -122,14 +122,14 @@
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
       <div>
         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-        <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：release 能否穩定產生下游產物、診斷預設值與工具分組如何影響可觀測性、語音介面是否把 agent 從文字回圈推向即時接管。</p>
+        <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：一、beta release 與 dashboard 是否一起讓排程更可驗證；二、patch release 與 headless worker 如何避免自動化在無人值守環境失真；三、模型升級走進工作介面後，權限與工具接入要怎麼補驗證。</p>
       </div>
       <div class="d-flex gap-2 flex-wrap">
         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
         <a class="btn btn-outline-secondary" href="news-archive.html">瀏覽新聞檔案列表</a>
       </div>
     </div>
-    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-09 · OpenClaw 官方 Release / Commit</div><p>今天最值得帶進課堂的是 OpenClaw 把 release 能力打包與 Doctor 預設 lint 邊界放在同一天看：一邊問「功能怎麼上線」，一邊問「哪些檢查應該預設執行」。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-09 · Hermes Agent 官方 Release / Commit</div><p>Hermes 同時提供 patch release 與 desktop UI commit：前者提醒學生看 tagged-release Docker build 是否可重現，後者則拿來討論多工具回合在畫面上如何被正確看見。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-09 · TechCrunch</div><p>OpenAI 的新語音模型適合當外部對照組：當 agent 走向 live conversation，延遲、打斷與人工接管條件都會變成新的系統設計問題。</p></article></div></div>
+    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-10 · OpenClaw 官方 Release / Commit</div><p>今天先把 OpenClaw 當成「排程與介面可觀測性」案例：同一邊是 beta release 打包 GPT-5.6、attach 與 on-exit cron，另一邊是 cron/tasks 卡片重設計，剛好可以一起問功能與狀態有沒有被同時交付。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-10 · Hermes Agent 官方 Release / Commit</div><p>Hermes 今天適合拿來讀「可重現部署」與「headless worker」兩條線：patch release 修的是 tagged Docker build，kanban commit 修的是無 TTY worker 不該誤入互動式 TUI。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-10 · 外部對照（The Verge）</div><p>外部新聞可用 GPT-5.6 + ChatGPT Work 當對照組：一旦模型升級直接走進工作介面，課堂比較就不能只看模型分數，還要追工具接入、權限與工作流。</p></article></div></div>
   </div>
  </section>
 
@@ -169,6 +169,7 @@
             <li>把「看不見的 guardrail」改寫成可驗證證據欄位：文件、旗標、畫面、log 或回歸測試</li>
             <li>同一天至少對照 1 則官方 release 與 1 則 commit，分辨 source of truth 是 release notes、host env policy、實際路徑，還是平台最終渲染</li>
             <li>每讀一條消息都補 1 個可驗證證據：產物、測試檔、log、畫面或評估結果</li>
+            <li>若消息同時牽涉排程與介面，再分開記「背景任務真的完成了嗎」與「畫面是否把完成狀態正確顯示出來」。</li>
             <li>官方文件、影片與新聞之間的對照閱讀路徑</li>
           </ol>
           <div class="soft-panel mt-3 p-3">
