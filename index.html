@@ -122,14 +122,14 @@
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
       <div>
         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-        <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：一、beta release 與 dashboard 是否一起讓排程更可驗證；二、patch release 與 headless worker 如何避免自動化在無人值守環境失真；三、模型升級走進工作介面後，權限與工具接入要怎麼補驗證。</p>
+        <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先看三條線：一、legacy delivery status 修復後，任務狀態終於能不能可信；二、sandbox script 把哪些本機狀態隔離開，才不會讓 desktop agent 測試互相污染；三、當 GPT-5.6 進入 Microsoft 365 Copilot，工程比較要怎麼從 benchmark 改成產品接點與權限邊界。</p>
       </div>
       <div class="d-flex gap-2 flex-wrap">
         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
         <a class="btn btn-outline-secondary" href="news-archive.html">瀏覽新聞檔案列表</a>
       </div>
     </div>
-    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-10 · OpenClaw 官方 Release / Commit</div><p>今天先把 OpenClaw 當成「排程與介面可觀測性」案例：同一邊是 beta release 打包 GPT-5.6、attach 與 on-exit cron，另一邊是 cron/tasks 卡片重設計，剛好可以一起問功能與狀態有沒有被同時交付。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-10 · Hermes Agent 官方 Release / Commit</div><p>Hermes 今天適合拿來讀「可重現部署」與「headless worker」兩條線：patch release 修的是 tagged Docker build，kanban commit 修的是無 TTY worker 不該誤入互動式 TUI。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-10 · 外部對照（The Verge）</div><p>外部新聞可用 GPT-5.6 + ChatGPT Work 當對照組：一旦模型升級直接走進工作介面，課堂比較就不能只看模型分數，還要追工具接入、權限與工作流。</p></article></div></div>
+    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-10 · OpenClaw 官方 Commit</div><p>把 OpenClaw 當成「狀態修復」案例：legacy delivery statuses 一旦修不好，dashboard 上的完成／失敗訊號就可能失真；這一則很適合拿來教 state migration 與 workflow observability 為什麼要一起驗證。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-10 · Hermes Agent 官方 Commit</div><p>把 Hermes 當成「隔離測試環境」案例：sandbox script 不只換資料夾，還一起隔離 HERMES_HOME、Electron userData 與 app name，剛好能帶學生問本機 agent 測試最容易在哪一層互相污染。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-09 · 外部對照（TechCrunch）</div><p>外部消息可用 GPT-5.6 進入 Microsoft 365 Copilot 當對照組：一旦模型更新直接走進工作產品，課堂比較就不能只看模型分數，還要追權限、整合與責任邊界。</p></article></div></div>
   </div>
  </section>
 
@@ -164,6 +164,7 @@
             <li class="mb-2">專題、課堂報告與實作切入點</li>
             <li class="mb-2">近期版本與產業新聞的工程重點</li>
             <li>練習把 release、commit 與外部報導各自對應到驗證方法</li>
+            <li>遇到 sandbox 或 state migration 類消息時，固定寫出它隔離或修補的是哪一層狀態。</li>
             <li>再補 1 欄「設定是暫時覆蓋還是永久寫回」，避免把示範旗標誤當成系統預設</li>
             <li>遇到跨平台 agent 問題時，再補 1 欄「這個假設只在 POSIX 成立，還是 Windows 也成立」，避免把 signal／process 邏輯直接複製到所有系統</li>
             <li>把「看不見的 guardrail」改寫成可驗證證據欄位：文件、旗標、畫面、log 或回歸測試</li>

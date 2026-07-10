@@ -34,6 +34,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-11.html — 2026-07-11 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-11.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-10.html — 2026-07-10 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-10.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-09.html — 2026-07-09 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-09.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-08.html — 2026-07-08 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-08.html">開啟</a></li>
@@ -44,7 +45,33 @@
         </ul>
       </div>
     </section>
-        <section class="mb-5">
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">2026-07-11 每日重點</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條練習怎麼把同一則更新改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-success" href="2026-07-11.html">開啟 2026-07-11 每日檔案</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.1-beta.2 仍是今天最值得先對照的官方版本，因為它把 GPT-5.6、attach、Telegram Codex、on-exit cron 與 scoped conversations 綁進同一個 release，適合學生把「能力上線」與「排程／邊界是否同步交付」放在同一張表讀。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.2" target="_blank" rel="noopener">來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 修補 legacy delivery statuses，是很好的狀態遷移案例：如果舊任務狀態沒修乾淨，學生在 dashboard 或任務列表上看到的完成／失敗訊號就可能失真。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/91ac7ca700ade95f78e88e3e908818232783426c" target="_blank" rel="noopener">來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.7.2 用 patch release 修正 WhatsApp Baileys 依賴釘選，讓 tagged-release Docker build 重新可用；這很適合教學生把 release 當成「下游產物能否重現」而不只是功能清單。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7.2" target="_blank" rel="noopener">來源（Hermes Agent 官方 Release）</a></li><li class="mb-3"><strong>Hermes 新增 isolated sandbox script 給本機開發使用，並把 HERMES_HOME、Electron userData 與 app name 分開，這很適合教「本機測試隔離」不是只換一個資料夾，而是要一起處理設定、使用者資料與單例鎖。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/5e849942c3b9d36fdd48c80e9d13cb66212d9731" target="_blank" rel="noopener">來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch 報導 OpenAI 表示 GPT-5.6 已成為 Microsoft 365 Copilot 的 preferred model，這是一個很好的外部對照：模型升級一旦直接進入工作產品，課堂比較就要從 benchmark 轉向權限、整合與工作流責任。</strong><br>來源：<a href="https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/" target="_blank" rel="noopener">來源（外部報導（TechCrunch））</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.1-beta.2 is still the best official release to compare first because it bundles GPT-5.6, attach, Telegram Codex, on-exit cron, and scoped conversations into one release-level lesson about shipping capability together with schedules and boundaries.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.2" target="_blank" rel="noopener">Source（OpenClaw Official Release）</a></li><li class="mb-3"><strong>OpenClaw repairs legacy delivery statuses, which makes a clean state-migration lesson: if historical task states are left inconsistent, dashboards and task lists can misreport whether work actually finished or failed.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/91ac7ca700ade95f78e88e3e908818232783426c" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.7.2 uses a patch release to fix pinned WhatsApp Baileys dependencies so tagged-release Docker builds work again, making reproducible downstream artifacts—not just feature lists—the main lesson.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7.2" target="_blank" rel="noopener">Source（Hermes Agent Official Release）</a></li><li class="mb-3"><strong>Hermes adds an isolated sandbox script for local development and separates HERMES_HOME, Electron userData, and the app name, making it a strong lesson that local test isolation is not just a new folder but a coordinated separation of config, user data, and single-instance locks.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/5e849942c3b9d36fdd48c80e9d13cb66212d9731" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>TechCrunch reports OpenAI saying GPT-5.6 is now the preferred model in Microsoft 365 Copilot, giving a useful outside comparison point: once a model upgrade lands inside a work product, the class discussion should move from benchmarks to permissions, integration, and workflow responsibility.</strong><br>Source：<a href="https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/" target="_blank" rel="noopener">Source（External Coverage (TechCrunch)）</a></li></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
@@ -69,7 +96,7 @@
         </div>
       </div>
     </section>
-
+    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
@@ -93,7 +120,8 @@
           </div>
         </div>
       </div>
-    </section>    <section class="mb-5">
+    </section>
+    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
@@ -117,7 +145,8 @@
           </div>
         </div>
       </div>
-    </section>    <section class="mb-5">
+    </section>
+    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
@@ -141,74 +170,77 @@
           </div>
         </div>
       </div>
-    </section>    <section class="mb-5">
+    </section>
+    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
-            <h2 class="section-title h3 mb-1">2026-07-06 每日重點</h2>
+            <h2 class="section-title h3 mb-1">2026-07-06 每日新聞檔案 每日重點</h2>
             <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條練習怎麼把同一則更新改寫成工程問題。</p>
           </div>
-          <a class="btn btn-outline-success" href="2026-07-06.html">開啟 2026-07-06 每日檔案</a>
+          <a class="btn btn-outline-success" href="2026-07-06.html">開啟 2026-07-06 每日新聞檔案 每日檔案</a>
         </div>
         <div class="row g-4">
           <div class="col-lg-6">
             <div class="border rounded-4 p-4 h-100">
               <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
-              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 2026.7.1-beta.2 把 GPT-5.6、外部 harness attach、Telegram Codex workflow、on-exit cron 與 scoped conversations 收進同一版，適合拿來教「能力擴張要不要同步補觀測與邊界」</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.2" target="_blank" rel="noopener">來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 新增 comparative cost analysis，並把成本視窗與每日 bucket 對齊 request timezone，適合教學生把「模型成本」當成可觀測系統，而不是只看總帳單</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/ff32076f78b2981e3022236122620548b4b2e608" target="_blank" rel="noopener">來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.1 把 Mixture-of-Agents、completion contracts 與 verification evidence 綁在同一版發佈，提醒學生「做得更會想」和「做完要能證明」最好一起設計</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.1" target="_blank" rel="noopener">來源（Hermes Agent 官方 Release）</a></li><li class="mb-3"><strong>Hermes Agent 讓 MCP probe 只有在 config 啟用且 server 真有宣告 capability 時，才去探測 prompts/resources，這很適合教「能力探索不能偷偷越界」</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/1f2a33f4acf253b58157ed0c87652884bc8e0558" target="_blank" rel="noopener">來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch：Alibaba 據報禁止員工使用 Claude Code，適合帶學生把 coding agent 議題從「能不能用」再往下拆成資料外流、審計與企業政策</strong><br>來源：<a href="https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/" target="_blank" rel="noopener">來源（TechCrunch）</a></li></ol>
+              <ol class="mb-0"></ol>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="border rounded-4 p-4 h-100">
               <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
-              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 2026.7.1-beta.2 packages GPT-5.6 support, external harness attach, Telegram Codex workflows, on-exit cron runs, and scoped conversations into one release-level lesson about growth plus boundaries</strong><br>Source：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.2" target="_blank" rel="noopener">Source（OpenClaw Official Release）</a></li><li class="mb-3"><strong>OpenClaw adds comparative cost analysis and aligns cost windows and daily buckets to request timezones, a compact lesson in treating model spend as an observable system instead of a single invoice number</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/ff32076f78b2981e3022236122620548b4b2e608" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.1 ships Mixture-of-Agents, completion contracts, and verification evidence together, making better reasoning and provable completion part of the same release story</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.1" target="_blank" rel="noopener">Source（Hermes Agent Official Release）</a></li><li class="mb-3"><strong>Hermes Agent now probes MCP prompts and resources only when config enables them and the server actually advertises those capabilities, a useful example of capability discovery without accidental overreach</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/1f2a33f4acf253b58157ed0c87652884bc8e0558" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>TechCrunch: Alibaba reportedly bans employees from using Claude Code, giving students a concrete coding-agent case for data leakage, auditability, and internal policy design</strong><br>Source：<a href="https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/" target="_blank" rel="noopener">Source（TechCrunch）</a></li></ol>
+              <ol class="mb-0"></ol>
             </div>
           </div>
         </div>
       </div>
-    </section>    <section class="mb-5">
+    </section>
+    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
-            <h2 class="section-title h3 mb-1">2026-07-05 每日重點</h2>
+            <h2 class="section-title h3 mb-1">2026-07-05 每日新聞檔案 每日重點</h2>
             <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條練習怎麼把同一則更新改寫成工程問題。</p>
           </div>
-          <a class="btn btn-outline-success" href="2026-07-05.html">開啟 2026-07-05 每日檔案</a>
+          <a class="btn btn-outline-success" href="2026-07-05.html">開啟 2026-07-05 每日新聞檔案 每日檔案</a>
         </div>
         <div class="row g-4">
           <div class="col-lg-6">
             <div class="border rounded-4 p-4 h-100">
               <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
-              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 2026.7.1-beta.1 把 GPT-5.6、attach 外部 harness、Telegram Codex、on-exit cron 與 scoped conversations 收進同一版，適合拿來教「能力擴張要不要同步補邊界」</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.1" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 把 live session 的回復責任明確留給 reattach，而不是讓 bulk teardown 順手關閉會話，這很適合示範「回收流程不能把正在執行的狀態一起清掉」</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/619fee1b4ff1d37d6fa5c54ed39ebf6fd6f4127b" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.1 把 Mixture-of-Agents、completion contracts 與 verification evidence 綁在同一版發佈，提醒學生「做得更會想」和「做完要能證明」最好一起設計</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.1" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Release）</a></li><li class="mb-3"><strong>Hermes Agent 把 OpenRouter 的「no tool use」404 重新分類成可 fallback 的 model_not_found，適合教學生怎麼把 provider 錯誤轉成可恢復策略</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/2bb11adb4976169f2434ce72a6185cb189d83079" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch：Alibaba 據報禁止員工使用 Claude Code，這很適合帶學生把 coding agent 議題從「能不能用」再往下拆成資料外流、審計與企業政策</strong><br>來源：<a href="https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/" target="_blank" rel="noopener">查看來源（TechCrunch）</a></li></ol>
+              <ol class="mb-0"></ol>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="border rounded-4 p-4 h-100">
               <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
-              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 2026.7.1-beta.1 packages GPT-5.6 support, external harness attach, Telegram Codex, on-exit cron runs, and scoped conversations into one release that teaches capability growth together with boundary design</strong><br>Source：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.1" target="_blank" rel="noopener">Source（OpenClaw Official Release）</a></li><li class="mb-3"><strong>OpenClaw keeps live-session recovery owned by reattach instead of letting bulk teardown close active sessions, a compact lesson in not mixing cleanup paths with recovery paths</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/619fee1b4ff1d37d6fa5c54ed39ebf6fd6f4127b" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.1 ships Mixture-of-Agents, completion contracts, and verification evidence together, making “better reasoning” and “provable completion” part of the same release story</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.1" target="_blank" rel="noopener">Source（Hermes Agent Official Release）</a></li><li class="mb-3"><strong>Hermes Agent reclassifies OpenRouter “no tool use” 404 responses as model_not_found cases that can trigger fallback, a useful example of turning provider errors into recoverable policy</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/2bb11adb4976169f2434ce72a6185cb189d83079" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>TechCrunch: Alibaba reportedly bans employees from using Claude Code, giving students a concrete coding-agent case for data leakage, auditability, and internal policy design</strong><br>Source：<a href="https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/" target="_blank" rel="noopener">Source（TechCrunch）</a></li></ol>
+              <ol class="mb-0"></ol>
             </div>
           </div>
         </div>
       </div>
-    </section>    <section class="mb-5">
+    </section>
+    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
-            <h2 class="section-title h3 mb-1">2026-07-04 每日重點</h2>
+            <h2 class="section-title h3 mb-1">2026-07-04 每日新聞檔案 每日重點</h2>
             <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條練習怎麼把同一則更新改寫成工程問題。</p>
           </div>
-          <a class="btn btn-outline-success" href="2026-07-04.html">開啟 2026-07-04 每日檔案</a>
+          <a class="btn btn-outline-success" href="2026-07-04.html">開啟 2026-07-04 每日新聞檔案 每日檔案</a>
         </div>
         <div class="row g-4">
           <div class="col-lg-6">
             <div class="border rounded-4 p-4 h-100">
               <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
-              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 2026.7.1-beta.1 把 GPT-5.6、attach 外部 harness、Telegram Codex、on-exit cron 與 scoped conversations 一起收進同一版，適合帶學生拆解「能力擴張時怎麼同步補上流程邊界」</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.1" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 把 legacy cron store 問題先做成可選 doctor lint，再把真正修復留在 doctor --fix，提醒學生「先暴露舊狀態，再執行修補」比默默改掉更容易驗證</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/219f27a5ec6b6ed058c95653ac604bc2a25a26d2" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.1 把 Mixture-of-Agents、completion contracts、可見的 verification evidence 與 P0/P1 清零一起拉進發版敘事，適合拿來教「done 必須有證據，不是模型自稱完成」</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.1" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Release）</a></li><li class="mb-3"><strong>Hermes Gateway 新增 /sessions search <query>，但仍保留 origin scoping、admin-only all 與 legacy-row fail-closed 姿態，適合講「搜尋能力不能偷放寬授權邊界」</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/19d4174454624a1ca91bc47b8f2a7ae8c3b4b5d3" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch：Meta 內部坦言 AI agents 進展不如預期，提醒學生外部敘事常講願景，但工程上仍要回到可量測的任務完成率、失敗樣態與成本曲線</strong><br>來源：<a href="https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/" target="_blank" rel="noopener">查看來源（TechCrunch）</a></li></ol>
+              <ol class="mb-0"></ol>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="border rounded-4 p-4 h-100">
               <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
-              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 2026.7.1-beta.1 bundles GPT-5.6 support, external harness attach, Telegram Codex workflows, on-exit cron runs, and scoped conversations into one release-level boundary lesson</strong><br>Source：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.1" target="_blank" rel="noopener">Source（OpenClaw Official Release）</a></li><li class="mb-3"><strong>OpenClaw exposes legacy cron-store findings as an optional doctor lint while keeping real repair in doctor --fix, showing that diagnosis and mutation should stay separable and auditable</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/219f27a5ec6b6ed058c95653ac604bc2a25a26d2" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.1 makes Mixture-of-Agents, completion contracts, visible verification evidence, and a repo-wide P0/P1 sweep part of one release story about proving work instead of merely claiming it</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.1" target="_blank" rel="noopener">Source（Hermes Agent Official Release）</a></li><li class="mb-3"><strong>Hermes Gateway adds /sessions search <query> without relaxing origin scoping, admin-only all access, or the legacy-row fail-closed posture</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/19d4174454624a1ca91bc47b8f2a7ae8c3b4b5d3" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>TechCrunch: Meta staff were told AI agents have not progressed as quickly as hoped, a useful reminder that market narratives still need measurable completion, failure, and cost evidence</strong><br>Source：<a href="https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/" target="_blank" rel="noopener">Source（TechCrunch）</a></li></ol>
+              <ol class="mb-0"></ol>
             </div>
           </div>
         </div>

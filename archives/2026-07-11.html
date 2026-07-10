@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026-07-11 iAgents 新聞檔案，整理 OpenClaw 與 Hermes Agent 的精選中英文消息。">
+  <title>2026-07-11 新聞檔案 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    body { background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%); color:#1f2937; }
+    .hero,.cardx { border-radius:1rem; }
+    .hero { background: linear-gradient(135deg, #0f766e, #14b8a6); color:#fff; box-shadow:0 1rem 3rem rgba(20,184,166,.18); }
+    .cardx { background:#fff; border:1px solid rgba(15,23,42,.08); box-shadow:0 .75rem 2rem rgba(15,23,42,.06); }
+    .section-title { font-weight:800; letter-spacing:.02em; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="../index.html">iAgents 中文學習站</a>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-outline-success" href="../news.html">今日新聞</a>
+        <a class="btn btn-outline-secondary" href="../news-archive.html">檔案列表</a>
+      </div>
+    </div>
+  </nav>
+  <main class="container py-4 py-lg-5">
+    <section class="hero p-4 p-lg-5 mb-5">
+      <h1 class="display-5 fw-bold mb-3">2026-07-11 新聞檔案</h1>
+      <p class="lead mb-0">本頁保留 2026-07-11 的精選新聞。建議先看中文 5 條抓教學主題，再對照英文 5 條，練習把 state repair、sandbox isolation、可重現部署與產品整合改寫成工程問題。</p>
+    </section>
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">2026-07-11 每日重點</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條練習怎麼把同一則更新改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-success" href="../news.html">回到今日新聞彙整</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.1-beta.2 仍是今天最值得先對照的官方版本，因為它把 GPT-5.6、attach、Telegram Codex、on-exit cron 與 scoped conversations 綁進同一個 release，適合學生把「能力上線」與「排程／邊界是否同步交付」放在同一張表讀。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.2" target="_blank" rel="noopener">來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 修補 legacy delivery statuses，是很好的狀態遷移案例：如果舊任務狀態沒修乾淨，學生在 dashboard 或任務列表上看到的完成／失敗訊號就可能失真。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/91ac7ca700ade95f78e88e3e908818232783426c" target="_blank" rel="noopener">來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.7.2 用 patch release 修正 WhatsApp Baileys 依賴釘選，讓 tagged-release Docker build 重新可用；這很適合教學生把 release 當成「下游產物能否重現」而不只是功能清單。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7.2" target="_blank" rel="noopener">來源（Hermes Agent 官方 Release）</a></li><li class="mb-3"><strong>Hermes 新增 isolated sandbox script 給本機開發使用，並把 HERMES_HOME、Electron userData 與 app name 分開，這很適合教「本機測試隔離」不是只換一個資料夾，而是要一起處理設定、使用者資料與單例鎖。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/5e849942c3b9d36fdd48c80e9d13cb66212d9731" target="_blank" rel="noopener">來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch 報導 OpenAI 表示 GPT-5.6 已成為 Microsoft 365 Copilot 的 preferred model，這是一個很好的外部對照：模型升級一旦直接進入工作產品，課堂比較就要從 benchmark 轉向權限、整合與工作流責任。</strong><br>來源：<a href="https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/" target="_blank" rel="noopener">來源（外部報導（TechCrunch））</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.1-beta.2 is still the best official release to compare first because it bundles GPT-5.6, attach, Telegram Codex, on-exit cron, and scoped conversations into one release-level lesson about shipping capability together with schedules and boundaries.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.2" target="_blank" rel="noopener">Source（OpenClaw Official Release）</a></li><li class="mb-3"><strong>OpenClaw repairs legacy delivery statuses, which makes a clean state-migration lesson: if historical task states are left inconsistent, dashboards and task lists can misreport whether work actually finished or failed.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/91ac7ca700ade95f78e88e3e908818232783426c" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.7.2 uses a patch release to fix pinned WhatsApp Baileys dependencies so tagged-release Docker builds work again, making reproducible downstream artifacts—not just feature lists—the main lesson.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7.2" target="_blank" rel="noopener">Source（Hermes Agent Official Release）</a></li><li class="mb-3"><strong>Hermes adds an isolated sandbox script for local development and separates HERMES_HOME, Electron userData, and the app name, making it a strong lesson that local test isolation is not just a new folder but a coordinated separation of config, user data, and single-instance locks.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/5e849942c3b9d36fdd48c80e9d13cb66212d9731" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>TechCrunch reports OpenAI saying GPT-5.6 is now the preferred model in Microsoft 365 Copilot, giving a useful outside comparison point: once a model upgrade lands inside a work product, the class discussion should move from benchmarks to permissions, integration, and workflow responsibility.</strong><br>Source：<a href="https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/" target="_blank" rel="noopener">Source（External Coverage (TechCrunch)）</a></li></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
