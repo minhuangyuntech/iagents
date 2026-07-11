@@ -117,19 +117,19 @@
        </div>
      </div>
    </section>
-    <section id="news" class="mb-5">
+      <section id="news" class="mb-5">
   <div class="card p-4">
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
       <div>
         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-        <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先看三條線：一、legacy delivery status 修復後，任務狀態終於能不能可信；二、sandbox script 把哪些本機狀態隔離開，才不會讓 desktop agent 測試互相污染；三、當 GPT-5.6 進入 Microsoft 365 Copilot，工程比較要怎麼從 benchmark 改成產品接點與權限邊界。</p>
+        <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先看三條線：一、OpenClaw onboarding 把 provider setup、核准邊界、憑證遮罩與 fallback 一起推到第一步；二、Hermes runtime context budget 告訴你有設定值不代表執行期真的遵守；三、外部 AI 基礎設施報導提醒你 provider、quota 與自建控制權本身也是 agent 工程題。</p>
       </div>
       <div class="d-flex gap-2 flex-wrap">
         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
         <a class="btn btn-outline-secondary" href="news-archive.html">瀏覽新聞檔案列表</a>
       </div>
     </div>
-    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-10 · OpenClaw 官方 Commit</div><p>把 OpenClaw 當成「狀態修復」案例：legacy delivery statuses 一旦修不好，dashboard 上的完成／失敗訊號就可能失真；這一則很適合拿來教 state migration 與 workflow observability 為什麼要一起驗證。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-10 · Hermes Agent 官方 Commit</div><p>把 Hermes 當成「隔離測試環境」案例：sandbox script 不只換資料夾，還一起隔離 HERMES_HOME、Electron userData 與 app name，剛好能帶學生問本機 agent 測試最容易在哪一層互相污染。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-09 · 外部對照（TechCrunch）</div><p>外部消息可用 GPT-5.6 進入 Microsoft 365 Copilot 當對照組：一旦模型更新直接走進工作產品，課堂比較就不能只看模型分數，還要追權限、整合與責任邊界。</p></article></div></div>
+    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-11 · OpenClaw 官方 Release</div><p>把 onboarding 當成系統工程題：這次 OpenClaw 把 provider setup、核准邊界、憑證遮罩與 fallback 綁在同一版，最適合拿來問「第一次啟用時，哪些狀態一定要可驗證」。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-11 · Hermes Agent 官方 Commit</div><p>把 context budget 當成執行期保證案例：Hermes 修的是 runtime enforcement，不是只改設定值，剛好能教 policy、實作與 regression evidence 要一起看。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-10 · 外部對照（TechCrunch）</div><p>把外部報導當 infrastructure 對照組：當企業不想一直租用 AI，課堂比較就要把 provider、quota、依賴來源與自建控制權放進同一張表。</p></article></div></div>
   </div>
  </section>
 
@@ -167,6 +167,7 @@
             <li>遇到 sandbox 或 state migration 類消息時，固定寫出它隔離或修補的是哪一層狀態。</li>
             <li>再補 1 欄「設定是暫時覆蓋還是永久寫回」，避免把示範旗標誤當成系統預設</li>
             <li>遇到跨平台 agent 問題時，再補 1 欄「這個假設只在 POSIX 成立，還是 Windows 也成立」，避免把 signal／process 邏輯直接複製到所有系統</li>
+            <li>看到 onboarding、approval 或 provider setup 類消息時，再補 1 欄「哪一步要人核准、哪一步可 fallback、哪一步會寫成持久化狀態」</li>
             <li>把「看不見的 guardrail」改寫成可驗證證據欄位：文件、旗標、畫面、log 或回歸測試</li>
             <li>同一天至少對照 1 則官方 release 與 1 則 commit，分辨 source of truth 是 release notes、host env policy、實際路徑，還是平台最終渲染</li>
             <li>每讀一條消息都補 1 個可驗證證據：產物、測試檔、log、畫面或評估結果</li>

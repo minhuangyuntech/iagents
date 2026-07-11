@@ -24,7 +24,7 @@
       </div>
     </div>
   </nav>
-  <main class="container py-4 py-lg-5">
+  <main id="top" class="container py-4 py-lg-5">
     <section class="hero p-4 p-lg-5 mb-5">
       <h1 class="display-5 fw-bold mb-3">2026 年 7 月新聞檔案</h1>
       <p class="lead mb-0">本檔案保留 2026 年 7 月的精選新聞與舊聞，依日期由新到舊排列，方便學生回查每日更新脈絡。</p>
@@ -34,6 +34,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-12.html — 2026-07-12 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-12.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-11.html — 2026-07-11 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-11.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-10.html — 2026-07-10 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-10.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-09.html — 2026-07-09 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-09.html">開啟</a></li>
@@ -47,6 +48,30 @@
     </section>
 
     <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">2026-07-12 每日重點</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條練習怎麼把同一則更新改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-success" href="2026-07-12.html">開啟 2026-07-12 每日檔案</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.1-beta.5 把 conversational onboarding、ClawRouter routing 與 quotas 收進同一版，最適合拿來教「首次啟用」其實同時牽涉模型發現、核准邊界、憑證遮罩與 fallback 行為。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.5" target="_blank" rel="noopener">來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 把 legacy session ownership 遷到 sqlite，這是一個很好的狀態主權案例：當 session 所屬關係不再靠舊路徑猜測，agent workflow 才比較容易做稽核、續跑與權限界定。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/266d49cddb977c45d40f13d27045214db29bc756" target="_blank" rel="noopener">來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.7.2 仍值得保留在今天的清單，因為它把 WhatsApp Baileys 依賴從 pinned git commit 換回 published release，示範了 tagged-release Docker build 為何必須追到可重現的依賴來源。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7.2" target="_blank" rel="noopener">來源（Hermes Agent 官方 Release）</a></li><li class="mb-3"><strong>Hermes 修正 gateway 沒有確實遵守 runtime context budgets，這很適合教學生區分「設定上限存在」與「執行期真的照上限裁切」是兩件不同的工程問題。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/265ac7d812192d3b6f11888811512604681d3a32" target="_blank" rel="noopener">來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch 引述 Hugging Face 執行長談「企業不想一直租用自己的 AI」，很適合拿來和 agent 平台做外部對照：模型、資料與工具鏈一旦要長期維運，部署控制權本身就是課堂上的系統設計題。</strong><br>來源：<a href="https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/" target="_blank" rel="noopener">來源（外部報導（TechCrunch））</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.1-beta.5 is the strongest official item to teach first today because it bundles conversational onboarding, ClawRouter routing, and quotas into one lesson about model discovery, approval boundaries, credential masking, and deterministic fallback.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-beta.5" target="_blank" rel="noopener">Source（OpenClaw Official Release）</a></li><li class="mb-3"><strong>OpenClaw migrates legacy session ownership to sqlite, making a strong systems lesson that workflow ownership becomes easier to audit, resume, and permission-check when it moves from inferred legacy state into a durable source of truth.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/commit/266d49cddb977c45d40f13d27045214db29bc756" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.7.2 still belongs in today’s set because it replaces a pinned WhatsApp Baileys git commit with a published release, making reproducible dependency sources the key lesson behind tagged-release Docker builds.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7.2" target="_blank" rel="noopener">Source（Hermes Agent Official Release）</a></li><li class="mb-3"><strong>Hermes fixes the gateway so runtime context budgets are actually honored, which is a compact lesson that having a configured limit and enforcing that limit at execution time are two different engineering problems.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/265ac7d812192d3b6f11888811512604681d3a32" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>TechCrunch quotes Hugging Face’s CEO arguing that companies are done renting their AI, which gives students a useful outside comparison point: once agent systems are operated for the long term, infrastructure control becomes part of the product design, not a side issue.</strong><br>Source: <a href="https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/" target="_blank" rel="noopener">Source（External Coverage (TechCrunch)）</a></li></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
@@ -70,8 +95,7 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="mb-5">
+    </section>    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
@@ -95,8 +119,7 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="mb-5">
+    </section>    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
@@ -120,8 +143,7 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="mb-5">
+    </section>    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
@@ -145,8 +167,7 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="mb-5">
+    </section>    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
@@ -170,8 +191,7 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="mb-5">
+    </section>    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
@@ -195,8 +215,7 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="mb-5">
+    </section>    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
@@ -220,8 +239,7 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="mb-5">
+    </section>    <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
