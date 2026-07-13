@@ -131,6 +131,7 @@
         <li>若消息牽涉 CLI 旗標或 dashboard 選項，再補一欄「只影響本次 session，還是會永久寫回設定」。</li>
         <li>若消息牽涉跨平台 watchdog、daemon 或 signal，再補一欄「哪些假設只在 POSIX 成立，Windows 是否另有保護分支」。</li>
         <li>若消息牽涉 dashboard 或設定編輯器，再補一欄「畫面值、重載後生效值、磁碟上的設定檔」是否一致，避免把 UI 暫存誤當成 source of truth。</li>
+        <li>若消息牽涉 installer、provider parser 或 retry guard，固定再拆成三欄：環境前提、可解析證據、重試條件，較容易把錯誤處理講成工程方法。</li>
       </ul>
     </div>
   </section>

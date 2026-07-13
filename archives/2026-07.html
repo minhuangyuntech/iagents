@@ -34,6 +34,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-14.html — 2026-07-14 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-14.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-13.html — 2026-07-13 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-13.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-12.html — 2026-07-12 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-12.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-11.html — 2026-07-11 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-11.html">開啟</a></li>
@@ -48,7 +49,33 @@
       </div>
     </section>
 
+    
     <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">2026-07-14 每日重點</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條練習怎麼把同一則更新改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-success" href="2026-07-14.html">開啟 2026-07-14 每日檔案</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.1 把 conversational onboarding、provider setup 與 approval 邊界收進同一版，今天最適合拿來教「首次啟用流程」不只是 UI，而是模型發現、憑證輸入、核准條件與 fallback 是否都能被驗證。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 修正「winget 先裝 Node.js 後，Windows installer 失敗」的問題，這是一個很好的安裝鏈教材：環境前提一旦寫死，bootstrap 就會在學生最早接觸系統的地方出錯。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/0f9cc945e37f5fa45a5f26a34a9396faa8f78b81" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.7.2 仍值得保留在今天清單，因為它把 WhatsApp Baileys 依賴改回 published release，提醒學生 tagged-release Docker build 真正要追的是可重現依賴來源。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7.2" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Release）</a></li><li class="mb-3"><strong>Hermes 修正 vLLM / LM Studio 的 output-cap 錯誤在 compression-disabled 情況下仍要走 retry 路徑，這很適合教學生：provider error 不是只看字串像不像，而是能不能被解析成可執行的重試策略。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/2ccfdb2db4eedf385f6c5b3fe722e183cee1b6de" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>The Verge 討論 AI data center 爭議，適合當今天的外部對照：agent 平台最後不只是在比模型能力，還要面對電力、機房位置、延遲與地方阻力等基礎設施限制。</strong><br>來源：<a href="https://www.theverge.com/column/963346/ai-data-centers-fight" target="_blank" rel="noopener">查看來源（外部報導（The Verge））</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.1 bundles conversational onboarding, provider setup, and approval boundaries into one release, making it the clearest official item today for teaching that first-run experience is really a systems workflow with model discovery, credentials, approvals, and fallback.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1" target="_blank" rel="noopener">Source (OpenClaw Official Release)</a></li><li class="mb-3"><strong>OpenClaw fixes a Windows installer failure triggered after winget installs Node.js, which makes a compact lesson that bootstrap paths fail when environment assumptions are baked in too early.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/commit/0f9cc945e37f5fa45a5f26a34a9396faa8f78b81" target="_blank" rel="noopener">Source (OpenClaw Official Commit)</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.7.2 still belongs in today’s set because it moves the WhatsApp Baileys dependency back to a published release, making reproducible dependency sources the real lesson behind tagged Docker builds.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7.2" target="_blank" rel="noopener">Source (Hermes Agent Official Release)</a></li><li class="mb-3"><strong>Hermes fixes the vLLM / LM Studio output-cap path so parseable provider errors still take the retry route even when compression is disabled, a strong lesson that error handling should key off actionable parsing, not only surface wording.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/2ccfdb2db4eedf385f6c5b3fe722e183cee1b6de" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>The Verge’s piece on the fight against AI data centers is a useful outside comparison point: agent platforms are not only constrained by model quality, but also by power, location, latency, and local infrastructure resistance.</strong><br>Source: <a href="https://www.theverge.com/column/963346/ai-data-centers-fight" target="_blank" rel="noopener">Source (External Reporting (The Verge))</a></li></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
