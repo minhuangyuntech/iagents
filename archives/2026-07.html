@@ -34,6 +34,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-15.html — 2026-07-15 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-15.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-14.html — 2026-07-14 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-14.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-13.html — 2026-07-13 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-13.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-12.html — 2026-07-12 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-12.html">開啟</a></li>
@@ -49,7 +50,33 @@
       </div>
     </section>
 
-    
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">2026-07-15 每日重點</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條練習怎麼把同一則更新改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-success" href="2026-07-15.html">開啟 2026-07-15 每日檔案</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.1 仍是今天最值得先讀的官方版本，因為它把 guided setup、連線檢查與 approval boundary 放進同一版，提醒學生「第一次能不能用」其實是 onboarding、憑證、模型與 fallback 一起成立。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 修正 OpenAI OAuth models 在 cloud workers 失敗的問題，這是一個很好的 worker-auth 教材：同一個模型路由若沒有把授權 profile 投影到正確執行環境，雲端 worker 就會在真正推理前先壞掉。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/4c03c297b2b745179683a64316946edd77e1e321" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 新增 auxiliary 各任務可獨立設定 reasoning_effort，這很適合拿來教學生：vision、web_extract、compression 不一定要共用同一個 thinking budget，任務成本與品質可以分欄設計。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/df5700ebe317ff9f2d9ea4677513e012eb68b6f4" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 修正 MCP ResourceLink 要顯示真實 wire tool name，並在 error path 把 resource 文字內容露出來；這很適合教學生：如果錯誤只剩一句泛用訊息，agent 根本無法知道下一步該讀哪個資源。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/284a3cd47e8b7645b92eedfe63e714940d52c924" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>The Verge 報導 Grok Build 程式工具曾把使用者整個 codebase 上傳到雲端 bucket，這很適合當今天的外部對照：coding agent 不只比補全速度，還要先畫清楚哪些原始碼、路徑與資產能不能離開本機。</strong><br>來源：<a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload" target="_blank" rel="noopener">查看來源（The Verge）</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.1 is still the best official item to study first today because it packages guided setup, connection checks, and approval boundaries into one release-level lesson: first-run success depends on onboarding, credentials, model routing, and fallback all working together.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.1" target="_blank" rel="noopener">Source (OpenClaw Official Release)</a></li><li class="mb-3"><strong>OpenClaw fixes OpenAI OAuth models failing on cloud workers, which is a compact worker-auth lesson: if the auth profile is not projected into the real execution environment, the worker breaks before inference even starts.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/commit/4c03c297b2b745179683a64316946edd77e1e321" target="_blank" rel="noopener">Source (OpenClaw Official Commit)</a></li><li class="mb-3"><strong>Hermes now lets each auxiliary task set its own reasoning_effort, making it a strong teaching example that vision, web_extract, and compression do not need to share the same thinking budget or latency target.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/df5700ebe317ff9f2d9ea4677513e012eb68b6f4" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>Hermes fixes MCP ResourceLink rendering so the marker points to the real wire tool name and still surfaces resource text on the error path, a useful lesson that observability fails when an agent is shown a fake tool name or an empty error shell.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/284a3cd47e8b7645b92eedfe63e714940d52c924" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>The Verge reports that Grok Build was uploading users’ entire codebases to a cloud bucket, making it today’s clearest outside comparison point: coding agents are not only about generation quality, but also about whether source code, paths, and artifacts are allowed to leave the local machine at all.</strong><br>Source: <a href="https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload" target="_blank" rel="noopener">Source (The Verge)</a></li></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
