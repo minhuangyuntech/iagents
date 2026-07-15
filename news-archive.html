@@ -27,7 +27,7 @@
   <main id="top" class="container py-4 py-lg-5">
    <section class="hero p-4 p-lg-5 mb-5">
      <h1 class="display-5 fw-bold mb-3">新聞檔案列表</h1>
-     <p class="lead mb-0">可把這些檔案當成版本演進紀錄來讀：先看最新的 2026-07-15 每日檔案與 2026-07 月檔案，再往前追幾天，較容易比較 first-run、worker auth、reasoning budget、MCP 資源顯示與資料邊界。</p>
+     <p class="lead mb-0">可把這些檔案當成版本演進紀錄來讀：先看最新的 2026-07-16 每日檔案與 2026-07 月檔案，再往前追幾天，較容易比較 session ownership、bootstrap/auth、CLI 契約與 human-in-the-loop 介面。</p>
    </section>
 
    <section class="mb-5">
@@ -35,9 +35,10 @@
        <h2 class="section-title h3 mb-3">目前可查閱的檔案</h2>
        <ul class="list-group list-group-flush">
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>news.html — 今日精選中英文消息</span><a class="btn btn-sm btn-outline-primary" href="news.html">開啟</a></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-16.html — 2026-07-16 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-16.html">開啟</a></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07.html — 2026 年 07 月新聞與舊聞彙整</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-15.html — 2026-07-15 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-15.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-14.html — 2026-07-14 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-14.html">開啟</a></li>
-      <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07.html — 2026 年 07 月新聞與舊聞彙整</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-13.html — 2026-07-13 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-13.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-12.html — 2026-07-12 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-12.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-11.html — 2026-07-11 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-11.html">開啟</a></li>
@@ -102,7 +103,8 @@
          <li class="mb-2">做課堂比較時，可固定用「release／commit／外部報導／驗證方法」四欄整理，較容易把消息轉成工程問題。</li>
          <li class="mb-2">若同一天同時有 onboarding、state、backup 或 deployment 類消息，先把它們分成「核准邊界」「狀態主權」「下游產物」三欄再做比較。</li>
          <li class="mb-2">固定補一欄「觸及檔案／可驗證證據」，例如 release notes、budget 測試、設定檔、資料庫 ownership、快照驗證或 Docker artifact，會更容易把新聞改寫成工程任務。</li>
-         <li>若消息提到 provider setup、quota、reload 或 dashboard editor，固定再記一欄「這個決策是人核准、自動 fallback、畫面暫存，還是持久化寫回」，比較容易把功能介紹轉成系統邊界分析。</li>
+         <li class="mb-2">若消息提到 remote coding session，固定再記一欄「session 歸哪台主機、從哪個 terminal 恢復、artifact 留在哪裡」，較容易把功能介紹轉成控制權分析。</li>
+         <li>若消息提到 provider setup、quota、reload、dashboard editor 或專用硬體，固定再記一欄「這個決策是人核准、自動 fallback、CLI 真實契約，還是持久化寫回」，比較容易把功能介紹轉成系統邊界分析。</li>
        </ul>
      </div>
    </section>
