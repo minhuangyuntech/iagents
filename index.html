@@ -122,14 +122,14 @@
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
       <div>
         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-        <p class="text-secondary mb-0">每天上午更新；首頁只保留三則最適合帶進課堂的摘要。今天建議先抓三條工程線：一、OpenClaw 2026.7.2-beta.1 把 remote coding sessions 與 guided setup 綁在一起；二、Hermes 修補 hosted bootstrap session 與 gh CLI 契約假設；三、OpenAI 的 Codex 鍵盤提醒你 coding agent 的介面已開始往專用硬體延伸。</p>
+        <p class="text-secondary mb-0">今天建議先抓三條工程線：一、OpenClaw 2026.7.2-beta.1 仍可拿來練 session 歸屬主機、terminal 恢復點與 approval 邊界；二、Hermes 的 keybind/worktree 與大型 transcript 切換提醒你 UI handoff 也是 agent 系統工程；三、Claude × 1Password 告訴你工具一旦碰到真實帳密，就必須把授權來源與回收流程寫清楚。</p>
       </div>
       <div class="d-flex gap-2 flex-wrap">
         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
         <a class="btn btn-outline-secondary" href="news-archive.html">瀏覽新聞檔案列表</a>
       </div>
     </div>
-    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-16 · OpenClaw 官方 Release</div><p>把 remote coding session 當成系統題：這版 release 適合要求學生寫清楚 session 歸哪台主機、終端在哪裡恢復、approval 狀態誰保存。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-16 · Hermes Agent 官方 Commit</div><p>把 bootstrap 與 CLI 契約當成驗證題：Hermes 同日修 hosted bootstrap session 與 gh pr create 假設，提醒你 workflow 要對真實工具行為負責。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-16 · 外部對照（TechCrunch）</div><p>把 Codex 鍵盤當成介面題：coding agent 一旦開始配專用硬體，課堂討論就要補上 human override、快捷鍵範圍與資料接觸點。</p></article></div></div>
+    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-16 · OpenClaw 官方 Release</div><p>把 remote coding session 當成控制權題：課堂上先畫出 session 開在哪台主機、從哪個 terminal 恢復、approval 狀態由誰保存。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-16 · Hermes Agent 官方 Commit</div><p>把 keybind、worktree 與 transcript 切換當成介面題：coding agent 的效率不只看模型，也看人能不能快速接手與切換。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-16 · 外部對照（The Verge）</div><p>把 Claude × 1Password 當成權限題：agent 一旦碰到真實登入資料，就要補上授權來源、秘密保存位置與出錯回收路徑。</p></article></div></div>
   </div>
  </section>
 
@@ -182,6 +182,7 @@
               <li>至少補 1 個回歸證據：測試檔、錯誤訊息、實際路徑、最終訊息畫面或比較實驗。</li>
               <li>若是 release 或 UI 消息，再補 1 欄「下游產物／畫面是否真的改變」：Docker build、tagged artifact、自動捲動或工具分組是否可直接觀察。</li>
               <li>若消息提到 remote coding session，再補 1 欄「session 歸屬主機／resume 終端／artifact 留存位置」，避免只看到功能名稱卻沒記主控權在哪裡。</li>
+              <li>若消息牽涉大型 transcript 或桌面切換，再把「模型延遲」與「介面切換延遲」分開記，避免把所有卡頓都誤判成推理問題。</li>
             </ul>
           </div>
         </div>

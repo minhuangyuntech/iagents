@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026-07-17 iAgents 每日新聞檔案，整理 OpenClaw 與 Hermes Agent 的精選中英文消息。">
+  <title>2026-07-17 新聞檔案 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    body { background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%); color:#1f2937; }
+    .hero,.cardx { border-radius:1rem; }
+    .hero { background: linear-gradient(135deg, #0d6efd, #6610f2); color:#fff; box-shadow:0 1rem 3rem rgba(13,110,253,.2); }
+    .cardx { background:#fff; border:1px solid rgba(15,23,42,.08); box-shadow:0 .75rem 2rem rgba(15,23,42,.06); }
+    .section-title { font-weight:800; letter-spacing:.02em; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="../index.html">iAgents 中文學習站</a>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-outline-primary" href="../news.html">今日新聞</a>
+        <a class="btn btn-outline-secondary" href="../news-archive.html">檔案列表</a>
+      </div>
+    </div>
+  </nav>
+  <main id="top" class="container py-4 py-lg-5">
+    <section class="hero p-4 p-lg-5 mb-5">
+      <h1 class="display-5 fw-bold mb-3">2026-07-17 每日新聞檔案</h1>
+      <p class="lead mb-2">今天建議先抓三條工程線：一、OpenClaw 2026.7.2-beta.1 仍可拿來練 session 歸屬主機、terminal 恢復點與 approval 邊界；二、Hermes 的 keybind/worktree 與大型 transcript 切換提醒你 UI handoff 也是 agent 系統工程；三、Claude × 1Password 告訴你工具一旦碰到真實帳密，就必須把授權來源與回收流程寫清楚。</p>
+      <p class="mb-0">封存時間：2026-07-17 07:00 CST</p>
+    </section>
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">中文 5 條</h2>
+            <p class="text-secondary mb-0">先讀官方 release 與 commit，再用外部報導補上權限與真實整合情境。</p>
+          </div>
+          <a class="btn btn-outline-primary" href="../news.html">回到今日新聞頁</a>
+        </div>
+        <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.2-beta.1 仍是今天最值得先讀的官方版本，因為它把 remote coding sessions、guided setup 與 channel safety 綁進同一版，剛好能讓學生把「session 歸屬主機、終端恢復點、核准邊界」放進同一張驗證表。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.1" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 把 Doctor 建立 GitHub issue 的行為加上邊界，這是一個很好的 agent guardrail 教材：診斷工具若能直接碰外部系統，就必須限制副作用範圍，而不是把「能自動送出」當成預設正確。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/f61a3d46a22e973d0c65fd6d5bc5d1586decdcdf" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 新增按鈕 tooltip 快捷鍵提示、keybinds 設定分頁與 unified worktree dialog，這很適合教學生：coding agent 的效率不只來自模型，也來自人能否快速接手、切換與管理工作樹。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/f08b1f34456d6f616309fcf03dd87c818cb0e480" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 改善大型 transcript 下的 session 切換速度，這是一個很好的可觀測性教材：當對話很長時，真正影響操作體驗的往往不是模型回答，而是 UI 能不能迅速切到正確 session。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/0f05aaa2bf1b6dfbc625d1006b0d46c178995fc2" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>The Verge 報導 Claude 已能透過 1Password 取用登入憑證，這很適合當今天的外部對照：agent 一旦碰到真實帳號與密碼，課堂討論就要從「能不能自動化」延伸到「誰授權、憑證放哪裡、出錯如何回收」。</strong><br>來源：<a href="https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration" target="_blank" rel="noopener">查看來源（The Verge）</a></li></ol></div>
+      </div>
+    </section>
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">English 5 Items</h2>
+            <p class="text-secondary mb-0">Use the English list to compare how the same engineering point reads across official and outside sources.</p>
+          </div>
+          <a class="btn btn-outline-secondary" href="2026-07.html">查看本月檔案</a>
+        </div>
+        <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.2-beta.1 is still the best official item to study first today because it packages remote coding sessions, guided setup, and channel safety into one release-level lesson about host ownership, terminal resume paths, and approval boundaries.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.1" target="_blank" rel="noopener">Source (OpenClaw Official Release)</a></li><li class="mb-3"><strong>OpenClaw now bounds Doctor-triggered GitHub issue creation, making it a compact guardrail lesson: once a diagnostic tool can touch external systems, side-effect limits matter as much as detection quality.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/f61a3d46a22e973d0c65fd6d5bc5d1586decdcdf" target="_blank" rel="noopener">Source (OpenClaw Official Commit)</a></li><li class="mb-3"><strong>Hermes adds button tooltip keybind hints, a dedicated keybinds settings tab, and a unified worktree dialog, which makes a strong teaching example that coding-agent productivity depends on human takeover paths as much as model capability.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/f08b1f34456d6f616309fcf03dd87c818cb0e480" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>Hermes speeds up session switching on large transcripts, a useful reminder that long-agent usability often fails in the interface layer before the model itself becomes the bottleneck.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/0f05aaa2bf1b6dfbc625d1006b0d46c178995fc2" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>The Verge reports that Claude can now use 1Password credentials for users, giving today’s clearest outside comparison point: once an agent touches real logins, the engineering discussion has to cover authorization source, credential storage, and recovery paths.</strong><br>Source：<a href="https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration" target="_blank" rel="noopener">Source (The Verge)</a></li></ol></div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
