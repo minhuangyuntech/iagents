@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026-07-18 iAgents 每日新聞檔案，整理 OpenClaw 與 Hermes Agent 的精選中英文消息。">
+  <title>2026-07-18 新聞檔案 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    body { background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%); color:#1f2937; }
+    .hero,.cardx { border-radius:1rem; }
+    .hero { background: linear-gradient(135deg, #0d6efd, #6610f2); color:#fff; box-shadow:0 1rem 3rem rgba(13,110,253,.2); }
+    .cardx { background:#fff; border:1px solid rgba(15,23,42,.08); box-shadow:0 .75rem 2rem rgba(15,23,42,.06); }
+    .section-title { font-weight:800; letter-spacing:.02em; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="../index.html">iAgents 中文學習站</a>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-outline-primary" href="../news.html">今日新聞</a>
+        <a class="btn btn-outline-secondary" href="../news-archive.html">檔案列表</a>
+      </div>
+    </div>
+  </nav>
+  <main id="top" class="container py-4 py-lg-5">
+    <section class="hero p-4 p-lg-5 mb-5">
+      <h1 class="display-5 fw-bold mb-3">2026-07-18 每日新聞檔案</h1>
+      <p class="lead mb-2">今天建議先抓五個工程點：OpenClaw 新版把遠端 session、guided setup 與 recovery 綁成同一個系統案例；SSH sandbox secret-owner 修補提醒你隔離邊界要落到 agent；Hermes 把本地 custom endpoint 真正接進 GUI、又補上 Windows CA trust；外部則用 Claude × 1Password 練習登入憑證的授權與回收流程。</p>
+      <p class="mb-0">封存時間：2026-07-18 07:00 CST</p>
+    </section>
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">中文 5 條</h2>
+            <p class="text-secondary mb-0">先讀官方 release，再看 commit 與外部報導，剛好能把控制權、隔離、接入、信任與憑證問題放在同一天比較。</p>
+          </div>
+          <a class="btn btn-outline-primary" href="../news.html">回到今日新聞頁</a>
+        </div>
+        <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.2-beta.2 把 remote coding sessions、guided setup、channel safety 與 gateway/session recovery 放進同一版，今天最適合拿來教學生把「控制權在哪台主機、核准邊界在哪裡、故障後怎麼續跑」當成同一張系統表來讀。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.2" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 把 broken SSH sandbox refs 維持在 agent-scoped，這是一個很好的 secret ownership 教材：sandbox 壞掉時，機密與生命週期不能被別的 agent 誤接手。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/9c2d38a596e20bdf39f30bda09a50922ed3b7cf6" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 在 Providers API-keys 分頁補上「Local / custom endpoint」入口，這很適合教學生：本地 OpenAI-compatible backend 能不能被一般使用者順利接入，常常取決於 UI 是否真的把設定路徑暴露出來。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/e7a8b374b780ee477d2d42eb183411c2a8d82657" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes Desktop 開始信任 Windows system CAs 來連遠端 gateway，這是一個很好的 LLM 基礎設施教材：遠端 agent 能不能用，常常卡在 TLS trust store，而不是 prompt 或模型。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/38233b61c2a96c6b646ca9b38148bf38a3b537a7" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>The Verge 報導 Claude 已能透過 1Password 使用使用者憑證，這很適合當今天的外部對照：agent 一旦碰到真實登入資料，工程討論就必須補上授權來源、密碼保存位置與失敗回收流程。</strong><br>來源：<a href="https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration" target="_blank" rel="noopener">查看來源（外部報導（The Verge））</a></li></ol></div>
+      </div>
+    </section>
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">English 5 Items</h2>
+            <p class="text-secondary mb-0">Use the English list to compare how the same engineering point reads across official and outside sources.</p>
+          </div>
+          <a class="btn btn-outline-secondary" href="2026-07.html">查看本月檔案</a>
+        </div>
+        <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.2-beta.2 bundles remote coding sessions, guided setup, channel safety, and gateway/session recovery into one release, making it the clearest official item today for teaching host ownership, approval boundaries, and recovery paths together.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.2" target="_blank" rel="noopener">Source (OpenClaw Official Release)</a></li><li class="mb-3"><strong>OpenClaw keeps broken SSH sandbox refs agent-scoped, which makes a compact lesson in secret ownership: when a sandbox breaks, lifecycle secrets must not drift to another agent by accident.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/commit/9c2d38a596e20bdf39f30bda09a50922ed3b7cf6" target="_blank" rel="noopener">Source (OpenClaw Official Commit)</a></li><li class="mb-3"><strong>Hermes adds a reachable “Local / custom endpoint” entry to the Providers API-keys tab, a strong teaching example that local OpenAI-compatible backends only help if the GUI actually exposes the configuration path.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/e7a8b374b780ee477d2d42eb183411c2a8d82657" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>Hermes Desktop now trusts Windows system CAs for remote gateways, which is a clean LLM-infrastructure lesson: remote agents often fail on TLS trust stores before prompts or models become the issue.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/38233b61c2a96c6b646ca9b38148bf38a3b537a7" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>The Verge reports that Claude can now use 1Password credentials for users, giving today’s clearest outside comparison point: once an agent touches real logins, the engineering discussion must include authorization source, credential storage, and rollback paths.</strong><br>Source: <a href="https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration" target="_blank" rel="noopener">Source (External Report (The Verge))</a></li></ol></div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
