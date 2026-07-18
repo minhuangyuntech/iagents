@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026-07-19 iAgents 每日新聞檔案，整理 OpenClaw 與 Hermes Agent 的精選中英文消息。">
+  <title>2026-07-19 新聞檔案 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    body { background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%); color:#1f2937; }
+    .hero,.cardx { border-radius:1rem; }
+    .hero { background: linear-gradient(135deg, #0d6efd, #6610f2); color:#fff; box-shadow:0 1rem 3rem rgba(13,110,253,.2); }
+    .cardx { background:#fff; border:1px solid rgba(15,23,42,.08); box-shadow:0 .75rem 2rem rgba(15,23,42,.06); }
+    .section-title { font-weight:800; letter-spacing:.02em; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="../index.html">iAgents 中文學習站</a>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-outline-primary" href="../news.html">今日新聞</a>
+        <a class="btn btn-outline-secondary" href="../news-archive.html">檔案列表</a>
+      </div>
+    </div>
+  </nav>
+  <main id="top" class="container py-4 py-lg-5">
+    <section class="hero p-4 p-lg-5 mb-5">
+      <h1 class="display-5 fw-bold mb-3">2026-07-19 每日新聞檔案</h1>
+      <p class="lead mb-2">今天建議先抓五個工程點：OpenClaw 仍用 release 帶你讀 remote session 與 recovery，再用 per-job dynamic cadence 補上排程層；Hermes 則用 MCP poll-loop OOM 與 Windows 安裝編碼錯誤提醒你把非同步錯誤路徑、記憶體邊界與跨平台 bootstrap 分開驗證；外部對照用 Vertu AI agent 手機實測，練習把產品宣稱拆成工作流、資安與人工接管。</p>
+      <p class="mb-0">封存時間：2026-07-19 07:00 CST</p>
+    </section>
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">中文 5 條</h2>
+            <p class="text-secondary mb-0">先讀 release 抓系統全貌，再用 commit 與外部報導練習把排程、錯誤路徑、安裝契約與產品宣稱改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-primary" href="../news.html">回到今日新聞頁</a>
+        </div>
+        <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.2-beta.2 仍是今天最值得先讀的官方版本，因為它把 remote coding sessions、guided setup、channel safety 與 gateway/session recovery 綁成同一個系統案例，最適合學生把主機控制權、核准邊界與故障續跑放進同一張驗證表。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.2" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 新增 per-job dynamic cadence，這很適合教排程工程：真正的 cron 不只是固定時間表，還要記錄哪個 job 能自己提出下一次檢查點、範圍怎麼被夾住、狀態何時寫回。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/556a2ee276f08192bd1644a4f4f40b8812ef37dd" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 修正 MCP poll loop 把已完成 future 的真實 TimeoutError 吞掉而引發 gateway OOM，這是一個很好的非同步系統教材：如果錯誤包裝錯了，agent 會同時失去可觀測性與資源上限。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/4f10b4f15dadd6c48ea44d10d8080f523128b6d5" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 把 install.ps1 強制維持純 ASCII，避免 Windows PowerShell 5.1 誤判字元造成安裝腳本整段失敗，這很適合教學生：跨平台 bootstrap 常常先壞在編碼與殼層契約，不是模型或 UI。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/97249cfc8abb9053c518552cbec88ec45aee0d76" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch 實測 Vertu 的 AI agent 手機，這很適合當今天的外部對照：只要產品宣稱能幫高階主管代理工作流，工程檢查就不能只問模型會不會回答，還要同時問資安、人工接管與真實任務完成率。</strong><br>來源：<a href="https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs/" target="_blank" rel="noopener">查看來源（TechCrunch）</a></li></ol></div>
+      </div>
+    </section>
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">English 5 Items</h2>
+            <p class="text-secondary mb-0">Use the English list to compare how release notes, commit fixes, and outside product coverage frame the same engineering questions.</p>
+          </div>
+          <a class="btn btn-outline-secondary" href="2026-07.html">查看本月檔案</a>
+        </div>
+        <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.2-beta.2 is still the best official item to study first today because it packages remote coding sessions, guided setup, channel safety, and gateway/session recovery into one release-level lesson about host ownership, approval boundaries, and recovery paths.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.2" target="_blank" rel="noopener">Source (OpenClaw Official Release)</a></li><li class="mb-3"><strong>OpenClaw adds per-job dynamic cadence, which makes a strong scheduling lesson: a serious cron system is not just a fixed calendar, but a contract for who may propose the next check, how bounds clamp it, and when that state is written back.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/commit/556a2ee276f08192bd1644a4f4f40b8812ef37dd" target="_blank" rel="noopener">Source (OpenClaw Official Commit)</a></li><li class="mb-3"><strong>Hermes fixes an MCP poll loop that swallowed a completed future's real TimeoutError and could drive gateway OOM, a compact async-systems lesson in how bad error wrapping destroys both observability and resource control.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/4f10b4f15dadd6c48ea44d10d8080f523128b6d5" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>Hermes keeps install.ps1 pure ASCII so Windows PowerShell 5.1 will not misparse the installer, which is a clean cross-platform bootstrap lesson: encoding and shell contracts often fail before model behavior or UI ever matter.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/97249cfc8abb9053c518552cbec88ec45aee0d76" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>TechCrunch's hands-on review of Vertu's AI-agent phone is a useful outside comparison point: once a product claims it can act on behalf of executives, engineering evaluation has to cover security, human takeover, and real workflow completion—not just chatbot polish.</strong><br>Source: <a href="https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs/" target="_blank" rel="noopener">Source (TechCrunch)</a></li></ol></div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
