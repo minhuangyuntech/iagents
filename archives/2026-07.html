@@ -34,6 +34,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-22.html — 2026-07-22 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-22.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-21.html — 2026-07-21 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-21.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-20.html — 2026-07-20 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-20.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-19.html — 2026-07-19 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-19.html">開啟</a></li>
@@ -55,6 +56,33 @@
         </ul>
       </div>
     </section>
+
+<section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">2026-07-22 每日重點</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條，練習怎麼把 lifecycle、schedule source identity、latency／delivery、config reload 與 team-agent chat 改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-success" href="2026-07-22.html">開啟 2026-07-22 每日檔案</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.2-beta.3 仍是今天最值得先讀的官方版本，因為它把 remote coding sessions、guided setup 與 gateway/session recovery 放進同一版，最適合拿來教學生把主機控制權、設定持久化與故障續跑畫成同一張生命週期圖。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.3" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 把 schedule sources 改成可串流且具有 durable source identity，這是一個很好的排程教材：真正重要的不只是「下一次何時執行」，還要記得是誰提出、哪個來源成為寫回依據。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/98742bc2c7f222a05d9c3a7d1622c49e21dec56f" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.20（Quicksilver）把首 token 延遲大幅壓低、推理串流改成預設可見，並補上 durable delivery ledger，今天最適合教「速度優化」與「交付不能遺失」其實是兩種不同的系統責任。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.20" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Release）</a></li><li class="mb-3"><strong>Hermes 修正 mcp_rev 必須把 mcp_servers 算進去、reload 要能在 leader failure 後存活，且 /theme 要先持久化，這很適合教學生區分畫面值、重載後生效值與真正寫進設定的 source of truth。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/6982c61b8cd250b0dbc2053e7ffcf3703345d3c0" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch 報導 Jack Dorsey 的 Buzz 想做 teams 與 AI agents 共用的群聊平台，這很適合作為今天的外部對照：只要 agent 要和真人一起待在同一條訊息流裡，就要追問 transport、核准邊界與審計紀錄是否一起成立。</strong><br>來源：<a href="https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/" target="_blank" rel="noopener">查看來源（TechCrunch）</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.2-beta.3 is still the best official item to study first today because it bundles remote coding sessions, guided setup, and gateway/session recovery into one release-level lesson on host ownership, state persistence, and resume paths.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.3" target="_blank" rel="noopener">Source (OpenClaw Official Release)</a></li><li class="mb-3"><strong>OpenClaw now streams schedule sources with durable source identity, making it a compact scheduling lesson: the real question is not only when the next run happens, but also which source proposed it and which identity becomes the write-back authority.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/commit/98742bc2c7f222a05d9c3a7d1622c49e21dec56f" target="_blank" rel="noopener">Source (OpenClaw Official Commit)</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.20 (Quicksilver) sharply reduces time-to-first-token, streams reasoning by default, and adds a durable delivery ledger, cleanly separating latency work from delivery guarantees.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.20" target="_blank" rel="noopener">Source (Hermes Agent Official Release)</a></li><li class="mb-3"><strong>Hermes fixes mcp_rev so it includes mcp_servers, keeps reload alive through leader failure, and persists /theme first, which makes a strong source-of-truth lesson about UI state, reload state, and the config actually written to disk.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/6982c61b8cd250b0dbc2053e7ffcf3703345d3c0" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>TechCrunch reports that Jack Dorsey&#x27;s Buzz wants to be a group chat platform for teams and their AI agents, giving today&#x27;s outside comparison point: once humans and agents share one message stream, transport, approval boundaries, and audit trails all become engineering requirements.</strong><br>Source: <a href="https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/" target="_blank" rel="noopener">Source (TechCrunch)</a></li></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 
     
