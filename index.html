@@ -117,19 +117,19 @@
        </div>
      </div>
    </section>
-        <section id="news" class="mb-5">
+  <section id="news" class="mb-5">
   <div class="card p-4">
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
       <div>
         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-        <p class="text-secondary mb-0">今天建議先抓五個工程點：OpenClaw 用 beta.3 release 與 durable schedule-source commit 提醒你把主機控制權、恢復點與 next-check 寫回依據分開驗；Hermes 用 Quicksilver release 與 MCP reload 持久化修正提醒你把速度、交付與設定 source of truth 分欄；外部對照用 Buzz 團隊群聊報導，練習把「agent 進聊天室」翻成 transport、核准與審計責任。</p>
+        <p class="text-secondary mb-0">今天建議先抓三個工程點：OpenClaw 用 beta.3 release 與 loopback auth commit 練習把主機控制權、持久化設定與 auth-before-pairing 分開驗；Hermes 用 Quicksilver release 與 resume duplicate-row 修正提醒你把速度優化、交付保證與畫面回放 correctness 分欄；外部對照用 Hugging Face hack 報導，練習把 agent 風險翻成 token、供應鏈與監控半徑。</p>
       </div>
       <div class="d-flex gap-2 flex-wrap">
         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
         <a class="btn btn-outline-secondary" href="news-archive.html">瀏覽新聞檔案列表</a>
       </div>
     </div>
-    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-18 / 2026-07-21 · OpenClaw 官方</div><p>先把 beta.3 的 lifecycle 與 schedule source identity 分開看：一個在講 session 歸屬與恢復，一個在講 next-check 由誰提出、由誰寫回。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-20 / 2026-07-21 · Hermes Agent 官方</div><p>Quicksilver release 要分成 latency 與 durable delivery 兩張表，再用 MCP reload 持久化修正補上設定與畫面哪個才是 source of truth。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-21 · TechCrunch</div><p>團隊群聊容納 AI agents 不只是 UX 題；把 Buzz 的敘事翻成 transport、approval 與 audit trail，才看得到真正的工程責任。</p></article></div></div>
+    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-18 / 2026-07-22 · OpenClaw 官方</div><p>先把 beta.3 的 lifecycle，和 loopback 也要先過 gateway auth 這件事分開記：本機連線不等於免驗證，pairing 也不是第一層 source of truth。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-20 / 2026-07-22 · Hermes Agent 官方</div><p>Quicksilver release 要分成 latency 與 delivery 兩張表，再用 resume duplicate-row 修正補上 UI 回放與 E2E 證據，避免把快與正確混成同一題。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-22 · TechCrunch</div><p>Hugging Face hack 的工程重點不是戲劇化敘事，而是問 token 怎麼漏、工具鏈怎麼放大，以及哪一層監控本該先警示。</p></article></div></div>
   </div>
 </section>
 
@@ -181,6 +181,7 @@
               <li>如果失敗，症狀會先出現在 timeout、環境繼承、Docker 路徑、Telegram 預覽，還是 memory 評估退化。</li>
               <li>至少補 1 個回歸證據：測試檔、錯誤訊息、實際路徑、最終訊息畫面或比較實驗。</li>
               <li>若是 release 或 UI 消息，再補 1 欄「下游產物／畫面是否真的改變」：Docker build、tagged artifact、自動捲動或工具分組是否可直接觀察。</li>
+              <li>若消息提到 loopback、pairing 或 local dashboard，固定再問：先通過的是 token／password 驗證，還是配對流程本身；避免把本機連線誤看成免授權。</li>
               <li>若消息提到 remote coding session，再補 1 欄「session 歸屬主機／resume 終端／artifact 留存位置」，避免只看到功能名稱卻沒記主控權在哪裡。</li>
               <li>若消息牽涉大型 transcript 或桌面切換，再把「模型延遲」與「介面切換延遲」分開記，避免把所有卡頓都誤判成推理問題。</li>
             </ul>

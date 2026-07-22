@@ -34,6 +34,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-23.html — 2026-07-23 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-23.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-22.html — 2026-07-22 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-22.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-21.html — 2026-07-21 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-21.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-20.html — 2026-07-20 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-20.html">開啟</a></li>
@@ -54,6 +55,32 @@
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-05.html — 2026-07-05 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-05.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-04.html — 2026-07-04 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-04.html">開啟</a></li>
         </ul>
+      </div>
+    </section>
+
+<section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">2026-07-23 每日重點</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條，練習怎麼把 host ownership、auth-before-pairing、latency／delivery、resume correctness 與 supply-chain risk 改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-success" href="2026-07-23.html">開啟 2026-07-23 每日檔案</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.2-beta.3 把 remote coding sessions、guided setup 與 gateway/session recovery 綁在同一版，今天最適合拿來教「session 開在哪台主機、哪些設定會持久化、掛掉後從哪裡恢復」其實要一起驗證。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.3" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 明確寫出 loopback 直連也不能繞過 gateway auth，而且 auth 發生在 device pairing 之前；這很適合把「看起來是本機」與「真的免驗證」分開教。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/30c651d5bf5c747b8a56c42ece04789abd754bf0" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.20（Quicksilver）把首 token 延遲大幅壓低、推理串流改成預設可見，並補上 durable delivery ledger，最適合拿來教「速度優化」與「交付不能遺失」其實是兩種不同的系統責任。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.20" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Release）</a></li><li class="mb-3"><strong>Hermes 修正 resume 時重複的 inflight user rows，並補上 large-session-resume 相關 E2E 覆蓋；這很適合教學生把「畫面重複」「狀態回放」與「回歸證據」分成三個層次。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/73c7f68456afed688863ab5441800b9c6cbdf48f" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch 追蹤 OpenAI 的人為失誤如何引出 Hugging Face 上的 AI-powered hack，這是今天最好的外部對照：agent 基礎設施不能只看模型能力，還要一起看權杖管理、套件供應鏈與錯誤放大半徑。</strong><br>來源：<a href="https://techcrunch.com/2026/07/22/how-an-openais-human-mistake-led-to-the-ai-powered-hack-on-hugging-face/" target="_blank" rel="noopener">查看來源（TechCrunch）</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.2-beta.3 bundles remote coding sessions, guided setup, and gateway/session recovery into one release-level lesson on host ownership, persisted setup, and resume paths.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.3" target="_blank" rel="noopener">Source (OpenClaw Official Release)</a></li><li class="mb-3"><strong>OpenClaw now spells out that a direct loopback connection does not bypass gateway auth and that authentication happens before device pairing, which cleanly separates “local-looking” from “actually unauthenticated.”</strong><br>Source: <a href="https://github.com/openclaw/openclaw/commit/30c651d5bf5c747b8a56c42ece04789abd754bf0" target="_blank" rel="noopener">Source (OpenClaw Official Commit)</a></li><li class="mb-3"><strong>Hermes Agent v2026.7.20 (Quicksilver) sharply reduces time-to-first-token, streams reasoning by default, and adds a durable delivery ledger, making latency work and delivery guarantees two separate engineering responsibilities.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.20" target="_blank" rel="noopener">Source (Hermes Agent Official Release)</a></li><li class="mb-3"><strong>Hermes fixes duplicate inflight user rows on resume and adds large-session-resume E2E coverage, which makes a compact lesson in separating visible UI duplication, replayed session state, and regression evidence.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/73c7f68456afed688863ab5441800b9c6cbdf48f" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>TechCrunch tracks how a human mistake at OpenAI led to an AI-powered hack on Hugging Face, making today’s outside comparison point about token handling, package supply chains, and blast-radius control rather than model cleverness alone.</strong><br>Source: <a href="https://techcrunch.com/2026/07/22/how-an-openais-human-mistake-led-to-the-ai-powered-hack-on-hugging-face/" target="_blank" rel="noopener">Source (TechCrunch)</a></li></ol>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

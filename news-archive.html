@@ -27,7 +27,7 @@
   <main id="top" class="container py-4 py-lg-5">
    <section class="hero p-4 p-lg-5 mb-5">
      <h1 class="display-5 fw-bold mb-3">新聞檔案列表</h1>
-     <p class="lead mb-0">可把這些檔案當成版本演進紀錄來讀：先看最新的 2026-07-22 每日檔案與 2026-07 月檔案，再往前追幾天，較容易比較 lifecycle、schedule source identity、latency／delivery、config reload 與 team-agent chat 邊界。</p>
+     <p class="lead mb-0">可把這些檔案當成版本演進紀錄來讀：先看最新的 2026-07-23 每日檔案與 2026-07 月檔案，再往前追幾天，較容易比較 host ownership、gateway auth、latency／delivery、resume correctness 與 supply-chain 風險。</p>
    </section>
 
    <section class="mb-5">
@@ -35,8 +35,9 @@
        <h2 class="section-title h3 mb-3">目前可查閱的檔案</h2>
        <ul class="list-group list-group-flush">
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>news.html — 今日精選中英文消息</span><a class="btn btn-sm btn-outline-primary" href="news.html">開啟</a></li>
-      <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-22.html — 2026-07-22 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-22.html">開啟</a></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-23.html — 2026-07-23 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-23.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07.html — 2026 年 07 月新聞與舊聞彙整</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07.html">開啟</a></li>
+      <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-22.html — 2026-07-22 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-22.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-21.html — 2026-07-21 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-21.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-20.html — 2026-07-20 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-20.html">開啟</a></li>
       <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-19.html — 2026-07-19 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-19.html">開啟</a></li>
@@ -111,9 +112,10 @@
          <li class="mb-2">固定補一欄「觸及檔案／可驗證證據」，例如 release notes、測試、設定檔、資料庫 ownership、快照驗證或 Docker artifact，會更容易把新聞改寫成工程任務。</li>
          <li class="mb-2">若消息提到 remote coding session，固定再記一欄「session 歸哪台主機、從哪個 terminal 恢復、artifact 留在哪裡」，較容易把功能介紹轉成控制權分析。</li>
          <li class="mb-2">若消息提到 dynamic cadence 或 next_check，固定再記一欄「下一次檢查由誰提議、誰能夾住範圍、何時真正寫回」，比較容易把排程功能改寫成狀態機。</li>
-        <li class="mb-2">若消息是 benchmark 或速度優化，固定拆成 dev build、prod build、cold start、FCP、TTFT 與 transcript mount 六欄，避免把單一數字誤當成整體體感。</li>
-         <li>若消息提到 provider setup、quota、reload、dashboard editor 或專用硬體，固定再記一欄「這個決策是人核准、自動 fallback、CLI 真實契約，還是持久化寫回」，比較容易把功能介紹轉成系統邊界分析。</li>
-        <li>若消息是 protocol 或 tooling UX 報導，固定再補一欄「wire contract 與權限邊界有沒有跟著變清楚」，避免只記得比較好用，卻漏掉真正的整合責任。</li>
+         <li class="mb-2">若消息是 benchmark 或速度優化，固定拆成 dev build、prod build、cold start、FCP、TTFT 與 transcript mount 六欄，避免把單一數字誤當成整體體感。</li>
+         <li class="mb-2">若消息提到 provider setup、quota、reload、dashboard editor 或專用硬體，固定再記一欄「這個決策是人核准、自動 fallback、CLI 真實契約，還是持久化寫回」，比較容易把功能介紹轉成系統邊界分析。</li>
+         <li class="mb-2">若消息提到 loopback、pairing 或 local dashboard，固定再問：先過的是哪一層 auth、哪一層只是配對／顯示流程，避免把本機路徑誤看成免授權。</li>
+         <li>若消息是 protocol、tooling UX 或安全事件報導，固定再補一欄「wire contract、token 邊界與監控半徑有沒有一起變清楚」，避免只記得比較好用或更聳動，卻漏掉真正的整合責任。</li>
        </ul>
      </div>
    </section>
