@@ -122,14 +122,14 @@
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
       <div>
         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-        <p class="text-secondary mb-0">今天建議先抓三個工程點：OpenClaw 用 beta.3 release 與 loopback auth commit 練習把主機控制權、持久化設定與 auth-before-pairing 分開驗；Hermes 用 Quicksilver release 與 resume duplicate-row 修正提醒你把速度優化、交付保證與畫面回放 correctness 分欄；外部對照用 Hugging Face hack 報導，練習把 agent 風險翻成 token、供應鏈與監控半徑。</p>
+        <p class="text-secondary mb-0">今天先抓三個工程問題：OpenClaw 要把 release 的主機控制權與 SQLite migration 的升級／回滾分開看；Hermes 要把 Quicksilver 的速度優化與 tool-call 後雙重渲染的 UI correctness 分開驗；外部對照用 Claude voice mode，練習把模型路由、延遲預算與語音 guardrail 放進同一張表。</p>
       </div>
       <div class="d-flex gap-2 flex-wrap">
         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
         <a class="btn btn-outline-secondary" href="news-archive.html">瀏覽新聞檔案列表</a>
       </div>
     </div>
-    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-18 / 2026-07-22 · OpenClaw 官方</div><p>先把 beta.3 的 lifecycle，和 loopback 也要先過 gateway auth 這件事分開記：本機連線不等於免驗證，pairing 也不是第一層 source of truth。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-20 / 2026-07-22 · Hermes Agent 官方</div><p>Quicksilver release 要分成 latency 與 delivery 兩張表，再用 resume duplicate-row 修正補上 UI 回放與 E2E 證據，避免把快與正確混成同一題。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-22 · TechCrunch</div><p>Hugging Face hack 的工程重點不是戲劇化敘事，而是問 token 怎麼漏、工具鏈怎麼放大，以及哪一層監控本該先警示。</p></article></div></div>
+    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-18 / 2026-07-23 · OpenClaw 官方</div><p>同一天要分兩層讀：release 告訴你 lifecycle 與 host ownership，SQLite migration commit 則提醒 schema 升級一定要補相容與回滾證據。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-20 / 2026-07-23 · Hermes Agent 官方</div><p>Quicksilver 講的是快與不丟回應；桌面版雙重渲染修正則提醒 persisted transcript 正確，不代表 live UI reconciliation 也正確。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-23 · TechCrunch</div><p>Claude voice mode 升級最值得追問的不是「會說話了」，而是模型路由、語音延遲與 guardrail 是否一起被設計與驗證。</p></article></div></div>
   </div>
 </section>
 
@@ -183,6 +183,7 @@
               <li>若是 release 或 UI 消息，再補 1 欄「下游產物／畫面是否真的改變」：Docker build、tagged artifact、自動捲動或工具分組是否可直接觀察。</li>
               <li>若消息提到 loopback、pairing 或 local dashboard，固定再問：先通過的是 token／password 驗證，還是配對流程本身；避免把本機連線誤看成免授權。</li>
               <li>若消息提到 remote coding session，再補 1 欄「session 歸屬主機／resume 終端／artifact 留存位置」，避免只看到功能名稱卻沒記主控權在哪裡。</li>
+              <li>若消息提到 state schema、SQLite 或 migration，再補 1 欄「升級路徑／舊資料相容／回滾證據」，避免只記得版本號卻沒記資料層風險。</li>
               <li>若消息牽涉大型 transcript 或桌面切換，再把「模型延遲」與「介面切換延遲」分開記，避免把所有卡頓都誤判成推理問題。</li>
             </ul>
           </div>
