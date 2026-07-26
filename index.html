@@ -122,17 +122,17 @@
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
       <div>
         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-        <p class="text-secondary mb-0">今天先抓三組工程問題：OpenClaw 要把 before-tool-call policy 與 shell deny fallback 分開驗；Hermes 要把 slash command 的 target session 與 relay interactive ack lifecycle 分開驗；外部對照用 Opus 5，練習把模型升級新聞改寫成 routing、cost、tool-use 與 latency 指標。</p>
+        <p class="text-secondary mb-0">今天先抓三組工程問題：OpenClaw 要分開看 UI affordance 與 OAuth-backed capability discovery；Hermes 要分開看 installer stale lock 清理與 gateway chat_type routing；外部對照則用安全事件新聞，練習把模型生態消息改寫成 credential、audit 與 disclosure evidence。</p>
       </div>
       <div class="d-flex gap-2 flex-wrap">
         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
         <a class="btn btn-outline-secondary" href="news-archive.html">瀏覽新聞檔案列表</a>
       </div>
     </div>
-    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-25 · OpenClaw 官方</div><p>先分兩層讀：before-tool-call policy pipeline 在教規則、核准與診斷要拆開；shell deny fallback 則提醒 fail-closed 不能只寫「拒絕」，還要寫清楚拒絕後剩哪些路可走。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-25 · Hermes Agent 官方</div><p>slash command 修正的是狀態寫回目標；relay interactive 則是在補 human-in-the-loop 的 ack lifecycle。兩條都在提醒：互動成功不代表狀態真的落在對的位置。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-24 · TechCrunch</div><p>Opus 5 最值得追問的不是「模型更強」，而是 agent stack 要不要跟著改 model routing、成本預算、tool-use 策略與延遲目標。</p></article></div></div>
+    <div class="row g-3"><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-26 · OpenClaw 官方</div><p>ClawHub skill icons 提醒學生：看得見的功能入口只是 affordance，真正還要追問權限、工具契約與 fallback 是否一致。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-26 · Hermes Agent 官方</div><p>Windows stale lock 與 gateway chat_type wiring 都在提醒：很多錯誤不是模型本身，而是殘留狀態或 metadata route 寫錯層。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-26 · TechCrunch</div><p>外部對照焦點不是新聞口號，而是 credential、audit trail 與 disclosure timing 能不能被轉成可驗證的 incident table。</p></article></div></div>
     <div class="soft-panel mt-3 p-3">
       <h3 class="h6 fw-bold mb-2">教學小提示</h3>
-      <p class="mb-0">先替每條消息各補兩欄：<strong>control boundary</strong> 是 policy、approval、session target、ack lifecycle，還是 model routing；以及 <strong>first wrong write</strong> 最早會先出現在 deny fallback、錯誤聊天、漏掉 ack，還是過高成本／延遲。</p>
+      <p class="mb-0">先替每條消息各補兩欄：<strong>visible affordance vs. real authority</strong>，以及 <strong>state / evidence path</strong> 最早會先出現在 token discovery、installer lock、chat metadata，還是 incident audit trail。</p>
     </div>
   </div>
 </section>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026-07-27 iAgents 每日新聞檔案，整理 OpenClaw 與 Hermes Agent 的精選中英文消息。">
+  <title>2026-07-27 新聞檔案 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    body { background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%); color:#1f2937; }
+    .hero,.cardx { border-radius:1rem; }
+    .hero { background: linear-gradient(135deg, #0d6efd, #6610f2); color:#fff; box-shadow:0 1rem 3rem rgba(13,110,253,.2); }
+    .cardx { background:#fff; border:1px solid rgba(15,23,42,.08); box-shadow:0 .75rem 2rem rgba(15,23,42,.06); }
+    .section-title { font-weight:800; letter-spacing:.02em; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="../index.html">iAgents 中文學習站</a>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-outline-primary" href="../news.html">今日新聞</a>
+        <a class="btn btn-outline-secondary" href="../news-archive.html">檔案列表</a>
+      </div>
+    </div>
+  </nav>
+  <main id="top" class="container py-4 py-lg-5">
+    <section class="hero p-4 p-lg-5 mb-5">
+      <h1 class="display-5 fw-bold mb-3">2026-07-27 每日新聞檔案</h1>
+      <p class="lead mb-2">今天先抓三組工程問題：OpenClaw 要分開看 UI affordance 與 OAuth-backed capability discovery；Hermes 要分開看 installer stale lock 清理與 gateway chat_type routing；外部對照則用安全事件新聞，練習把模型生態消息改寫成 credential、audit 與 disclosure evidence。</p>
+      <p class="mb-0">封存時間：2026-07-27 07:00 CST</p>
+    </section>
+    <section class="mb-4"><div class="cardx p-4"><h2 class="section-title h4 mb-2">今天新增的小教學提示</h2><p class="text-secondary mb-0">先替每條消息各補兩欄：① visible affordance / authority boundary；② state / evidence path 最早會先出現在 token discovery、installer lock、chat metadata，還是 incident audit trail。</p></div></section>
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">中文 5 條</h2>
+            <p class="text-secondary mb-0">先讀 affordance 與 authority boundary，再對照 stale state、routing metadata 與 incident evidence，練習把同一天的不同敘事改寫成工程驗證表。</p>
+          </div>
+          <a class="btn btn-outline-primary" href="../news.html">回到今日新聞頁</a>
+        </div>
+        <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw 把 ClawHub skill icons 放進 Control UI，最適合拿來教「可見能力」與「真正可執行能力」不是同一件事：圖示能改善 discoverability，但工程上仍要追問圖示背後的權限、工具契約與 fallback 是否一致。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/c66ca2fbb2b038f4796abfa76bd52dcc3b675b02" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>OpenClaw 讓 Anthropic discovery 走 OAuth token 驗證，這是一條很好的模型接入教材：只要 agent 要自動探測 provider 能力，就要把 capability discovery 與 credential boundary 一起驗證。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/4bb8df63ca9c11d486cf2e97a09045eae113b24c" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 安裝流程會清掉舊的 Windows CUA lock，這很適合教學生把「安裝失敗」拆成程式碼錯誤與殘留狀態兩類：有時真正卡住的是 stale lock，而不是新版本本身。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/83dc0b9b85bb8c86ec4aeb012d406e3a4086b6e1" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes gateway 去重 chat_type wiring，這是一個很好的訊息路由教材：聊天型別若在組裝過程中被重複或覆蓋，畫面看起來像同一則訊息，實際上 routing 與 downstream policy 可能已經分流錯誤。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/26670bce95780fdef8d62ddb0322691ddfcd3339" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch 報導 Hugging Face 執行長在 OpenAI 相關入侵事件後主張更激進的透明揭露，這很適合當今天的外部對照：agent 與 LLM 基礎設施不能只談能力，還要把權杖管理、事件揭露與供應鏈信任一起寫進工程流程。</strong><br>來源：<a href="https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/" target="_blank" rel="noopener">查看來源（TechCrunch）</a></li></ol></div>
+      </div>
+    </section>
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">English 5 Items</h2>
+            <p class="text-secondary mb-0">Use the English list to compare affordances, credential boundaries, stale state cleanup, routing metadata, and incident-disclosure evidence.</p>
+          </div>
+          <a class="btn btn-outline-secondary" href="2026-07.html">查看本月檔案</a>
+        </div>
+        <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw now shows ClawHub skill icons in the Control UI, which is a good classroom reminder that visible capability and executable capability are different layers: icons improve discoverability, but engineers still need to inspect authority, tool contracts, and fallback behavior behind them.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/c66ca2fbb2b038f4796abfa76bd52dcc3b675b02" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>OpenClaw authenticates Anthropic model discovery with OAuth tokens, making it a compact lesson that capability discovery and credential boundaries must be verified together whenever an agent probes provider features automatically.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/4bb8df63ca9c11d486cf2e97a09045eae113b24c" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes now clears stale Windows CUA locks during install, which is a clean lesson that install failures often split into two classes: new code defects versus leftover state such as stale locks.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/83dc0b9b85bb8c86ec4aeb012d406e3a4086b6e1" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>Hermes deduplicates chat_type wiring in the gateway, which is a strong routing lesson: if chat metadata is duplicated or overwritten during composition, the UI may still look fine while downstream routing and policy decisions drift.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/26670bce95780fdef8d62ddb0322691ddfcd3339" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>TechCrunch reports that Hugging Face’s CEO is calling for radical transparency after an OpenAI-linked hack, giving today’s outside comparison point: agent and LLM infrastructure work must treat credential hygiene, incident disclosure, and supply-chain trust as first-class engineering concerns.</strong><br>Source：<a href="https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/" target="_blank" rel="noopener">Source（TechCrunch）</a></li></ol></div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
