@@ -34,6 +34,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-28.html — 2026-07-28 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-28.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-27.html — 2026-07-27 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-27.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-26.html — 2026-07-26 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-26.html">開啟</a></li>
 <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-25.html — 2026-07-25 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-25.html">開啟</a></li>
@@ -63,6 +64,32 @@
     </section>
 
 
+
+<section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">2026-07-28 每日重點</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條，練習怎麼把 hook order、route binding、input intent、stale state 與 incident evidence 改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-success" href="2026-07-28.html">開啟 2026-07-28 每日檔案</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 把 outbound hooks 放到 webchat projection 前面，這很適合教學生把「先執行哪一層副作用」與「最後畫面怎麼投影」分開看：若 hooks 次序錯了，前端看起來正常，實際記錄、標記或外送流程可能已經失真。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/a4c4f905ff7b5a7a65114c5225ddc563c7014fb7" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>OpenClaw 把 message route bindings 隔離開來，這是一條很好的路由教材：只要 account、message route 與 maintenance path 彼此污染，系統就可能把同一則訊息送到錯的邊界。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/49e7c12d613b2ea041324cacc99393379a016c19" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 修正桌面版 Enter 不應把 free-text slash 參數偷換成 completion，這很適合教學生分辨「使用者真正輸入的意圖」與「介面自動補完後接受的值」其實是兩個不同層次。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/43571601aa71fbd30e839f567e540106a92d8a03" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 修掉 stale cdp_url 讓每次 browser startup 多卡 10 秒以上的問題，這是一個很好的除錯教材：很多「模型好像很慢」其實是舊狀態或舊設定殘留，把啟動路徑先拖住了。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/731aa0ccc9d0968bd61a0c6cee7911aa787c58b2" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch 報導 Microsoft 推出首個 cybersecurity model 與新的 agentic cybersecurity system，這很適合當今天的外部對照：一旦 agent 要碰安全事件處理，工程上就不能只談自動化能力，還要一起看證據鏈、核准邊界與回復流程。</strong><br>來源：<a href="https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/" target="_blank" rel="noopener">查看來源（TechCrunch）</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw moves outbound hooks ahead of webchat projection, which is a compact lesson in separating side-effect order from final UI projection: if hooks run in the wrong order, the screen may look fine while logs, tags, or downstream delivery semantics are already wrong.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/commit/a4c4f905ff7b5a7a65114c5225ddc563c7014fb7" target="_blank" rel="noopener">Source (OpenClaw Official Commit)</a></li><li class="mb-3"><strong>OpenClaw isolates message route bindings, making it a strong routing lesson: once account scope, message route, and maintenance path leak into each other, the system can deliver one message across the wrong boundary.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/commit/49e7c12d613b2ea041324cacc99393379a016c19" target="_blank" rel="noopener">Source (OpenClaw Official Commit)</a></li><li class="mb-3"><strong>Hermes fixes the desktop Enter key so it no longer swaps a free-text slash argument for an autocomplete completion, which cleanly separates the user's intended input from the UI value that gets accepted.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/43571601aa71fbd30e839f567e540106a92d8a03" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>Hermes removes a stale cdp_url path that could stall every browser startup by more than 10 seconds, which is a clean debugging lesson that apparent model slowness is often leftover state or old configuration, not inference itself.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/731aa0ccc9d0968bd61a0c6cee7911aa787c58b2" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>TechCrunch reports that Microsoft launched its first cybersecurity model and a new agentic cybersecurity system, giving today's outside comparison point: once agents touch incident response, the engineering discussion must include evidence chains, approval boundaries, and recovery flow.</strong><br>Source: <a href="https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/" target="_blank" rel="noopener">Source (TechCrunch)</a></li></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
