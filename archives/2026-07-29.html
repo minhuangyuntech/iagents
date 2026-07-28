@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026-07-29 iAgents 每日新聞檔案，整理 OpenClaw 與 Hermes Agent 的精選中英文消息。">
+  <title>2026-07-29 新聞檔案 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    body { background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%); color:#1f2937; }
+    .hero,.cardx { border-radius:1rem; }
+    .hero { background: linear-gradient(135deg, #0d6efd, #6610f2); color:#fff; box-shadow:0 1rem 3rem rgba(13,110,253,.2); }
+    .cardx { background:#fff; border:1px solid rgba(15,23,42,.08); box-shadow:0 .75rem 2rem rgba(15,23,42,.06); }
+    .section-title { font-weight:800; letter-spacing:.02em; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="../index.html">iAgents 中文學習站</a>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-outline-primary" href="../news.html">今日新聞</a>
+        <a class="btn btn-outline-secondary" href="../news-archive.html">檔案列表</a>
+      </div>
+    </div>
+  </nav>
+  <main id="top" class="container py-4 py-lg-5">
+    <section class="hero p-4 p-lg-5 mb-5">
+      <h1 class="display-5 fw-bold mb-3">2026-07-29 每日新聞檔案</h1>
+      <p class="lead mb-2">今天先抓三個工程問題：OpenClaw beta.5 要把 persistence、replay、MCP Apps 與 onboarding 放進同一張系統圖；Hermes 要把 macOS signing identity 與 TCC 權限持久化分開驗證；外部對照則用 Perplexity Personal Computer，練習把 agent / OS authority、approval 與 fallback 明確拆開。</p>
+      <p class="mb-0">封存時間：2026-07-29 07:01 CST</p>
+    </section>
+    <section class="mb-4"><div class="cardx p-4"><h2 class="section-title h4 mb-2">今天新增的小教學提示</h2><p class="text-secondary mb-0">先替每條消息各補三欄：① persistence / replay 或 session state source of truth；② codesign identity / TCC / docs evidence；③ agent / OS authority、approval 與 rollback。今天最容易誤判的不是模型能力，而是狀態、權限與控制邊界真正寫在哪裡。</p></div></section>
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+      <div>
+        <h2 class="section-title h3 mb-1">中文 5 條</h2>
+        <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條，練習怎麼把 persistence、session state、permission persistence、docs evidence 與 agent / OS boundary 改寫成工程問題。</p>
+      </div>
+      <a class="btn btn-outline-primary" href="../news.html">回到今日新聞頁</a>
+    </div>
+    <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.2-beta.5 把 state recovery、durable delivery、session rewind/fork、interactive MCP Apps 與 guided setup / local inference 放進同一版，最適合工程學生練習把持久化、回放、核准與沙箱邊界畫成一張系統圖。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.5" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 讓 web 與 terminal 共用同一份 session state，這是一條很好的狀態一致性教材：如果不同介面各自維護 session 投影，學生就要追問真正的 source of truth 在哪裡。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/ad3f74f296e5d82009a55d922159713f691e842e" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 修正 macOS signing identity，讓 TCC 權限在 rebuild 後仍能保留；這很適合教學生把「功能能跑」與「系統權限是否持久」拆成兩個不同驗證層。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/5d171ffbbe6264261bbca938981418e8f553d58f" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 補上 macOS TCC permission persistence 與 keychain identity opt-in 文件，這是很好的文件教材：工程修正之後，還要看 docs 是否把授權前提、持久化條件與使用者選項說清楚。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/bc1c168d4941a91ff2d169d63c6ddb998450fdbb" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>The Verge 報導 Perplexity 的 Personal Computer 想把 Windows PC 變成 AI agent，今天最值得學生追問的不是口號，而是 OS authority、工具呼叫、使用者核准與 fallback 誰來控制。</strong><br>來源：<a href="https://www.theverge.com/ai-artificial-intelligence/971750/perplexity-personal-computer-windows-ai-agents" target="_blank" rel="noopener">查看來源（The Verge）</a></li></ol></div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="cardx p-4 p-lg-5">
+    <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+      <div>
+        <h2 class="section-title h3 mb-1">English 5 Items</h2>
+        <p class="text-secondary mb-0">Use the English list to compare persistence, session-state authority, permission persistence, documentation evidence, and the agent / OS boundary.</p>
+      </div>
+      <a class="btn btn-outline-secondary" href="2026-07.html">查看本月檔案</a>
+    </div>
+    <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw v2026.7.2-beta.5 bundles state recovery, durable delivery, session rewind/fork, interactive MCP Apps, and guided setup / local inference into one release, making it a strong architecture case for persistence, replay, approval, and sandbox boundaries.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.5" target="_blank" rel="noopener">Source (OpenClaw Official Release)</a></li><li class="mb-3"><strong>OpenClaw makes the web and terminal share one session state, which is a compact lesson in state consistency: once different interfaces maintain separate projections, engineers have to prove which copy is the real source of truth.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/ad3f74f296e5d82009a55d922159713f691e842e" target="_blank" rel="noopener">Source (OpenClaw Official Commit)</a></li><li class="mb-3"><strong>Hermes stabilizes the macOS signing identity so TCC grants survive rebuilds, which cleanly separates “the feature runs” from “system permissions persist correctly after rebuilds.”</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/5d171ffbbe6264261bbca938981418e8f553d58f" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>Hermes adds documentation for macOS TCC permission persistence and the keychain-identity opt-in, which is a strong reminder that a fix is not complete until the docs explain the authorization preconditions and persistence model clearly.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/bc1c168d4941a91ff2d169d63c6ddb998450fdbb" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>The Verge reports that Perplexity’s Personal Computer wants to turn Windows PCs into AI agents; the engineering question is not the slogan but who controls OS authority, tool execution, user approval, and fallback.</strong><br>Source：<a href="https://www.theverge.com/ai-artificial-intelligence/971750/perplexity-personal-computer-windows-ai-agents" target="_blank" rel="noopener">Source (The Verge)</a></li></ol></div>
+  </div>
+</section>
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
