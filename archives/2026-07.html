@@ -34,6 +34,7 @@
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-30.html — 2026-07-30 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-30.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-29.html — 2026-07-29 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-29.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-28.html — 2026-07-28 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-28.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-27.html — 2026-07-27 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-07-27.html">開啟</a></li>
@@ -66,6 +67,33 @@
 
 
 
+
+
+<section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">2026-07-30 每日重點</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條，練習怎麼把 session authority、timezone contract、shared state、cleanup boundary 與 personal-agent permission 改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-success" href="2026-07-30.html">開啟 2026-07-30 每日檔案</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 把 mapped wake events 寫回設定好的 session，這是一條很好的 session authority 教材：同樣叫做喚醒事件，不代表它就該落回目前可見的聊天；工程上要追的是哪個 session 擁有真正的寫回權。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/fc95d7190cbbcc50a024df1b61bf1b8b6a9cb84b" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>OpenClaw 更正 timezone configuration contract，這很適合今天的排程教材：時區不是小顯示設定，而是會直接影響日期推理、cron 解讀與跨通道事件時間戳的 source of truth。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/3226f07cad67d0a8c3c3286940edd6588c3e283f" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 修正 hermes -w 會被一個 flaky fetch 卡住 30–60 秒，這是一條很好的效能除錯教材：看到「agent 很慢」時，先拆開是模型推理慢、worktree 探測慢，還是外部 fetch 把整個 CLI 入口堵住。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/1cf5d3841b37f02062a39557c4a7579a51742e3a" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 修正 _normalize_custom_provider_entry 會直接改寫 caller dict，這是一條很好的 shared-state 教材：設定正規化若偷偷改動呼叫端資料，後面的 cache、比較與回歸測試都可能建立在被污染的前提上。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/bfe4cbdc2a70050a5b0c865c54eaa37992b1f142" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch 報導 Mark Zuckerberg 預期未來五年會有數十億人擁有 personal AI agents；今天最值得學生追問的不是預測本身，而是這類「個人 agent」要把 identity、permission、memory 與 device boundary 放在哪裡。</strong><br>來源：<a href="https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/" target="_blank" rel="noopener">查看來源（TechCrunch）</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw routes mapped wake events back to configured sessions, which is a compact lesson in session authority: a wake event is not supposed to land in whatever chat happens to be visible; engineers still need to prove which session owns the write-back.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/commit/fc95d7190cbbcc50a024df1b61bf1b8b6a9cb84b" target="_blank" rel="noopener">Source (OpenClaw Official Commit)</a></li><li class="mb-3"><strong>OpenClaw corrects the timezone configuration contract, making today’s scheduling lesson clear: timezone is not just a cosmetic display choice but part of the source of truth for date reasoning, cron interpretation, and cross-channel timestamps.</strong><br>Source: <a href="https://github.com/openclaw/openclaw/commit/3226f07cad67d0a8c3c3286940edd6588c3e283f" target="_blank" rel="noopener">Source (OpenClaw Official Commit)</a></li><li class="mb-3"><strong>Hermes fixes a flaky fetch that could stall `hermes -w` for 30–60 seconds, which is a clean performance-debugging lesson: when an agent feels slow, engineers should separate model latency from worktree discovery and external fetch bottlenecks.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/1cf5d3841b37f02062a39557c4a7579a51742e3a" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>Hermes stops `_normalize_custom_provider_entry` from mutating the caller’s dict, giving a compact shared-state lesson: if config normalization silently rewrites caller-owned data, later cache checks, comparisons, and regression tests can all inherit polluted assumptions.</strong><br>Source: <a href="https://github.com/NousResearch/hermes-agent/commit/bfe4cbdc2a70050a5b0c865c54eaa37992b1f142" target="_blank" rel="noopener">Source (Hermes Agent Official Commit)</a></li><li class="mb-3"><strong>TechCrunch reports Mark Zuckerberg’s prediction that billions of people will have personal AI agents within five years; the engineering question is not the forecast itself but where identity, permissions, memory, and device boundaries would actually live in such “personal agent” systems.</strong><br>Source: <a href="https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/" target="_blank" rel="noopener">Source (TechCrunch)</a></li></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
