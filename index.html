@@ -122,7 +122,7 @@
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
       <div>
         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-        <p class="text-secondary mb-0">今天先抓三個工程問題：wake event 要寫回哪個 session、timezone contract 誰說了算、personal AI agent 的身分與權限是否真的可持久化。</p>
+        <p class="text-secondary mb-0">今天先抓三個工程問題：control channel 靠什麼證明還活著、晚到的背景 prompt 是否仍寫回原 session、timeout policy 是否真的覆蓋所有媒體路徑。</p>
       </div>
       <div class="d-flex gap-2 flex-wrap">
         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -130,11 +130,11 @@
       </div>
     </div>
     <div class="row g-3">
-      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-29 · OpenClaw 官方</div><p>wake event 該寫回哪個 configured session，不該只看眼前聊天視窗。</p></article></div> <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-29 · Hermes Agent 官方</div><p>CLI 變慢要先拆開 worktree 探測、flaky fetch 與模型延遲三層。</p></article></div> <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-29 · TechCrunch</div><p>personal AI agents 的真正工程題目是 identity、permission、memory 與 device boundary。</p></article></div>
+      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-30 · OpenClaw 官方</div><p>remote Codex 補 heartbeat 與 reconnect，提醒學生控制通道可靠性要看存活訊號與恢復證據。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-30 · Hermes Agent 官方</div><p>queued prompts 必須綁回 origin session，避免背景任務晚到時把內容寫進新的聊天。</p></article></div><div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-30 · TechCrunch</div><p>Anthropic 的 supply-chain risk 標籤爭議提醒學生：外部風險敘事也要拆成 claim、evidence 與可驗證 artifact。</p></article></div>
     </div>
     <div class="soft-panel mt-3 p-3">
       <h3 class="h6 fw-bold mb-2">教學小提示</h3>
-      <p class="mb-0">今天讀消息時，固定補三欄：<strong>target session / write-back authority</strong>、<strong>timezone / date source</strong>、<strong>shared mutable state</strong>；再問外部 agent 願景是否真的說清楚了 <strong>identity</strong>、<strong>permission</strong> 與 <strong>memory boundary</strong>。</p>
+      <p class="mb-0">讀今天的消息時，固定補三欄：<strong>heartbeat / reconnect evidence</strong>、<strong>origin session / write-back target</strong>、<strong>timeout policy by path</strong>；若外部報導談到風險標籤，再補一欄 <strong>claim vs evidence</strong>。</p>
     </div>
   </div>
 </section>
