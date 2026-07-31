@@ -27,7 +27,7 @@
   <main id="top" class="container py-4 py-lg-5">
    <section class="hero p-4 p-lg-5 mb-5">
      <h1 class="display-5 fw-bold mb-3">新聞檔案列表</h1>
-     <p class="lead mb-0">可把這些檔案當成版本演進紀錄來讀：先看最新的 2026-07-31 每日檔案與 2026-07 月檔案，再往前追幾天，較容易比較 heartbeat、backpressure、origin session ownership、timeout policy 與 evidence strength。</p>
+     <p class="lead mb-0">可把這些檔案當成版本演進紀錄來讀：先看最新的 2026-08-01 每日檔案與 2026-08 月檔案，再往前追幾天，較容易比較 compaction、quarantine、sandbox path、scope 與 evidence strength。</p>
    </section>
 
    <section class="mb-5">
@@ -35,8 +35,9 @@
        <h2 class="section-title h3 mb-3">目前可查閱的檔案</h2>
        <ul class="list-group list-group-flush">
         <li class="list-group-item d-flex justify-content-between align-items-center"><span>news.html — 今日精選中英文消息</span><a class="btn btn-sm btn-outline-primary" href="news.html">開啟</a></li>
+        <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-08-01.html — 2026-08-01 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-08-01.html">開啟</a></li>
+        <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-08.html — 2026 年 08 月新聞與舊聞彙整</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-08.html">開啟</a></li>
         <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-31.html — 2026-07-31 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-31.html">開啟</a></li>
-        <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07.html — 2026 年 07 月新聞與舊聞彙整</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07.html">開啟</a></li>
         <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-30.html — 2026-07-30 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-30.html">開啟</a></li>
         <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-29.html — 2026-07-29 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-29.html">開啟</a></li>
         <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07-28.html — 2026-07-28 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07-28.html">開啟</a></li>
@@ -100,6 +101,7 @@
         <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-14.html — 2026-04-14 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-04-14.html">開啟</a></li>
         <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-13.html — 2026-04-13 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-04-13.html">開啟</a></li>
         <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04-12.html — 2026-04-12 每日新聞檔案</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-04-12.html">開啟</a></li>
+        <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-07.html — 2026 年 07 月新聞與舊聞彙整</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-07.html">開啟</a></li>
         <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-06.html — 2026 年 06 月新聞與舊聞彙整</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-06.html">開啟</a></li>
         <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-05.html — 2026 年 05 月新聞與舊聞彙整</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-05.html">開啟</a></li>
         <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-04.html — 2026 年 04 月新聞與舊聞彙整</span><a class="btn btn-sm btn-outline-primary" href="archives/2026-04.html">開啟</a></li>
@@ -121,7 +123,7 @@
          <li class="mb-2">若消息提到圖示、模型清單、chat type 或安裝流程，固定再分開記 visible affordance、真正 authority 與殘留 state，避免把 UI 提示誤看成系統已完成。</li>
          <li class="mb-2">若消息提到 autocomplete、Enter 或設定儲存，固定再分開記「使用者原始意圖」與「UI 最後接受的值」，避免把介面代填誤看成正確需求。</li>
          <li class="mb-2">若消息提到 macOS 權限、codesign 或 rebuild，固定再分開記 signing identity、TCC grant 與 installer / repair 路徑，避免把一次成功授權誤看成長期持久化。</li>
-         <li class="mb-2">若消息同時牽涉 heartbeat、reconnect、queue 或 timeout，固定再補一欄「存活訊號、origin session、取消邊界、跨路徑 timeout 是否一致」，避免把所有穩定性問題都寫成單一句「連線變穩」。</li>
+         <li class="mb-2">若消息同時牽涉 compact、quarantine、sandbox path 或 scope，固定再補一欄「哪一層在保存狀態、哪一層在讀取狀態、哪一層最先暴露錯誤」。</li>
          <li>若消息是模型升級或新能力新聞，固定再補一欄 routing / cost / latency 影響，避免把外部報導直接當成部署結論。</li>
        </ul>
      </div>

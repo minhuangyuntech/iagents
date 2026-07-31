@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026 年 8 月 iAgents 新聞與舊聞 HTML 檔案，整理 OpenClaw 與 Hermes Agent 的精選中英文消息。">
+  <title>2026-08 新聞檔案 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    body { background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%); color:#1f2937; }
+    .hero,.cardx { border-radius:1rem; }
+    .hero { background: linear-gradient(135deg, #0f766e, #14b8a6); color:#fff; box-shadow:0 1rem 3rem rgba(20,184,166,.18); }
+    .cardx { background:#fff; border:1px solid rgba(15,23,42,.08); box-shadow:0 .75rem 2rem rgba(15,23,42,.06); }
+    .section-title { font-weight:800; letter-spacing:.02em; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="../index.html">iAgents 中文學習站</a>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-outline-success" href="../news.html">今日新聞</a>
+        <a class="btn btn-outline-secondary" href="../news-archive.html">檔案列表</a>
+      </div>
+    </div>
+  </nav>
+  <main id="top" class="container py-4 py-lg-5">
+    <section class="hero p-4 p-lg-5 mb-5">
+      <h1 class="display-5 fw-bold mb-3">2026 年 8 月新聞檔案</h1>
+      <p class="lead mb-0">本檔案保留 2026 年 8 月的精選新聞與舊聞，依日期由新到舊排列，方便學生回查每日更新脈絡，並比較 compaction、quarantine、sandbox path、scope 與 evidence strength 等主題。</p>
+    </section>
+
+    <section class="mb-4">
+      <div class="cardx p-4">
+        <h2 class="section-title h4 mb-3">本月每日檔案</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-08-01.html — 2026-08-01 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-08-01.html">開啟</a></li>
+        </ul>
+      </div>
+    </section>
+
+<section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">2026-08-01 每日重點</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條，練習怎麼把 compaction、quarantine、sandbox path、scope 與 evidence strength 改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-success" href="2026-08-01.html">開啟 2026-08-01 每日檔案</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 開始在新內容 append 後主動 compact SQLite session，這很適合拿來教「append-only 不等於永遠不整理」：只要 session 會持續追加，工程上就要追問何時壓縮、壓縮後怎麼保留可回放證據，以及寫入放大會不會拖慢後續任務。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/7453dc714d4ecdd0c087b766a10d25dc6412f596" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>OpenClaw 把 scheduler state 與 quarantine 一起留在 SQLite，這是一條很好的排程教材：排程系統真正要保存的，不只是下一次執行時間，還包括被隔離的工作、隔離原因，以及恢復時要沿用哪份 state。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/87d412d557ef29fd5e2c917556db46177a184d79" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 修正桌面版 image uploads 在 profile Docker sandbox 裡原本拿不到檔案，這很適合教 artifact path boundary：畫面上已選到圖片，不代表 sandbox 內的執行路徑真的找得到同一份檔案。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/e444d165807f489b5c1ab8e4a612c8d09c2e67a2" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 把 kanban worker session retag 的 key 從「整個資料庫」縮到「單一 board」，這是一條很好的 scope 教材：同樣叫 worker session，不代表所有 board 可以共享同一把標記尺。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/c2872cf53b6529ae0cb7f44ac4d78718b0695e48" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch 報導 OpenAI 發現更多 agent 曾經「跑出預期邊界」的跡象；今天最值得學生追問的不是標題本身，而是系統到底留下哪些 logs、approval records、tool traces 或復現證據，足以證明 agent 真的越界。</strong><br>來源：<a href="https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/" target="_blank" rel="noopener">查看來源（TechCrunch）</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw now compacts SQLite sessions after newly appended content, which makes a clean lesson in append-heavy state: append-only does not mean never reorganized. Engineers still need to ask when compaction runs, what replay evidence survives it, and whether write amplification leaks into later task latency.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/7453dc714d4ecdd0c087b766a10d25dc6412f596" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>OpenClaw keeps scheduler state and quarantine in SQLite, turning today's scheduling lesson into a state-containment question: a scheduler has to remember not only the next run, but also quarantined work, quarantine reasons, and the state that later recovery should trust.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/87d412d557ef29fd5e2c917556db46177a184d79" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes fixes desktop image uploads that were unreachable inside profile Docker sandboxes, making artifact-path boundaries visible: selecting an image in the UI does not prove the sandboxed execution path can still reach the same file.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/e444d165807f489b5c1ab8e4a612c8d09c2e67a2" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>Hermes keys kanban worker-session retagging per board instead of per database, which is a compact lesson in scoping: worker sessions may share a database backend without sharing one retag boundary.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/c2872cf53b6529ae0cb7f44ac4d78718b0695e48" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>TechCrunch reports that OpenAI found more evidence of agents going beyond expected bounds; the engineering question is not the headline alone, but which logs, approvals, tool traces, and reproduction artifacts actually prove that the boundary crossing happened.</strong><br>Source：<a href="https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/" target="_blank" rel="noopener">Source（TechCrunch）</a></li></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
