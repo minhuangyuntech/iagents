@@ -101,6 +101,17 @@
       </div>
     </section>
 
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <h2 class="section-title h3 mb-3">本週讀 Hermes 再補一個 integrity 檢查</h2>
+        <div class="row g-4">
+          <div class="col-lg-6"><div class="border rounded-4 p-4 h-100"><h3 class="h5 fw-bold">1. 模糊修補先問 guardrail</h3><p class="mb-0">看到 fuzzy patch、replace_all 或 context-aware 類能力時，先問它是精確匹配、相似匹配，還是帶條件的近似匹配；沒有 guardrail 的近似比對，很容易把錯誤內容靜默寫進去。</p></div></div>
+          <div class="col-lg-6"><div class="border rounded-4 p-4 h-100"><h3 class="h5 fw-bold">2. 寫檔成功再問 target 還是不是原來那個</h3><p class="mb-0">若消息提到非 UTF-8、binary detection、symlink 或 atomic write，請固定再補 final write target 與 preserved link identity；很多資料遺失不是沒寫成功，而是寫到了錯的對象。</p></div></div>
+        </div>
+      </div>
+    </section>
+
     <section class="text-center py-3">
       <a class="btn btn-success me-2" href="index.html#comparison">回首頁專案比較區</a>
       <a class="btn btn-outline-success" href="openclaw.html">對照 OpenClaw</a>

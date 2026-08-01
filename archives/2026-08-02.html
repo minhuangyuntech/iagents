@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026-08-02 iAgents 每日新聞檔案，整理 OpenClaw 與 Hermes Agent 的精選中英文消息。">
+  <title>2026-08-02 新聞檔案 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    body { background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%); color:#1f2937; }
+    .hero,.cardx { border-radius:1rem; }
+    .hero { background: linear-gradient(135deg, #0d6efd, #6610f2); color:#fff; box-shadow:0 1rem 3rem rgba(13,110,253,.2); }
+    .cardx { background:#fff; border:1px solid rgba(15,23,42,.08); box-shadow:0 .75rem 2rem rgba(15,23,42,.06); }
+    .section-title { font-weight:800; letter-spacing:.02em; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="../index.html">iAgents 中文學習站</a>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-outline-primary" href="../news.html">今日新聞</a>
+        <a class="btn btn-outline-secondary" href="../news-archive.html">檔案列表</a>
+      </div>
+    </div>
+  </nav>
+  <main id="top" class="container py-4 py-lg-5">
+    <section class="hero p-4 p-lg-5 mb-5">
+      <h1 class="display-5 fw-bold mb-3">2026-08-02 每日新聞檔案</h1>
+      <p class="lead mb-2">今天把 5 條消息收斂成一個教學主題：AI agent 的可靠性要一起看 recovery store、session scope、模糊修補 guardrail、檔案完整性，最後再用外部安全新聞檢查 claim 與 artifact 是否對得起來。</p>
+      <p class="mb-0">封存時間：2026-08-02 07:01 CST</p>
+    </section>
+    <section class="mb-4"><div class="cardx p-4"><h2 class="section-title h4 mb-2">今天新增的小教學提示</h2><p class="text-secondary mb-0">若同一天同時看到 release、session switch、fuzzy patch 與 file-write 類修正，請不要都寫成「穩定性提升」；要分開記 surviving state、scope reset、approximate match guardrail、以及 final write target 是否仍指向正確 artifact。</p></div></section>
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">中文 5 條</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條，練習怎麼把 recovery、scope、edit integrity 與 evidence strength 改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-primary" href="../news.html">回到今日新聞頁</a>
+        </div>
+        <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw 2026.7.2-beta.6 把 quarantine store、crash-recoverable SQLite snapshots 與 durable channel delivery 放進同一版，今天最適合教學生的不是功能數量，而是「主資料庫壞掉時，哪些狀態還活著、哪些通道還可回收」。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.6" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 修正 TUI session switch 後 mode scope 會串到別的 session，這是一條很好的「狀態作用域」教材：切換 session 時，trace / verbose / reasoning 類設定不該偷偷沿用前一個上下文。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/08ea9cc31d8e17a1101fde0f366fc5050eef0c03" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 修正 fuzzy-match 的 context_aware strategy 可能半對半錯地改到不該改的內容，這很適合教「模糊匹配不是免費的」：近似比對若沒有明確 guardrail，批次修補可能靜默污染檔案。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/c0b0c886263abe3f32abfbca26b585b97081ff59" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 修正 file operations 對非 UTF-8 與 symlink target 的處理，提醒學生「看到可寫入」不代表真的寫在正確對象上；編碼判斷錯誤或 atomic write 取代 symlink 都會把資料完整性悄悄破壞。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/021a076880ccb545c5bf2d5d3ecd73ae0b0b9289" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>The Verge 報導 Anthropic 表示 Claude 在 cyber 測試期間也曾誤觸真實公司系統；對工程學生更重要的不是聳動標題，而是要追問測試邊界、批准流程與留下哪些 artifacts 才足以支撐 claim。</strong><br>來源：<a href="https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests" target="_blank" rel="noopener">查看來源（The Verge）</a></li></ol></div>
+      </div>
+    </section>
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">English 5 Items</h2>
+            <p class="text-secondary mb-0">Use the English list to compare recovery, scope, edit integrity, and safety evidence.</p>
+          </div>
+          <a class="btn btn-outline-secondary" href="2026-08.html">查看本月檔案</a>
+        </div>
+        <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw 2026.7.2-beta.6 bundles quarantine stores, crash-recoverable SQLite snapshots, and durable channel delivery, so the teaching question is not feature count but which state survives primary-database damage and which channels remain recoverable after restarts.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.6" target="_blank" rel="noopener">Source（OpenClaw Official Release）</a></li><li class="mb-3"><strong>OpenClaw fixes TUI mode scoping when switching sessions, making state scope teachable: trace, verbose, and reasoning settings should not leak from one session context into another just because the operator changed focus.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/08ea9cc31d8e17a1101fde0f366fc5050eef0c03" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes fixes a fuzzy-match context_aware path that could silently replace half-matching wrong content, which is a crisp lesson that approximate matching is not free: without guardrails, bulk patching can corrupt files quietly.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/c0b0c886263abe3f32abfbca26b585b97081ff59" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>Hermes fixes file operations around non-UTF-8 data and symlink targets, reminding students that “the write succeeded” does not prove the write hit the right object; encoding mistakes and atomic-write swaps can quietly damage integrity.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/021a076880ccb545c5bf2d5d3ecd73ae0b0b9289" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>The Verge reports Anthropic saying Claude accidentally touched real companies during cyber tests; for students, the engineering lesson is not the headline but the need to trace test boundaries, approval paths, and the artifacts that make the claim verifiable.</strong><br>Source：<a href="https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests" target="_blank" rel="noopener">Source（The Verge）</a></li></ol></div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
