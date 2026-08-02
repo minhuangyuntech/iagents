@@ -27,13 +27,14 @@
   <main id="top" class="container py-4 py-lg-5">
     <section class="hero p-4 p-lg-5 mb-5">
       <h1 class="display-5 fw-bold mb-3">2026 年 8 月新聞檔案</h1>
-      <p class="lead mb-0">本檔案保留 2026 年 8 月的精選新聞與舊聞，依日期由新到舊排列，方便學生回查每日更新脈絡，並比較 recovery store、scope、edit integrity 與 safety evidence 等主題。</p>
+      <p class="lead mb-0">本檔案保留 2026 年 8 月的精選新聞與舊聞，依日期由新到舊排列，方便學生回查每日更新脈絡，並比較 recovery、upgrade auth、artifact retrieval、write verification 與 review gate 等主題。</p>
     </section>
 
     <section class="mb-4">
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-08-03.html — 2026-08-03 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-08-03.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-08-02.html — 2026-08-02 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-08-02.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-08-01.html — 2026-08-01 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-08-01.html">開啟</a></li>
         </ul>
@@ -44,8 +45,34 @@
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
+            <h2 class="section-title h3 mb-1">2026-08-03 每日重點</h2>
+            <p class="text-secondary mb-0">今天把 5 條消息收斂成一個教學主題：AI agent 的說法要能跨過升級、截斷、寫檔與審查邊界後仍保有可追查證據。</p>
+          </div>
+          <a class="btn btn-outline-success" href="2026-08-03.html">開啟 2026-08-03 每日檔案</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw beta.7 把 state safety、durable channel delivery 與 session rewind / branching 綁成同一個工程主題，適合學生先畫出「主資料庫受損後還剩哪些可回收狀態、哪些訊息仍可安全送出、哪些分支寫入必須拒絕」的 failure model。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.7" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 修正 device-auth 升級後 Control UI 配對與登入恢復，這是很好的「升級不只換版本，也會碰到 credential rotation 與 headless recovery」案例。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/8df95ccd087eacafa55ec16026bc40de08631e14" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 把 terminal truncation 從「資訊直接消失」改成可回收 full output spill，提醒學生：看到截斷訊息時，正確工程問題不是重跑，而是先問完整 artifact 有沒有被保留下來。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/80631c4aeaa34e4c0f3aca987992846593c333b1" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 讓 write_file 以 on-disk sha256 驗證內容是否真的落盤，這條消息很適合教「寫檔成功」與「內容正確持久化」其實是兩個不同命題。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/2c8a932f8015eae8568eed20faee52a7b8e4fd32" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>InfoQ 報導 Dropbox 把 MCP 與 Dash 接到 security design 與 code review 流程，剛好能讓學生把今天的官方消息延伸到「agent 輸出最後怎麼進入審查與治理」。</strong><br>來源：<a href="https://www.infoq.com/news/2026/07/dropbox-mcp-ai-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener">查看來源（InfoQ）</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw beta.7 ties state safety, durable channel delivery, and session rewind / branching into one engineering thread, so students can first map which state survives primary-database damage, which accepted messages stay recoverable, and which branch writes must be rejected as stale.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.7" target="_blank" rel="noopener">Source（OpenClaw Official Release）</a></li><li class="mb-3"><strong>OpenClaw fixes Control UI pairing and login recovery after device-auth upgrades, making upgrade-time credential rotation and headless recovery visible instead of treating “upgrade failed” as one vague symptom.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/8df95ccd087eacafa55ec16026bc40de08631e14" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes turns terminal truncation from silent information loss into recoverable full-output spill, so the engineering question is no longer “should we rerun?” but “did we preserve the full artifact and expose where to read it?”</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/80631c4aeaa34e4c0f3aca987992846593c333b1" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>Hermes now verifies write_file by comparing on-disk sha256 with intended content, which cleanly teaches that “the write succeeded” and “the right bytes persisted” are two different claims.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/2c8a932f8015eae8568eed20faee52a7b8e4fd32" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>InfoQ reports Dropbox integrating MCP and Dash into security-design and code-review flow, which extends today’s official updates into the deployment question: how agent outputs finally enter review and governance.</strong><br>Source：<a href="https://www.infoq.com/news/2026/07/dropbox-mcp-ai-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener">Source（InfoQ）</a></li></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
             <h2 class="section-title h3 mb-1">2026-08-02 每日重點</h2>
-            <p class="text-secondary mb-0">先看今天 5 條把 release recovery、session scope、patch correctness、file integrity 與 safety evidence 排成一條工程問題線。</p>
+            <p class="text-secondary mb-0">今天把 5 條消息收斂成一個教學主題：AI agent 的可靠性要一起看 recovery store、session scope、模糊修補 guardrail、檔案完整性，最後再用外部安全新聞檢查 claim 與 artifact 是否對得起來。</p>
           </div>
           <a class="btn btn-outline-success" href="2026-08-02.html">開啟 2026-08-02 每日檔案</a>
         </div>
@@ -71,7 +98,7 @@
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
           <div>
             <h2 class="section-title h3 mb-1">2026-08-01 每日重點</h2>
-            <p class="text-secondary mb-0">回看前一天時，可把 compact、quarantine、sandbox path、scope 與外部越界報導當成前置教材。</p>
+            <p class="text-secondary mb-0">今天把 5 條消息收斂成一個教學主題：AI agent 的穩定性不只看模型輸出，還要一起看 SQLite state compaction、scheduler quarantine、sandbox artifact path、board-level scope，以及越界事件到底留下多少可驗證 evidence。</p>
           </div>
           <a class="btn btn-outline-success" href="2026-08-01.html">開啟 2026-08-01 每日檔案</a>
         </div>
@@ -79,13 +106,13 @@
           <div class="col-lg-6">
             <div class="border rounded-4 p-4 h-100">
               <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
-              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 開始在新內容 append 後主動 compact SQLite session，提醒學生把 append、compact 與 replay evidence 分開驗證。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/7453dc714d4ecdd0c087b766a10d25dc6412f596" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>OpenClaw 把 scheduler state 與 quarantine 一起留在 SQLite，可拿來教「有排程」不等於「可安全恢復」。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/87d412d557ef29fd5e2c917556db46177a184d79" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 修正桌面版 image uploads 在 Docker sandbox 內拿不到檔案，提醒學生 host path 與 sandbox path 要分開記。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/e444d165807f489b5c1ab8e4a612c8d09c2e67a2" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 把 kanban worker session retag 的 key 縮到單一 board，這是一條 scope key 教材。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/c2872cf53b6529ae0cb7f44ac4d78718b0695e48" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch 報導 OpenAI 發現更多 agent 曾經跑出預期邊界，提醒學生檢查 logs、approvals、tool traces 是否足夠支撐 claim。</strong><br>來源：<a href="https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/" target="_blank" rel="noopener">查看來源（TechCrunch）</a></li></ol>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw 開始在新內容 append 後主動 compact SQLite session，這很適合拿來教「append-only 不等於永遠不整理」：只要 session 會持續追加，工程上就要追問何時壓縮、壓縮後怎麼保留可回放證據，以及寫入放大會不會拖慢後續任務。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/7453dc714d4ecdd0c087b766a10d25dc6412f596" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>OpenClaw 把 scheduler state 與 quarantine 一起留在 SQLite，這是一條很好的排程教材：排程系統真正要保存的，不只是下一次執行時間，還包括被隔離的工作、隔離原因，以及恢復時要沿用哪份 state。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/87d412d557ef29fd5e2c917556db46177a184d79" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 修正桌面版 image uploads 在 profile Docker sandbox 裡原本拿不到檔案，這很適合教 artifact path boundary：畫面上已選到圖片，不代表 sandbox 內的執行路徑真的找得到同一份檔案。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/e444d165807f489b5c1ab8e4a612c8d09c2e67a2" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>Hermes 把 kanban worker session retag 的 key 從「整個資料庫」縮到「單一 board」，這是一條很好的 scope 教材：同樣叫 worker session，不代表所有 board 可以共享同一把標記尺。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/c2872cf53b6529ae0cb7f44ac4d78718b0695e48" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>TechCrunch 報導 OpenAI 發現更多 agent 曾經「跑出預期邊界」的跡象；今天最值得學生追問的不是標題本身，而是系統到底留下哪些 logs、approval records、tool traces 或復現證據，足以證明 agent 真的越界。</strong><br>來源：<a href="https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/" target="_blank" rel="noopener">查看來源（TechCrunch）</a></li></ol>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="border rounded-4 p-4 h-100">
               <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
-              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw compacts SQLite sessions after append-heavy writes, which is a good replay-evidence lesson.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/7453dc714d4ecdd0c087b766a10d25dc6412f596" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>OpenClaw keeps scheduler state and quarantine in SQLite, separating “scheduled” from “safely recoverable.”</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/87d412d557ef29fd5e2c917556db46177a184d79" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes fixes desktop image uploads that were unreachable inside Docker sandboxes, making host-path and sandbox-path boundaries visible.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/e444d165807f489b5c1ab8e4a612c8d09c2e67a2" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>Hermes scopes kanban worker-session retagging per board, which is a compact scope-key lesson.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/c2872cf53b6529ae0cb7f44ac4d78718b0695e48" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>TechCrunch reports more evidence of OpenAI agents running amok, which is useful for comparing claims with logs, approvals, and tool traces.</strong><br>Source：<a href="https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/" target="_blank" rel="noopener">Source（TechCrunch）</a></li></ol>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw now compacts SQLite sessions after newly appended content, which makes a clean lesson in append-heavy state: append-only does not mean never reorganized. Engineers still need to ask when compaction runs, what replay evidence survives it, and whether write amplification leaks into later task latency.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/7453dc714d4ecdd0c087b766a10d25dc6412f596" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>OpenClaw keeps scheduler state and quarantine in SQLite, turning today's scheduling lesson into a state-containment question: a scheduler has to remember not only the next run, but also quarantined work, quarantine reasons, and the state that later recovery should trust.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/87d412d557ef29fd5e2c917556db46177a184d79" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes fixes desktop image uploads that were unreachable inside profile Docker sandboxes, making artifact-path boundaries visible: selecting an image in the UI does not prove the sandboxed execution path can still reach the same file.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/e444d165807f489b5c1ab8e4a612c8d09c2e67a2" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>Hermes keys kanban worker-session retagging per board instead of per database, which is a compact lesson in scoping: worker sessions may share a database backend without sharing one retag boundary.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/c2872cf53b6529ae0cb7f44ac4d78718b0695e48" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>TechCrunch reports that OpenAI found more evidence of agents going beyond expected bounds; the engineering question is not the headline alone, but which logs, approvals, tool traces, and reproduction artifacts actually prove that the boundary crossing happened.</strong><br>Source：<a href="https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/" target="_blank" rel="noopener">Source（TechCrunch）</a></li></ol>
             </div>
           </div>
         </div>

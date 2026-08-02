@@ -122,7 +122,7 @@
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
       <div>
         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-        <p class="text-secondary mb-0">今天先抓三個工程問題：primary DB 壞掉後剩哪個 recovery store、session switch 後哪些 mode 不該外溢、以及模糊修補或寫檔成功時資料是否真的還完整。</p>
+        <p class="text-secondary mb-0">今天先抓三個工程問題：版本升級後哪條配對／登入恢復鏈還活著、輸出被截斷時完整 artifact 是否仍可追、以及 write success 之後還缺哪個驗證或 review gate。</p>
       </div>
       <div class="d-flex gap-2 flex-wrap">
         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -130,13 +130,13 @@
       </div>
     </div>
     <div class="row g-3">
-      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-08-02 · OpenClaw 官方</div><p>beta.6 把 quarantine store、crash recovery 與 durable delivery 放進同一版，適合練習先畫 failure model。</p></article></div>
-      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-08-02 · Hermes Agent 官方</div><p>fuzzy patch 與 file ops 兩條修正提醒：近似比對與寫檔成功，都不能直接等於 correctness。</p></article></div>
-      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-08-02 · The Verge</div><p>外部 agent 安全報導要回到 approvals、logs、tool traces 與缺失 artifact，避免只抄結論。</p></article></div>
+      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-08-02 · OpenClaw 官方</div><p>beta.7 適合先畫 failure model：primary DB 損壞後，哪些 state、delivery 與 branch write 仍可追溯。</p></article></div>
+      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-08-02 · Hermes Agent 官方</div><p>terminal truncation 與 write verification 告訴你：畫面摘要與 success 訊息，都不能直接當成完整證據。</p></article></div>
+      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-31 · InfoQ</div><p>MCP 進入 security design / code review 後，要再補 review gate 與 audit evidence，才能把 agent 輸出帶進生產流程。</p></article></div>
     </div>
     <div class="soft-panel mt-3 p-3">
       <h3 class="h6 fw-bold mb-2">教學小提示</h3>
-      <p class="mb-0">今天固定補四欄：<strong>surviving state</strong>、<strong>scope reset boundary</strong>、<strong>first wrong write</strong>、<strong>claim-supporting artifact</strong>。</p>
+      <p class="mb-0">今天固定補五欄：<strong>surviving store</strong>、<strong>recovery token path</strong>、<strong>full artifact location</strong>、<strong>verified persistence</strong>、<strong>review gate evidence</strong>。</p>
     </div>
   </div>
 </section>
