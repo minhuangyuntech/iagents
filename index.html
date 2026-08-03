@@ -122,7 +122,7 @@
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3 mb-3">
       <div>
         <h2 class="section-title h3 mb-1">最新消息重點</h2>
-        <p class="text-secondary mb-0">今天先抓三個工程問題：版本升級後哪條配對／登入恢復鏈還活著、輸出被截斷時完整 artifact 是否仍可追、以及 write success 之後還缺哪個驗證或 review gate。</p>
+        <p class="text-secondary mb-0">今天先抓三個工程問題：版本升級後哪些 state 真的可恢復、安裝與 provider 設定的 source of truth 在哪裡、以及一段工作該寫成 skill 還是要保留成隔離 sub-agent。</p>
       </div>
       <div class="d-flex gap-2 flex-wrap">
         <a class="btn btn-outline-primary" href="news.html">查看完整消息彙整</a>
@@ -130,13 +130,13 @@
       </div>
     </div>
     <div class="row g-3">
-      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-08-02 · OpenClaw 官方</div><p>beta.7 適合先畫 failure model：primary DB 損壞後，哪些 state、delivery 與 branch write 仍可追溯。</p></article></div>
-      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-08-02 · Hermes Agent 官方</div><p>terminal truncation 與 write verification 告訴你：畫面摘要與 success 訊息，都不能直接當成完整證據。</p></article></div>
-      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-07-31 · InfoQ</div><p>MCP 進入 security design / code review 後，要再補 review gate 與 audit evidence，才能把 agent 輸出帶進生產流程。</p></article></div>
+      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-08-02 · OpenClaw 官方</div><p>beta.7 最值得先畫 surviving store、delivery recovery 與 stale-branch rejection，因為版本更新真正教的是恢復路徑，不是功能數量。</p></article></div>
+      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-08-03 · Hermes Agent 官方</div><p>v2026.8.3 與 explicit API key precedence 可以一起讀：能力宣告之外，還要問 transport、event 與 config authority 到底在哪一層生效。</p></article></div>
+      <div class="col-lg-4"><article class="mini-news"><div class="news-date mb-2">2026-08-03 · InfoQ</div><p>skill 與 sub-agent 的取捨，可當作今天的課堂比較題：重複流程看程序封裝，探索流程看隔離上下文與獨立證據。</p></article></div>
     </div>
     <div class="soft-panel mt-3 p-3">
       <h3 class="h6 fw-bold mb-2">教學小提示</h3>
-      <p class="mb-0">今天固定補五欄：<strong>surviving store</strong>、<strong>recovery token path</strong>、<strong>full artifact location</strong>、<strong>verified persistence</strong>、<strong>review gate evidence</strong>。</p>
+      <p class="mb-0">今天固定補五欄：<strong>surviving store</strong>、<strong>install source proof</strong>、<strong>config precedence</strong>、<strong>task boundary</strong>、<strong>recovery / verification artifact</strong>。</p>
     </div>
   </div>
 </section>

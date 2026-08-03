@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026-08-04 iAgents 每日新聞檔案，整理 OpenClaw 與 Hermes Agent 的精選中英文消息。">
+  <title>2026-08-04 新聞檔案 | iAgents 中文學習站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style>
+    body { background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%); color:#1f2937; }
+    .hero,.cardx { border-radius:1rem; }
+    .hero { background: linear-gradient(135deg, #0d6efd, #6610f2); color:#fff; box-shadow:0 1rem 3rem rgba(13,110,253,.2); }
+    .cardx { background:#fff; border:1px solid rgba(15,23,42,.08); box-shadow:0 .75rem 2rem rgba(15,23,42,.06); }
+    .section-title { font-weight:800; letter-spacing:.02em; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="../index.html">iAgents 中文學習站</a>
+      <div class="d-flex gap-2 flex-wrap">
+        <a class="btn btn-outline-primary" href="../news.html">今日新聞</a>
+        <a class="btn btn-outline-secondary" href="../news-archive.html">檔案列表</a>
+      </div>
+    </div>
+  </nav>
+  <main id="top" class="container py-4 py-lg-5">
+    <section class="hero p-4 p-lg-5 mb-5">
+      <h1 class="display-5 fw-bold mb-3">2026-08-04 每日新聞檔案</h1>
+      <p class="lead mb-2">今天把 5 條消息收斂成一個教學主題：AI agent 的能力宣告，必須同時通過 state recovery、安裝來源、設定優先序與任務分工邊界的驗證。</p>
+      <p class="mb-0">封存時間：2026-08-04 07:08 CST</p>
+    </section>
+    <section class="mb-4"><div class="cardx p-4"><h2 class="section-title h4 mb-2">今天新增的小教學提示</h2><p class="text-secondary mb-0">今天新增 1 個固定欄位：<strong>which authority wins?</strong> 也就是版本、安裝來源、設定值或任務分工一旦衝突時，最後哪個來源真正被系統採用，並留下什麼驗證證據。</p></div></section>
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">中文 5 條</h2>
+            <p class="text-secondary mb-0">先看中文 5 條抓教學主題，再對照英文 5 條，練習怎麼把 recovery、install provenance、config precedence 與 task-boundary design 改寫成工程問題。</p>
+          </div>
+          <a class="btn btn-outline-primary" href="../news.html">回到今日新聞頁</a>
+        </div>
+        <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw beta.7 把 state safety、durable channel delivery 與 session rewind / branching 收進同一版，最適合學生先問：主資料庫受損後，哪些狀態仍可恢復、哪些訊息仍可重送、哪些分支寫入必須拒絕。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.7" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 新增 CLI onboarding 與 plugin install sources 的 QA 覆蓋，提醒學生：安裝流程能跑通，還不代表來源證據、下載路徑與最終使用的 plugin source 已經被驗證。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/06b5f0b2ffee9afe421e436ce85c4d66faff506b" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.8.3 把即時語音、A2A 1.0、事件宣告與更多 gateway 能力整合進同一個 release，這很適合教學生把「會說、會傳、會通知」拆成 transport、事件與權限三層分別驗證。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.3" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Release）</a></li><li class="mb-3"><strong>Hermes 明確偏好顯式提供的 Anthropic API key，這是一條很好的設定優先序教材：環境變數、設定檔與臨時覆蓋若沒有講清楚 authority order，就很容易出現「我明明改了設定卻沒生效」的錯覺。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/0845232d764617129d6c6c21a5d9be62dcc05d44" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>InfoQ 討論該把工作封裝成 skill 還是交給 sub-agent，剛好能讓工程學生把今天四條官方消息往前延伸：什麼流程適合寫成可重複的程序，什麼流程必須保留隔離上下文與獨立證據。</strong><br>來源：<a href="https://www.infoq.com/news/2026/08/choosing-between-subagent-skills/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener">查看來源（InfoQ）</a></li></ol></div>
+      </div>
+    </section>
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">English 5 Items</h2>
+            <p class="text-secondary mb-0">Use the English list to compare recovery, install provenance, config precedence, and task boundaries.</p>
+          </div>
+          <a class="btn btn-outline-secondary" href="2026-08.html">查看本月檔案</a>
+        </div>
+        <div class="border rounded-4 p-4"><ol class="mb-0"><li class="mb-3"><strong>OpenClaw beta.7 bundles state safety, durable channel delivery, and session rewind / branching, which makes students ask first: after primary-database damage, which state still recovers, which accepted messages still replay, and which branch writes must be rejected.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.7" target="_blank" rel="noopener">Source（OpenClaw Official Release）</a></li><li class="mb-3"><strong>OpenClaw adds QA coverage for CLI onboarding and plugin install sources, reminding students that a successful install flow does not prove the source provenance, fetch path, or final plugin source were actually verified.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/06b5f0b2ffee9afe421e436ce85c4d66faff506b" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.8.3 rolls real-time voice, A2A 1.0, event announcements, and wider gateway support into one release, making it a strong lesson in validating “can speak, can relay, can notify” across transport, event, and authority layers.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.3" target="_blank" rel="noopener">Source（Hermes Agent Official Release）</a></li><li class="mb-3"><strong>Hermes now prefers an explicitly supplied Anthropic API key, which is a crisp lesson in config precedence: if environment variables, config files, and temporary overrides do not have a clear authority order, operators easily think a setting changed when it never became effective.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/0845232d764617129d6c6c21a5d9be62dcc05d44" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>InfoQ examines when work should become a skill versus a sub-agent, which extends today’s official items into a design question: which flows should be reusable procedures, and which need isolated context with independent evidence.</strong><br>Source：<a href="https://www.infoq.com/news/2026/08/choosing-between-subagent-skills/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener">Source（InfoQ）</a></li></ol></div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -122,6 +122,17 @@
       </div>
     </section>
 
+
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <h2 class="section-title h3 mb-3">這週讀 Hermes 再補 1 個 authority 檢查</h2>
+        <div class="row g-4">
+          <div class="col-lg-6"><div class="border rounded-4 p-4 h-100"><h3 class="h5 fw-bold">1. provider key 先後順序要寫清楚</h3><p class="mb-0">看到 provider 或 API key 類修正時，請固定列出 CLI 參數、環境變數、設定檔與暫時覆蓋誰先被讀取；沒有 precedence 表，就很難判斷錯誤到底出在設定沒改到，還是改了但沒生效。</p></div></div>
+          <div class="col-lg-6"><div class="border rounded-4 p-4 h-100"><h3 class="h5 fw-bold">2. reset 指令要分清恢復哪一層</h3><p class="mb-0">若文件提到 personality、profile 或 mode reset，請再補是重設畫面狀態、session state，還是持久化設定；同樣叫 reset，實際影響層次常常不同。</p></div></div>
+        </div>
+      </div>
+    </section>
+
     <section class="text-center py-3">
       <a class="btn btn-success me-2" href="index.html#comparison">回首頁專案比較區</a>
       <a class="btn btn-outline-success" href="openclaw.html">對照 OpenClaw</a>

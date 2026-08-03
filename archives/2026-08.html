@@ -27,13 +27,14 @@
   <main id="top" class="container py-4 py-lg-5">
     <section class="hero p-4 p-lg-5 mb-5">
       <h1 class="display-5 fw-bold mb-3">2026 年 8 月新聞檔案</h1>
-      <p class="lead mb-0">本檔案保留 2026 年 8 月的精選新聞與舊聞，依日期由新到舊排列，方便學生回查每日更新脈絡，並比較 recovery、upgrade auth、artifact retrieval、write verification 與 review gate 等主題。</p>
+      <p class="lead mb-0">本檔案保留 2026 年 8 月的精選新聞與舊聞，依日期由新到舊排列，方便學生回查每日更新脈絡，並比較 state recovery、install provenance、config precedence 與 task-boundary design 等主題。</p>
     </section>
 
     <section class="mb-4">
       <div class="cardx p-4">
         <h2 class="section-title h4 mb-3">本月每日檔案</h2>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-08-04.html — 2026-08-04 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-08-04.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-08-03.html — 2026-08-03 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-08-03.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-08-02.html — 2026-08-02 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-08-02.html">開啟</a></li>
           <li class="list-group-item d-flex justify-content-between align-items-center"><span>archives/2026-08-01.html — 2026-08-01 每日新聞檔案</span><a class="btn btn-sm btn-outline-success" href="2026-08-01.html">開啟</a></li>
@@ -41,6 +42,31 @@
       </div>
     </section>
 
+    <section class="mb-5">
+      <div class="cardx p-4 p-lg-5">
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
+          <div>
+            <h2 class="section-title h3 mb-1">2026-08-04 每日重點</h2>
+            <p class="text-secondary mb-0">今天把 5 條消息收斂成一個教學主題：AI agent 的能力宣告，必須同時通過 state recovery、安裝來源、設定優先序與任務分工邊界的驗證。</p>
+          </div>
+          <a class="btn btn-outline-success" href="2026-08-04.html">開啟 2026-08-04 每日檔案</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">中文 5 條</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw beta.7 把 state safety、durable channel delivery 與 session rewind / branching 收進同一版，最適合學生先問：主資料庫受損後，哪些狀態仍可恢復、哪些訊息仍可重送、哪些分支寫入必須拒絕。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.7" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Release）</a></li><li class="mb-3"><strong>OpenClaw 新增 CLI onboarding 與 plugin install sources 的 QA 覆蓋，提醒學生：安裝流程能跑通，還不代表來源證據、下載路徑與最終使用的 plugin source 已經被驗證。</strong><br>來源：<a href="https://github.com/openclaw/openclaw/commit/06b5f0b2ffee9afe421e436ce85c4d66faff506b" target="_blank" rel="noopener">查看來源（OpenClaw 官方 Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.8.3 把即時語音、A2A 1.0、事件宣告與更多 gateway 能力整合進同一個 release，這很適合教學生把「會說、會傳、會通知」拆成 transport、事件與權限三層分別驗證。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.3" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Release）</a></li><li class="mb-3"><strong>Hermes 明確偏好顯式提供的 Anthropic API key，這是一條很好的設定優先序教材：環境變數、設定檔與臨時覆蓋若沒有講清楚 authority order，就很容易出現「我明明改了設定卻沒生效」的錯覺。</strong><br>來源：<a href="https://github.com/NousResearch/hermes-agent/commit/0845232d764617129d6c6c21a5d9be62dcc05d44" target="_blank" rel="noopener">查看來源（Hermes Agent 官方 Commit）</a></li><li class="mb-3"><strong>InfoQ 討論該把工作封裝成 skill 還是交給 sub-agent，剛好能讓工程學生把今天四條官方消息往前延伸：什麼流程適合寫成可重複的程序，什麼流程必須保留隔離上下文與獨立證據。</strong><br>來源：<a href="https://www.infoq.com/news/2026/08/choosing-between-subagent-skills/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener">查看來源（InfoQ）</a></li></ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="border rounded-4 p-4 h-100">
+              <h3 class="h4 fw-bold mb-3">English 5 Items</h3>
+              <ol class="mb-0"><li class="mb-3"><strong>OpenClaw beta.7 bundles state safety, durable channel delivery, and session rewind / branching, which makes students ask first: after primary-database damage, which state still recovers, which accepted messages still replay, and which branch writes must be rejected.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.7" target="_blank" rel="noopener">Source（OpenClaw Official Release）</a></li><li class="mb-3"><strong>OpenClaw adds QA coverage for CLI onboarding and plugin install sources, reminding students that a successful install flow does not prove the source provenance, fetch path, or final plugin source were actually verified.</strong><br>Source：<a href="https://github.com/openclaw/openclaw/commit/06b5f0b2ffee9afe421e436ce85c4d66faff506b" target="_blank" rel="noopener">Source（OpenClaw Official Commit）</a></li><li class="mb-3"><strong>Hermes Agent v2026.8.3 rolls real-time voice, A2A 1.0, event announcements, and wider gateway support into one release, making it a strong lesson in validating “can speak, can relay, can notify” across transport, event, and authority layers.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.3" target="_blank" rel="noopener">Source（Hermes Agent Official Release）</a></li><li class="mb-3"><strong>Hermes now prefers an explicitly supplied Anthropic API key, which is a crisp lesson in config precedence: if environment variables, config files, and temporary overrides do not have a clear authority order, operators easily think a setting changed when it never became effective.</strong><br>Source：<a href="https://github.com/NousResearch/hermes-agent/commit/0845232d764617129d6c6c21a5d9be62dcc05d44" target="_blank" rel="noopener">Source（Hermes Agent Official Commit）</a></li><li class="mb-3"><strong>InfoQ examines when work should become a skill versus a sub-agent, which extends today’s official items into a design question: which flows should be reusable procedures, and which need isolated context with independent evidence.</strong><br>Source：<a href="https://www.infoq.com/news/2026/08/choosing-between-subagent-skills/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=AI%2C+ML+%26+Data+Engineering" target="_blank" rel="noopener">Source（InfoQ）</a></li></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
@@ -66,7 +92,6 @@
         </div>
       </div>
     </section>
-
     <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
@@ -92,7 +117,6 @@
         </div>
       </div>
     </section>
-
     <section class="mb-5">
       <div class="cardx p-4 p-lg-5">
         <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center mb-4">
